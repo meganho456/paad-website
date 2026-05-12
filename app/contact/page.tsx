@@ -36,7 +36,8 @@ export default function ContactPage() {
   const [formState, setFormState] = useState<FormState>('idle')
   const [form, setForm] = useState({
     firstName: '', lastName: '', email: '', phone: '',
-    service: '', message: '', preferredTime: '',
+    isCurrentPatient: '', hearAboutUs: '',
+    service: '', preferredDay: '', preferredTime: '', message: '',
   })
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) =>
@@ -164,6 +165,47 @@ export default function ContactPage() {
                       </div>
                     </div>
 
+                    {/* Current patient radio */}
+                    <div>
+                      <label className="block text-xs font-semibold text-navy-800 uppercase tracking-wider mb-2">
+                        Are you a current patient? *
+                      </label>
+                      <div className="flex gap-6">
+                        {['Yes', 'No'].map((opt) => (
+                          <label key={opt} className="flex items-center gap-2 cursor-pointer">
+                            <input
+                              type="radio" name="isCurrentPatient" value={opt} required
+                              checked={form.isCurrentPatient === opt}
+                              onChange={handleChange}
+                              className="accent-gold-500 w-4 h-4"
+                            />
+                            <span className="text-navy-900 text-sm">{opt}</span>
+                          </label>
+                        ))}
+                      </div>
+                    </div>
+
+                    {/* How did you hear */}
+                    <div>
+                      <label className="block text-xs font-semibold text-navy-800 uppercase tracking-wider mb-1.5">
+                        How did you hear about us?
+                      </label>
+                      <select
+                        name="hearAboutUs" value={form.hearAboutUs}
+                        onChange={handleChange}
+                        className="w-full px-4 py-3 rounded-xl border border-cream-300 bg-cream-50 text-navy-900 text-sm focus:outline-none focus:border-gold-500 focus:ring-2 focus:ring-gold-200 transition-all"
+                      >
+                        <option value="">Select…</option>
+                        <option value="google">Google Search</option>
+                        <option value="yelp">Yelp</option>
+                        <option value="friend">Friend or Family Referral</option>
+                        <option value="doctor">Doctor Referral</option>
+                        <option value="insurance">Insurance Directory</option>
+                        <option value="walkin">Walk-in / Drove By</option>
+                        <option value="other">Other</option>
+                      </select>
+                    </div>
+
                     <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
                       <div>
                         <label className="block text-xs font-semibold text-navy-800 uppercase tracking-wider mb-1.5">
@@ -180,23 +222,42 @@ export default function ContactPage() {
                       </div>
                       <div>
                         <label className="block text-xs font-semibold text-navy-800 uppercase tracking-wider mb-1.5">
-                          Preferred Time
+                          Preferred Day
                         </label>
                         <select
-                          name="preferredTime" value={form.preferredTime}
+                          name="preferredDay" value={form.preferredDay}
                           onChange={handleChange}
                           className="w-full px-4 py-3 rounded-xl border border-cream-300 bg-cream-50 text-navy-900 text-sm focus:outline-none focus:border-gold-500 focus:ring-2 focus:ring-gold-200 transition-all"
                         >
-                          <option value="">Any time works</option>
-                          <option value="morning">Morning (8am – 12pm)</option>
-                          <option value="afternoon">Afternoon (12pm – 5pm)</option>
+                          <option value="">Any day works</option>
+                          <option value="monday">Monday</option>
+                          <option value="tuesday">Tuesday</option>
+                          <option value="wednesday">Wednesday</option>
+                          <option value="thursday">Thursday</option>
+                          <option value="friday">Friday</option>
+                          <option value="saturday">Saturday</option>
                         </select>
                       </div>
                     </div>
 
                     <div>
                       <label className="block text-xs font-semibold text-navy-800 uppercase tracking-wider mb-1.5">
-                        Message
+                        Preferred Time
+                      </label>
+                      <select
+                        name="preferredTime" value={form.preferredTime}
+                        onChange={handleChange}
+                        className="w-full px-4 py-3 rounded-xl border border-cream-300 bg-cream-50 text-navy-900 text-sm focus:outline-none focus:border-gold-500 focus:ring-2 focus:ring-gold-200 transition-all"
+                      >
+                        <option value="">Any time works</option>
+                        <option value="morning">Morning (9am – 12pm)</option>
+                        <option value="afternoon">Afternoon (12pm – 6pm)</option>
+                      </select>
+                    </div>
+
+                    <div>
+                      <label className="block text-xs font-semibold text-navy-800 uppercase tracking-wider mb-1.5">
+                        Please describe the nature of your appointment
                       </label>
                       <textarea
                         name="message" rows={4} value={form.message}

@@ -31,7 +31,7 @@ export default function Footer() {
             <div className="mb-5">
               <div className="relative h-14 w-48">
                 <Image
-                  src="/polo alto logo.jpg"
+                  src="/palo alto logo.png"
                   alt="Palo Alto Advanced Dentists"
                   fill
                   className="object-contain object-left"

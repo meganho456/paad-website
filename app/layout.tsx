@@ -4,37 +4,145 @@ import Navbar from '@/components/Navbar'
 import Footer from '@/components/Footer'
 import FloatingContact from '@/components/FloatingContact'
 
+const jsonLd = {
+  '@context': 'https://schema.org',
+  '@type': ['Dentist', 'LocalBusiness', 'MedicalBusiness'],
+  name: 'Palo Alto Advanced Dentists',
+  alternateName: 'PAAD',
+  url: 'https://www.paloaltoadvanceddentists.com',
+  logo: 'https://www.paloaltoadvanceddentists.com/polo%20alto%20logo.jpg',
+  description:
+    "Palo Alto's one-stop dental practice led by Harvard-trained Dr. James Ho. Same-day implants, Invisalign Elite, PINHOLE surgery, veneers, root canals, and preventive care — all under one roof since 2005.",
+  telephone: '+16503244900',
+  address: {
+    '@type': 'PostalAddress',
+    streetAddress: '4191 El Camino Real',
+    addressLocality: 'Palo Alto',
+    addressRegion: 'CA',
+    postalCode: '94306',
+    addressCountry: 'US',
+  },
+  geo: {
+    '@type': 'GeoCoordinates',
+    latitude: 37.4165,
+    longitude: -122.1066,
+  },
+  hasMap: 'https://maps.google.com/?q=4191+El+Camino+Real+Palo+Alto+CA+94306',
+  openingHoursSpecification: [
+    {
+      '@type': 'OpeningHoursSpecification',
+      dayOfWeek: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'],
+      opens: '09:00',
+      closes: '18:00',
+    },
+  ],
+  priceRange: '$$',
+  currenciesAccepted: 'USD',
+  paymentAccepted: 'Cash, Credit Card, Dental Insurance',
+  areaServed: [
+    'Palo Alto', 'Mountain View', 'Menlo Park', 'Los Altos',
+    'Sunnyvale', 'Redwood City', 'Stanford', 'Silicon Valley',
+  ],
+  availableService: [
+    { '@type': 'MedicalProcedure', name: 'Same-Day Dental Implants' },
+    { '@type': 'MedicalProcedure', name: 'Invisalign Elite' },
+    { '@type': 'MedicalProcedure', name: 'Porcelain Veneers' },
+    { '@type': 'MedicalProcedure', name: 'Teeth Whitening' },
+    { '@type': 'MedicalProcedure', name: 'Root Canal Treatment' },
+    { '@type': 'MedicalProcedure', name: 'PINHOLE Surgical Technique' },
+    { '@type': 'MedicalProcedure', name: 'Preventive Dental Cleaning' },
+  ],
+  founder: {
+    '@type': 'Person',
+    name: 'Dr. James Ho',
+    jobTitle: 'Founder & Lead Dentist',
+    alumniOf: [
+      { '@type': 'CollegeOrUniversity', name: 'Harvard School of Dental Medicine' },
+    ],
+  },
+  aggregateRating: {
+    '@type': 'AggregateRating',
+    ratingValue: '5',
+    bestRating: '5',
+    ratingCount: '150',
+  },
+  sameAs: [
+    'https://www.yelp.com/biz/palo-alto-advanced-dentists-palo-alto',
+  ],
+}
+
 export const metadata: Metadata = {
+  metadataBase: new URL('https://www.paloaltoadvanceddentists.com'),
   title: {
-    default: 'Palo Alto Advanced Dentists | Harvard-Trained Excellence',
+    default: 'Palo Alto Advanced Dentists | Complete Dental Care Since 2005',
     template: '%s | Palo Alto Advanced Dentists',
   },
   description:
-    'Palo Alto\'s complete dental practice — from routine fillings and cleanings to same-day implants, Invisalign Elite, PINHOLE surgery, root canals, and veneers. One roof, every treatment. Bay Area Best Dentist.',
+    "Palo Alto's one-stop dental practice — from simple fillings and cleanings to same-day implants, Invisalign Elite, PINHOLE surgery, root canals, and veneers. Led by Harvard-trained Dr. James Ho since 2005.",
   keywords: [
     'dentist palo alto',
-    'dental implants silicon valley',
+    'palo alto advanced dentists',
+    'same day dental implants palo alto',
     'invisalign elite palo alto',
-    'harvard dentist',
-    'same day implants',
-    'cosmetic dentistry bay area',
-    'pinhole surgery',
-    'multilingual dentist',
+    'pinhole surgery bay area',
+    'cosmetic dentistry silicon valley',
+    'root canal palo alto',
+    'porcelain veneers palo alto',
+    'multilingual dentist bay area',
+    'family dentist palo alto',
+    'dr james ho dentist',
+    'harvard trained dentist',
+    'dental implants menlo park',
+    'teeth whitening palo alto',
   ],
+  authors: [{ name: 'Dr. James Ho, DMD, MPH' }],
+  creator: 'Palo Alto Advanced Dentists',
+  publisher: 'Palo Alto Advanced Dentists',
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: { index: true, follow: true, 'max-image-preview': 'large' },
+  },
   openGraph: {
     type: 'website',
     locale: 'en_US',
+    url: 'https://www.paloaltoadvanceddentists.com',
     siteName: 'Palo Alto Advanced Dentists',
+    title: 'Palo Alto Advanced Dentists | Complete Dental Care Since 2005',
+    description:
+      "Palo Alto's one-stop dental practice — same-day implants, Invisalign Elite, PINHOLE surgery, root canals, veneers & cleanings. Led by Harvard-trained Dr. James Ho.",
+    images: [
+      {
+        url: '/polo%20alto%20logo.jpg',
+        width: 1200,
+        height: 630,
+        alt: 'Palo Alto Advanced Dentists',
+      },
+    ],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Palo Alto Advanced Dentists | Complete Dental Care Since 2005',
+    description:
+      "Palo Alto's one-stop dental practice — same-day implants, Invisalign Elite, PINHOLE surgery, root canals & veneers.",
+  },
+  alternates: {
+    canonical: 'https://www.paloaltoadvanceddentists.com',
+  },
+  verification: {
+    google: '',
   },
 }
 
-export default function RootLayout({
-  children,
-}: {
-  children: React.ReactNode
-}) {
+export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en" className="scroll-smooth">
+      <head>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+        />
+      </head>
       <body>
         <Navbar />
         <main>{children}</main>

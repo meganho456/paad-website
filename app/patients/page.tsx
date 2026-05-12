@@ -94,7 +94,7 @@ export default function PatientsPage() {
             </h1>
             <p className="text-white/55 text-xl leading-relaxed max-w-2xl mx-auto mb-10">
               Everything you need to know for your first visit — and beyond.
-              We've made coming to PAAD as seamless as possible.
+              We&apos;ve made coming to PAAD as seamless as possible.
             </p>
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
               <Link href="/contact" className="btn-gold inline-flex items-center gap-2">
@@ -123,7 +123,7 @@ export default function PatientsPage() {
               <span className="gold-text italic">Step by Step</span>
             </h2>
             <p className="section-subheading mx-auto">
-              We've streamlined your experience so you spend less time on paperwork
+              We&apos;ve streamlined your experience so you spend less time on paperwork
               and more time getting the care you deserve.
             </p>
           </FadeUp>

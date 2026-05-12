@@ -3,13 +3,13 @@ import Image from 'next/image'
 import { MapPin, Phone, Clock, Star } from 'lucide-react'
 
 const services = [
+  'PINHOLE Surgery',
+  'Porcelain Veneers',
   'Same-Day Implants',
   'Invisalign Elite',
-  'Porcelain Veneers',
   'Teeth Whitening',
   'Root Canal',
-  'PINHOLE Surgery',
-  'Preventive Cleanings',
+  'Comprehensive Exam & Cleaning',
 ]
 
 const practiceLinks = [

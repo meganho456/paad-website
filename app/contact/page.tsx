@@ -20,13 +20,13 @@ function FadeUp({ children, delay = 0, className = '' }: { children: React.React
 }
 
 const services = [
+  'PINHOLE Surgery',
+  'Porcelain Veneers',
   '5-in-1 Same Day Implants',
   'Invisalign',
-  'Porcelain Veneers',
   'Teeth Whitening',
-  'Preventive Cleaning',
   'Root Canal',
-  'PINHOLE Surgery',
+  'Comprehensive Exam & Cleaning',
   'General Inquiry',
 ]
 

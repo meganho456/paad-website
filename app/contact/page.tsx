@@ -46,9 +46,31 @@ export default function ContactPage() {
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault()
     setFormState('submitting')
-    // Simulate submission — replace with your API endpoint or form service
-    await new Promise((r) => setTimeout(r, 1200))
-    setFormState('success')
+    try {
+      const res = await fetch('https://formspree.io/f/xaqvkyro', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json', Accept: 'application/json' },
+        body: JSON.stringify({
+          'First Name': form.firstName,
+          'Last Name': form.lastName,
+          'Email': form.email,
+          'Phone': form.phone,
+          'Current Patient': form.isCurrentPatient,
+          'How Did You Hear': form.hearAboutUs,
+          'Service': form.service,
+          'Preferred Day': form.preferredDay,
+          'Preferred Time': form.preferredTime,
+          'Message': form.message,
+        }),
+      })
+      if (res.ok) {
+        setFormState('success')
+      } else {
+        setFormState('error')
+      }
+    } catch {
+      setFormState('error')
+    }
   }
 
   return (
@@ -271,6 +293,13 @@ export default function ContactPage() {
                       By submitting, you consent to being contacted about your inquiry.
                       We never share your information with third parties.
                     </p>
+
+                    {formState === 'error' && (
+                      <p className="text-red-600 text-sm text-center">
+                        Something went wrong. Please call us at{' '}
+                        <a href="tel:6503244900" className="font-semibold underline">(650) 324-4900</a>.
+                      </p>
+                    )}
 
                     <button
                       type="submit"

@@ -595,6 +595,22 @@ const testimonials = [
     quote: "I had the pleasure of working with Dr. Ho's staff years ago and thought they were great, professional and caring. I do have dental work to be done but at least I feel that my teeth will be fixed properly, with all the best materials and with a staff that seems to appreciate my teeth as much as I do!",
     name: "Jeffrey G.",
   },
+  {
+    quote: "Excellent service from the entire team. Had a dental emergency, they brought me right in and provided outstanding care. Much appreciation!",
+    name: "Terri P.",
+  },
+  {
+    quote: "The experience I had here is 5 star. I've been treated well, the dentist is nice and is very good at his job. They worked with me on payments and I am very glad I went here. If you're considering going here, I highly recommend you should.",
+    name: "Brittany B.",
+  },
+  {
+    quote: "Dr. Ho has been our family dentist for over 25 years — which says everything about the level of trust and care he provides. Over that time, we've watched his Silicon Valley practice consistently stay ahead of the curve, using the latest dental technology and modern techniques.",
+    name: "Ross M.",
+  },
+  {
+    quote: "Dr. Ryan Ho did a great job with my cleaning and filling. Great service as well!",
+    name: "Beverly W.",
+  },
 ]
 
 function StarRow() {

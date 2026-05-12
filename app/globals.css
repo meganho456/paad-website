@@ -1,0 +1,183 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,600;1,700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --font-playfair: 'Playfair Display', Georgia, serif;
+  --accent-gold:   #D4A843;
+  --accent-gold-l: #F0CC7A;
+  --accent-gold-d: #B88D2C;
+  --apple-black:   #000000;
+  --apple-gray:    #1D1D1F;
+  --apple-light:   #F5F5F7;
+}
+
+@layer base {
+  *, *::before, *::after { box-sizing: border-box; }
+
+  html {
+    scroll-behavior: smooth;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+  }
+
+  body {
+    @apply bg-cream-100 text-navy-900;
+    font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Text', 'Inter', system-ui, sans-serif;
+    font-size: 17px;
+    overflow-x: hidden;
+  }
+
+  h1, h2, h3, h4 {
+    font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Inter', system-ui, sans-serif;
+    font-weight: 700;
+    letter-spacing: -0.03em;
+  }
+}
+
+@layer components {
+
+  /* ── Apple-style headline classes ─────────────────── */
+  .headline-display {
+    font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Display', system-ui, sans-serif;
+    font-weight: 800;
+    letter-spacing: -0.04em;
+    line-height: 1.02;
+  }
+
+  .headline-section {
+    font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Display', system-ui, sans-serif;
+    font-weight: 700;
+    letter-spacing: -0.03em;
+    line-height: 1.08;
+  }
+
+  .section-label {
+    font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Text', system-ui, sans-serif;
+    font-size: 0.75rem;
+    font-weight: 600;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--accent-gold);
+  }
+
+  /* ── Glass Card ─────────────────────────────────── */
+  .glass-card {
+    @apply backdrop-blur-2xl rounded-3xl border;
+    background: rgba(255, 255, 255, 0.07);
+    border-color: rgba(255, 255, 255, 0.1);
+  }
+
+  .glass-card-light {
+    @apply backdrop-blur-xl rounded-3xl border;
+    background: rgba(255, 255, 255, 0.75);
+    border-color: rgba(255, 255, 255, 0.9);
+  }
+
+  /* ── Tile utilities (bento grid) ─────────────────── */
+  .tile-dark {
+    @apply rounded-3xl p-8 md:p-10;
+    background: #1D1D1F;
+    border: 1px solid rgba(255,255,255,0.08);
+  }
+
+  .tile-darker {
+    @apply rounded-3xl p-8 md:p-10;
+    background: #0D0D0F;
+    border: 1px solid rgba(255,255,255,0.06);
+  }
+
+  .tile-gold {
+    @apply rounded-3xl p-8 md:p-10;
+    background: linear-gradient(135deg, rgba(212,168,67,0.18) 0%, rgba(184,141,44,0.12) 100%);
+    border: 1px solid rgba(212,168,67,0.25);
+  }
+
+  /* ── Buttons ────────────────────────────────────── */
+  .btn-gold {
+    @apply inline-flex items-center justify-center gap-2 font-semibold transition-all duration-300;
+    background: linear-gradient(135deg, #D4A843 0%, #B88D2C 100%);
+    color: #000000;
+    padding: 0.75rem 2rem;
+    border-radius: 980px;
+    font-size: 0.9375rem;
+    letter-spacing: -0.01em;
+    box-shadow: 0 4px 20px rgba(212,168,67,0.3);
+  }
+  .btn-gold:hover {
+    box-shadow: 0 6px 32px rgba(212,168,67,0.5);
+    transform: translateY(-1px);
+    background: linear-gradient(135deg, #E0B550 0%, #C49930 100%);
+  }
+
+  .btn-ghost-white {
+    @apply inline-flex items-center justify-center gap-2 font-semibold border transition-all duration-300 text-white;
+    border-color: rgba(255, 255, 255, 0.3);
+    padding: 0.75rem 2rem;
+    border-radius: 980px;
+    backdrop-filter: blur(8px);
+  }
+  .btn-ghost-white:hover {
+    background: rgba(255, 255, 255, 0.1);
+    border-color: rgba(255, 255, 255, 0.55);
+  }
+
+  .btn-text-gold {
+    @apply inline-flex items-center gap-1.5 font-semibold transition-colors duration-200;
+    color: var(--accent-gold);
+    font-size: 0.9375rem;
+  }
+  .btn-text-gold:hover { color: var(--accent-gold-l); }
+
+  /* ── Typography Utilities ───────────────────────── */
+  .gold-text {
+    @apply text-transparent bg-clip-text;
+    background-image: linear-gradient(135deg, #F0CC7A 0%, #D4A843 50%, #B88D2C 100%);
+  }
+
+  .section-heading {
+    @apply text-4xl md:text-5xl font-bold leading-tight;
+    letter-spacing: -0.03em;
+  }
+
+  .section-subheading {
+    @apply text-lg leading-relaxed max-w-2xl;
+    color: rgba(29,29,31,0.65);
+  }
+
+  /* ── Hero grid ──────────────────────────────────── */
+  .hero-grid {
+    background-image:
+      linear-gradient(rgba(212,168,67,0.04) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(212,168,67,0.04) 1px, transparent 1px);
+    background-size: 80px 80px;
+  }
+
+  /* ── Gold divider ───────────────────────────────── */
+  .divider-gold {
+    @apply w-12 h-[2px] rounded-full;
+    background: linear-gradient(90deg, #D4A843, #B88D2C);
+  }
+
+  /* ── Section padding ────────────────────────────── */
+  .section-py {
+    @apply py-24 md:py-32;
+  }
+
+  /* ── Apple-style separating line ────────────────── */
+  .apple-rule {
+    @apply w-full h-px;
+    background: rgba(255,255,255,0.1);
+  }
+}
+
+/* ── Scrollbar ─────────────────────────────────────── */
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: #000000; }
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(#D4A843, #B88D2C);
+  border-radius: 3px;
+}

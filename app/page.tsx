@@ -580,6 +580,79 @@ function DoctorSpotlight() {
 }
 
 /* ─────────────────────────────────────────────────────
+   TESTIMONIALS
+───────────────────────────────────────────────────── */
+const testimonials = [
+  {
+    quote: "I have been going to this office for the past 3-4 years. They are great at accommodating my work schedule, the dentists work quickly but do a great job as well. Highly recommend.",
+    name: "Beatriz V.",
+  },
+  {
+    quote: "This is my 2nd experience with Dr. Ho. 1st experience was 5 stars when I took care of my daughter. This time around I came in to have my own Invisalign treatment. Our family is very happy with the professionalism and service. Highly recommend this office — staff is so friendly too!",
+    name: "Elaine L.",
+  },
+  {
+    quote: "I had the pleasure of working with Dr. Ho's staff years ago and thought they were great, professional and caring. I do have dental work to be done but at least I feel that my teeth will be fixed properly, with all the best materials and with a staff that seems to appreciate my teeth as much as I do!",
+    name: "Jeffrey G.",
+  },
+]
+
+function StarRow() {
+  return (
+    <div className="flex gap-1 justify-center mb-4">
+      {Array.from({ length: 5 }).map((_, i) => (
+        <svg key={i} className="w-4 h-4" viewBox="0 0 20 20" fill="#D4A843">
+          <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+        </svg>
+      ))}
+    </div>
+  )
+}
+
+function Testimonials() {
+  return (
+    <section className="section-py" style={{ background: '#F5F5F7' }}>
+      <div className="max-w-7xl mx-auto px-6">
+        <FadeUp className="text-center mb-14">
+          <p className="section-label mb-4" style={{ color: '#B88D2C' }}>Patient Stories</p>
+          <h2
+            className="headline-section text-navy-950 mb-4"
+            style={{ fontSize: 'clamp(2.5rem,5vw,4rem)' }}
+          >
+            What our patients say.
+          </h2>
+        </FadeUp>
+
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+          {testimonials.map((t, i) => (
+            <FadeUp key={t.name} delay={i * 0.1}>
+              <div
+                className="h-full rounded-3xl p-8 flex flex-col"
+                style={{ background: '#FFFFFF', border: '1px solid rgba(0,0,0,0.07)' }}
+              >
+                <StarRow />
+                <p
+                  className="text-navy-900/70 leading-relaxed flex-1 text-center italic"
+                  style={{ fontSize: '0.9375rem' }}
+                >
+                  &ldquo;{t.quote}&rdquo;
+                </p>
+                <p
+                  className="text-center font-semibold mt-6"
+                  style={{ color: '#D4A843', fontSize: '0.875rem' }}
+                >
+                  — {t.name}
+                </p>
+              </div>
+            </FadeUp>
+          ))}
+        </div>
+      </div>
+    </section>
+  )
+}
+
+/* ─────────────────────────────────────────────────────
    LANGUAGES BAND
 ───────────────────────────────────────────────────── */
 function LanguagesBand() {
@@ -659,6 +732,7 @@ export default function HomePage() {
       <ServicesPreview />
       <TechHighlight />
       <DoctorSpotlight />
+      <Testimonials />
       <LanguagesBand />
       <FinalCTA />
     </>

@@ -8,7 +8,6 @@ import { motion, AnimatePresence } from 'framer-motion'
 import { Phone, Menu, X } from 'lucide-react'
 
 const navLinks = [
-  { href: '/',         label: 'Home' },
   { href: '/services', label: 'Services' },
   { href: '/doctors',  label: 'Our Doctors' },
   { href: '/practice', label: 'Our Practice' },
@@ -33,69 +32,81 @@ export default function Navbar() {
     <header
       className="fixed top-0 left-0 right-0 z-50 transition-all duration-500"
       style={{
-        background: scrolled
-          ? 'rgba(0,0,0,0.85)'
-          : 'transparent',
+        background: scrolled ? 'rgba(0,0,0,0.92)' : 'transparent',
         backdropFilter: scrolled ? 'blur(20px) saturate(180%)' : 'none',
         WebkitBackdropFilter: scrolled ? 'blur(20px) saturate(180%)' : 'none',
         borderBottom: scrolled ? '1px solid rgba(255,255,255,0.08)' : 'none',
       }}
     >
-      <div className="max-w-7xl mx-auto px-6 h-[52px] flex items-center justify-between">
-
-        {/* ── Logo ── */}
-        <Link href="/" className="group flex items-center gap-2.5">
-          <div className="relative w-9 h-9 shrink-0">
+      {/* ── Desktop bar ── */}
+      <div className="hidden lg:grid max-w-7xl mx-auto px-8 h-20"
+        style={{ gridTemplateColumns: '1fr auto 1fr', alignItems: 'center' }}
+      >
+        {/* Left — Logo */}
+        <Link href="/" className="flex items-center gap-3">
+          <div className="relative w-10 h-10 shrink-0">
             <Image src="/logo-t.png" alt="PAAD" fill className="object-contain" priority />
           </div>
           <span
-            className="font-bold text-white tracking-tight"
-            style={{ fontSize: '1.0625rem', letterSpacing: '-0.02em' }}
+            className="font-bold tracking-tight leading-tight"
+            style={{ fontSize: '1.05rem', color: '#D4A843', letterSpacing: '-0.01em' }}
           >
-            PAAD
+            Palo Alto Advanced Dentists
           </span>
         </Link>
 
-        {/* ── Desktop Nav ── */}
-        <nav className="hidden lg:flex items-center gap-8">
-          {navLinks.slice(1, -1).map((link) => (
+        {/* Center — Nav links absolutely centered */}
+        <nav className="flex items-center gap-9">
+          {navLinks.slice(0, 4).map((link) => (
             <Link
               key={link.href}
               href={link.href}
-              className="text-sm font-medium transition-colors duration-200"
+              className="font-semibold transition-colors duration-200 whitespace-nowrap"
               style={{
-                color: pathname === link.href
-                  ? '#D4A843'
-                  : 'rgba(255,255,255,0.75)',
+                fontSize: '0.9375rem',
+                color: pathname === link.href ? '#D4A843' : 'rgba(255,255,255,0.82)',
               }}
               onMouseEnter={(e) => { if (pathname !== link.href) (e.target as HTMLElement).style.color = '#fff' }}
-              onMouseLeave={(e) => { if (pathname !== link.href) (e.target as HTMLElement).style.color = 'rgba(255,255,255,0.75)' }}
+              onMouseLeave={(e) => { if (pathname !== link.href) (e.target as HTMLElement).style.color = 'rgba(255,255,255,0.82)' }}
             >
               {link.label}
             </Link>
           ))}
         </nav>
 
-        {/* ── Desktop CTA ── */}
-        <div className="hidden lg:flex items-center gap-5">
+        {/* Right — CTA */}
+        <div className="flex items-center gap-5 justify-end">
           <a
             href="tel:6503244900"
-            className="flex items-center gap-1.5 text-sm font-medium transition-colors duration-200"
-            style={{ color: 'rgba(255,255,255,0.6)' }}
+            className="flex items-center gap-1.5 font-medium transition-colors duration-200 hover:text-white"
+            style={{ fontSize: '0.875rem', color: 'rgba(255,255,255,0.6)' }}
           >
-            <Phone className="w-3 h-3" />
+            <Phone className="w-3.5 h-3.5" />
             (650) 324-4900
           </a>
           <Link href="/contact" className="btn-gold text-sm py-2 px-5">
             Book Now
           </Link>
         </div>
+      </div>
 
-        {/* ── Mobile hamburger ── */}
+      {/* ── Mobile bar ── */}
+      <div className="lg:hidden flex items-center justify-between px-5 h-16">
+        <Link href="/" className="flex items-center gap-2.5">
+          <div className="relative w-8 h-8 shrink-0">
+            <Image src="/logo-t.png" alt="PAAD" fill className="object-contain" priority />
+          </div>
+          <span
+            className="font-bold leading-tight"
+            style={{ fontSize: '0.875rem', color: '#D4A843', letterSpacing: '-0.01em' }}
+          >
+            Palo Alto Advanced Dentists
+          </span>
+        </Link>
         <button
           onClick={() => setMobileOpen((v) => !v)}
           aria-label="Toggle menu"
-          className="lg:hidden p-2 text-white/80 hover:text-white transition-colors"
+          className="p-2 text-white/80 hover:text-white transition-colors"
         >
           {mobileOpen ? <X className="w-5 h-5" /> : <Menu className="w-5 h-5" />}
         </button>
@@ -111,15 +122,15 @@ export default function Navbar() {
             exit={{ opacity: 0, height: 0 }}
             transition={{ duration: 0.22, ease: 'easeInOut' }}
             className="lg:hidden overflow-hidden border-t border-white/10"
-            style={{ background: 'rgba(0,0,0,0.95)', backdropFilter: 'blur(20px)' }}
+            style={{ background: 'rgba(0,0,0,0.97)', backdropFilter: 'blur(20px)' }}
           >
-            <nav className="px-6 py-6 flex flex-col gap-1">
+            <nav className="px-6 py-5 flex flex-col gap-1">
               {navLinks.map((link) => (
                 <Link
                   key={link.href}
                   href={link.href}
-                  className="text-base font-medium py-3 border-b border-white/5 transition-colors duration-200"
-                  style={{ color: pathname === link.href ? '#D4A843' : 'rgba(255,255,255,0.8)' }}
+                  className="text-lg font-semibold py-3.5 border-b border-white/8 transition-colors duration-200"
+                  style={{ color: pathname === link.href ? '#D4A843' : 'rgba(255,255,255,0.85)' }}
                 >
                   {link.label}
                 </Link>
@@ -129,7 +140,7 @@ export default function Navbar() {
                   <Phone className="w-4 h-4" style={{ color: '#D4A843' }} />
                   (650) 324-4900
                 </a>
-                <Link href="/contact" className="btn-gold text-center text-sm">
+                <Link href="/contact" className="btn-gold text-center text-sm py-3">
                   Book Appointment
                 </Link>
               </div>

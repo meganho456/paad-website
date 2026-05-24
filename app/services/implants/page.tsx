@@ -66,7 +66,7 @@ const faqs = [
   },
   {
     q: 'What is the recovery like after same-day implant surgery?',
-    a: 'Most patients return to desk work within 48–72 hours. Swelling peaks at 48 hours and resolves within a week. A soft diet is recommended for 6–8 weeks while osseointegration occurs. Dr. Ho's flapless or minimal-flap technique significantly reduces post-operative discomfort vs. traditional open-flap surgery.',
+    a: "Most patients return to desk work within 48–72 hours. Swelling peaks at 48 hours and resolves within a week. A soft diet is recommended for 6–8 weeks while osseointegration occurs. Dr. Ho's flapless or minimal-flap technique significantly reduces post-operative discomfort vs. traditional open-flap surgery.",
   },
   {
     q: 'Does insurance cover dental implants?',

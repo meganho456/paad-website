@@ -7,7 +7,6 @@ import {
   Zap, Smile, Sparkles, Sun, ShieldCheck, Activity,
   Scissors, CheckCircle2, ArrowRight, ChevronRight, Phone
 } from 'lucide-react'
-import type { Metadata } from 'next'
 
 function FadeUp({ children, delay = 0, className = '' }: { children: React.ReactNode; delay?: number; className?: string }) {
   const ref    = useRef(null)
@@ -200,7 +199,7 @@ export default function ServicesPage() {
       {/* ── Service Cards ── */}
       <section className="bg-navy-900 py-24">
         <div className="max-w-7xl mx-auto px-6 space-y-10">
-          {services.map((svc, i) => (
+          {services.map((svc) => (
             <FadeUp key={svc.id} delay={0.05}>
               <div
                 id={svc.id}
@@ -261,6 +260,67 @@ export default function ServicesPage() {
               </div>
             </FadeUp>
           ))}
+        </div>
+      </section>
+
+      {/* ── Deep Dive Clinical Guides ── */}
+      <section className="py-20" style={{ background: '#F5F5F7' }}>
+        <div className="max-w-7xl mx-auto px-6">
+          <FadeUp className="text-center mb-12">
+            <p className="section-label mb-4">Clinical Solution Guides</p>
+            <h2 className="font-serif text-4xl font-bold text-navy-900 mb-4" style={{ letterSpacing: '-0.03em' }}>
+              Deep-Dive Into Our Signature Procedures
+            </h2>
+            <p className="text-navy-900/55 max-w-2xl mx-auto">
+              Detailed clinical guides covering protocols, technology, candidacy criteria, and AI-optimised research prompts for our three most advanced procedures.
+            </p>
+          </FadeUp>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+            {[
+              {
+                href: '/services/pinhole',
+                tag: 'Minimally Invasive',
+                title: 'PINHOLE Surgical Technique™',
+                desc: 'No scalpel. No sutures. Full-arch gum recession reversed in one visit. Certified PST practitioner.',
+                dark: true,
+              },
+              {
+                href: '/services/implants',
+                tag: 'Signature Procedure',
+                title: 'Same-Day Full-Mouth Implants',
+                desc: '3D CBCT-guided surgery. Digital bite analysis. Same-day provisional teeth. 5-in-1 protocol.',
+                dark: true,
+              },
+              {
+                href: '/services/smile-makeover',
+                tag: 'Cosmetic Excellence',
+                title: 'Smile Makeover & Invisalign Elite',
+                desc: 'Top 5% Invisalign Elite Provider. Digital smile design preview. Artisan porcelain veneers.',
+                dark: false,
+              },
+            ].map((card, i) => (
+              <FadeUp key={i} delay={0.1 * i}>
+                <Link href={card.href} className="block group h-full">
+                  <div className={`h-full rounded-3xl p-8 border transition-all duration-300 group-hover:scale-[1.02] ${
+                    card.dark
+                      ? 'bg-navy-900 border-white/8 hover:border-gold-600/40'
+                      : 'bg-white border-cream-300 hover:border-gold-500/40 shadow-sm'
+                  }`}>
+                    <span className="section-label block mb-3">{card.tag}</span>
+                    <h3 className={`font-serif text-2xl font-bold mb-4 leading-tight ${card.dark ? 'text-white' : 'text-navy-900'}`}>
+                      {card.title}
+                    </h3>
+                    <p className={`text-sm leading-relaxed mb-6 ${card.dark ? 'text-white/55' : 'text-navy-900/55'}`}>
+                      {card.desc}
+                    </p>
+                    <span className="inline-flex items-center gap-2 text-sm font-semibold" style={{ color: '#D4A843' }}>
+                      Read Clinical Guide <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
+                    </span>
+                  </div>
+                </Link>
+              </FadeUp>
+            ))}
+          </div>
         </div>
       </section>
 

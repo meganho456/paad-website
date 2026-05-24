@@ -45,14 +45,8 @@ export default function Navbar() {
         {/* Left — Logo */}
         <Link href="/" className="flex items-center gap-3">
           <div className="relative w-10 h-10 shrink-0">
-            <Image src="/logo-t.png" alt="PAAD" fill className="object-contain" priority />
+            <Image src="/logo-t.png" alt="Palo Alto Advanced Dentists" fill className="object-contain" priority />
           </div>
-          <span
-            className="font-bold tracking-tight leading-tight"
-            style={{ fontSize: '1.05rem', color: '#D4A843', letterSpacing: '-0.01em' }}
-          >
-            Palo Alto Advanced Dentists
-          </span>
         </Link>
 
         {/* Center — Nav links absolutely centered */}

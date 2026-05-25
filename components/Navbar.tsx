@@ -43,10 +43,16 @@ export default function Navbar() {
         style={{ gridTemplateColumns: '1fr auto 1fr', alignItems: 'center' }}
       >
         {/* Left — Logo */}
-        <Link href="/" className="flex items-center gap-3">
+        <Link href="/" className="flex items-center gap-3 min-w-0 overflow-hidden">
           <div className="relative w-10 h-10 shrink-0">
             <Image src="/logo-t.png" alt="Palo Alto Advanced Dentists" fill className="object-contain" priority />
           </div>
+          <span
+            className="font-bold leading-tight truncate"
+            style={{ fontSize: '1.05rem', color: '#D4A843', letterSpacing: '-0.01em' }}
+          >
+            Palo Alto Advanced Dentists
+          </span>
         </Link>
 
         {/* Center — Nav links absolutely centered */}

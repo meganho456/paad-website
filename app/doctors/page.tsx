@@ -22,6 +22,7 @@ function FadeUp({ children, delay = 0, className = '' }: { children: React.React
 
 const doctors = [
   {
+    id: 'james-ho',
     photo: '/doctors/dr-james-ho.jpg',
     initials: 'JH',
     name: 'Dr. James Ho',
@@ -44,6 +45,7 @@ const doctors = [
     bio: 'Dr. James Ho brings over 20 years of full-time clinical experience and a rare dual perspective to dental medicine — the clinical mastery of a Harvard D.M.D. and the population-health lens of an M.P.H. Known for solving cases other practices consider "hopeless," Dr. Ho combines comprehensive skill across implants, orthodontics, endodontics, and periodontics to deliver complete care under one roof. He is fluent in English, Mandarin, and Cantonese, and places strong emphasis on patient consensus at every stage of treatment planning.',
   },
   {
+    id: 'ryan-ho',
     photo: '/doctors/dr-ryan-ho.jpg',
     initials: 'RH',
     name: 'Dr. Ryan Charles Ho',
@@ -64,6 +66,7 @@ const doctors = [
     bio: 'Dr. Ryan Charles Ho grew up right here in Palo Alto — the same streets, the same community, the same neighbors who have trusted his father, Dr. James Ho, for over two decades. Inspired by watching his father transform patients\' lives through dentistry, Ryan pursued the same path and earned his D.M.D. with a biochemistry foundation from UC Davis. He brings the warmth of someone who truly knows this community, combined with a gentle, patient-first approach that reflects everything the Ho family stands for. Having a father as one of the Bay Area\'s most respected dentists is a high bar — and Dr. Ryan Charles Ho rises to it every day.',
   },
   {
+    id: 'sara-hamed',
     photo: '/doctors/dr-sara-hamed.jpg',
     initials: 'SH',
     name: 'Dr. Sara Hamed-Negahdar',
@@ -84,6 +87,7 @@ const doctors = [
     bio: 'Known affectionately as the "gentle dentist," Dr. Sara Hamed-Negahdar is deeply committed to patient comfort and thorough communication. She takes time to explain each procedure in detail, ensuring patients feel informed and confident. Beyond the office, Dr. Hamed-Negahdar is passionate about community service, having participated in dental mission trips in Mexico and Kenya. Outside dentistry she enjoys cooking, jazz music, podcasts, and skiing.',
   },
   {
+    id: 'pedro-avendano',
     photo: '/doctors/dr-pedro-avendano.jpg',
     initials: 'PA',
     name: 'Dr. Pedro Avendaño',
@@ -106,6 +110,7 @@ const doctors = [
     bio: 'Dr. Pedro Avendaño brings a distinguished international perspective to PAAD. As a former director of clinical practices in Santiago, Chile, and an active lecturer in implantology, he combines elite academic credentials with deep hands-on expertise. Dr. Avendaño has contributed to implant training courses at Loma Linda University School of Dentistry and remains actively engaged in continuing education. He enjoys skiing and spending time with family.',
   },
   {
+    id: 'eddy-wang',
     photo: '/doctors/dr-eddy-wang.jpg',
     initials: 'EW',
     name: 'Dr. Eddy Wang',
@@ -171,7 +176,7 @@ export default function DoctorsPage() {
         <div className="max-w-7xl mx-auto px-6 space-y-16">
           {doctors.map((doc, i) => (
             <FadeUp key={doc.name} delay={0.05}>
-              <div className={`grid grid-cols-1 lg:grid-cols-[320px_1fr] gap-10 glass-card p-8 md:p-12 ${i % 2 !== 0 ? 'lg:grid-cols-[1fr_320px]' : ''}`}>
+              <div id={doc.id} className={`grid grid-cols-1 lg:grid-cols-[320px_1fr] gap-10 glass-card p-8 md:p-12 ${i % 2 !== 0 ? 'lg:grid-cols-[1fr_320px]' : ''}`}>
 
                 {/* Photo column */}
                 <div className={i % 2 !== 0 ? 'lg:order-2' : ''}>

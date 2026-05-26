@@ -112,18 +112,19 @@ export default function Navbar() {
       }}
     >
       {/* ── Desktop bar ── */}
-      <div className="hidden lg:grid max-w-7xl mx-auto px-8 h-20"
-        style={{ gridTemplateColumns: '1fr auto 1fr', alignItems: 'center' }}
-      >
-        {/* Left — Logo */}
-        <Link href="/" className="flex items-center">
+      <div className="hidden lg:flex items-center max-w-7xl mx-auto px-8 h-20 relative">
+        {/* Left — Logo + Name */}
+        <Link href="/" className="flex items-center gap-3 shrink-0">
           <div className="relative w-10 h-10 shrink-0">
             <Image src="/logo-t.png" alt="Palo Alto Advanced Dentists" fill className="object-contain" priority />
           </div>
+          <span className="font-bold whitespace-nowrap" style={{ fontSize: '0.95rem', color: '#D4A843', letterSpacing: '-0.01em' }}>
+            Palo Alto Advanced Dentists
+          </span>
         </Link>
 
-        {/* Center — Nav links */}
-        <nav className="flex items-center gap-9">
+        {/* Center — Nav links absolutely centered */}
+        <nav className="absolute left-1/2 -translate-x-1/2 flex items-center gap-9">
           {navLinks.slice(0, 4).map((link) => (
             <div
               key={link.href}
@@ -163,7 +164,7 @@ export default function Navbar() {
         </nav>
 
         {/* Right — CTA */}
-        <div className="flex items-center gap-5 justify-end">
+        <div className="ml-auto flex items-center gap-5 shrink-0">
           <a
             href="tel:6503244900"
             className="flex items-center gap-1.5 font-medium transition-colors duration-200 hover:text-white"

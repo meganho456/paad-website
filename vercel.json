@@ -1,0 +1,27 @@
+{
+  "redirects": [
+    { "source": "/?page_id=21",                          "destination": "/",         "permanent": true },
+    { "source": "/?page_id=79",                          "destination": "/",         "permanent": true },
+    { "source": "/our-practice/meet-our-doctors/",       "destination": "/doctors",  "permanent": true },
+    { "source": "/our-practice/meet-our-doctors",        "destination": "/doctors",  "permanent": true },
+    { "source": "/our-practice/",                        "destination": "/practice", "permanent": true },
+    { "source": "/our-practice",                         "destination": "/practice", "permanent": true },
+    { "source": "/our-services/",                        "destination": "/services", "permanent": true },
+    { "source": "/our-services",                         "destination": "/services", "permanent": true },
+    { "source": "/our-services/cosmetic-dentistry/",     "destination": "/services", "permanent": true },
+    { "source": "/our-services/oral-maxillofacial-surgery/", "destination": "/services", "permanent": true },
+    { "source": "/our-services/dental-emergencies/",     "destination": "/services", "permanent": true },
+    { "source": "/dental-implants/",                     "destination": "/services/implants", "permanent": true },
+    { "source": "/dental-implants",                      "destination": "/services/implants", "permanent": true },
+    { "source": "/patient-information/",                 "destination": "/patients", "permanent": true },
+    { "source": "/patient-information",                  "destination": "/patients", "permanent": true },
+    { "source": "/patient-information/patient-forms/",   "destination": "/patients", "permanent": true },
+    { "source": "/patient-portal/",                      "destination": "/patients", "permanent": true },
+    { "source": "/patient-portal",                       "destination": "/patients", "permanent": true },
+    { "source": "/contact-us/",                          "destination": "/contact",  "permanent": true },
+    { "source": "/contact-us",                           "destination": "/contact",  "permanent": true },
+    { "source": "/contact-us/appointment-request/",      "destination": "/contact",  "permanent": true },
+    { "source": "/leave-a-review/",                      "destination": "/",         "permanent": true },
+    { "source": "/leave-a-review/testimonials/",         "destination": "/",         "permanent": true }
+  ]
+}

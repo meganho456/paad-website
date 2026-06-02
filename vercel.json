@@ -1,8 +1,5 @@
 {
   "redirects": [
-    { "source": "/", "has": [{"type": "query", "key": "page_id", "value": "21"}], "destination": "/", "permanent": true },
-    { "source": "/", "has": [{"type": "query", "key": "page_id", "value": "79"}], "destination": "/", "permanent": true },
-
     { "source": "/our-services/periodontics/:path*",         "destination": "/services/periodontics",       "permanent": true },
     { "source": "/our-services/periodontal-disease/:path*",  "destination": "/services/periodontics",       "permanent": true },
     { "source": "/our-services/orthodontics/:path*",         "destination": "/services/invisalign",         "permanent": true },

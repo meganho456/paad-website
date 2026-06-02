@@ -1,6 +1,6 @@
 'use client'
 
-import { useState, useEffect, useRef } from 'react'
+import { useState } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
 import { Phone, X, Copy, Check } from 'lucide-react'
 
@@ -158,64 +158,9 @@ function FloatBtn({
   )
 }
 
-/* ── Drag tooltip ───────────────────────────────────── */
-function DragTooltip({ onDismiss }: { onDismiss: () => void }) {
-  return (
-    <motion.div
-      initial={{ opacity: 0, scale: 0.85, y: 6 }}
-      animate={{ opacity: 1, scale: 1, y: 0 }}
-      exit={{ opacity: 0, scale: 0.85, y: 6 }}
-      transition={{ duration: 0.22, ease: [0.25, 0.1, 0.25, 1] }}
-      className="absolute bottom-full right-0 mb-3 pointer-events-auto"
-      style={{ zIndex: 110, width: '200px' }}
-    >
-      {/* X button */}
-      <button
-        onClick={onDismiss}
-        className="absolute -top-2 -right-2 w-6 h-6 rounded-full flex items-center justify-center z-10"
-        style={{ background: 'rgba(100,100,100,0.85)' }}
-      >
-        <X className="w-3 h-3 text-white" />
-      </button>
-
-      {/* Bubble */}
-      <div
-        className="relative rounded-2xl px-4 py-3 text-sm font-semibold leading-snug w-full"
-        style={{ background: 'rgba(255,255,255,0.95)', color: '#C0392B', boxShadow: '0 4px 20px rgba(0,0,0,0.15)' }}
-      >
-        Drag the icon to move it freely!
-        {/* Tail */}
-        <span
-          className="absolute right-5 -bottom-2 w-0 h-0"
-          style={{
-            borderLeft: '8px solid transparent',
-            borderRight: '8px solid transparent',
-            borderTop: '9px solid rgba(255,255,255,0.95)',
-          }}
-        />
-      </div>
-    </motion.div>
-  )
-}
-
 /* ── Main export ────────────────────────────────────── */
 export default function FloatingContact() {
   const [wechatOpen, setWechatOpen] = useState(false)
-  const [showTooltip, setShowTooltip] = useState(false)
-  const constraintsRef = useRef<HTMLDivElement>(null)
-
-  useEffect(() => {
-    const dismissed = localStorage.getItem('paad-drag-tooltip-dismissed')
-    if (!dismissed) {
-      const t = setTimeout(() => setShowTooltip(true), 1800)
-      return () => clearTimeout(t)
-    }
-  }, [])
-
-  const dismissTooltip = () => {
-    setShowTooltip(false)
-    localStorage.setItem('paad-drag-tooltip-dismissed', '1')
-  }
 
   return (
     <>
@@ -223,25 +168,8 @@ export default function FloatingContact() {
         {wechatOpen && <WeChatModal onClose={() => setWechatOpen(false)} />}
       </AnimatePresence>
 
-      {/* Full-viewport drag boundary */}
-      <div ref={constraintsRef} className="fixed inset-0 z-[99] pointer-events-none" />
-
-      {/* Draggable widget */}
-      <motion.div
-        drag
-        dragMomentum={false}
-        dragConstraints={constraintsRef}
-        dragElastic={0.08}
-        className="fixed right-5 bottom-8 z-[100] flex flex-col items-center gap-3 cursor-grab active:cursor-grabbing"
-        style={{ touchAction: 'none' }}
-        onDragStart={dismissTooltip}
-      >
-        {/* Tooltip */}
-        <div className="relative">
-          <AnimatePresence>
-            {showTooltip && <DragTooltip onDismiss={dismissTooltip} />}
-          </AnimatePresence>
-        </div>
+      {/* Always-visible vertical stack — bottom-right */}
+      <div className="fixed right-5 bottom-8 z-[100] flex flex-col items-center gap-3">
 
         {/* Phone */}
         <FloatBtn
@@ -273,7 +201,7 @@ export default function FloatingContact() {
           icon={<WeChatIcon className="w-5 h-5" />}
         />
 
-      </motion.div>
+      </div>
     </>
   )
 }

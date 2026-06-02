@@ -4,6 +4,7 @@ import './globals.css'
 import Navbar from '@/components/Navbar'
 import Footer from '@/components/Footer'
 import FloatingContact from '@/components/FloatingContact'
+import DraggableChatButton from '@/components/DraggableChatButton'
 
 const jsonLd = {
   '@context': 'https://schema.org',
@@ -149,6 +150,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <main>{children}</main>
         <Footer />
         <FloatingContact />
+        <DraggableChatButton />
         <Script
           src="https://www.googletagmanager.com/gtag/js?id=G-BV29WD7WDG"
           strategy="afterInteractive"

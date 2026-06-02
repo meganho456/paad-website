@@ -167,7 +167,7 @@ function DragTooltip({ onDismiss }: { onDismiss: () => void }) {
       exit={{ opacity: 0, scale: 0.85, y: 6 }}
       transition={{ duration: 0.22, ease: [0.25, 0.1, 0.25, 1] }}
       className="absolute bottom-full right-0 mb-3 pointer-events-auto"
-      style={{ zIndex: 110 }}
+      style={{ zIndex: 110, width: '200px' }}
     >
       {/* X button */}
       <button
@@ -180,7 +180,7 @@ function DragTooltip({ onDismiss }: { onDismiss: () => void }) {
 
       {/* Bubble */}
       <div
-        className="relative rounded-2xl px-4 py-3 max-w-[180px] text-sm font-semibold leading-snug"
+        className="relative rounded-2xl px-4 py-3 text-sm font-semibold leading-snug w-full"
         style={{ background: 'rgba(255,255,255,0.95)', color: '#C0392B', boxShadow: '0 4px 20px rgba(0,0,0,0.15)' }}
       >
         Drag the icon to move it freely!
@@ -237,7 +237,7 @@ export default function FloatingContact() {
         onDragStart={dismissTooltip}
       >
         {/* Tooltip */}
-        <div className="relative w-full flex flex-col items-center">
+        <div className="relative">
           <AnimatePresence>
             {showTooltip && <DragTooltip onDismiss={dismissTooltip} />}
           </AnimatePresence>

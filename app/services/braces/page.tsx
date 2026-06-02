@@ -158,7 +158,7 @@ export default function BracesPage() {
               </h2>
               <div className="space-y-4 text-navy-900/65 leading-relaxed">
                 <p>Fixed orthodontic appliances — braces — deliver forces to teeth continuously, 24 hours a day, making them uniquely capable of resolving moderate to severe crowding, deep bites, crossbites, and skeletal discrepancies that removable aligners cannot address as reliably. They are also ideal for patients who prefer a hands-off treatment that does not depend on compliance with aligner wear time.</p>
-                <p>At PAAD, orthodontic treatment begins with a full set of digital records and a detailed occlusal analysis. Dr. Ho customises bracket placement, archwire progression, and auxiliary mechanics to each patient's anatomy, ensuring both aesthetic improvement and a functionally balanced bite that protects your teeth and jaw joints for decades.</p>
+                <p>At PAAD, orthodontic treatment begins with a full set of digital records and a detailed occlusal analysis. Dr. Ho customises bracket placement, archwire progression, and auxiliary mechanics to each patient&apos;s anatomy, ensuring both aesthetic improvement and a functionally balanced bite that protects your teeth and jaw joints for decades.</p>
               </div>
             </FadeUp>
             <FadeUp delay={0.15}>

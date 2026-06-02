@@ -21,31 +21,25 @@ export default function DraggableChatButton() {
   const constraintsRef = useRef<HTMLDivElement>(null)
 
   useEffect(() => {
-    const activate = () => {
-      window.tidioChatApi!.hide()
-      setReady(true)
-      const dismissed = localStorage.getItem('paad-chat-tooltip-dismissed')
-      if (!dismissed) {
-        setTimeout(() => setShowTooltip(true), 1800)
-      }
+    setReady(true)
+    const dismissed = localStorage.getItem('paad-chat-tooltip-dismissed')
+    if (!dismissed) {
+      setTimeout(() => setShowTooltip(true), 1800)
     }
 
-    // Poll until tidioChatApi exists, then hide the default launcher
+    // When Tidio chat closes, hide its container again
+    const onClose = () => {
+      const el = document.getElementById('tidio-chat')
+      if (el) el.style.display = 'none'
+    }
     const interval = setInterval(() => {
       if (window.tidioChatApi) {
         clearInterval(interval)
-        // Already ready
-        try { window.tidioChatApi.hide() } catch {}
-        window.tidioChatApi.on('ready', activate)
-        // In case 'ready' already fired before we registered
-        setTimeout(() => {
-          if (!ready) activate()
-        }, 3000)
+        window.tidioChatApi.on('close', onClose)
       }
-    }, 200)
+    }, 300)
 
     return () => clearInterval(interval)
-  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [])
 
   const dismissTooltip = () => {
@@ -54,13 +48,12 @@ export default function DraggableChatButton() {
   }
 
   const openChat = () => {
+    const el = document.getElementById('tidio-chat')
+    if (el) el.style.display = 'block'
     if (window.tidioChatApi) {
-      window.tidioChatApi.show()
       window.tidioChatApi.open()
     }
   }
-
-  if (!ready) return null
 
   return (
     <>

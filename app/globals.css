@@ -4,6 +4,10 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Hide Tidio default launcher — our custom draggable button handles opening */
+#tidio-chat { display: none !important; }
+#tidio-chat.tidio-chat-open { display: block !important; }
+
 
 :root {
   --font-playfair: 'Playfair Display', Georgia, serif;

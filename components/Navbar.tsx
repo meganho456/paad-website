@@ -8,15 +8,15 @@ import { motion, AnimatePresence } from 'framer-motion'
 import { Phone, Menu, X, ChevronDown } from 'lucide-react'
 
 const servicesMenu = [
-  { href: '/services/implants',          label: 'Same-Day Implants',     tag: 'Signature' },
-  { href: '/services/pinhole',           label: 'PINHOLE Surgery™',      tag: 'Minimally Invasive' },
-  { href: '/services/invisalign',        label: 'Invisalign Elite',      tag: 'Top 5%' },
-  { href: '/services/smile-makeover',    label: 'Smile Makeover',        tag: 'Cosmetic' },
-  { href: '/services/teeth-whitening',   label: 'Teeth Whitening',       tag: 'Quick' },
-  { href: '/services/dental-emergencies',label: 'Dental Emergencies',    tag: 'Same-Day' },
-  { href: '/services/periodontics',      label: 'Gum Disease / Perio',   tag: 'Periodontal' },
-  { href: '/services/cleanings',         label: 'Cleanings & Prevention',tag: 'Preventive' },
-  { href: '/services#veneers',           label: 'Porcelain Veneers',     tag: 'Cosmetic' },
+  { href: '/services/pinhole',            label: 'PINHOLE Surgery™',      tag: 'Minimally Invasive' },
+  { href: '/services/invisalign',         label: 'Invisalign Elite',      tag: 'Top 5%' },
+  { href: '/services/smile-makeover',     label: 'Smile Makeover',        tag: 'Cosmetic' },
+  { href: '/services/teeth-whitening',    label: 'Teeth Whitening',       tag: 'Quick' },
+  { href: '/services/dental-emergencies', label: 'Dental Emergencies',    tag: 'Same-Day' },
+  { href: '/services/periodontics',       label: 'Gum Disease / Perio',   tag: 'Periodontal' },
+  { href: '/services/cleanings',          label: 'Cleanings & Prevention',tag: 'Preventive' },
+  { href: '/services/porcelain-veneers',  label: 'Porcelain Veneers',     tag: 'Cosmetic' },
+  { href: '/services/implants',           label: 'Same-Day Implants',     tag: 'Signature' },
 ]
 
 const doctorsMenu = [

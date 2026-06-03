@@ -30,7 +30,7 @@ export default function DraggableChatButton() {
     // When Tidio chat closes, hide its container again
     const onClose = () => {
       const el = document.getElementById('tidio-chat')
-      if (el) el.style.display = 'none'
+      if (el) el.style.removeProperty('display')
     }
     const interval = setInterval(() => {
       if (window.tidioChatApi) {
@@ -49,7 +49,7 @@ export default function DraggableChatButton() {
 
   const openChat = () => {
     const el = document.getElementById('tidio-chat')
-    if (el) el.style.display = 'block'
+    if (el) el.style.setProperty('display', 'block', 'important')
     if (window.tidioChatApi) {
       window.tidioChatApi.open()
     }

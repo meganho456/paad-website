@@ -37,7 +37,7 @@ export default function DraggableChatButton() {
 
   useEffect(() => {
     setReady(true)
-    const dismissed = localStorage.getItem('paad-chat-tooltip-dismissed')
+    const dismissed = localStorage.getItem('paad-chat-tooltip-v3')
     if (!dismissed) {
       setTimeout(() => setShowTooltip(true), 1800)
     }
@@ -59,7 +59,7 @@ export default function DraggableChatButton() {
 
   const dismissTooltip = () => {
     setShowTooltip(false)
-    localStorage.setItem('paad-chat-tooltip-dismissed', '1')
+    localStorage.setItem('paad-chat-tooltip-v3', '1')
   }
 
   const openChat = () => {

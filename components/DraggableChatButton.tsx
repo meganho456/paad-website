@@ -2,7 +2,22 @@
 
 import { useState, useEffect, useRef } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
-import { X, MessageCircle } from 'lucide-react'
+import { X } from 'lucide-react'
+
+function AIChatIcon() {
+  return (
+    <svg viewBox="0 0 28 28" fill="none" className="w-7 h-7">
+      <path
+        d="M4 6C4 4.9 4.9 4 6 4h16a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H8l-4 4V6z"
+        stroke="white" strokeWidth="1.8" strokeLinejoin="round" fill="none"
+      />
+      <path
+        d="M14 9l1.2 2.8L18 13l-2.8 1.2L14 17l-1.2-2.8L10 13l2.8-1.2L14 9z"
+        fill="white" opacity="0.9"
+      />
+    </svg>
+  )
+}
 
 declare global {
   interface Window {
@@ -66,7 +81,7 @@ export default function DraggableChatButton() {
         dragConstraints={constraintsRef}
         dragElastic={0.08}
         onDragStart={dismissTooltip}
-        className="fixed bottom-6 left-6 z-[101] cursor-grab active:cursor-grabbing"
+        className="fixed bottom-24 right-5 z-[101] cursor-grab active:cursor-grabbing"
         style={{ touchAction: 'none' }}
       >
         {/* Tooltip bubble */}
@@ -77,8 +92,8 @@ export default function DraggableChatButton() {
               animate={{ opacity: 1, scale: 1, y: 0 }}
               exit={{ opacity: 0, scale: 0.85, y: 6 }}
               transition={{ duration: 0.22 }}
-              className="absolute bottom-full left-0 mb-3"
-              style={{ width: '200px' }}
+              className="absolute bottom-full right-0 mb-3"
+              style={{ width: '220px' }}
             >
               <button
                 onClick={dismissTooltip}
@@ -91,10 +106,10 @@ export default function DraggableChatButton() {
                 className="relative rounded-2xl px-4 py-3 text-sm font-semibold leading-snug"
                 style={{ background: 'rgba(255,255,255,0.95)', color: '#C0392B', boxShadow: '0 4px 20px rgba(0,0,0,0.15)' }}
               >
-                Try our chat! Drag the icon to move it freely.
-                {/* Tail pointing down-left */}
+                Try our new GenAI chatbot!<br />Drag the icon to move it.
+                {/* Tail pointing down-right toward button */}
                 <span
-                  className="absolute left-5 -bottom-2 w-0 h-0"
+                  className="absolute right-5 -bottom-2 w-0 h-0"
                   style={{
                     borderLeft: '8px solid transparent',
                     borderRight: '8px solid transparent',
@@ -106,19 +121,16 @@ export default function DraggableChatButton() {
           )}
         </AnimatePresence>
 
-        {/* Chat button */}
+        {/* Chat button — dark circle with AI icon */}
         <button
           onClick={openChat}
-          className="flex items-center gap-2 px-4 py-3 rounded-full text-sm font-semibold shadow-lg transition-transform duration-150 hover:scale-105 active:scale-95 select-none"
+          className="flex items-center justify-center w-14 h-14 rounded-full transition-transform duration-150 hover:scale-110 active:scale-95 select-none"
           style={{
-            background: 'rgba(255,255,255,0.95)',
-            color: '#1a1a1a',
-            boxShadow: '0 4px 20px rgba(0,0,0,0.18)',
-            backdropFilter: 'blur(10px)',
+            background: '#1a1a1a',
+            boxShadow: '0 4px 24px rgba(0,0,0,0.35)',
           }}
         >
-          <MessageCircle className="w-4 h-4" style={{ color: '#D4A843' }} />
-          Chat with us
+          <AIChatIcon />
         </button>
       </motion.div>
     </>

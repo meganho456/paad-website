@@ -117,7 +117,7 @@ export default function Navbar() {
         {/* Left — Logo + Name */}
         <Link href="/" className="flex items-center gap-3 shrink-0">
           <div className="relative w-10 h-10 shrink-0">
-            <Image src="/logo-t.png" alt="Palo Alto Advanced Dentists" fill className="object-contain" priority />
+            <Image src="/logo-t.png" alt="Palo Alto Advanced Dentists logo — dental practice at 4191 El Camino Real, Palo Alto CA, led by Harvard-trained Dr. James Ho" fill className="object-contain" priority />
           </div>
           <span className="font-bold whitespace-nowrap" style={{ fontSize: '0.95rem', color: '#D4A843', letterSpacing: '-0.01em' }}>
             Palo Alto Advanced Dentists

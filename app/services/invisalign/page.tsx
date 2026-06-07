@@ -106,6 +106,10 @@ const comparisonRows = [
 
 const faqs = [
   {
+    q: 'What makes an Invisalign Elite Provider different from a regular Invisalign provider?',
+    a: 'Elite Preferred Providers are in the top 5% of Invisalign practices nationwide — ranked by case volume, complexity, and clinical outcomes. Dr. James Ho at Palo Alto Advanced Dentists holds this designation, meaning he treats complex bite corrections, significant crowding, and rotation cases that most providers refer out or decline.',
+  },
+  {
     q: 'How does Invisalign compare to traditional braces for complex cases?',
     a: 'Modern Invisalign with SmartForce attachments and precision cuts can treat the vast majority of cases that braces address — including significant bite correction, rotations, and vertical movements. As an Elite Preferred Provider with high case volume, Dr. Ho routinely completes complex cases that general Invisalign providers decline. The iTero 3D scan gives us precise staging control that manual wire adjustments cannot match.',
   },
@@ -154,9 +158,10 @@ export default function InvisalignPage() {
               <span style={{ color: '#D4A843', fontStyle: 'italic' }}>Elite Preferred Provider — Top 5%.</span>
             </h1>
             <p className="text-white/55 text-xl leading-relaxed max-w-3xl mb-8">
-              Straighten your teeth with precision-engineered clear aligners at Palo Alto Advanced Dentists.
-              We are one of fewer than 5% of Invisalign providers nationwide to hold Elite Preferred status —
-              earned through case volume, complexity, and clinical outcomes.
+              Palo Alto Advanced Dentists is an Invisalign Elite Preferred Provider — a designation held by
+              fewer than 5% of providers nationwide. Dr. James Ho (Harvard DMD, MPH) uses the iTero Element
+              3D intraoral scanner to show you a digital preview of your final result before you commit to
+              a single aligner.
             </p>
             <div className="flex flex-wrap gap-4">
               <Link href="/contact" className="btn-gold inline-flex items-center gap-2">
@@ -193,8 +198,8 @@ export default function InvisalignPage() {
                 Who Is a Good Candidate for Invisalign?
               </h2>
               <div className="space-y-4 text-navy-900/65 leading-relaxed">
-                <p>Invisalign is appropriate for most adults and teens with mild-to-severe orthodontic issues. As an Elite Preferred Provider, PAAD routinely treats cases that standard providers decline — including complex bite correction and significant crowding.</p>
-                <p>A 3D iTero scan at your consultation gives us a precise picture of your bone, root anatomy, and tooth positions — allowing us to give you an accurate assessment and a virtual preview of your outcome before you commit.</p>
+                <p>Invisalign is appropriate for most adults and teens with mild-to-severe orthodontic issues. As an Elite Preferred Provider in Palo Alto, Dr. James Ho routinely treats complex bite corrections, significant crowding, and rotation cases that general Invisalign providers decline.</p>
+                <p>Your consultation includes a 3D iTero Element scan — capturing precise root anatomy and bone structure — plus a live SmileView simulation showing your projected outcome. You see the result before committing to treatment.</p>
               </div>
             </FadeUp>
             <FadeUp delay={0.15}>

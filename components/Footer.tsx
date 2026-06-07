@@ -32,7 +32,7 @@ export default function Footer() {
               <div className="relative h-14 w-48">
                 <Image
                   src="/palo alto logo.png"
-                  alt="Palo Alto Advanced Dentists"
+                  alt="Palo Alto Advanced Dentists — same-day implants, Invisalign Elite, and PINHOLE Surgery in Palo Alto, CA. Harvard-trained Dr. James Ho, DMD MPH."
                   fill
                   className="object-contain object-left"
                 />

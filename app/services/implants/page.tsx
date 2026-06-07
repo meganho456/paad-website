@@ -57,16 +57,16 @@ const protocol = [
 
 const faqs = [
   {
-    q: 'Am I a candidate for same-day implants?',
-    a: 'Most healthy adults with sufficient bone volume qualify. Our 3D CBCT scan at consultation accurately assesses bone density and sinus anatomy. Patients who have previously been told they lack sufficient bone may still qualify — ask about our in-house sinus lift and bone grafting protocol.',
+    q: 'Can I get a dental implant on the same day as an extraction in Palo Alto?',
+    a: 'Yes. At Palo Alto Advanced Dentists, Dr. James Ho (Harvard DMD, MPH) performs same-day implant placement at the time of extraction using 3D CBCT-guided surgery. Most patients receive a provisional crown the same day. Not every case qualifies — a pre-surgical CBCT scan confirms candidacy.',
   },
   {
     q: 'How is the PAAD 5-in-1 protocol different from standard All-on-4?',
-    a: 'Standard All-on-4 uses four implants to support a fixed arch with a prefabricated bar. Our 5-in-1 protocol individualises each case with computer-guided placement, digital bite analysis, and same-day milled provisionals — resulting in better load distribution and longer-term success rates.',
+    a: 'Standard All-on-4 uses four implants with a prefabricated bar. Dr. Ho\'s 5-in-1 protocol individualises each case with computer-guided placement, digital bite analysis, and same-day milled provisionals — resulting in better load distribution and longer-term success rates than off-the-shelf solutions.',
   },
   {
-    q: 'What is the recovery like after same-day implant surgery?',
-    a: "Most patients return to desk work within 48–72 hours. Swelling peaks at 48 hours and resolves within a week. A soft diet is recommended for 6–8 weeks while osseointegration occurs. Dr. Ho's flapless or minimal-flap technique significantly reduces post-operative discomfort vs. traditional open-flap surgery.",
+    q: 'How long is recovery after full-arch dental implants in Palo Alto?',
+    a: "Most patients return to desk work within 48–72 hours. Swelling peaks at 48 hours and resolves within a week. A soft diet is recommended for 6–8 weeks while osseointegration occurs. Dr. Ho's flapless technique significantly reduces post-operative discomfort compared to traditional open-flap surgery.",
   },
   {
     q: 'Does insurance cover dental implants?',
@@ -146,8 +146,9 @@ export default function ImplantsPage() {
               <span style={{ color: '#D4A843', fontStyle: 'italic' }}>3D CBCT · Digital Bite · One Visit.</span>
             </h1>
             <p className="text-white/55 text-xl leading-relaxed max-w-3xl mb-8">
-              For patients researching advanced, minimally invasive full-arch restoration in Silicon Valley —
-              this page details the exact clinical protocols, technology stack, and candidacy criteria used at PAAD.
+              Dr. James Ho (Harvard DMD, MPH) performs same-day full-arch dental implants in Palo Alto using
+              3D CBCT-guided surgery and in-house digital fabrication. Most patients leave with functional
+              provisional teeth on the same day as extraction — no staging across multiple appointments.
             </p>
             <div className="flex flex-wrap gap-4">
               <Link href="/contact" className="btn-gold inline-flex items-center gap-2">
@@ -171,8 +172,8 @@ export default function ImplantsPage() {
                 Who This Procedure Is For
               </h2>
               <div className="space-y-4 text-navy-900/65 leading-relaxed">
-                <p>Full-mouth implant reconstruction is indicated for patients with multiple missing teeth, failing dentition, severe bone loss, or complete edentulism who want a permanent, fixed solution — not removable dentures.</p>
-                <p>At PAAD, our 5-in-1 protocol is designed for patients who require extraction of remaining failing teeth, bone grafting, and immediate implant placement in the same surgical appointment. The result: same-day provisional teeth on the day of surgery.</p>
+                <p>Yes — patients with multiple missing or failing teeth can receive implants in Palo Alto in a single surgical visit. Dr. Ho's 5-in-1 protocol extracts failing teeth, places bone graft, installs the titanium implant fixtures, and delivers provisional crowns all on the same day.</p>
+                <p>This is appropriate for patients with complete edentulism, failing dentition, or severe gum disease — including many who have been told they lack sufficient bone. A 3D CBCT scan at consultation confirms candidacy and maps the exact implant positions before any surgery begins.</p>
               </div>
             </FadeUp>
             <FadeUp delay={0.15}>

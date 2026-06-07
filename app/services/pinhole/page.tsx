@@ -106,6 +106,10 @@ const stats = [
 
 const faqs = [
   {
+    q: 'How long does recovery take for the Pinhole Surgical Technique?',
+    a: 'Most patients recover in 24–48 hours. Because PST requires no scalpel incision, no palate tissue harvest, and no sutures, post-operative discomfort is mild — typically managed with over-the-counter ibuprofen. Traditional gum grafting requires 2–4 weeks of restricted diet and prescription pain medication. Most PST patients return to work the same day or next morning.',
+  },
+  {
     q: 'What is gum recession and why does it need treatment?',
     a: 'Gum recession occurs when the gum tissue pulls away from the tooth, exposing the root surface. Exposed roots are vulnerable to decay, extremely sensitive to temperature, and aesthetically concerning — creating the appearance of "long teeth." Without treatment, recession progresses. The root surface lacks the protective enamel coating of the crown, making exposed roots 2–3× more susceptible to cavities. Left untreated, recession leads to tooth mobility and eventual tooth loss.',
   },
@@ -177,9 +181,9 @@ export default function PinholePage() {
               <span style={{ color: '#D4A843', fontStyle: 'italic' }}>No Scalpel. No Sutures. Same-Day.</span>
             </h1>
             <p className="text-white/55 text-xl leading-relaxed max-w-3xl mb-8">
-              The most advanced minimally invasive treatment for gum recession available today.
-              Reverse receding gums in a single visit — no cutting, no grafting, no donor site pain.
-              Performed by one of a select number of certified PST practitioners in the Bay Area.
+              Dr. James Ho (Harvard DMD, MPH) is one of a select number of certified PINHOLE Surgical Technique®
+              practitioners in the Bay Area. At Palo Alto Advanced Dentists, he reverses gum recession through
+              a 1–2mm entry point — no scalpel, no palate tissue harvest, no sutures. Most patients recover in 24–48 hours.
             </p>
             <div className="flex flex-wrap gap-4 mb-10">
               <Link href="/contact" className="btn-gold inline-flex items-center gap-2">
@@ -211,9 +215,9 @@ export default function PinholePage() {
                 What Is Gum Recession?
               </h2>
               <div className="space-y-4 text-navy-900/65 text-base leading-relaxed">
-                <p>Gum recession occurs when the gum tissue margin surrounding the teeth pulls back, exposing the root surface below. It affects an estimated 50% of adults over 40 and progresses silently — most patients don&apos;t notice it until significant root exposure has already occurred.</p>
-                <p>Exposed roots are hypersensitive to temperature and touch, far more susceptible to decay than enamel-covered crowns, and create the appearance of elongated or &quot;long&quot; teeth. Without treatment, recession advances — leading to tooth mobility, bone loss, and tooth loss.</p>
-                <p>The PINHOLE Surgical Technique® reverses recession by repositioning existing gum tissue over the exposed root, with no cutting, no grafting, and no sutures required.</p>
+                <p>Gum recession is the downward migration of the gum margin, exposing root surfaces that are normally covered. It affects an estimated 50% of adults over 40 and progresses silently — most patients don&apos;t notice it until significant root exposure has already occurred.</p>
+                <p>Exposed roots decay 2–3× faster than enamel-covered crowns, are hypersensitive to temperature, and create the appearance of elongated teeth. Without treatment, recession leads to tooth mobility and tooth loss.</p>
+                <p>Dr. Ho uses the PINHOLE Surgical Technique® to reposition existing gum tissue coronally over the exposed root through a pinhole entry point — no cutting, no grafting, no sutures. Palo Alto patients treated with PST typically have roots covered and are back to normal activities within 24–48 hours.</p>
               </div>
             </FadeUp>
             <FadeUp delay={0.15}>

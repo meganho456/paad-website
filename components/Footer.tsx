@@ -129,7 +129,7 @@ export default function Footer() {
 
         {/* Bottom bar */}
         <div className="mt-16 pt-8 border-t border-white/10 flex flex-col md:flex-row items-center justify-between gap-4">
-          <p className="text-white/30 text-sm">
+          <p className="text-white/55 text-sm">
             © {new Date().getFullYear()} Palo Alto Advanced Dentists. All rights reserved.
           </p>
           <div className="flex gap-6">
@@ -137,7 +137,7 @@ export default function Footer() {
               <Link
                 key={label}
                 href="#"
-                className="text-white/30 hover:text-white/60 text-sm transition-colors duration-200"
+                className="text-white/50 hover:text-white/80 text-sm transition-colors duration-200"
               >
                 {label}
               </Link>
@@ -146,14 +146,14 @@ export default function Footer() {
         </div>
 
         {/* Disclaimer & design credit */}
-        <div className="mt-6 pt-5 border-t border-white/5 text-center space-y-2">
-          <p className="text-white/20 text-xs leading-relaxed max-w-3xl mx-auto">
+        <div className="mt-6 pt-5 border-t border-white/10 text-center space-y-2">
+          <p className="text-white/45 text-xs leading-relaxed max-w-3xl mx-auto">
             The information provided on this website is for general informational purposes only and does not constitute
             professional dental advice, diagnosis, or treatment. Always seek the guidance of a qualified dental
             professional with any questions you may have regarding your oral health.
           </p>
-          <p className="text-white/15 text-xs">
-            Website designed by <span className="text-white/30 font-medium">Megan Ho</span>
+          <p className="text-white/45 text-xs">
+            Website designed by <span className="text-white/65 font-medium">Megan Ho</span>
           </p>
         </div>
       </div>

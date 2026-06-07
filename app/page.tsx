@@ -137,7 +137,7 @@ function StatsBand() {
 const panels = [
   {
     num: '01',
-    headline: 'Same-day implants.',
+    headline: 'Same-Day Dental Implants in Palo Alto',
     sub: 'One visit. Complete smile.',
     body: 'Our 5-in-1 Same Day Implant Protocol — pioneered by Dr. Ho — condenses what traditional practices spread across 4–6 appointments into a single seamless surgery.',
     cta: { label: 'Learn the Protocol', href: '/practice' },
@@ -151,7 +151,7 @@ const panels = [
   },
   {
     num: '03',
-    headline: 'Invisalign Elite.',
+    headline: 'Invisalign Elite in Palo Alto',
     sub: 'Top 1% of providers nationwide.',
     body: 'As Elite Preferred Providers, we treat the most complex cases other practices turn away — and show you your result before you commit to a single aligner.',
     cta: { label: 'Explore Invisalign', href: '/services' },
@@ -281,7 +281,7 @@ function BrandStatement() {
 const services = [
   {
     tag: 'Minimally Invasive',
-    title: 'PINHOLE Surgery™',
+    title: 'PINHOLE Surgical Technique™ in Palo Alto',
     desc: 'Gum recession reversed. No scalpel, no sutures.',
     span: 'lg:col-span-2',
     dark: true,
@@ -295,7 +295,7 @@ const services = [
   },
   {
     tag: 'Signature',
-    title: '5-in-1 Same Day Implants',
+    title: 'Same-Day Dental Implants in Palo Alto',
     desc: 'Extract, graft, place, and crown — all in a single appointment.',
     span: '',
     dark: false,
@@ -343,7 +343,7 @@ function ServicesPreview() {
             Every smile, covered.
           </h2>
           <p className="text-navy-900/55 text-lg max-w-xl mx-auto">
-            From your first cleaning to full-arch reconstruction — all under one roof.
+            From your first cleaning to full-arch reconstruction in Palo Alto — all under one roof.
           </p>
         </FadeUp>
 

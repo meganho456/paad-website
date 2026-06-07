@@ -26,9 +26,15 @@ const jsonLd = {
   },
   geo: {
     '@type': 'GeoCoordinates',
-    latitude: 37.4165,
-    longitude: -122.1066,
+    latitude: 37.4082,
+    longitude: -122.1287,
   },
+  memberOf: [
+    {
+      '@type': 'Organization',
+      name: 'Harvard School of Dental Medicine Alumnus',
+    },
+  ],
   hasMap: 'https://maps.google.com/?q=4191+El+Camino+Real+Palo+Alto+CA+94306',
   openingHoursSpecification: [
     {
@@ -76,11 +82,11 @@ const jsonLd = {
 export const metadata: Metadata = {
   metadataBase: new URL('https://www.paloaltoadvanceddentists.com'),
   title: {
-    default: 'Palo Alto Advanced Dentists | Complete Dental Care Since 2005',
+    default: 'Palo Alto Dentist | Implants, Invisalign & PINHOLE Surgery',
     template: '%s | Palo Alto Advanced Dentists',
   },
   description:
-    "Palo Alto's one-stop dental practice — from simple fillings and cleanings to same-day implants, Invisalign Elite, PINHOLE surgery, root canals, and veneers. Led by Harvard-trained Dr. James Ho since 2005.",
+    "Harvard-trained Dr. James Ho (DMD, MPH) offers same-day dental implants, Invisalign Elite & PINHOLE Surgery in Palo Alto. Advanced technology. Since 2005.",
   keywords: [
     'dentist palo alto',
     'palo alto advanced dentists',
@@ -110,9 +116,9 @@ export const metadata: Metadata = {
     locale: 'en_US',
     url: 'https://www.paloaltoadvanceddentists.com',
     siteName: 'Palo Alto Advanced Dentists',
-    title: 'Palo Alto Advanced Dentists | Complete Dental Care Since 2005',
+    title: 'Palo Alto Dentist | Implants, Invisalign & PINHOLE Surgery',
     description:
-      "Palo Alto's one-stop dental practice — same-day implants, Invisalign Elite, PINHOLE surgery, root canals, veneers & cleanings. Led by Harvard-trained Dr. James Ho.",
+      "Harvard-trained Dr. James Ho (DMD, MPH) offers same-day dental implants, Invisalign Elite & PINHOLE Surgery in Palo Alto. Advanced technology. Since 2005.",
     images: [
       {
         url: '/polo%20alto%20logo.jpg',
@@ -124,9 +130,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Palo Alto Advanced Dentists | Complete Dental Care Since 2005',
+    title: 'Palo Alto Dentist | Implants, Invisalign & PINHOLE Surgery',
     description:
-      "Palo Alto's one-stop dental practice — same-day implants, Invisalign Elite, PINHOLE surgery, root canals & veneers.",
+      "Harvard-trained Dr. James Ho offers same-day dental implants, Invisalign Elite & PINHOLE Surgery in Palo Alto.",
   },
   alternates: {
     canonical: 'https://www.paloaltoadvanceddentists.com',

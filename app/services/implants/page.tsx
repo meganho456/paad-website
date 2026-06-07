@@ -172,7 +172,7 @@ export default function ImplantsPage() {
                 Who This Procedure Is For
               </h2>
               <div className="space-y-4 text-navy-900/65 leading-relaxed">
-                <p>Yes — patients with multiple missing or failing teeth can receive implants in Palo Alto in a single surgical visit. Dr. Ho's 5-in-1 protocol extracts failing teeth, places bone graft, installs the titanium implant fixtures, and delivers provisional crowns all on the same day.</p>
+                <p>Yes — patients with multiple missing or failing teeth can receive implants in Palo Alto in a single surgical visit. Dr. Ho&apos;s 5-in-1 protocol extracts failing teeth, places bone graft, installs the titanium implant fixtures, and delivers provisional crowns all on the same day.</p>
                 <p>This is appropriate for patients with complete edentulism, failing dentition, or severe gum disease — including many who have been told they lack sufficient bone. A 3D CBCT scan at consultation confirms candidacy and maps the exact implant positions before any surgery begins.</p>
               </div>
             </FadeUp>

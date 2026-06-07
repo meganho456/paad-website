@@ -148,9 +148,7 @@ export default function Footer() {
         {/* Disclaimer & design credit */}
         <div className="mt-6 pt-5 border-t border-white/10 text-center space-y-2">
           <p className="text-white/45 text-xs leading-relaxed max-w-3xl mx-auto">
-            The information provided on this website is for general informational purposes only and does not constitute
-            professional dental advice, diagnosis, or treatment. Always seek the guidance of a qualified dental
-            professional with any questions you may have regarding your oral health.
+            For informational purposes only — not a substitute for professional dental advice. Consult a qualified dentist for your oral health needs.
           </p>
           <p className="text-white/45 text-xs">
             Website designed by <span className="text-white/65 font-medium">Megan Ho</span>

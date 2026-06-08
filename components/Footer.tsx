@@ -50,7 +50,7 @@ export default function Footer() {
               <span className="text-white/50 text-xs ml-1">Bay Area Best Dentist</span>
             </div>
             <p className="text-white/40 text-xs mt-4 leading-relaxed">
-              We speak: English · Mandarin · Cantonese · Taiwanese · Spanish
+              We speak: English · Spanish · Chinese · Korean · Persian
             </p>
           </div>
 

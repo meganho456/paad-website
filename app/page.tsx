@@ -93,7 +93,7 @@ function HeroSection() {
 const stats = [
   { number: '20+', label: 'Years of Excellence' },
   { number: '15k+', label: 'Smiles Transformed' },
-  { number: '4',   label: 'Languages Spoken' },
+  { number: '5',   label: 'Languages Spoken' },
   { number: '1',   label: 'Day for Same-Day Implants' },
 ]
 
@@ -559,7 +559,7 @@ function DoctorSpotlight() {
                 'Harvard School of Dental Medicine — DMD',
                 'Harvard T.H. Chan School of Public Health — MPH',
                 'PINHOLE Surgical Technique® Certified',
-                'Speaks English, Mandarin, Cantonese & Taiwanese',
+                'Speaks English, Chinese, Spanish & Korean',
               ].map((item) => (
                 <div key={item} className="flex items-start gap-3">
                   <CheckCircle2 className="w-4 h-4 text-gold-400 shrink-0 mt-0.5" />
@@ -675,7 +675,7 @@ function LanguagesBand() {
       <div className="max-w-5xl mx-auto px-6 flex flex-wrap items-center justify-center gap-5">
         <Globe className="w-4 h-4 text-gold-400" />
         <span className="text-white/35 text-sm font-medium">We speak:</span>
-        {['English', 'Mandarin', 'Cantonese', 'Taiwanese', 'Spanish', 'Persian'].map((lang) => (
+        {['English', 'Spanish', 'Chinese', 'Korean', 'Persian'].map((lang) => (
           <span
             key={lang}
             className="text-white/70 text-sm font-semibold px-3 py-1 rounded-full"

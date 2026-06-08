@@ -40,9 +40,9 @@ const doctors = [
       'CAD-CAM & Laser Dentistry',
     ],
     memberships: ['American Dental Association', 'California Dental Association', 'American Association for Functional Orthodontics'],
-    languages: ['English', 'Mandarin', 'Cantonese'],
+    languages: ['English', 'Chinese', 'Spanish', 'Korean'],
     awards: ['Best Dentist Award — 2 Consecutive Years'],
-    bio: 'Dr. James Ho brings over 20 years of full-time clinical experience and a rare dual perspective to dental medicine — the clinical mastery of a Harvard D.M.D. and the population-health lens of an M.P.H. Known for solving cases other practices consider "hopeless," Dr. Ho combines comprehensive skill across implants, orthodontics, endodontics, and periodontics to deliver complete care under one roof. He is fluent in English, Mandarin, and Cantonese, and places strong emphasis on patient consensus at every stage of treatment planning.',
+    bio: 'Dr. James Ho brings over 20 years of full-time clinical experience and a rare dual perspective to dental medicine — the clinical mastery of a Harvard D.M.D. and the population-health lens of an M.P.H. Known for solving cases other practices consider "hopeless," Dr. Ho combines comprehensive skill across implants, orthodontics, endodontics, and periodontics to deliver complete care under one roof. He is fluent in English and Chinese, and places strong emphasis on patient consensus at every stage of treatment planning.',
   },
   {
     id: 'ryan-ho',
@@ -61,7 +61,7 @@ const doctors = [
       'Restorative Dentistry',
     ],
     memberships: [],
-    languages: ['English', 'Mandarin', 'Cantonese'],
+    languages: ['English', 'Chinese'],
     awards: ['Second-Generation PAAD Dentist'],
     bio: 'Dr. Ryan Charles Ho grew up right here in Palo Alto — the same streets, the same community, the same neighbors who have trusted his father, Dr. James Ho, for over two decades. Inspired by watching his father transform patients\' lives through dentistry, Ryan pursued the same path and earned his D.M.D. with a biochemistry foundation from UC Davis. He brings the warmth of someone who truly knows this community, combined with a gentle, patient-first approach that reflects everything the Ho family stands for. Having a father as one of the Bay Area\'s most respected dentists is a high bar — and Dr. Ryan Charles Ho rises to it every day.',
   },
@@ -128,9 +128,9 @@ const doctors = [
       'General & Cosmetic Dentistry',
     ],
     memberships: [],
-    languages: ['English', 'Mandarin', 'Taiwanese'],
+    languages: ['English', 'Chinese'],
     awards: ['Trauma Dentistry Residency — St. Elizabeth Level 1'],
-    bio: 'Dr. Eddy Wang received advanced residency training at a Level 1 trauma hospital, giving him rare expertise in treating severe dental injuries and complex oral surgery cases. His professionalism, patience, and gentle chairside manner make him an exceptional provider for patients of all backgrounds. Dr. Wang is fluent in English, Mandarin, Cantonese, and Taiwanese — making him a trusted choice for the Bay Area\'s diverse Chinese-speaking community.',
+    bio: 'Dr. Eddy Wang received advanced residency training at a Level 1 trauma hospital, giving him rare expertise in treating severe dental injuries and complex oral surgery cases. His professionalism, patience, and gentle chairside manner make him an exceptional provider for patients of all backgrounds. Dr. Wang is fluent in English and Chinese — making him a trusted choice for the Bay Area\'s diverse Chinese-speaking community.',
   },
 ]
 
@@ -162,7 +162,7 @@ export default function DoctorsPage() {
         <div className="max-w-5xl mx-auto px-6 flex flex-wrap items-center justify-center gap-6">
           <Globe className="w-4 h-4 text-gold-400" />
           <span className="text-white/50 text-sm font-medium">We speak:</span>
-          {['English', 'Mandarin', 'Cantonese', 'Taiwanese', 'Spanish', 'Persian'].map((lang) => (
+          {['English', 'Spanish', 'Chinese', 'Korean', 'Persian'].map((lang) => (
             <span key={lang} className="text-white/80 text-sm font-semibold px-3 py-1 rounded-full"
               style={{ background: 'rgba(212,168,67,0.12)', border: '1px solid rgba(212,168,67,0.25)' }}>
               {lang}

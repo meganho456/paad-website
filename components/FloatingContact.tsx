@@ -202,8 +202,7 @@ export default function FloatingContact() {
           bg="linear-gradient(135deg, #D4A843, #B88D2C)"
           shadow="rgba(212,168,67,0.5)"
           onClick={() => {
-            const el = document.getElementById('tidio-chat')
-            if (el) el.style.setProperty('display', 'block', 'important')
+            window.tidioChatApi?.show()
             window.tidioChatApi?.open()
           }}
           icon={<LiveChatIcon className="w-5 h-5" />}

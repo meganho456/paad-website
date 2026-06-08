@@ -42,14 +42,12 @@ export default function DraggableChatButton() {
       setTimeout(() => setShowTooltip(true), 1800)
     }
 
-    // When Tidio chat closes, hide its container again
-    const onClose = () => {
-      const el = document.getElementById('tidio-chat')
-      if (el) el.style.removeProperty('display')
-    }
+    // When Tidio chat closes, hide the widget (so only our button shows)
+    const onClose = () => window.tidioChatApi?.hide()
     const interval = setInterval(() => {
       if (window.tidioChatApi) {
         clearInterval(interval)
+        window.tidioChatApi.hide()
         window.tidioChatApi.on('close', onClose)
       }
     }, 300)
@@ -63,11 +61,8 @@ export default function DraggableChatButton() {
   }
 
   const openChat = () => {
-    const el = document.getElementById('tidio-chat')
-    if (el) el.style.setProperty('display', 'block', 'important')
-    if (window.tidioChatApi) {
-      window.tidioChatApi.open()
-    }
+    window.tidioChatApi?.show()
+    window.tidioChatApi?.open()
   }
 
   return (

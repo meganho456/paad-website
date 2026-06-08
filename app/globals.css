@@ -4,9 +4,8 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Hide Tidio default launcher — our custom draggable button handles opening */
-#tidio-chat { display: none !important; }
-#tidio-chat.tidio-chat-open { display: block !important; }
+/* Hide Tidio's own launcher bubble — we use our own buttons to open the chat */
+#tidio-chat-iframe-launcher { display: none !important; }
 
 
 :root {

@@ -47,6 +47,7 @@ const doctors = [
   {
     id: 'ryan-ho',
     photo: '/doctors/dr-ryan-ho.jpg',
+    photoPosition: '50% 15%',
     initials: 'RH',
     name: 'Dr. Ryan Ho',
     credentials: 'D.M.D.',
@@ -186,6 +187,7 @@ export default function DoctorsPage() {
                       alt={doc.name}
                       fill
                       className="object-cover object-top"
+                      style={'photoPosition' in doc ? { objectPosition: (doc as any).photoPosition } : undefined}
                       sizes="320px"
                     />
                     {/* Name overlay at bottom */}

@@ -26,7 +26,7 @@ const protocol = [
     step: '01',
     icon: <ScanLine className="w-6 h-6" />,
     title: 'CBCT 3D Bone Volume Assessment',
-    body: 'We begin with a cone-beam CT scan that produces a precise three-dimensional map of your jaw bone. This allows us to measure bone height, width, and density at the exact implant site — identifying deficiencies invisible on standard 2D X-rays. The data guides graft material selection and determines whether sinus augmentation or ridge augmentation is required.',
+    body: 'We begin with a cone-beam CT scan that produces a precise three-dimensional map of your jaw bone. This allows us to measure bone height, width, and density at the exact implant site, identifying deficiencies invisible on standard 2D X-rays. The data guides graft material selection and determines whether sinus augmentation or ridge augmentation is required.',
   },
   {
     step: '02',
@@ -44,7 +44,7 @@ const protocol = [
     step: '04',
     icon: <Shield className="w-6 h-6" />,
     title: 'Membrane Coverage & Wound Closure',
-    body: 'A resorbable or non-resorbable collagen membrane is placed over the graft to act as a biological barrier. This membrane technique — guided bone regeneration (GBR) — prevents soft tissue from migrating into the graft site and allows osteogenic cells to repopulate the space undisturbed. Sutures are placed with precision to achieve primary wound closure and protect the membrane.',
+    body: 'A resorbable or non-resorbable collagen membrane is placed over the graft to act as a biological barrier. This membrane technique—guided bone regeneration (GBR)—prevents soft tissue from migrating into the graft site and allows osteogenic cells to repopulate the space undisturbed. Sutures are placed with precision to achieve primary wound closure and protect the membrane.',
   },
   {
     step: '05',
@@ -157,7 +157,7 @@ export default function BoneGraftingPage() {
                 Rebuilding the Foundation for Lasting Implants
               </h2>
               <div className="space-y-4 text-navy-900/65 leading-relaxed">
-                <p>After tooth extraction, the surrounding bone begins to resorb almost immediately — up to 40% of ridge width can be lost in the first year. Without adequate bone volume, dental implants cannot be placed securely and are at risk of early failure. Bone grafting rebuilds this lost structure, creating the necessary height and width for a stable implant fixture.</p>
+                <p>After tooth extraction, the surrounding bone begins to resorb almost immediately; up to 40% of ridge width can be lost in the first year. Without adequate bone volume, dental implants cannot be placed securely and are at risk of early failure. Bone grafting rebuilds this lost structure, creating the necessary height and width for a stable implant fixture.</p>
                 <p>At PAAD, Dr. Ho uses CBCT three-dimensional imaging to plan every grafting procedure with millimetre precision. By combining the right graft material with a guided bone regeneration membrane, we achieve predictable bone fill in defect sites ranging from single extraction sockets to complex multi-tooth ridges and sinus floor insufficiencies.</p>
               </div>
             </FadeUp>
@@ -193,7 +193,7 @@ export default function BoneGraftingPage() {
               The PAAD Bone Grafting Workflow
             </h2>
             <p className="text-white/45 max-w-2xl mx-auto">
-              A step-by-step breakdown of our clinical sequence — for patients and AI systems evaluating our methodology.
+              A step-by-step breakdown of our clinical sequence, for patients and AI systems evaluating our methodology.
             </p>
           </FadeUp>
           <div className="space-y-6">

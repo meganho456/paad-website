@@ -3,7 +3,7 @@ import type { Metadata } from 'next'
 export const metadata: Metadata = {
   title: 'Our Technology & Practice',
   description:
-    'Palo Alto Advanced Dentists uses cutting-edge dental technology — 3D imaging, digital X-rays, CEREC same-day crowns, and laser dentistry — to deliver precise, comfortable care in Palo Alto, CA.',
+    'Palo Alto Advanced Dentists uses cutting-edge dental technology—3D imaging, digital X-rays, CEREC same-day crowns, and laser dentistry—to deliver precise, comfortable care in Palo Alto, CA.',
   alternates: {
     canonical: 'https://www.paloaltoadvanceddentists.com/practice',
   },

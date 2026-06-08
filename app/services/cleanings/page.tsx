@@ -106,27 +106,27 @@ const whoNeedsMore = [
 const faqs = [
   {
     q: 'How often do I really need a dental cleaning if my teeth feel fine?',
-    a: 'Every 6 months is the evidence-based standard for patients without gum disease — regardless of how your teeth feel. Most early cavities, gum disease, and oral cancer lesions produce no symptoms until they have progressed significantly. Professional cleaning removes calculus (hardened plaque) that no amount of brushing or flossing can eliminate. Patients who skip cleanings consistently have higher rates of tooth loss, gum disease, and oral cancer detection at advanced stages.',
+    a: 'Every 6 months is the evidence-based standard for patients without gum disease, regardless of how your teeth feel. Most early cavities, gum disease, and oral cancer lesions produce no symptoms until they have progressed significantly. Professional cleaning removes calculus (hardened plaque) that no amount of brushing or flossing can eliminate. Patients who skip cleanings consistently have higher rates of tooth loss, gum disease, and oral cancer detection at advanced stages.',
   },
   {
     q: 'What is the difference between a cleaning and a deep cleaning?',
-    a: 'A standard prophylaxis removes plaque and calculus from above the gumline (supragingival) in patients with healthy or gingivitis-level gum tissue. A deep cleaning — scaling and root planing (SRP) — addresses calculus deposits below the gumline on root surfaces, in patients with pocket depths of 4mm or greater and bone loss. SRP requires local anaesthesia and is completed over 2 appointments. It is a medical procedure, not an upgrade to a standard cleaning.',
+    a: 'A standard prophylaxis removes plaque and calculus from above the gumline (supragingival) in patients with healthy or gingivitis-level gum tissue. A deep cleaning—scaling and root planing (SRP)—addresses calculus deposits below the gumline on root surfaces, in patients with pocket depths of 4mm or greater and bone loss. SRP requires local anaesthesia and is completed over 2 appointments. It is a medical procedure, not an upgrade to a standard cleaning.',
   },
   {
     q: 'Is there any pain during a dental cleaning?',
-    a: 'A standard prophylaxis is typically comfortable. Some sensitivity around inflamed gum tissue is normal. If you have sensitive teeth or significant buildup, we can use topical anaesthetic and adjust our technique. Scaling and root planing is always performed under local anaesthesia — you should feel no discomfort during the procedure. Post-procedure soreness for 24–48 hours is common and managed with over-the-counter anti-inflammatories.',
+    a: 'A standard prophylaxis is typically comfortable. Some sensitivity around inflamed gum tissue is normal. If you have sensitive teeth or significant buildup, we can use topical anaesthetic and adjust our technique. Scaling and root planing is always performed under local anaesthesia—you should feel no discomfort during the procedure. Post-procedure soreness for 24–48 hours is common and managed with over-the-counter anti-inflammatories.',
   },
   {
     q: 'Does dental insurance cover my cleaning?',
-    a: 'Most dental insurance plans include two preventive cleanings per year at 100% coverage — meaning no out-of-pocket cost for a standard prophylaxis. Periodontal maintenance (every 3–4 months) is typically covered at 50–80% by plans that include a periodontal benefit. We verify your specific benefits before your appointment and provide a clear breakdown of any expected out-of-pocket cost.',
+    a: 'Most dental insurance plans include two preventive cleanings per year at 100% coverage, meaning no out-of-pocket cost for a standard prophylaxis. Periodontal maintenance (every 3–4 months) is typically covered at 50–80% by plans that include a periodontal benefit. We verify your specific benefits before your appointment and provide a clear breakdown of any expected out-of-pocket cost.',
   },
   {
     q: 'My gums bleed when I brush — is that normal?',
-    a: 'No. Healthy gums do not bleed with normal brushing and flossing. Bleeding gums are the earliest warning sign of gingivitis — bacterial inflammation of the gum tissue. If caught at this stage, gingivitis is completely reversible with professional cleaning and improved home care. Ignored, gingivitis progresses to periodontitis with permanent bone loss. If your gums bleed regularly, schedule an evaluation — don\'t wait for your next routine appointment.',
+    a: 'No. Healthy gums do not bleed with normal brushing and flossing. Bleeding gums are the earliest warning sign of gingivitis (bacterial inflammation of the gum tissue). If caught at this stage, gingivitis is completely reversible with professional cleaning and improved home care. Ignored, gingivitis progresses to periodontitis with permanent bone loss. If your gums bleed regularly, schedule an evaluation—don\'t wait for your next routine appointment.',
   },
   {
     q: 'Can I get a cleaning if I am pregnant?',
-    a: 'Yes — and it is strongly recommended. Pregnancy hormones dramatically increase susceptibility to gingivitis and gum disease, which is associated with preterm birth and low birth weight. The American Congress of Obstetricians and Gynecologists and the American Dental Association both recommend dental cleanings at least once during pregnancy, ideally in the second trimester. Digital X-rays use minimal radiation and are safe with appropriate shielding, and local anaesthetics used in dentistry are considered safe during pregnancy.',
+    a: 'Yes, and it is strongly recommended. Pregnancy hormones dramatically increase susceptibility to gingivitis and gum disease, which is associated with preterm birth and low birth weight. The American Congress of Obstetricians and Gynecologists and the American Dental Association both recommend dental cleanings at least once during pregnancy, ideally in the second trimester. Digital X-rays use minimal radiation and are safe with appropriate shielding, and local anaesthetics used in dentistry are considered safe during pregnancy.',
   },
 ]
 
@@ -147,7 +147,7 @@ export default function CleaningsPage() {
             </h1>
             <p className="text-white/55 text-xl leading-relaxed max-w-3xl mb-8">
               Prevention is the most cost-effective investment in your oral health. Our comprehensive
-              exam and cleaning appointments go well beyond polishing teeth — we use digital X-rays,
+              exam and cleaning appointments go well beyond polishing teeth: we use digital X-rays,
               laser cavity detection, oral cancer screening, and full periodontal charting to protect
               every dimension of your oral health at every visit.
             </p>

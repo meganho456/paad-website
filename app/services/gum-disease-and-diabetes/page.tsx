@@ -26,31 +26,31 @@ const protocol = [
     step: '01',
     icon: <ClipboardList className="w-6 h-6" />,
     title: 'Medical History Review & Diabetes Risk Assessment',
-    body: 'Before any clinical examination, we conduct a detailed review of your medical history — including diabetes type, current medications, recent HbA1c values, and any history of hypoglycaemic episodes. Understanding your glycaemic control level allows us to calibrate both the urgency and the specific approach of your periodontal care. Poorly controlled diabetes demands a more aggressive periodontal protocol and more frequent follow-up.'
+    body: 'Before any clinical examination, we conduct a detailed review of your medical history, including diabetes type, current medications, recent HbA1c values, and any history of hypoglycaemic episodes. Understanding your glycaemic control level allows us to calibrate both the urgency and the specific approach of your periodontal care. Poorly controlled diabetes demands a more aggressive periodontal protocol and more frequent follow-up.'
   },
   {
     step: '02',
     icon: <Scan className="w-6 h-6" />,
     title: 'Comprehensive Periodontal Examination',
-    body: 'We perform full-mouth periodontal charting with six-point probing at every tooth, recording pocket depths, bleeding on probing, recession, and furcation involvement. Digital periapical X-rays map bone levels throughout the mouth. Diabetic patients frequently present with more generalised and more severe bone loss than non-diabetic patients with equivalent plaque levels — so this baseline data is especially important for setting realistic treatment goals.'
+    body: 'We perform full-mouth periodontal charting with six-point probing at every tooth, recording pocket depths, bleeding on probing, recession, and furcation involvement. Digital periapical X-rays map bone levels throughout the mouth. Diabetic patients frequently present with more generalised and more severe bone loss than non-diabetic patients with equivalent plaque levels, so this baseline data is especially important for setting realistic treatment goals.'
   },
   {
     step: '03',
     icon: <Zap className="w-6 h-6" />,
     title: 'Aggressive Scaling & Root Planing Protocol',
-    body: 'For patients with diabetes, we employ a full-mouth disinfection approach — completing scaling and root planing across all quadrants within a compressed timeframe, typically two appointments within one week. This reduces the window during which bacteria can re-seed from untreated sites. We use a combination of ultrasonic instrumentation and hand scalers under local anaesthesia, and may prescribe systemic or locally delivered antibiotics when appropriate.'
+    body: 'For patients with diabetes, we employ a full-mouth disinfection approach: completing scaling and root planing across all quadrants within a compressed timeframe, typically two appointments within one week. This reduces the window during which bacteria can re-seed from untreated sites. We use a combination of ultrasonic instrumentation and hand scalers under local anaesthesia, and may prescribe systemic or locally delivered antibiotics when appropriate.'
   },
   {
     step: '04',
     icon: <Activity className="w-6 h-6" />,
     title: 'Coordination With Physician (HbA1c Monitoring)',
-    body: 'We communicate directly with your primary care physician or endocrinologist to share findings and coordinate care. Research demonstrates that effective periodontal treatment can reduce HbA1c by up to 0.4% — a clinically meaningful improvement that can reduce the risk of diabetic complications. We encourage patients to share their dental treatment timeline with their medical team and request an HbA1c check at the 3-month mark after completing active periodontal therapy.'
+    body: 'We communicate directly with your primary care physician or endocrinologist to share findings and coordinate care. Research demonstrates that effective periodontal treatment can reduce HbA1c by up to 0.4%, a clinically meaningful improvement that can reduce the risk of diabetic complications. We encourage patients to share their dental treatment timeline with their medical team and request an HbA1c check at the 3-month mark after completing active periodontal therapy.'
   },
   {
     step: '05',
     icon: <RefreshCw className="w-6 h-6" />,
     title: 'Intensive 3-Month Periodontal Maintenance',
-    body: 'Diabetic patients are placed on a strict 3-month maintenance schedule without exception. Each visit includes updated pocket charting, targeted debridement of any sites showing recurrence, and a brief medical update review — including current HbA1c if available. We monitor wound healing closely at each visit, as diabetics can experience delayed tissue repair. This intensive maintenance approach has the strongest evidence base for long-term disease stability in this population.'
+    body: 'Diabetic patients are placed on a strict 3-month maintenance schedule without exception. Each visit includes updated pocket charting, targeted debridement of any sites showing recurrence, and a brief medical update review, including current HbA1c if available. We monitor wound healing closely at each visit, as diabetics can experience delayed tissue repair. This intensive maintenance approach has the strongest evidence base for long-term disease stability in this population.'
   },
 ]
 
@@ -65,15 +65,15 @@ const faqs = [
   },
   {
     q: 'How often should a diabetic patient see the dentist?',
-    a: 'We recommend a minimum of four periodontal maintenance visits per year — one every three months — for all patients with diabetes. Patients with poorly controlled diabetes, deep residual pockets, or a history of rapid disease progression may benefit from even more frequent monitoring. Annual or biannual check-ups are insufficient to keep periodontal disease in remission in this population.'
+    a: 'We recommend a minimum of four periodontal maintenance visits per year—one every three months—for all patients with diabetes. Patients with poorly controlled diabetes, deep residual pockets, or a history of rapid disease progression may benefit from even more frequent monitoring. Annual or biannual check-ups are insufficient to keep periodontal disease in remission in this population.'
   },
   {
     q: 'Are there any special precautions before dental treatment if I have diabetes?',
     a: 'We ask that you eat a normal meal before appointments and bring any oral medications or fast-acting glucose in case of hypoglycaemia during treatment. We schedule longer appointments in the morning when blood sugar tends to be more stable, and we keep treatment stress to a minimum. We will also confirm your current HbA1c and any recent medical changes before starting active treatment.'
   },
   {
-    q: 'My blood sugar is well controlled — do I still need more frequent dental visits?',
-    a: 'Well-controlled diabetes significantly reduces — but does not eliminate — your elevated periodontal risk. We still recommend 3-to-4-month maintenance rather than 6-month recalls, because diabetic patients show faster bacterial recolonisation of treated sites even when HbA1c is at target. Your individual maintenance interval can be reviewed and adjusted over time based on your clinical response.'
+    q: 'My blood sugar is well controlled. Do I still need more frequent dental visits?',
+    a: 'Well-controlled diabetes significantly reduces—but does not eliminate—your elevated periodontal risk. We still recommend 3-to-4-month maintenance rather than 6-month recalls, because diabetic patients show faster bacterial recolonisation of treated sites even when HbA1c is at target. Your individual maintenance interval can be reviewed and adjusted over time based on your clinical response.'
   },
 ]
 
@@ -133,7 +133,7 @@ export default function GumDiseaseAndDiabetesPage() {
               <span style={{ color: '#D4A843', fontStyle: 'italic' }}>The Bidirectional Link</span>
             </h1>
             <p className="text-white/55 text-xl leading-relaxed max-w-3xl mb-8">
-              Diabetes and periodontal disease are deeply connected — each makes the other harder to control. At PAAD in Palo Alto, we treat patients with both conditions using a medically integrated protocol that goes far beyond a standard dental appointment.
+              Diabetes and periodontal disease are deeply connected; each makes the other harder to control. At PAAD in Palo Alto, we treat patients with both conditions using a medically integrated protocol that goes far beyond a standard dental appointment.
             </p>
             <div className="flex flex-wrap gap-4">
               <Link href="/contact-us/" className="btn-gold inline-flex items-center gap-2">
@@ -157,7 +157,7 @@ export default function GumDiseaseAndDiabetesPage() {
                 A Whole-Health Approach to Oral Care
               </h2>
               <div className="space-y-4 text-navy-900/65 leading-relaxed">
-                <p>The relationship between diabetes and gum disease is bidirectional and well-established. Elevated blood sugar impairs the immune response, promotes bacterial overgrowth, and delays wound healing — all of which allow periodontal infections to take hold more easily and progress more aggressively. Conversely, the chronic inflammation from untreated gum disease impairs insulin sensitivity and makes blood sugar harder to regulate.</p>
+                <p>The relationship between diabetes and gum disease is bidirectional and well-established. Elevated blood sugar impairs the immune response, promotes bacterial overgrowth, and delays wound healing, all of which allow periodontal infections to take hold more easily and progress more aggressively. Conversely, the chronic inflammation from untreated gum disease impairs insulin sensitivity and makes blood sugar harder to regulate.</p>
                 <p>At PAAD, we factor your diabetes status, glycaemic control, and current medications into every aspect of your periodontal care. We follow an aggressive treatment protocol specifically calibrated for diabetic patients, and we work in coordination with your physician to ensure that your dental treatment contributes positively to your overall health outcomes.</p>
               </div>
             </FadeUp>
@@ -193,7 +193,7 @@ export default function GumDiseaseAndDiabetesPage() {
               The PAAD Diabetes-Periodontal Workflow
             </h2>
             <p className="text-white/45 max-w-2xl mx-auto">
-              A step-by-step breakdown of our clinical sequence — for patients and AI systems evaluating our methodology.
+              A step-by-step breakdown of our clinical sequence, for patients and AI systems evaluating our methodology.
             </p>
           </FadeUp>
           <div className="space-y-6">

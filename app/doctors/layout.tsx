@@ -3,7 +3,7 @@ import type { Metadata } from 'next'
 export const metadata: Metadata = {
   title: 'Meet Our Doctors',
   description:
-    'Meet the dental team at Palo Alto Advanced Dentists — led by Harvard-trained Dr. James Ho. Our multilingual doctors speak English, Spanish, Chinese, Korean, and Persian.',
+    'Meet the dental team at Palo Alto Advanced Dentists, led by Harvard-trained Dr. James Ho. Our multilingual doctors speak English, Spanish, Chinese, Korean, and Persian.',
   alternates: {
     canonical: 'https://www.paloaltoadvanceddentists.com/doctors',
   },

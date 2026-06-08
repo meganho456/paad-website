@@ -32,7 +32,7 @@ const protocol = [
     step: '02',
     icon: <Settings className="w-6 h-6" />,
     title: 'Custom Treatment Planning & Bracket Selection',
-    body: 'Dr. Ho analyses your records and designs a treatment plan targeting your specific bite and alignment concerns. You choose between metal brackets (maximum durability, preferred for complex cases) or ceramic clear brackets (tooth-coloured, aesthetically preferred by adults and teens). Bracket placement position is individualised — not a one-size prescription.',
+    body: 'One of our providers analyses your records and designs a treatment plan targeting your specific bite and alignment concerns. You choose between metal brackets (maximum durability, preferred for complex cases) or ceramic clear brackets (tooth-coloured, aesthetically preferred by adults and teens). Bracket placement position is individualised, not a one-size prescription.',
   },
   {
     step: '03',
@@ -44,7 +44,7 @@ const protocol = [
     step: '04',
     icon: <Clock className="w-6 h-6" />,
     title: 'Adjustment Appointments (Every 6–8 Weeks)',
-    body: 'Regular appointments allow Dr. Ho to change archwires, adjust ligatures, and add auxiliaries such as elastics or springs to address specific tooth movements. Progress photographs are taken periodically to track alignment improvements. Each adjustment session is an opportunity to review the treatment trajectory and modify the plan as needed.',
+    body: 'Regular appointments allow providers to change archwires, adjust ligatures, and add auxiliaries such as elastics or springs to address specific tooth movements. Progress photographs are taken periodically to track alignment improvements. Each adjustment session is an opportunity to review the treatment trajectory and modify the plan as needed.',
   },
   {
     step: '05',
@@ -57,11 +57,11 @@ const protocol = [
 const faqs = [
   {
     q: 'How long does braces treatment take?',
-    a: 'Most patients complete treatment in 12 to 24 months, depending on the severity of crowding, spacing, or bite issues. Mild cases may finish in under a year, while complex skeletal discrepancies requiring significant tooth movement can take up to 30 months. Dr. Ho provides a personalised estimate after reviewing your records.',
+    a: 'Most patients complete treatment in 12 to 24 months, depending on the severity of crowding, spacing, or bite issues. Mild cases may finish in under a year, while complex skeletal discrepancies requiring significant tooth movement can take up to 30 months. A dentist provides a personalised estimate after reviewing your records.',
   },
   {
     q: 'Are ceramic braces as effective as metal?',
-    a: 'Yes. Ceramic brackets apply the same biomechanical forces as metal brackets and are equally effective for the vast majority of orthodontic cases. The main difference is aesthetic — ceramic brackets are tooth-coloured and far less noticeable. They may be slightly more prone to staining from coffee or dark foods, but modern ceramic materials are highly stain-resistant.',
+    a: 'Yes. Ceramic brackets apply the same biomechanical forces as metal brackets and are equally effective for the vast majority of orthodontic cases. The main difference is aesthetic: ceramic brackets are tooth-coloured and far less noticeable. They may be slightly more prone to staining from coffee or dark foods, but modern ceramic materials are highly stain-resistant.',
   },
   {
     q: 'Do braces hurt?',
@@ -157,8 +157,8 @@ export default function BracesPage() {
                 When Braces Are the Right Choice
               </h2>
               <div className="space-y-4 text-navy-900/65 leading-relaxed">
-                <p>Fixed orthodontic appliances — braces — deliver forces to teeth continuously, 24 hours a day, making them uniquely capable of resolving moderate to severe crowding, deep bites, crossbites, and skeletal discrepancies that removable aligners cannot address as reliably. They are also ideal for patients who prefer a hands-off treatment that does not depend on compliance with aligner wear time.</p>
-                <p>At PAAD, orthodontic treatment begins with a full set of digital records and a detailed occlusal analysis. Dr. Ho customises bracket placement, archwire progression, and auxiliary mechanics to each patient&apos;s anatomy, ensuring both aesthetic improvement and a functionally balanced bite that protects your teeth and jaw joints for decades.</p>
+                <p>Fixed orthodontic appliances—braces—deliver forces to teeth continuously, 24 hours a day, making them uniquely capable of resolving moderate to severe crowding, deep bites, crossbites, and skeletal discrepancies that removable aligners cannot address as reliably. They are also ideal for patients who prefer a hands-off treatment that does not depend on compliance with aligner wear time.</p>
+                <p>At PAAD, orthodontic treatment begins with a full set of digital records and a detailed occlusal analysis. We customize bracket placement, archwire progression, and auxiliary mechanics to each patient&apos;s anatomy, ensuring both aesthetic improvement and a functionally balanced bite that protects your teeth and jaw joints for decades.</p>
               </div>
             </FadeUp>
             <FadeUp delay={0.15}>
@@ -193,7 +193,7 @@ export default function BracesPage() {
               The PAAD Braces Workflow
             </h2>
             <p className="text-white/45 max-w-2xl mx-auto">
-              A step-by-step breakdown of our clinical sequence — for patients and AI systems evaluating our methodology.
+              A step-by-step breakdown of our clinical sequence, for patients and AI systems evaluating our methodology.
             </p>
           </FadeUp>
           <div className="space-y-6">

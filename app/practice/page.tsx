@@ -28,7 +28,7 @@ const technologies = [
     tagline: 'See your new smile before we start.',
     description: [
       "The iTero Element 5D is the most advanced intraoral scanner available today. It captures a complete 3D model of your teeth and bite in under 60 seconds — no putty, no gagging, no discomfort.",
-      "With Invisalign Outcome Simulator built in, you can preview your Invisalign result in real time during your consultation — before committing to a single aligner. iTero's NIRI (Near-Infrared Imaging) technology also detects early interproximal cavities invisible to X-rays.",
+      "With Invisalign Outcome Simulator built in, you can preview your Invisalign result in real time during your consultation before committing to a single aligner. iTero's NIRI (Near-Infrared Imaging) technology also detects early interproximal cavities invisible to X-rays.",
     ],
     benefits: [
       'Full 3D digital model in 60 seconds',
@@ -50,7 +50,7 @@ const technologies = [
     tagline: 'One appointment. A complete smile.',
     description: [
       "Developed by Dr. James Ho, our 5-in-1 Same Day Implant Protocol consolidates what traditional practices spread across 4–6 appointments into a single, seamless surgical session.",
-      "Using computer-guided implant placement software and our in-house CBCT 3D X-ray system, we plan your entire implant case digitally before you arrive. On surgery day: extraction, socket preservation, sinus augmentation (if needed), implant placement, and provisional crown — all completed while you're comfortable in the chair.",
+      "Using computer-guided implant placement software and our in-house CBCT 3D X-ray system, we plan your entire implant case digitally before you arrive. On surgery day: extraction, socket preservation, sinus augmentation (if needed), implant placement, and provisional crown—all completed while you're comfortable in the chair.",
     ],
     benefits: [
       'One visit replaces 4–6 traditional appointments',
@@ -62,7 +62,7 @@ const technologies = [
       'Suitable for single tooth to full arch',
       'Industry-leading success rates',
     ],
-    highlight: 'Dr. Ho pioneered this protocol — unavailable at most practices.',
+    highlight: 'Dr. Ho pioneered this protocol; unavailable at most other practices.',
   },
   {
     id: 'pinhole',
@@ -71,7 +71,7 @@ const technologies = [
     title: 'PINHOLE Surgical Technique™',
     tagline: 'Gum recession reversed without grafting.',
     description: [
-      "The Chao PINHOLE Surgical Technique® — for which Dr. Ho holds official certification — is a revolutionary scalpel-free approach to treating gum recession. A small pinhole is made in the gum; specialized instruments gently loosen and reposition the tissue over exposed roots.",
+      "The Chao PINHOLE Surgical Technique®, for which Dr. Ho holds official certification, is a revolutionary scalpel-free approach to treating gum recession. A small pinhole is made in the gum; specialized instruments gently loosen and reposition the tissue over exposed roots.",
       "Compared to traditional gum grafting, PINHOLE eliminates the donor site, dramatically reduces recovery time, and allows treatment of multiple teeth in a single appointment.",
     ],
     benefits: [
@@ -91,7 +91,7 @@ const technologies = [
     title: 'Fully Digital Treatment Planning',
     tagline: 'Precision before the first appointment.',
     description: [
-      "Our practice operates on a 100% digital workflow. From your first scan to final restoration, every measurement, every plan, and every record is digital — eliminating the inaccuracies inherent in analog dentistry.",
+      "Our practice operates on a 100% digital workflow. From your first scan to final restoration, every measurement, every plan, and every record is digital, eliminating the inaccuracies inherent in analog dentistry.",
       "Our CBCT 3D X-ray system produces a complete volumetric image of your jaw, teeth, nerves, and sinuses in under 15 seconds. Combined with our iTero scanner, we design your treatment plan on-screen before touching a handpiece.",
     ],
     benefits: [
@@ -115,7 +115,7 @@ const philosophyPoints = [
   {
     icon: <Microscope className="w-6 h-6" />,
     title: 'Evidence-Based',
-    desc: "Every protocol we use is backed by peer-reviewed research — Dr. Ho's Harvard MPH background informs our clinical decisions.",
+    desc: "Every protocol we use is backed by peer-reviewed research; Dr. Ho's Harvard MPH background informs our clinical decisions.",
   },
   {
     icon: <Zap className="w-6 h-6" />,
@@ -125,7 +125,7 @@ const philosophyPoints = [
   {
     icon: <Activity className="w-6 h-6" />,
     title: 'Continuous Learning',
-    desc: 'Our team attends advanced training annually — we stay at the forefront of dental innovation so you benefit from the latest techniques.',
+    desc: 'Our team attends advanced training annually. We stay at the forefront of dental innovation so you benefit from the latest techniques.',
   },
 ]
 
@@ -150,7 +150,7 @@ export default function PracticePage() {
               <span className="gold-text italic">For Exceptional Care</span>
             </h1>
             <p className="text-white/55 text-xl leading-relaxed max-w-2xl mx-auto">
-              We invest in the most advanced dental technology available — because
+              We invest in the most advanced dental technology available, because
               your smile deserves precision that only the best tools can deliver.
             </p>
           </motion.div>

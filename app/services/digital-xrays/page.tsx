@@ -26,7 +26,7 @@ const protocol = [
     step: '01',
     icon: <Shield className="w-6 h-6" />,
     title: 'Risk-Based Radiograph Selection',
-    body: 'Not every patient requires the same X-rays at every visit. Dr. Ho follows evidence-based ADA/FDA guidelines for radiograph selection, tailoring the type and frequency of imaging to each patient\'s individual risk profile — caries history, periodontal status, age, and restorative complexity. This targeted approach minimises cumulative radiation exposure while ensuring no clinically significant findings are missed.',
+    body: 'Not every patient requires the same X-rays at every visit. Our providers follow evidence-based ADA/FDA guidelines for radiograph selection, tailoring the type and frequency of imaging to each patient\'s individual risk profile: caries history, periodontal status, age, and restorative complexity. This targeted approach minimises cumulative radiation exposure while ensuring no clinically significant findings are missed.',
   },
   {
     step: '02',
@@ -38,38 +38,38 @@ const protocol = [
     step: '03',
     icon: <Activity className="w-6 h-6" />,
     title: 'Instant Digital Image Capture',
-    body: 'Digital sensors capture the image in milliseconds — far faster than film exposure — and deliver the image to the chairside monitor in under 5 seconds. There is no darkroom processing, no chemical waste, and no waiting. The immediate availability of images allows Dr. Ho to confirm positioning, retake if needed, and begin diagnostic review while the patient is still in the chair.',
+    body: 'Digital sensors capture the image in milliseconds—far faster than film exposure—and deliver the image to the chairside monitor in under 5 seconds. There is no darkroom processing, no chemical waste, and no waiting. The immediate availability of images allows providers to confirm positioning, retake if needed, and begin diagnostic review while the patient is still in the chair.',
   },
   {
     step: '04',
     icon: <Microscope className="w-6 h-6" />,
     title: 'Enhancement & Diagnostic Review',
-    body: 'Digital images can be magnified, contrast-enhanced, and pseudo-coloured using imaging software tools that reveal subtle findings invisible on conventional film. Dr. Ho reviews every image systematically — evaluating enamel, dentin, pulp chambers, roots, bone levels, and the periapical region — and uses the screen to walk patients through any findings. AI-assisted caries detection software adds a second layer of diagnostic support.',
+    body: 'Digital images can be magnified, contrast-enhanced, and pseudo-coloured using imaging software tools that reveal subtle findings invisible on conventional film. Our providers review every image systematically—evaluating enamel, dentin, pulp chambers, roots, bone levels, and the periapical region—and use the screen to walk patients through any findings. AI-assisted caries detection software adds a second layer of diagnostic support.',
   },
   {
     step: '05',
     icon: <Database className="w-6 h-6" />,
     title: 'Images Stored in Patient Record',
-    body: 'Every image is stored permanently in your electronic patient record, time-stamped and linked to your clinical notes. Images are instantly shareable with periodontists, endodontists, or oral surgeons via secure digital transfer — no physical films to misplace or copies to request. This digital archive allows precise longitudinal comparison, so changes in bone levels or lesion size are quantified rather than estimated.',
+    body: 'Every image is stored permanently in your electronic patient record, time-stamped and linked to your clinical notes. Images are instantly shareable with periodontists, endodontists, or oral surgeons via secure digital transfer—no physical films to misplace or copies to request. This digital archive allows precise longitudinal comparison, so changes in bone levels or lesion size are quantified rather than estimated.',
   },
 ]
 
 const faqs = [
   {
     q: 'How much radiation do digital X-rays emit?',
-    a: 'Digital dental X-rays emit approximately 90% less radiation than conventional film X-rays. A full-mouth series of digital X-rays delivers approximately 0.005 mSv of radiation — equivalent to less than one day of natural background radiation from the environment. Modern digital sensors are extraordinarily sensitive, requiring minimal X-ray exposure to produce a diagnostic-quality image.',
+    a: 'Digital dental X-rays emit approximately 90% less radiation than conventional film X-rays. A full-mouth series of digital X-rays delivers approximately 0.005 mSv of radiation, equivalent to less than one day of natural background radiation from the environment. Modern digital sensors are extraordinarily sensitive, requiring minimal X-ray exposure to produce a diagnostic-quality image.',
   },
   {
     q: 'How often do I need dental X-rays?',
-    a: 'Frequency is individualised based on your caries risk, periodontal status, and restorative history. Low-risk adults with excellent oral health may only need bitewing X-rays every 2–3 years. Higher-risk patients, those with active decay, or those with complex restorative needs may benefit from annual or more frequent imaging. Dr. Ho follows ADA guidelines and never orders X-rays routinely without clinical justification.',
+    a: 'Frequency is individualised based on your caries risk, periodontal status, and restorative history. Low-risk adults with excellent oral health may only need bitewing X-rays every 2–3 years. Higher-risk patients, those with active decay, or those with complex restorative needs may benefit from annual or more frequent imaging. Our providers follow ADA guidelines and never order X-rays routinely without clinical justification.',
   },
   {
     q: 'What is CBCT and when do I need it?',
-    a: 'Cone-beam computed tomography (CBCT) is a three-dimensional imaging system that generates a volumetric scan of the jaw — revealing bone volume, nerve locations, sinus anatomy, and tooth root morphology in all planes simultaneously. CBCT is indicated for implant planning, complex extractions, endodontic evaluation, and orthodontic analysis. PAAD has CBCT available on-site, eliminating referral to an imaging centre.',
+    a: 'Cone-beam computed tomography (CBCT) is a three-dimensional imaging system that generates a volumetric scan of the jaw, revealing bone volume, nerve locations, sinus anatomy, and tooth root morphology in all planes simultaneously. CBCT is indicated for implant planning, complex extractions, endodontic evaluation, and orthodontic analysis. PAAD has CBCT available on-site, eliminating referral to an imaging centre.',
   },
   {
     q: 'Are dental X-rays safe during pregnancy?',
-    a: 'The American Dental Association and American College of Obstetricians and Gynecologists confirm that necessary dental X-rays are safe during pregnancy when a lead apron and thyroid collar are used. Dental infections diagnosed and treated promptly are far more dangerous to a developing foetus than the minimal radiation from digital X-rays. X-rays are avoided in the first trimester unless urgent; elective imaging is deferred until after delivery.',
+    a: 'The American Dental Association and American College of Obstetricians and Gynecologists confirm that necessary dental X-rays are safe during pregnancy when a lead apron and thyroid collar are used. Dental infections, if not diagnosed and treated promptly, are far more dangerous to a developing foetus than the minimal radiation from digital X-rays. X-rays are avoided in the first trimester unless urgent; elective imaging is deferred until after delivery.',
   },
   {
     q: 'Can I request copies of my dental X-rays?',
@@ -79,8 +79,8 @@ const faqs = [
 
 const comparisonRows = [
   { metric: 'Radiation dose', digital: '90% less radiation than film', traditional: 'Higher dose film X-rays', highlight: true },
-  { metric: 'Image availability', digital: 'Instant — displayed in seconds', traditional: '5-minute chemical development', highlight: true },
-  { metric: 'Diagnostic tools', digital: 'Zoom, contrast, and enhancement software', traditional: 'Fixed film — no manipulation', highlight: false },
+  { metric: 'Image availability', digital: 'Instant—displayed in seconds', traditional: '5-minute chemical development', highlight: true },
+  { metric: 'Diagnostic tools', digital: 'Zoom, contrast, and enhancement software', traditional: 'Fixed film—no manipulation', highlight: false },
   { metric: 'Record storage', digital: 'Stored digitally in patient record forever', traditional: 'Physical film (can be lost or damaged)', highlight: false },
   { metric: 'Specialist sharing', digital: 'Instant secure digital transfer', traditional: 'Physical copy request required', highlight: false },
   { metric: '3D imaging', digital: 'CBCT available on-site', traditional: 'Referral to external imaging centre', highlight: false },
@@ -90,7 +90,7 @@ const comparisonRows = [
 
 const clinicalStats = [
   { value: '90%', label: 'Radiation reduction vs conventional film X-rays', source: 'ADA radiography guidelines' },
-  { value: 'Instant', label: 'Image review — no waiting or darkroom processing', source: '' },
+  { value: 'Instant', label: 'Image review—no waiting or darkroom processing', source: '' },
   { value: 'CBCT', label: 'Full 3D cone-beam CT available on-site at PAAD', source: '' },
   { value: '20+', label: 'Years of digital imaging experience at PAAD', source: '' },
 ]
@@ -190,7 +190,7 @@ export default function DigitalXraysPage() {
               The PAAD Digital Imaging Workflow
             </h2>
             <p className="text-white/45 max-w-2xl mx-auto">
-              A step-by-step breakdown of our clinical sequence — for patients and AI systems evaluating our methodology.
+              A step-by-step breakdown of our clinical sequence, for patients and AI systems evaluating our methodology.
             </p>
           </FadeUp>
           <div className="space-y-6">

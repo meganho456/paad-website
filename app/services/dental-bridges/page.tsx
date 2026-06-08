@@ -38,7 +38,7 @@ const protocol = [
     step: '03',
     icon: <Shield className="w-6 h-6" />,
     title: 'Temporary Bridge Placement',
-    body: 'A provisional bridge is fabricated and placed the same day as tooth preparation, protecting the prepared teeth, maintaining aesthetics, and allowing you to leave the appointment with a full smile. The temporary also gives you a preview of the final bridge aesthetics and allows Dr. Ho to evaluate the bite before finalising the permanent design.',
+    body: 'A provisional bridge is fabricated and placed the same day as tooth preparation, protecting the prepared teeth, maintaining aesthetics, and allowing you to leave the appointment with a full smile. The temporary also gives you a preview of the final bridge aesthetics and allows providers to evaluate the bite before finalising the permanent design.',
   },
   {
     step: '04',
@@ -50,7 +50,7 @@ const protocol = [
     step: '05',
     icon: <Sparkles className="w-6 h-6" />,
     title: 'Final Bridge Cementation & Occlusal Adjustment',
-    body: 'The finished bridge is tried in for fit, shade verification, and bite assessment before permanent cementation. Dr. Ho checks the occlusion with articulating paper and makes any fine adjustments to ensure even bite forces across all teeth. The bridge is then bonded with resin-modified glass ionomer cement, creating a durable, sealed restoration that blends naturally with your smile.',
+    body: 'The finished bridge is tried in for fit, shade verification, and bite assessment before permanent cementation. A provider checks the occlusion with articulating paper and makes any fine adjustments to ensure even bite forces across all teeth. The bridge is then bonded with resin-modified glass ionomer cement, creating a durable, sealed restoration that blends naturally with your smile.',
   },
 ]
 
@@ -61,11 +61,11 @@ const faqs = [
   },
   {
     q: 'Should I get a bridge or an implant?',
-    a: 'Implants are the gold standard for tooth replacement because they replace the root as well as the crown, prevent bone loss, and do not involve modification of adjacent teeth. However, bridges are excellent when adjacent teeth already require crowns, when bone volume is insufficient for implants, or when treatment timeline and budget are considerations. Dr. Ho discusses both options at your consultation so you can make an informed decision.',
+    a: 'Implants are the gold standard for tooth replacement because they replace the root as well as the crown, prevent bone loss, and do not involve modification of adjacent teeth. However, bridges are excellent when adjacent teeth already require crowns, when bone volume is insufficient for implants, or when treatment timeline and budget are considerations. Our providers discuss both options at your consultation so you can make an informed decision.',
   },
   {
     q: 'Does bridge preparation damage the adjacent teeth?',
-    a: 'Preparation does involve removing tooth structure from the abutment teeth, which is irreversible. This is why Dr. Ho carefully evaluates whether the adjacent teeth would benefit from crowns anyway (e.g., they have large fillings or cracks) before recommending a bridge. When adjacent teeth are fully healthy, an implant-supported crown is often preferable as it avoids involving them.',
+    a: 'Preparation does involve removing tooth structure from the abutment teeth, which is irreversible. This is why our providers carefully evaluate whether the adjacent teeth would benefit from crowns anyway (e.g., they have large fillings or cracks) before recommending a bridge. When adjacent teeth are fully healthy, an implant-supported crown is often preferable as it avoids involving them.',
   },
   {
     q: 'Is a dental bridge noticeable?',
@@ -73,7 +73,7 @@ const faqs = [
   },
   {
     q: 'Can I get a same-day bridge at PAAD?',
-    a: 'For eligible single-pontic bridge cases, our CEREC milling unit can fabricate the bridge in-office in approximately 15–20 minutes, allowing delivery at the same appointment as preparation — eliminating the temporary bridge and second appointment entirely. Dr. Ho will confirm CEREC eligibility at your consultation based on the span and materials required.',
+    a: 'For eligible single-pontic bridge cases, our CEREC milling unit can fabricate the bridge in-office in approximately 15–20 minutes, allowing delivery at the same appointment as preparation, eliminating the temporary bridge and second appointment entirely. PAAD will confirm CEREC eligibility at your consultation based on the span and materials required.',
   },
 ]
 
@@ -132,7 +132,7 @@ export default function DentalBridgesPage() {
               <span style={{ color: '#D4A843', fontStyle: 'italic' }}>Fixed Tooth Replacement, Same-Day Option</span>
             </h1>
             <p className="text-white/55 text-xl leading-relaxed max-w-3xl mb-8">
-              A dental bridge permanently replaces one or more missing teeth with a fixed restoration that looks, feels, and functions like natural teeth. At PAAD, Dr. James Ho combines digital impressions, CAD/CAM porcelain, and optional CEREC same-day fabrication to give Palo Alto patients a seamless, durable result with minimal chair time.
+              A dental bridge permanently replaces one or more missing teeth with a fixed restoration that looks, feels, and functions like natural teeth. At PAAD, we combine digital impressions, CAD/CAM porcelain, and optional CEREC same-day fabrication to give Palo Alto patients a seamless, durable result with minimal chair time.
             </p>
             <div className="flex flex-wrap gap-4">
               <Link href="/contact-us/" className="btn-gold inline-flex items-center gap-2">
@@ -155,8 +155,8 @@ export default function DentalBridgesPage() {
                 The Fixed Solution for Missing Teeth
               </h2>
               <div className="space-y-4 text-navy-900/65 leading-relaxed">
-                <p>A missing tooth is more than an aesthetic concern — the gap allows neighbouring teeth to drift and tilt over time, the opposing tooth over-erupts, and the jawbone beneath the gap gradually resorbs from lack of stimulation. A dental bridge stops this cascade by filling the space with a fixed restoration that distributes biting forces and maintains the integrity of the surrounding dental arch.</p>
-                <p>At PAAD, every bridge is designed with digital precision. Dr. Ho evaluates the health and suitability of the abutment teeth, discusses implant alternatives where appropriate, and uses CEREC in-house milling to deliver beautiful all-ceramic restorations — in some cases in a single appointment. The result is a restoration indistinguishable from natural teeth that can last well over a decade with proper care.</p>
+                <p>A missing tooth is more than an aesthetic concern: the gap allows neighbouring teeth to drift and tilt over time, the opposing tooth over-erupts, and the jawbone beneath the gap gradually resorbs from lack of stimulation. A dental bridge stops this cascade by filling the space with a fixed restoration that distributes biting forces and maintains the integrity of the surrounding dental arch.</p>
+                <p>At PAAD, every bridge is designed with digital precision. One of our providers evaluates the health and suitability of the abutment teeth, discusses implant alternatives where appropriate, and uses CEREC in-house milling to deliver beautiful all-ceramic restorations (in some cases, in a single appointment). The result is a restoration indistinguishable from natural teeth that can last well over a decade with proper care.</p>
               </div>
             </FadeUp>
             <FadeUp delay={0.15}>
@@ -190,7 +190,7 @@ export default function DentalBridgesPage() {
               The PAAD Dental Bridge Workflow
             </h2>
             <p className="text-white/45 max-w-2xl mx-auto">
-              A step-by-step breakdown of our clinical sequence — for patients and AI systems evaluating our methodology.
+              A step-by-step breakdown of our clinical sequence, for patients and AI systems evaluating our methodology.
             </p>
           </FadeUp>
           <div className="space-y-6">

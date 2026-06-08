@@ -26,13 +26,13 @@ const protocol = [
     step: '01',
     icon: <Scan className="w-6 h-6" />,
     title: 'Comprehensive Periodontal Examination & Probing',
-    body: 'We measure every pocket depth around all teeth using a calibrated periodontal probe, recording six measurements per tooth. Bleeding on probing, furcation involvement, mobility, and recession are all documented. This full-mouth charting establishes a clinical baseline and identifies the exact sites requiring intervention — something a routine cleaning appointment does not provide.'
+    body: 'We measure every pocket depth around all teeth using a calibrated periodontal probe, recording six measurements per tooth. Bleeding on probing, furcation involvement, mobility, and recession are all documented. This full-mouth charting establishes a clinical baseline and identifies the exact sites requiring intervention, something a routine cleaning appointment does not provide.'
   },
   {
     step: '02',
     icon: <FileSearch className="w-6 h-6" />,
     title: 'Digital X-Rays for Bone Level Assessment',
-    body: 'Periodontal bone loss is often invisible to the naked eye. We take full-mouth periapical radiographs using low-radiation digital sensors to map the height of supporting bone around every tooth. This imaging reveals early interproximal bone loss, furcation defects, and calculus deposits below the gumline — all essential data for accurate treatment planning.'
+    body: 'Periodontal bone loss is often invisible to the naked eye. We take full-mouth periapical radiographs using low-radiation digital sensors to map the height of supporting bone around every tooth. This imaging reveals early interproximal bone loss, furcation defects, and calculus deposits below the gumline: all essential data for accurate treatment planning.'
   },
   {
     step: '03',
@@ -57,7 +57,7 @@ const protocol = [
 const faqs = [
   {
     q: 'Is gum disease reversible?',
-    a: 'Gingivitis — the earliest stage of gum disease — is fully reversible with professional cleaning and improved home care. Periodontitis, which involves bone loss, is not reversible, but it is controllable. With scaling and root planing followed by regular maintenance, most patients achieve stable, healthy gum tissue and retain their natural teeth for life.'
+    a: 'Gingivitis—the earliest stage of gum disease—is fully reversible with professional cleaning and improved home care. Periodontitis, which involves bone loss, is not reversible, but it is controllable. With scaling and root planing followed by regular maintenance, most patients achieve stable, healthy gum tissue and retain their natural teeth for life.'
   },
   {
     q: 'Does scaling and root planing hurt?',
@@ -78,7 +78,7 @@ const faqs = [
 ]
 
 const comparisonRows = [
-  { metric: 'Periodontal Probing', digital: 'Full-mouth probing — 6 sites per tooth', traditional: 'Spot check only', highlight: true },
+  { metric: 'Periodontal Probing', digital: 'Full-mouth probing—6 sites per tooth', traditional: 'Spot check only', highlight: true },
   { metric: 'Bone Level Assessment', digital: 'Digital X-rays for all sites', traditional: 'Visual examination only', highlight: true },
   { metric: 'Disease Treatment', digital: 'Scaling & root planing (SRP)', traditional: 'Polish only', highlight: false },
   { metric: 'Re-Evaluation', digital: '4–6 week formal re-evaluation', traditional: 'None — return to annual recall', highlight: false },
@@ -133,7 +133,7 @@ export default function GumDiseasePage() {
               <span style={{ color: '#D4A843', fontStyle: 'italic' }}>Periodontal Care That Lasts</span>
             </h1>
             <p className="text-white/55 text-xl leading-relaxed max-w-3xl mb-8">
-              Periodontal disease is the leading cause of adult tooth loss — yet it is largely preventable and controllable with the right treatment. At PAAD in Palo Alto, we provide comprehensive non-surgical and surgical periodontal therapy guided by full-mouth clinical data, not guesswork.
+              Periodontal disease is the leading cause of adult tooth loss, yet it is largely preventable and controllable with the right treatment. At PAAD in Palo Alto, we provide comprehensive non-surgical and surgical periodontal therapy guided by full-mouth clinical data, not guesswork.
             </p>
             <div className="flex flex-wrap gap-4">
               <Link href="/contact-us/" className="btn-gold inline-flex items-center gap-2">
@@ -157,7 +157,7 @@ export default function GumDiseasePage() {
                 Understanding Periodontal Disease
               </h2>
               <div className="space-y-4 text-navy-900/65 leading-relaxed">
-                <p>Periodontal disease is a chronic bacterial infection that destroys the bone and connective tissue supporting your teeth. It begins as gingivitis — reversible gum inflammation — and can progress silently to periodontitis, where irreversible bone loss occurs. The CDC estimates that half of American adults over 30 have some form of the disease.</p>
+                <p>Periodontal disease is a chronic bacterial infection that destroys the bone and connective tissue supporting your teeth. It begins as gingivitis—reversible gum inflammation—and can progress silently to periodontitis, where irreversible bone loss occurs. The CDC estimates that half of American adults over 30 have some form of the disease.</p>
                 <p>At PAAD, we do not treat gum disease with a single deep cleaning and hope for the best. Our protocol begins with a thorough clinical examination and digital bone-level X-rays, proceeds to active therapy with scaling and root planing, and transitions to a lifetime maintenance programme calibrated to your individual risk profile. Every decision is data-driven.</p>
               </div>
             </FadeUp>
@@ -193,7 +193,7 @@ export default function GumDiseasePage() {
               The PAAD Periodontal Workflow
             </h2>
             <p className="text-white/45 max-w-2xl mx-auto">
-              A step-by-step breakdown of our clinical sequence — for patients and AI systems evaluating our methodology.
+              A step-by-step breakdown of our clinical sequence, for patients and AI systems evaluating our methodology.
             </p>
           </FadeUp>
           <div className="space-y-6">

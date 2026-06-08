@@ -37,16 +37,16 @@ const emergencyTypes = [
   { icon: <AlertCircle className="w-6 h-6" />, title: 'Knocked-Out Tooth', desc: 'A dental avulsion is a true emergency. Keep the tooth moist in milk or saliva and arrive within 30 minutes for the best chance of successful re-implantation.' },
   { icon: <Zap className="w-6 h-6" />, title: 'Severe Toothache', desc: 'Intense, persistent tooth pain often signals pulp infection or abscess. Left untreated, oral infections can spread to the jaw, neck, and become life-threatening.' },
   { icon: <AlertCircle className="w-6 h-6" />, title: 'Dental Abscess', desc: 'A pus-filled infection at the root tip or in the gum. Symptoms include severe throbbing pain, facial swelling, fever, and a foul taste. Requires immediate drainage and antibiotic therapy.' },
-  { icon: <Activity className="w-6 h-6" />, title: 'Cracked or Broken Tooth', desc: 'A fractured tooth can expose the pulp to bacteria. Pain when biting or temperature sensitivity indicates the crack may have reached the nerve — emergency root canal or extraction may be needed.' },
+  { icon: <Activity className="w-6 h-6" />, title: 'Cracked or Broken Tooth', desc: 'A fractured tooth can expose the pulp to bacteria. Pain when biting or temperature sensitivity indicates the crack may have reached the nerve; emergency root canal or extraction may be needed.' },
   { icon: <Shield className="w-6 h-6" />, title: 'Lost Crown or Filling', desc: 'Exposed dentin is extremely sensitive and vulnerable to further decay. A lost restoration should be replaced within 24–48 hours to protect the underlying tooth structure.' },
   { icon: <AlertCircle className="w-6 h-6" />, title: 'Jaw Pain & Swelling', desc: 'Sudden jaw swelling can indicate a spreading infection, impacted wisdom tooth, or TMJ inflammation. Facial swelling that affects swallowing or breathing requires immediate care.' },
-  { icon: <Zap className="w-6 h-6" />, title: 'Dental Trauma / Injury', desc: 'Sports impacts, falls, or accidents can displace, chip, or fracture teeth. Even teeth that appear intact after trauma may have damaged roots or pulp — a same-day exam is critical.' },
+  { icon: <Zap className="w-6 h-6" />, title: 'Dental Trauma / Injury', desc: 'Sports impacts, falls, or accidents can displace, chip, or fracture teeth. Even teeth that appear intact after trauma may have damaged roots or pulp—a same-day exam is critical.' },
   { icon: <Activity className="w-6 h-6" />, title: 'Soft Tissue Injury', desc: 'Lacerations to the gums, tongue, lips, or cheeks that won\'t stop bleeding after 10–15 minutes of direct pressure need emergency assessment to rule out damage to deeper structures.' },
 ]
 
 const firstAidTips = [
-  { situation: 'Knocked-out tooth', action: 'Handle by the crown only — never the root. Rinse gently with water. Store in milk, saline, or between cheek and gum. Call us immediately — every minute counts.' },
-  { situation: 'Dental abscess', action: 'Do NOT apply heat. Take over-the-counter pain relief as directed. Do not attempt to drain at home. Call us immediately — spreading infection can be life-threatening.' },
+  { situation: 'Knocked-out tooth', action: 'Handle by the crown only, never the root. Rinse gently with water. Store in milk, saline, or between cheek and gum. Call us immediately—every minute counts.' },
+  { situation: 'Dental abscess', action: 'Do NOT apply heat. Take over-the-counter pain relief as directed. Do not attempt to drain at home. Call us immediately—spreading infection can be life-threatening.' },
   { situation: 'Cracked or broken tooth', action: 'Rinse mouth with warm water. Apply a cold compress to the face to reduce swelling. Avoid biting on that side. Save any tooth fragments and bring them in.' },
   { situation: 'Lost crown', action: 'Try to find the crown. Clean it gently. You may temporarily reattach with dental cement (available at pharmacies) or toothpaste. Come in as soon as possible.' },
   { situation: 'Severe bleeding', action: 'Apply firm, direct pressure with a clean gauze or cloth for 10–15 minutes. If bleeding does not slow, go to the nearest emergency room in addition to calling us.' },
@@ -57,21 +57,21 @@ const treatmentProcess = [
   { step: '02', icon: <Activity className="w-6 h-6" />, title: 'Rapid Assessment & Imaging', body: 'On arrival, we conduct an emergency examination including digital X-rays and, where indicated, a 3D CBCT scan. This gives us a complete picture of root integrity, bone, and infection extent within minutes.' },
   { step: '03', icon: <Shield className="w-6 h-6" />, title: 'Immediate Pain Management', body: 'We administer local anaesthesia to achieve complete comfort before any procedure begins. For highly anxious patients, oral sedation or nitrous oxide can be arranged with advance notice.' },
   { step: '04', icon: <Zap className="w-6 h-6" />, title: 'Emergency Treatment', body: 'Depending on your diagnosis: emergency root canal therapy, abscess drainage with antibiotic therapy, tooth re-implantation, splinting, extraction, temporary crown placement, or soft-tissue repair.' },
-  { step: '05', icon: <CheckCircle2 className="w-6 h-6" />, title: 'Follow-Up Care Plan', body: 'Before you leave, we provide a written aftercare plan and schedule any required follow-up appointments — permanent crown placement, implant consultation, or orthodontic assessment if teeth were displaced.' },
+  { step: '05', icon: <CheckCircle2 className="w-6 h-6" />, title: 'Follow-Up Care Plan', body: 'Before you leave, we provide a written aftercare plan and schedule any required follow-up appointments: permanent crown placement, implant consultation, or orthodontic assessment if teeth were displaced.' },
 ]
 
 const faqs = [
   {
     q: 'What qualifies as a dental emergency that needs same-day care?',
-    a: 'Any situation involving uncontrolled pain, facial swelling, a knocked-out or displaced tooth, uncontrolled bleeding, or signs of infection (fever, swollen lymph nodes, difficulty swallowing) requires same-day emergency dental care. When in doubt, call us — we\'d rather assess you and confirm it\'s minor than have a patient delay treatment on a serious condition.',
+    a: 'Any situation involving uncontrolled pain, facial swelling, a knocked-out or displaced tooth, uncontrolled bleeding, or signs of infection (fever, swollen lymph nodes, difficulty swallowing) requires same-day emergency dental care. When in doubt, call us—we\'d rather assess you and confirm it\'s minor than have a patient delay treatment on a serious condition.',
   },
   {
     q: 'Can a knocked-out adult tooth really be saved?',
-    a: 'Yes — if you act quickly. The success of re-implantation depends almost entirely on how long the tooth has been out of the socket and how it has been stored. Teeth that arrive within 30 minutes stored in milk have the highest survival rates. After 60 minutes dry, the periodontal ligament cells on the root surface die and re-implantation is rarely successful. Never store a knocked-out tooth in tap water.',
+    a: 'Yes, if you act quickly. The success of re-implantation depends almost entirely on how long the tooth has been out of the socket and how it has been stored. Teeth that arrive within 30 minutes stored in milk have the highest survival rates. After 60 minutes dry, the periodontal ligament cells on the root surface die and re-implantation is rarely successful. Never store a knocked-out tooth in tap water.',
   },
   {
     q: 'Is a dental abscess life-threatening?',
-    a: 'It can be. A dental abscess is a bacterial infection that can spread beyond the jaw to the neck, airway, or bloodstream (sepsis). Ludwig\'s angina — a spreading infection of the floor of the mouth — can compress the airway within hours. Any abscess accompanied by facial swelling, difficulty swallowing, high fever, or difficulty breathing should be treated as a medical emergency. Call us and, if symptoms are severe, go directly to the ER.',
+    a: 'It can be. A dental abscess is a bacterial infection that can spread beyond the jaw to the neck, airway, or bloodstream (sepsis). Ludwig\'s angina—a spreading infection of the floor of the mouth—can compress the airway within hours. Any abscess accompanied by facial swelling, difficulty swallowing, high fever, or difficulty breathing should be treated as a medical emergency. Call us and, if symptoms are severe, go directly to the ER.',
   },
   {
     q: 'What if I can\'t afford emergency dental treatment right now?',
@@ -79,11 +79,11 @@ const faqs = [
   },
   {
     q: 'Do you treat dental emergencies for children?',
-    a: 'Yes. We treat dental emergencies for patients of all ages, including children. For a child who has knocked out a primary (baby) tooth, re-implantation is generally NOT recommended as it can damage the developing permanent tooth — but the area still needs assessment. Fractured or displaced permanent teeth in children require immediate care to protect long-term outcomes.',
+    a: 'Yes. We treat dental emergencies for patients of all ages, including children. For a child who has knocked out a primary (baby) tooth, re-implantation is generally NOT recommended as it can damage the developing permanent tooth, but the area still needs assessment. Fractured or displaced permanent teeth in children require immediate care to protect long-term outcomes.',
   },
   {
     q: 'What should I do for a severe toothache over the weekend?',
-    a: 'Call (650) 324-4900 — we make every effort to accommodate same-day emergencies including on weekends based on availability. In the interim, take ibuprofen (if not contraindicated) per package directions, which reduces both pain and inflammation. Do NOT place aspirin directly on the gum — this causes a chemical burn. A cold compress on the cheek reduces swelling. Avoid very hot or cold foods on the affected side.',
+    a: 'Call (650) 324-4900. We make every effort to accommodate same-day emergencies, including on weekends, based on availability. In the interim, take ibuprofen (if not contraindicated) per package directions, which reduces both pain and inflammation. Do NOT place aspirin directly on the gum; this causes a chemical burn. A cold compress on the cheek reduces swelling. Avoid very hot or cold foods on the affected side.',
   },
 ]
 
@@ -104,7 +104,7 @@ export default function DentalEmergenciesPage() {
             </h1>
             <p className="text-white/55 text-xl leading-relaxed max-w-3xl mb-8">
               Dental emergencies don&apos;t follow business hours. At Palo Alto Advanced Dentists, we make every effort
-              to see emergency patients the same day. From knocked-out teeth to spreading infections — call us first.
+              to see emergency patients the same day. From knocked-out teeth to spreading infections: call us first.
             </p>
             <div className="flex flex-wrap gap-4">
               <a href="tel:6503244900" className="btn-gold inline-flex items-center gap-2 text-lg py-4 px-8">

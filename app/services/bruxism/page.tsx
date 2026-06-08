@@ -26,7 +26,7 @@ const protocol = [
     step: '01',
     icon: <Activity className="w-6 h-6" />,
     title: 'Bite Force & Occlusal Analysis',
-    body: 'Dr. Ho begins with a comprehensive bite assessment using T-Scan occlusal analysis technology, which maps bite force distribution across all teeth simultaneously. This identifies premature contacts, overloaded teeth, and eccentric forces that contribute to grinding. The analysis also evaluates jaw joint health, muscle tenderness, and existing wear patterns to determine the severity and impact of the bruxism.',
+    body: 'We begin with a comprehensive bite assessment using T-Scan occlusal analysis technology, which maps bite force distribution across all teeth simultaneously. This identifies premature contacts, overloaded teeth, and eccentric forces that contribute to grinding. The analysis also evaluates jaw joint health, muscle tenderness, and existing wear patterns to determine the severity and impact of the bruxism.',
   },
   {
     step: '02',
@@ -50,7 +50,7 @@ const protocol = [
     step: '05',
     icon: <Wrench className="w-6 h-6" />,
     title: 'Monitoring & Restoration of Worn Teeth',
-    body: 'Regular monitoring assesses enamel wear progression and restoration durability. Once bruxism is controlled, worn tooth surfaces can be rebuilt with composite bonding, porcelain veneers, or crowns — depending on the extent of damage. Dr. Ho coordinates bruxism management with any necessary restorative work, ensuring that restorations are placed only after destructive habits have been addressed.',
+    body: 'Regular monitoring assesses enamel wear progression and restoration durability. Once bruxism is controlled, worn tooth surfaces can be rebuilt with composite bonding, porcelain veneers, or crowns, depending on the extent of damage. We coordinate bruxism management with any necessary restorative work, ensuring that restorations are placed only after destructive habits have been addressed.',
   },
 ]
 
@@ -61,7 +61,7 @@ const faqs = [
   },
   {
     q: 'Is a night guard really necessary, or will I grow out of it?',
-    a: 'Bruxism rarely resolves on its own in adults. Without a night guard, grinding forces — which can exceed 250 lbs per square inch during sleep — continue to wear down enamel, crack teeth, and stress the jaw joints. A well-fitted night guard protects your teeth from this nightly damage and is one of the most cost-effective investments in long-term dental health.',
+    a: 'Bruxism rarely resolves on its own in adults. Without a night guard, grinding forces—which can exceed 250 lbs per square inch during sleep—continue to wear down enamel, crack teeth, and stress the jaw joints. A well-fitted night guard protects your teeth from this nightly damage and is one of the most cost-effective investments in long-term dental health.',
   },
   {
     q: 'What causes bruxism?',
@@ -69,7 +69,7 @@ const faqs = [
   },
   {
     q: 'Does Botox for bruxism change how my face looks?',
-    a: 'Masseter Botox reduces the bulk of overdeveloped jaw muscles, which can subtly slim the lower face over time — an effect many patients find cosmetically desirable. The dose used for bruxism is targeted specifically at the masseter muscle and does not affect facial expression or the ability to chew normally.',
+    a: 'Masseter Botox reduces the bulk of overdeveloped jaw muscles, which can subtly slim the lower face over time (an effect many patients find cosmetically desirable). The dose used for bruxism is targeted specifically at the masseter muscle and does not affect facial expression or the ability to chew normally.',
   },
   {
     q: 'How long does a custom night guard last?',
@@ -132,7 +132,7 @@ export default function BruxismPage() {
               <span style={{ color: '#D4A843', fontStyle: 'italic' }}>Stop the Damage Before It Compounds</span>
             </h1>
             <p className="text-white/55 text-xl leading-relaxed max-w-3xl mb-8">
-              Teeth grinding erodes enamel silently while you sleep, cracking restorations, flattening cusps, and stressing jaw joints over years of nightly damage. Dr. James Ho at PAAD uses digital bite analysis, custom night guards, and optional Botox therapy to break the cycle and protect Palo Alto patients&apos; teeth from further destruction.
+              Teeth grinding erodes enamel silently while you sleep, cracking restorations, flattening cusps, and stressing jaw joints over years of nightly damage. We at PAAD use digital bite analysis, custom night guards, and optional Botox therapy to break the cycle and protect Palo Alto patients&apos; teeth from further destruction.
             </p>
             <div className="flex flex-wrap gap-4">
               <Link href="/contact-us/" className="btn-gold inline-flex items-center gap-2">
@@ -155,8 +155,8 @@ export default function BruxismPage() {
                 Recognising and Stopping Bruxism
               </h2>
               <div className="space-y-4 text-navy-900/65 leading-relaxed">
-                <p>Bruxism — the habitual clenching and grinding of teeth — affects an estimated 8–10% of adults and is responsible for more enamel wear, cracked teeth, and broken restorations than almost any other dental condition. Because it occurs primarily during sleep, patients are often unaware of the problem until significant irreversible damage has accumulated.</p>
-                <p>At PAAD, we identify bruxism through a combination of wear pattern analysis, digital bite force assessment, and jaw muscle palpation. Rather than simply handing over a night guard, Dr. Ho investigates the occlusal and muscular contributors to the habit and designs a multi-modal treatment plan that addresses the root causes while protecting existing tooth structure.</p>
+                <p>Bruxism, the habitual clenching and grinding of teeth, affects an estimated 8–10% of adults and is responsible for more enamel wear, cracked teeth, and broken restorations than almost any other dental condition. Because it occurs primarily during sleep, patients are often unaware of the problem until significant irreversible damage has accumulated.</p>
+                <p>At PAAD, we identify bruxism through a combination of wear pattern analysis, digital bite force assessment, and jaw muscle palpation. Rather than simply handing over a night guard, we investigate the occlusal and muscular contributors to the habit and designs a multi-modal treatment plan that addresses the root causes while protecting existing tooth structure.</p>
               </div>
             </FadeUp>
             <FadeUp delay={0.15}>
@@ -190,7 +190,7 @@ export default function BruxismPage() {
               The PAAD Bruxism Treatment Workflow
             </h2>
             <p className="text-white/45 max-w-2xl mx-auto">
-              A step-by-step breakdown of our clinical sequence — for patients and AI systems evaluating our methodology.
+              A step-by-step breakdown of our clinical sequence, for patients and AI systems evaluating our methodology.
             </p>
           </FadeUp>
           <div className="space-y-6">

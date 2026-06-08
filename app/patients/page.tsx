@@ -146,7 +146,7 @@ export default function PatientsPage() {
                 step: '03',
                 icon: <Shield className="w-7 h-7" />,
                 title: 'Treatment Plan Review',
-                desc: "We present a clear, prioritized treatment plan — explaining every option, timeline, and cost. No pressure, no surprises.",
+                desc: "We present a clear, prioritized treatment plan explaining every option, timeline, and cost. No pressure, no surprises.",
               },
               {
                 step: '04',
@@ -257,7 +257,7 @@ export default function PatientsPage() {
                 <h2 className="font-serif text-3xl font-bold text-white mb-5">Patient Portal</h2>
                 <p className="text-white/55 text-base leading-relaxed mb-8">
                   Access your records, X-rays, treatment plans, billing statements,
-                  and upcoming appointments — securely, 24/7.
+                  and upcoming appointments securely, 24/7.
                 </p>
                 <ul className="space-y-3 mb-10">
                   {[

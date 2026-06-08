@@ -26,38 +26,38 @@ const protocol = [
     step: '01',
     icon: <Search className="w-6 h-6" />,
     title: 'Periodontal Evaluation & Bone Sounding',
-    body: 'Crown lengthening begins with a detailed periodontal assessment including bone sounding — a probing technique that maps the exact level of supporting bone around the tooth. This measurement determines precisely how much tissue and bone must be repositioned to expose adequate tooth structure for crown retention, without violating the biological width that protects the attachment apparatus.',
+    body: 'Crown lengthening begins with a detailed periodontal assessment including bone sounding, a probing technique that maps the exact level of supporting bone around the tooth. This measurement determines precisely how much tissue and bone must be repositioned to expose adequate tooth structure for crown retention, without violating the biological width that protects the attachment apparatus.',
   },
   {
     step: '02',
     icon: <Zap className="w-6 h-6" />,
     title: 'Local Anaesthesia & Tissue Management',
-    body: 'Profound local anaesthesia is administered to ensure complete comfort throughout the procedure. Dr. Ho uses a minimally invasive approach that preserves as much healthy gum tissue as possible while achieving the clinical objectives. The surgical field is carefully managed to minimise bleeding and maintain clear visibility throughout the procedure.',
+    body: 'Profound local anaesthesia is administered to ensure complete comfort throughout the procedure. Our providers use a minimally invasive approach that preserves as much healthy gum tissue as possible while achieving the clinical objectives. The surgical field is carefully managed to minimise bleeding and maintain clear visibility throughout the procedure.',
   },
   {
     step: '03',
     icon: <Layers className="w-6 h-6" />,
     title: 'Gingival Incision & Bone Recontouring',
-    body: 'Incisions are made to reflect a flap of gum tissue, exposing the underlying bone. Bone is then carefully recontoured to create adequate space between the bone crest and the planned crown margin — typically at least 3mm of tooth structure must be exposed. This bone recontouring is what distinguishes crown lengthening from simple gingivectomy and ensures the result is stable long-term.',
+    body: 'Incisions are made to reflect a flap of gum tissue, exposing the underlying bone. Bone is then carefully recontoured to create adequate space between the bone crest and the planned crown margin—typically, at least 3mm of tooth structure must be exposed. This bone recontouring is what distinguishes crown lengthening from simple gingivectomy and ensures the result is stable long-term.',
   },
   {
     step: '04',
     icon: <Shield className="w-6 h-6" />,
     title: 'Suturing & Wound Management',
-    body: 'The gum flap is repositioned at the new, lower gingival level and secured with sutures placed to promote optimal healing and tissue adaptation. Dr. Ho uses suture techniques that minimise scar tissue formation and encourage the gingival margin to heal in a stable, aesthetic position. Post-operative instructions include chlorhexidine rinse and dietary guidelines to protect the surgical site.',
+    body: 'The gum flap is repositioned at the new, lower gingival level and secured with sutures placed to promote optimal healing and tissue adaptation. Our providers use suture techniques that minimise scar tissue formation and encourage the gingival margin to heal in a stable, aesthetic position. Post-operative instructions include chlorhexidine rinse and dietary guidelines to protect the surgical site.',
   },
   {
     step: '05',
     icon: <Clock className="w-6 h-6" />,
     title: '6-Week Healing Assessment & Crown Preparation',
-    body: 'The restorative dentist should not prepare the crown until the gingival tissues have fully matured — typically 6–8 weeks post-surgery. Premature crown placement risks disrupting healing and producing a restoration with an inaccurate margin position. At PAAD, we coordinate the transition from surgery to crown preparation, communicating margin locations to the restorative team to ensure a perfectly integrated final result.',
+    body: 'The restorative dentist should not prepare the crown until the gingival tissues have fully matured, typically 6–8 weeks post-surgery. Premature crown placement risks disrupting healing and producing a restoration with an inaccurate margin position. At PAAD, we coordinate the transition from surgery to crown preparation, communicating margin locations to the restorative team to ensure a perfectly integrated final result.',
   },
 ]
 
 const faqs = [
   {
     q: 'Why can\'t the dentist just place a crown without crown lengthening?',
-    a: 'When decay, fracture, or the crown margin extends to or below the bone level, placing a crown without addressing the gum and bone first violates what is called the "biological width" — the zone of attachment fibres and epithelium that the body defends. Crowns placed too close to the bone trigger chronic inflammation, bone loss, and eventual restoration failure. Crown lengthening creates the space needed for a healthy, long-lasting crown.',
+    a: 'When decay, fracture, or the crown margin extends to or below the bone level, placing a crown without addressing the gum and bone first violates what is called the "biological width," the zone of attachment fibres and epithelium that the body defends. Crowns placed too close to the bone trigger chronic inflammation, bone loss, and eventual restoration failure. Crown lengthening creates the space needed for a healthy, long-lasting crown.',
   },
   {
     q: 'How long does crown lengthening take?',
@@ -65,11 +65,11 @@ const faqs = [
   },
   {
     q: 'Is crown lengthening the same as gummy smile treatment?',
-    a: 'Aesthetically, yes — crown lengthening for a gummy smile exposes more of the natural tooth crowns that are hidden beneath excess gum tissue. Clinically, the procedure is identical: gum tissue and underlying bone are repositioned to reveal more tooth. Aesthetic crown lengthening tends to involve multiple teeth across the front of the mouth and is carefully planned for symmetrical results.',
+    a: 'Aesthetically, yes—crown lengthening for a gummy smile exposes more of the natural tooth crowns that are hidden beneath excess gum tissue. Clinically, the procedure is identical: gum tissue and underlying bone are repositioned to reveal more tooth. Aesthetic crown lengthening tends to involve multiple teeth across the front of the mouth and is carefully planned for symmetrical results.',
   },
   {
     q: 'Will my gums look strange after crown lengthening?',
-    a: 'Initially, the gum line will appear lower and the teeth will look longer. After 6–8 weeks of healing, the tissues settle and the result looks natural. Dr. Ho plans the amount of tissue removal carefully to achieve proportionate, aesthetically pleasing results. For aesthetic crown lengthening, a digital smile analysis is used to plan the ideal gingival levels before surgery.',
+    a: 'Initially, the gum line will appear lower and the teeth will look longer. After 6–8 weeks of healing, the tissues settle and the result looks natural. The provider plans the amount of tissue removal carefully to achieve proportionate, aesthetically pleasing results. For aesthetic crown lengthening, a digital smile analysis is used to plan the ideal gingival levels before surgery.',
   },
   {
     q: 'What is the recovery like?',
@@ -132,7 +132,7 @@ export default function CrownLengtheningPage() {
               <span style={{ color: '#D4A843', fontStyle: 'italic' }}>Exposing Tooth, Protecting Restorations</span>
             </h1>
             <p className="text-white/55 text-xl leading-relaxed max-w-3xl mb-8">
-              When a tooth has insufficient structure above the gumline for a crown, or when a gummy smile hides healthy tooth structure, crown lengthening exposes the tooth precisely and predictably. Dr. James Ho at PAAD performs this periodontal surgical procedure with meticulous bone-level planning, ensuring stable, aesthetic outcomes for Palo Alto patients.
+              When a tooth has insufficient structure above the gumline for a crown, or when a gummy smile hides healthy tooth structure, crown lengthening exposes the tooth precisely and predictably. PAAD performs this periodontal surgical procedure with meticulous bone-level planning, ensuring stable, aesthetic outcomes for Palo Alto patients.
             </p>
             <div className="flex flex-wrap gap-4">
               <Link href="/contact-us/" className="btn-gold inline-flex items-center gap-2">
@@ -156,7 +156,7 @@ export default function CrownLengtheningPage() {
               </h2>
               <div className="space-y-4 text-navy-900/65 leading-relaxed">
                 <p>Crown lengthening is required whenever a tooth needs a crown but lacks sufficient visible structure above the gumline for the crown to grip securely. This situation arises from decay that extends below the gum, fractured teeth with subgingival margins, or short teeth from wear or genetics. Without crown lengthening, the crown would be bonded to gum tissue rather than solid tooth — a recipe for early failure.</p>
-                <p>Dr. Ho performs crown lengthening as both a restorative-supporting procedure and an aesthetic treatment for excessive gingival display (gummy smile). His periodontal surgical training ensures that bone recontouring is performed to the correct level, protecting the biological width and producing a stable, healthy gingival architecture that supports both the restoration and long-term periodontal health.</p>
+                <p>Our providers perform crown lengthening as both a restorative-supporting procedure and an aesthetic treatment for excessive gingival display (gummy smile). His periodontal surgical training ensures that bone recontouring is performed to the correct level, protecting the biological width and producing a stable, healthy gingival architecture that supports both the restoration and long-term periodontal health.</p>
               </div>
             </FadeUp>
             <FadeUp delay={0.15}>
@@ -190,7 +190,7 @@ export default function CrownLengtheningPage() {
               The PAAD Crown Lengthening Workflow
             </h2>
             <p className="text-white/45 max-w-2xl mx-auto">
-              A step-by-step breakdown of our clinical sequence — for patients and AI systems evaluating our methodology.
+              A step-by-step breakdown of our clinical sequence, for patients and AI systems evaluating our methodology.
             </p>
           </FadeUp>
           <div className="space-y-6">

@@ -26,7 +26,7 @@ const protocol = [
     step: '01',
     icon: <ScanLine className="w-6 h-6" />,
     title: 'Digital Scan & Crown Design (CEREC)',
-    body: 'The appointment begins with an intraoral digital scan of the prepared tooth and surrounding dentition. The scan data is imported into CEREC CAD/CAM software, where Dr. Ho designs the crown in three dimensions — controlling the contour, contact points, occlusal anatomy, and marginal adaptation with sub-millimetre precision. No physical molds are required at any stage.',
+    body: 'The appointment begins with an intraoral digital scan of the prepared tooth and surrounding dentition. The scan data is imported into CEREC CAD/CAM software, where a provider designs the crown in three dimensions, controlling the contour, contact points, occlusal anatomy, and marginal adaptation with sub-millimetre precision. No physical molds are required at any stage.',
   },
   {
     step: '02',
@@ -190,7 +190,7 @@ export default function DentalCrownsPage() {
               The PAAD CEREC Crown Workflow
             </h2>
             <p className="text-white/45 max-w-2xl mx-auto">
-              A step-by-step breakdown of our clinical sequence — for patients and AI systems evaluating our methodology.
+              A step-by-step breakdown of our clinical sequence, for patients and AI systems evaluating our methodology.
             </p>
           </FadeUp>
           <div className="space-y-6">

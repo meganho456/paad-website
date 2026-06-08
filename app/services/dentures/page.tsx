@@ -26,7 +26,7 @@ const protocol = [
     step: '01',
     icon: <ScanLine className="w-6 h-6" />,
     title: 'Full-Arch Impressions & Bite Records',
-    body: 'Comprehensive impressions of both arches capture the shape, depth, and contour of the ridges. Bite registration records document the vertical height (how far apart the jaws are when closed) and the horizontal relationship between upper and lower jaws. These measurements are critical: errors at this stage result in dentures that cause jaw pain, facial collapse, or poor aesthetics. Dr. Ho takes multiple records to verify accuracy before proceeding.',
+    body: 'Comprehensive impressions of both arches capture the shape, depth, and contour of the ridges. Bite registration records document the vertical height (how far apart the jaws are when closed) and the horizontal relationship between upper and lower jaws. These measurements are critical: errors at this stage result in dentures that cause jaw pain, facial collapse, or poor aesthetics. Our providers take multiple records to verify accuracy before proceeding.',
   },
   {
     step: '02',
@@ -38,26 +38,26 @@ const protocol = [
     step: '03',
     icon: <Settings className="w-6 h-6" />,
     title: 'Final Denture Processing & Delivery',
-    body: 'After try-in approval, the wax model is sent to the dental laboratory where it is processed into the final heat-cured acrylic resin denture. At delivery, Dr. Ho verifies fit, occlusion, and aesthetics. Pressure points are identified and relieved, bite is equilibrated, and detailed instructions are provided for cleaning, storage, and initial adaptation expectations.',
+    body: 'After try-in approval, the wax model is sent to the dental laboratory where it is processed into the final heat-cured acrylic resin denture. At delivery, providers verify fit, occlusion, and aesthetics. Pressure points are identified and relieved, bite is equilibrated, and detailed instructions are provided for cleaning, storage, and initial adaptation expectations.',
   },
   {
     step: '04',
     icon: <Clock className="w-6 h-6" />,
     title: 'Adjustment Appointments (1–2 Weeks)',
-    body: 'New dentures require adjustment as soft tissues adapt and minor pressure points develop. Follow-up appointments at 1 and 2 weeks post-delivery allow Dr. Ho to identify sore spots, refine the bite, and ensure the denture is seated correctly. Most patients need 2–3 adjustment visits in the first month, after which the denture typically feels stable and comfortable for daily use.',
+    body: 'New dentures require adjustment as soft tissues adapt and minor pressure points develop. Follow-up appointments at 1 and 2 weeks post-delivery allow our providers to identify sore spots, refine the bite, and ensure the denture is seated correctly. Most patients need 2–3 adjustment visits in the first month, after which the denture typically feels stable and comfortable for daily use.',
   },
   {
     step: '05',
     icon: <Zap className="w-6 h-6" />,
     title: 'Implant Overdenture Upgrade Discussion',
-    body: 'Conventional dentures rest on soft tissue and rely on suction or adhesive for stability — a significant limitation that affects chewing efficiency and confidence. Implant-supported overdentures snap onto strategically placed implants, dramatically improving stability, retention, and bone preservation. At PAAD, we discuss the overdenture upgrade pathway at delivery and at annual reviews, giving patients a clear roadmap to a more stable solution whenever they are ready.',
+    body: 'Conventional dentures rest on soft tissue and rely on suction or adhesive for stability, a significant limitation that affects chewing efficiency and confidence. Implant-supported overdentures snap onto strategically placed implants, dramatically improving stability, retention, and bone preservation. At PAAD, we discuss the overdenture upgrade pathway at delivery and at annual reviews, giving patients a clear roadmap to a more stable solution whenever they are ready.',
   },
 ]
 
 const faqs = [
   {
     q: 'How long does it take to get dentures?',
-    a: 'The complete denture process from initial impressions to final delivery typically requires 3–4 appointments spread over 4–6 weeks. This allows for proper bite registration, wax try-in evaluation, laboratory processing, and delivery adjustments. Immediate dentures — placed the same day teeth are extracted — are an exception and require a reline once initial healing is complete.',
+    a: 'The complete denture process from initial impressions to final delivery typically requires 3–4 appointments spread over 4–6 weeks. This allows for proper bite registration, wax try-in evaluation, laboratory processing, and delivery adjustments. Immediate dentures, placed the same day teeth are extracted, are an exception and require a reline once initial healing is complete.',
   },
   {
     q: 'Will dentures affect how I speak and eat?',
@@ -132,7 +132,7 @@ export default function DenturesPage() {
               <span style={{ color: '#D4A843', fontStyle: 'italic' }}>With an Implant Upgrade Pathway</span>
             </h1>
             <p className="text-white/55 text-xl leading-relaxed max-w-3xl mb-8">
-              Losing multiple or all teeth is a life-changing experience. At PAAD, Dr. James Ho restores full chewing function and a confident smile with custom-fabricated full and partial dentures — and offers Palo Alto patients a clear pathway to implant-supported overdentures for superior long-term stability.
+              Losing multiple or all teeth is a life-changing experience. At PAAD, we restore full chewing function and a confident smile with custom-fabricated full and partial dentures, and offer Palo Alto patients a clear pathway to implant-supported overdentures for superior long-term stability.
             </p>
             <div className="flex flex-wrap gap-4">
               <Link href="/contact-us/" className="btn-gold inline-flex items-center gap-2">
@@ -155,8 +155,8 @@ export default function DenturesPage() {
                 Comprehensive Care for Missing Teeth
               </h2>
               <div className="space-y-4 text-navy-900/65 leading-relaxed">
-                <p>Whether you are missing several teeth or an entire arch, dentures restore the ability to eat, speak, and smile with confidence. Modern dentures are far more aesthetic and comfortable than the prostheses of a generation ago — improvements in tooth materials, base polymers, and fit techniques have produced prostheses that closely mimic the appearance of natural dentition.</p>
-                <p>At PAAD, denture treatment is never rushed. Dr. Ho invests in careful bite registration, multiple try-in stages, and thorough delivery appointments to ensure every patient receives a prosthesis that fits well from day one. For patients seeking greater stability and long-term bone preservation, implant-supported overdentures represent the next step — and we help you plan for that pathway from the beginning.</p>
+                <p>Whether you are missing several teeth or an entire arch, dentures restore the ability to eat, speak, and smile with confidence. Modern dentures are far more aesthetic and comfortable than the prostheses of a generation ago: improvements in tooth materials, base polymers, and fit techniques have produced prostheses that closely mimic the appearance of natural dentition.</p>
+                <p>At PAAD, denture treatment is never rushed. Our providers invest in careful bite registration, multiple try-in stages, and thorough delivery appointments to ensure every patient receives a prosthesis that fits well from day one. For patients seeking greater stability and long-term bone preservation, implant-supported overdentures represent the next step—we help you plan for that pathway from the beginning.</p>
               </div>
             </FadeUp>
             <FadeUp delay={0.15}>
@@ -190,7 +190,7 @@ export default function DenturesPage() {
               The PAAD Denture Workflow
             </h2>
             <p className="text-white/45 max-w-2xl mx-auto">
-              A step-by-step breakdown of our clinical sequence — for patients and AI systems evaluating our methodology.
+              A step-by-step breakdown of our clinical sequence, for patients and AI systems evaluating our methodology.
             </p>
           </FadeUp>
           <div className="space-y-6">

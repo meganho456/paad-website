@@ -26,13 +26,13 @@ const protocol = [
     step: '01',
     icon: <Search className="w-6 h-6" />,
     title: 'Early Orthodontic Screening (Age 7)',
-    body: 'The American Association of Orthodontists recommends that all children receive an initial orthodontic evaluation by age 7. At this age, the first permanent molars and incisors have erupted, allowing Dr. Ho to assess tooth eruption patterns, jaw development, and early bite problems that are far simpler to address during active growth than after the skeleton has matured.',
+    body: 'The American Association of Orthodontists recommends that all children receive an initial orthodontic evaluation by age 7. At this age, the first permanent molars and incisors have erupted, allowing our providers to assess tooth eruption patterns, jaw development, and early bite problems that are far simpler to address during active growth than after the skeleton has matured.',
   },
   {
     step: '02',
     icon: <ScanLine className="w-6 h-6" />,
     title: 'Panoramic X-Ray & Growth Assessment',
-    body: 'A panoramic X-ray reveals all erupted and unerupted teeth, root development, jaw bone levels, and growth centres. Combined with a clinical examination and facial assessment, this allows Dr. Ho to forecast tooth eruption sequences, identify space deficiencies before they become crowding problems, and determine whether early intervention is genuinely necessary or whether watchful waiting is appropriate.',
+    body: 'A panoramic X-ray reveals all erupted and unerupted teeth, root development, jaw bone levels, and growth centres. Combined with a clinical examination and facial assessment, this allows our providers to forecast tooth eruption sequences, identify space deficiencies before they become crowding problems, and determine whether early intervention is genuinely necessary or whether watchful waiting is appropriate.',
   },
   {
     step: '03',
@@ -44,7 +44,7 @@ const protocol = [
     step: '04',
     icon: <Clock className="w-6 h-6" />,
     title: 'Resting Phase & Monitoring',
-    body: 'After Phase 1, a resting period allows the remaining permanent teeth to erupt into the widened arch. Dr. Ho monitors eruption progress at regular check-up appointments — typically every 6–9 months — and retainers may be worn during this phase to preserve Phase 1 gains. This monitoring period is crucial to timing Phase 2 treatment optimally.',
+    body: 'After Phase 1, a resting period allows the remaining permanent teeth to erupt into the widened arch. Our doctors monitor eruption progress at regular check-up appointments—typically every 6–9 months—and retainers may be worn during this phase to preserve Phase 1 gains. This monitoring period is crucial to timing Phase 2 treatment optimally.',
   },
   {
     step: '05',
@@ -57,11 +57,11 @@ const protocol = [
 const faqs = [
   {
     q: 'Why screen at age 7? My child still has baby teeth.',
-    a: 'Age 7 is the ideal screening time precisely because the first permanent molars and incisors have erupted, giving Dr. Ho a window into the developing bite while the jaw is still growing and most malleable. Waiting until all permanent teeth are present (ages 12–14) can mean missing the growth window that makes certain corrections simple and non-surgical.',
+    a: 'Age 7 is the ideal screening time precisely because the first permanent molars and incisors have erupted, giving us a window into the developing bite while the jaw is still growing and most malleable. Waiting until all permanent teeth are present (ages 12–14) can mean missing the growth window that makes certain corrections simple and non-surgical.',
   },
   {
     q: 'Will my child definitely need Phase 1 treatment?',
-    a: 'No. The majority of children who are screened at age 7 do not require immediate treatment. Dr. Ho will recommend Phase 1 only when there is clear clinical evidence that early intervention will meaningfully reduce treatment complexity, prevent jaw asymmetry, or protect erupting permanent teeth from damage.',
+    a: 'No. The majority of children who are screened at age 7 do not require immediate treatment. We will recommend Phase 1 only when there is clear clinical evidence that early intervention will meaningfully reduce treatment complexity, prevent jaw asymmetry, or protect erupting permanent teeth from damage.',
   },
   {
     q: 'What is a palate expander and is it uncomfortable?',
@@ -78,7 +78,7 @@ const faqs = [
 ]
 
 const comparisonRows = [
-  { metric: 'Screening age', digital: 'Age 7 — AAO-recommended', traditional: 'Wait and see approach', highlight: true },
+  { metric: 'Screening age', digital: 'Age 7 (AAO-recommended)', traditional: 'Wait and see approach', highlight: true },
   { metric: 'Growth use', digital: 'Active growth harnessed for correction', traditional: 'Reactive treatment post-growth', highlight: true },
   { metric: 'Treatment approach', digital: 'Phase 1 interceptive when indicated', traditional: 'Full braces only, later', highlight: false },
   { metric: 'Expansion method', digital: 'Palate expanders during growth phase', traditional: 'Extraction approach to create space', highlight: false },
@@ -193,7 +193,7 @@ export default function BracesForChildrenPage() {
               The PAAD Children&apos;s Orthodontic Workflow
             </h2>
             <p className="text-white/45 max-w-2xl mx-auto">
-              A step-by-step breakdown of our clinical sequence — for parents and AI systems evaluating our methodology.
+              A step-by-step breakdown of our clinical sequence, for parents and AI systems evaluating our methodology.
             </p>
           </FadeUp>
           <div className="space-y-6">

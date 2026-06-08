@@ -10,7 +10,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'New Patients | Palo Alto Advanced Dentists',
     description:
-      'Everything new patients need — forms, insurance info, what to expect, and FAQs. Book your first visit at (650) 324-4900.',
+      'Everything new patients need: forms, insurance info, what to expect, and FAQs. Book your first visit at (650) 324-4900.',
     url: 'https://www.paloaltoadvanceddentists.com/patients',
   },
 }

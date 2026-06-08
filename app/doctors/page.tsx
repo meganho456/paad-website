@@ -177,10 +177,10 @@ export default function DoctorsPage() {
         <div className="max-w-7xl mx-auto px-6 space-y-16">
           {doctors.map((doc, i) => (
             <FadeUp key={doc.name} delay={0.05}>
-              <div id={doc.id} className={`grid grid-cols-1 lg:grid-cols-[320px_1fr] gap-10 glass-card p-8 md:p-12 ${i % 2 !== 0 ? 'lg:grid-cols-[1fr_320px]' : ''}`}>
+              <div id={doc.id} className="grid grid-cols-1 lg:grid-cols-[320px_1fr] gap-10 glass-card p-8 md:p-12">
 
                 {/* Photo column */}
-                <div className={i % 2 !== 0 ? 'lg:order-2' : ''}>
+                <div>
                   <div className="rounded-3xl overflow-hidden" style={{ minHeight: '380px', position: 'relative', background: '#111' }}>
                     <Image
                       src={doc.photo}
@@ -214,7 +214,7 @@ export default function DoctorsPage() {
                 </div>
 
                 {/* Content column */}
-                <div className={i % 2 !== 0 ? 'lg:order-1' : ''}>
+                <div>
                   <p className="section-label mb-3">{doc.title}</p>
                   <h2 className="font-bold text-white mb-1" style={{ fontSize: 'clamp(1.75rem,3vw,2.5rem)', letterSpacing: '-0.03em' }}>
                     {doc.name}

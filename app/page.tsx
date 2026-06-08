@@ -559,7 +559,7 @@ function DoctorSpotlight() {
                 'Harvard School of Dental Medicine — DMD',
                 'Harvard T.H. Chan School of Public Health — MPH',
                 'PINHOLE Surgical Technique® Certified',
-                'Speaks English, Chinese, Spanish & Korean',
+                'Speaks English & Cantonese',
               ].map((item) => (
                 <div key={item} className="flex items-start gap-3">
                   <CheckCircle2 className="w-4 h-4 text-gold-400 shrink-0 mt-0.5" />

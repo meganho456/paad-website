@@ -40,9 +40,9 @@ const doctors = [
       'CAD-CAM & Laser Dentistry',
     ],
     memberships: ['American Dental Association', 'California Dental Association', 'American Association for Functional Orthodontics'],
-    languages: ['English', 'Chinese', 'Spanish', 'Korean'],
+    languages: ['English', 'Cantonese'],
     awards: ['Best Dentist Award — 2 Consecutive Years'],
-    bio: 'Dr. James Ho brings over 20 years of full-time clinical experience and a rare dual perspective to dental medicine — the clinical mastery of a Harvard D.M.D. and the population-health lens of an M.P.H. Known for solving cases other practices consider "hopeless," Dr. Ho combines comprehensive skill across implants, orthodontics, endodontics, and periodontics to deliver complete care under one roof. He is fluent in English and Chinese, and places strong emphasis on patient consensus at every stage of treatment planning.',
+    bio: 'Dr. James Ho brings over 20 years of full-time clinical experience and a rare dual perspective to dental medicine — the clinical mastery of a Harvard D.M.D. and the population-health lens of an M.P.H. Known for solving cases other practices consider "hopeless," Dr. Ho combines comprehensive skill across implants, orthodontics, endodontics, and periodontics to deliver complete care under one roof. He is fluent in English and Cantonese, and places strong emphasis on patient consensus at every stage of treatment planning.',
   },
   {
     id: 'ryan-ho',
@@ -128,9 +128,9 @@ const doctors = [
       'General & Cosmetic Dentistry',
     ],
     memberships: [],
-    languages: ['English', 'Chinese'],
+    languages: ['English', 'Taiwanese'],
     awards: ['Trauma Dentistry Residency — St. Elizabeth Level 1'],
-    bio: 'Dr. Eddy Wang received advanced residency training at a Level 1 trauma hospital, giving him rare expertise in treating severe dental injuries and complex oral surgery cases. His professionalism, patience, and gentle chairside manner make him an exceptional provider for patients of all backgrounds. Dr. Wang is fluent in English and Chinese — making him a trusted choice for the Bay Area\'s diverse Chinese-speaking community.',
+    bio: 'Dr. Eddy Wang received advanced residency training at a Level 1 trauma hospital, giving him rare expertise in treating severe dental injuries and complex oral surgery cases. His professionalism, patience, and gentle chairside manner make him an exceptional provider for patients of all backgrounds. Dr. Wang is fluent in English and Taiwanese — making him a trusted choice for the Bay Area\'s diverse Taiwanese-speaking community.',
   },
 ]
 

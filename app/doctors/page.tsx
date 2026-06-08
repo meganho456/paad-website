@@ -47,9 +47,8 @@ const doctors = [
   {
     id: 'ryan-ho',
     photo: '/doctors/dr-ryan-ho.jpg',
-    photoPosition: 'object-center',
     initials: 'RH',
-    name: 'Dr. Ryan Charles Ho',
+    name: 'Dr. Ryan Ho',
     credentials: 'D.M.D.',
     title: 'Associate Dentist',
     education: [
@@ -64,7 +63,7 @@ const doctors = [
     memberships: [],
     languages: ['English', 'Chinese'],
     awards: ['Second-Generation PAAD Dentist'],
-    bio: 'Dr. Ryan Charles Ho grew up right here in Palo Alto — the same streets, the same community, the same neighbors who have trusted his father, Dr. James Ho, for over two decades. Inspired by watching his father transform patients\' lives through dentistry, Ryan pursued the same path and earned his D.M.D. with a biochemistry foundation from UC Davis. He brings the warmth of someone who truly knows this community, combined with a gentle, patient-first approach that reflects everything the Ho family stands for. Having a father as one of the Bay Area\'s most respected dentists is a high bar — and Dr. Ryan Charles Ho rises to it every day.',
+    bio: 'Dr. Ryan Ho grew up right here in Palo Alto — the same streets, the same community, the same neighbors who have trusted his father, Dr. James Ho, for over two decades. Inspired by watching his father transform patients\' lives through dentistry, Ryan pursued the same path and earned his D.M.D. with a biochemistry foundation from UC Davis. He brings the warmth of someone who truly knows this community, combined with a gentle, patient-first approach that reflects everything the Ho family stands for. Having a father as one of the Bay Area\'s most respected dentists is a high bar — and Dr. Ryan Ho rises to it every day.',
   },
   {
     id: 'sara-hamed',
@@ -150,7 +149,7 @@ export default function DoctorsPage() {
               <span className="gold-text">Behind Your Smile</span>
             </h1>
             <p className="text-white/55 text-xl leading-relaxed max-w-2xl mx-auto">
-              Led by Harvard-trained Dr. James Ho — and his son Dr. Ryan Charles Ho,
+              Led by Harvard-trained Dr. James Ho — and his son Dr. Ryan Ho,
               a Palo Alto native carrying the family legacy forward. Two generations
               of dentists, one shared commitment to exceptional care.
             </p>
@@ -186,7 +185,7 @@ export default function DoctorsPage() {
                       src={doc.photo}
                       alt={doc.name}
                       fill
-                      className={`object-cover ${'photoPosition' in doc ? doc.photoPosition : 'object-top'}`}
+                      className="object-cover object-center"
                       sizes="320px"
                     />
                     {/* Name overlay at bottom */}

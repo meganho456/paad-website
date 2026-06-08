@@ -180,33 +180,33 @@ export default function FloatingContact() {
           delay={0.1}
           label="Call (650) 324-4900"
           href="tel:6503244900"
-          bg="linear-gradient(135deg, #D4A843, #B88D2C)"
-          shadow="rgba(212,168,67,0.5)"
+          bg="linear-gradient(135deg, #22C55E, #16A34A)"
+          shadow="rgba(34,197,94,0.45)"
           icon={<Phone className="w-5 h-5" />}
+        />
+
+        {/* WeChat */}
+        <FloatBtn
+          delay={0.18}
+          label="WeChat: paad_wechat"
+          bg="linear-gradient(135deg, #07C160, #06AE56)"
+          shadow="rgba(7,193,96,0.45)"
+          onClick={() => setWechatOpen(true)}
+          icon={<WeChatIcon className="w-5 h-5" />}
         />
 
         {/* Live Chat */}
         <FloatBtn
-          delay={0.18}
+          delay={0.26}
           label="Live Chat"
-          bg="linear-gradient(135deg, #3B82F6, #1D4ED8)"
-          shadow="rgba(59,130,246,0.45)"
+          bg="linear-gradient(135deg, #D4A843, #B88D2C)"
+          shadow="rgba(212,168,67,0.5)"
           onClick={() => {
             const el = document.getElementById('tidio-chat')
             if (el) el.style.setProperty('display', 'block', 'important')
             window.tidioChatApi?.open()
           }}
           icon={<LiveChatIcon className="w-5 h-5" />}
-        />
-
-        {/* WeChat */}
-        <FloatBtn
-          delay={0.26}
-          label="WeChat: paad_wechat"
-          bg="linear-gradient(135deg, #07C160, #06AE56)"
-          shadow="rgba(7,193,96,0.45)"
-          onClick={() => setWechatOpen(true)}
-          icon={<WeChatIcon className="w-5 h-5" />}
         />
 
       </div>

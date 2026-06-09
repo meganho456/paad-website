@@ -156,7 +156,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <Footer />
         <FloatingContact />
         <Script
-          src="https://www.googletagmanager.com/gtag/js?id=G-BV29WD7WDG"
+          src="https://www.googletagmanager.com/gtag/js?id=G-ZCNSVQJF2H"
           strategy="afterInteractive"
         />
         <Script id="google-analytics" strategy="afterInteractive">
@@ -164,7 +164,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             window.dataLayer = window.dataLayer || [];
             function gtag(){dataLayer.push(arguments);}
             gtag('js', new Date());
-            gtag('config', 'G-BV29WD7WDG');
+            gtag('config', 'G-ZCNSVQJF2H');
           `}
         </Script>
         <Script src="//code.tidio.co/sjmrtrjdaufbrl7j01xxzuq8gahdfrvh.js" strategy="afterInteractive" />

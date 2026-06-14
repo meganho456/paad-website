@@ -80,6 +80,9 @@
     { "source": "/our-services/oral-maxillofacial-surgery/mini-dental-implants",  "destination": "/services/mini-implants/",               "permanent": true },
     { "source": "/our-services/oral-maxillofacial-surgery/simple-tooth-extractions/","destination": "/services/tooth-extraction/",           "permanent": true },
     { "source": "/our-services/oral-maxillofacial-surgery/simple-tooth-extractions","destination": "/services/tooth-extraction/",           "permanent": true },
+    { "source": "/our-services/surgical-instructions/after-tooth-extractions/",  "destination": "/services/tooth-extraction/",             "permanent": true },
+    { "source": "/our-services/surgical-instructions/after-tooth-extractions",   "destination": "/services/tooth-extraction/",             "permanent": true },
+    { "source": "/our-services/surgical-instructions/:path*",                    "destination": "/services/tooth-extraction/",             "permanent": true },
     { "source": "/our-services/oral-maxillofacial-surgery/tooth-extractions/",    "destination": "/services/tooth-extraction/",             "permanent": true },
     { "source": "/our-services/oral-maxillofacial-surgery/tooth-extractions",     "destination": "/services/tooth-extraction/",             "permanent": true },
     { "source": "/our-services/oral-maxillofacial-surgery/bone-grafting/",        "destination": "/services/bone-grafting/",                "permanent": true },
@@ -98,6 +101,8 @@
 
     { "source": "/our-services/cleanings-prevention/digital-x-rays/",            "destination": "/services/digital-xrays/",                "permanent": true },
     { "source": "/our-services/cleanings-prevention/digital-x-rays",             "destination": "/services/digital-xrays/",                "permanent": true },
+    { "source": "/our-services/cleanings-prevention/dental-x-rays/",             "destination": "/services/digital-xrays/",                "permanent": true },
+    { "source": "/our-services/cleanings-prevention/dental-x-rays",              "destination": "/services/digital-xrays/",                "permanent": true },
     { "source": "/our-services/cleanings-prevention/panoramic-x-rays/",          "destination": "/services/digital-xrays/",                "permanent": true },
     { "source": "/our-services/cleanings-prevention/panoramic-x-rays",           "destination": "/services/digital-xrays/",                "permanent": true },
     { "source": "/our-services/cleanings-prevention/oral-cancer-exam/",          "destination": "/services/oral-cancer-exam/",             "permanent": true },

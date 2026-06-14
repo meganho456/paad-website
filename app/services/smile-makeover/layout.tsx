@@ -31,7 +31,7 @@ const jsonLd = {
 }
 
 export const metadata: Metadata = {
-  title: 'Cosmetic Smile Makeover | Invisalign Elite & Veneers Palo Alto',
+  title: 'Cosmetic Dentist Palo Alto | Smile Makeover, Veneers & Invisalign Elite',
   description:
     'Digital smile design, Invisalign Elite (top 5% provider), and porcelain veneers in Palo Alto. Harvard-trained Dr. James Ho. Preview your results before treatment begins. Serving Silicon Valley since 2005.',
   keywords: [

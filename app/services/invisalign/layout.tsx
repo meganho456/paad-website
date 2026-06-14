@@ -31,7 +31,7 @@ const jsonLd = {
 }
 
 export const metadata: Metadata = {
-  title: 'Invisalign Clear Aligners Palo Alto | Elite Preferred Provider — Top 5%',
+  title: 'Invisalign Provider Palo Alto | Elite Preferred Provider — Top 5% Nationwide',
   description: 'Invisalign Elite Preferred Provider in Palo Alto, CA — top 5% of providers nationwide. iTero 3D scanner, virtual smile preview, and expert clear aligner treatment for adults and teens. Complimentary whitening included. Call (650) 324-4900.',
   keywords: [
     'Invisalign Palo Alto', 'clear aligners Palo Alto', 'Invisalign Elite Preferred Provider',

@@ -35,9 +35,9 @@ const jsonLd = {
 }
 
 export const metadata: Metadata = {
-  title: 'Same-Day Full-Mouth Dental Implants | 3D CBCT Guided Surgery Palo Alto',
+  title: 'Dental Implants Palo Alto | Same-Day & Full-Arch Implants — 3D CBCT Guided',
   description:
-    'Advanced All-on-4 and full-mouth implant specialist in Palo Alto. Dr. James Ho uses 3D CBCT-guided surgery and digital bite analysis for same-day teeth. Harvard-trained. Serving Silicon Valley since 2005.',
+    'Dental implants in Palo Alto, CA — same-day placement with 3D CBCT-guided surgery. Harvard-trained Dr. James Ho performs All-on-4 and full-arch implants using digital bite analysis. Serving Silicon Valley since 2005.',
   keywords: [
     'full mouth dental implants palo alto',
     'all on 4 implants silicon valley',

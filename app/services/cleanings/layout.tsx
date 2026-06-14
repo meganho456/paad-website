@@ -31,7 +31,7 @@ const jsonLd = {
 
 export const metadata: Metadata = {
   title: 'Dental Cleanings & Preventive Care Palo Alto | Comprehensive Exam | PAAD',
-  description: 'Professional dental cleanings and preventive dentistry in Palo Alto, CA. Routine prophylaxis, deep cleaning, oral cancer screening, digital X-rays, and periodontal charting. Most insurance accepted. Call (650) 324-4900.',
+  description: 'Affordable dental care in Palo Alto, CA — professional cleanings, preventive exams, oral cancer screening, digital X-rays, and periodontal charting. Most insurance accepted. Call (650) 324-4900.',
   keywords: [
     'dental cleaning Palo Alto', 'teeth cleaning Palo Alto', 'preventive dentistry Palo Alto',
     'dental checkup Palo Alto', 'oral cancer screening Palo Alto', 'digital X-rays dentist',

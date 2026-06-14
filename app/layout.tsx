@@ -85,7 +85,7 @@ export const metadata: Metadata = {
     template: '%s | Palo Alto Advanced Dentists',
   },
   description:
-    "Harvard-trained Dr. James Ho (DMD, MPH) offers same-day dental implants, Invisalign Elite & PINHOLE Surgery in Palo Alto. Advanced technology. Since 2005.",
+    "Harvard-trained Dr. James Ho (DMD, MPH) offers same-day dental implants, Invisalign Elite, cosmetic dentistry & PINHOLE Surgery in Palo Alto, CA. Palo Alto's trusted family dental practice since 2005.",
   keywords: [
     'dentist palo alto',
     'palo alto advanced dentists',
@@ -117,7 +117,7 @@ export const metadata: Metadata = {
     siteName: 'Palo Alto Advanced Dentists',
     title: 'Palo Alto Dentist | Implants, Invisalign & PINHOLE Surgery',
     description:
-      "Harvard-trained Dr. James Ho (DMD, MPH) offers same-day dental implants, Invisalign Elite & PINHOLE Surgery in Palo Alto. Advanced technology. Since 2005.",
+      "Harvard-trained Dr. James Ho (DMD, MPH) offers same-day dental implants, Invisalign Elite, cosmetic dentistry & PINHOLE Surgery in Palo Alto, CA. Palo Alto's trusted family dental practice since 2005.",
     images: [
       {
         url: '/polo%20alto%20logo.jpg',

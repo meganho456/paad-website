@@ -50,8 +50,9 @@ function HeroSection() {
           className="text-white/55 max-w-xl mx-auto mb-12 leading-relaxed"
           style={{ fontSize: '1.1875rem' }}
         >
-          Complete dentistry under one roof. Fillings to full-arch
-          implants, Invisalign, root canals, and PINHOLE surgery.
+          Your dentist in Palo Alto, CA — complete care from cleanings and
+          family dentistry to same-day implants, Invisalign, PINHOLE surgery,
+          and same-day emergency appointments.
         </motion.p>
 
         <motion.div
@@ -309,7 +310,7 @@ const services = [
   },
   {
     tag: 'Quick Transformation',
-    title: 'Teeth Whitening',
+    title: 'Teeth Whitening in Palo Alto',
     desc: 'Up to 8 shades brighter in a single 90-minute session.',
     span: '',
     dark: true,
@@ -320,6 +321,13 @@ const services = [
     desc: 'Precise, comfortable, and completed in one visit.',
     span: '',
     dark: false,
+  },
+  {
+    tag: 'Urgent Care',
+    title: 'Emergency Dentist in Palo Alto',
+    desc: 'Same-day appointments for knocked-out teeth, abscesses, and severe pain.',
+    span: '',
+    dark: true,
   },
   {
     tag: 'Foundation of Health',
@@ -340,10 +348,10 @@ function ServicesPreview() {
             className="headline-section text-navy-950 mb-4"
             style={{ fontSize: 'clamp(2.5rem,5vw,4rem)' }}
           >
-            Every smile, covered.
+            Advanced dentistry in Palo Alto — every smile, covered.
           </h2>
           <p className="text-navy-900/55 text-lg max-w-xl mx-auto">
-            From your first cleaning to full-arch reconstruction in Palo Alto — all under one roof.
+            From your first cleaning to full-arch reconstruction — all under one roof.
           </p>
         </FadeUp>
 
@@ -545,8 +553,8 @@ function DoctorSpotlight() {
               className="headline-section text-white mb-6"
               style={{ fontSize: 'clamp(2.25rem,4vw,3.5rem)' }}
             >
-              Two generations.<br />
-              <span className="gold-text">One family. One practice.</span>
+              Palo Alto&apos;s family dental practice.<br />
+              <span className="gold-text">Two generations. One mission.</span>
             </h2>
             <p className="text-white/55 leading-relaxed mb-8" style={{ fontSize: '1.0625rem' }}>
               Dr. James Ho — Harvard-trained, with over 20 years of full-service clinical excellence —
@@ -715,7 +723,8 @@ function FinalCTA() {
           <span className="gold-text">starts here.</span>
         </h2>
         <p className="text-white/50 text-xl mb-12 leading-relaxed">
-          Complimentary consultation. No pressure. Just answers.
+          Complimentary consultation. No pressure. Just answers.<br />
+          <span className="text-white/35 text-base">Flexible financing and affordable dental care in Palo Alto.</span>
         </p>
         <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
           <Link href="/contact" className="btn-gold text-base">

@@ -8,6 +8,7 @@ import FloatingContact from '@/components/FloatingContact'
 const jsonLd = {
   '@context': 'https://schema.org',
   '@type': ['Dentist', 'LocalBusiness', 'MedicalBusiness'],
+  '@id': 'https://www.paloaltoadvanceddentists.com/#dentist',
   name: 'Palo Alto Advanced Dentists',
   alternateName: 'PAAD',
   url: 'https://www.paloaltoadvanceddentists.com',
@@ -74,8 +75,21 @@ const jsonLd = {
     ratingCount: '150',
   },
   sameAs: [
+    'https://www.facebook.com/paloaltoadvanceddentists',
     'https://www.yelp.com/biz/palo-alto-advanced-dentists-palo-alto',
   ],
+  hasOfferCatalog: {
+    '@type': 'OfferCatalog',
+    name: 'Dental Services',
+    itemListElement: [
+      { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Cosmetic Dentistry', description: 'Cosmetic dentist in Palo Alto offering smile makeovers, porcelain veneers, and digital smile design.' } },
+      { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Dental Implants', description: 'Same-day dental implants in Palo Alto using 3D CBCT-guided surgery and All-on-4 full-arch restoration.' } },
+      { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Invisalign Clear Aligner Therapy', description: 'Invisalign Elite Preferred Provider in Palo Alto — top 5% of providers nationwide.' } },
+      { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Emergency Dental Care', description: 'Same-day emergency dentist in Palo Alto for knocked-out teeth, abscesses, severe pain, and dental trauma.' } },
+      { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Family Dentistry', description: 'Comprehensive family dental practice in Palo Alto serving patients of all ages since 2005.' } },
+      { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Teeth Whitening', description: 'Professional in-office Zoom teeth whitening in Palo Alto — up to 8 shades brighter in 90 minutes.' } },
+    ],
+  },
 }
 
 export const metadata: Metadata = {

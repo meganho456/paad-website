@@ -41,7 +41,7 @@ export default function Footer() {
             <p className="text-white/55 text-sm leading-relaxed mb-6">
               One practice. Every treatment. From routine cleanings and
               fillings to same-day implants, PINHOLE surgery, Invisalign,
-              and root canals — all under one roof since 2005.
+              and root canals — all under one roof in Palo Alto, CA since 2005.
             </p>
             <div className="flex items-center gap-1.5">
               {Array.from({ length: 5 }).map((_, i) => (

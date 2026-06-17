@@ -262,41 +262,84 @@ function SummerPromoBanner() {
       <div className="max-w-7xl mx-auto px-6">
         <FadeUp>
           <div
-            className="relative rounded-3xl overflow-hidden px-8 py-12 md:px-16 md:py-16 text-center"
+            className="relative rounded-3xl overflow-hidden px-8 py-12 md:px-16 md:py-16"
             style={{
               background: 'linear-gradient(135deg, rgba(212,168,67,0.13) 0%, rgba(184,141,44,0.06) 50%, rgba(212,168,67,0.13) 100%)',
               border: '1px solid rgba(212,168,67,0.35)',
             }}
           >
             <div className="absolute inset-0 hero-grid opacity-30 pointer-events-none" />
-            <div className="absolute top-0 left-0 right-0 h-px"
-              style={{ background: 'linear-gradient(90deg, transparent, #D4A843, transparent)' }} />
-            <div className="relative z-10">
-              <span
-                className="inline-block text-[10px] font-bold uppercase tracking-widest px-3 py-1 rounded-full mb-6"
-                style={{ background: 'rgba(212,168,67,0.15)', color: '#D4A843', border: '1px solid rgba(212,168,67,0.35)' }}
-              >
-                Summer &amp; Back-to-School Smile Event
-              </span>
-              <h2
-                className="headline-section text-white mb-5"
-                style={{ fontSize: 'clamp(1.75rem, 4vw, 3rem)' }}
-              >
-                Brighter, Straighter Teeth<br className="hidden sm:block" />{' '}
-                Before School Starts
-              </h2>
-              <p
-                className="text-white/60 max-w-2xl mx-auto mb-8 leading-relaxed"
-                style={{ fontSize: '1.0625rem' }}
-              >
-                Get a complimentary Zoom chairside whitening when you start Invisalign this summer — or save{' '}
-                <span style={{ color: '#D4A843', fontWeight: 600 }}>$150</span> on standalone professional whitening.
-              </p>
-              <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-                <Link href="/summer-smile-promo" className="btn-gold">
-                  Claim Summer Offer <ArrowRight className="w-4 h-4" />
-                </Link>
-                <span className="text-white/35 text-sm">Valid for consultations booked by August 31</span>
+            <div
+              className="absolute top-0 left-0 right-0 h-px"
+              style={{ background: 'linear-gradient(90deg, transparent, #D4A843, transparent)' }}
+            />
+
+            <div className="relative z-10 flex flex-col lg:flex-row items-center gap-10 lg:gap-16">
+              {/* Did you know callout */}
+              <div className="text-center shrink-0">
+                <p
+                  className="text-xs font-bold uppercase tracking-widest mb-3"
+                  style={{ color: 'rgba(255,255,255,0.4)' }}
+                >
+                  Did you know?
+                </p>
+                <p className="text-white/70 text-sm mb-3 max-w-[220px] mx-auto leading-snug">
+                  teeth can be straightened out in as little as
+                </p>
+                <div
+                  className="font-black gold-text leading-none"
+                  style={{ fontSize: 'clamp(5rem, 10vw, 8rem)', letterSpacing: '-0.05em' }}
+                >
+                  2–3
+                </div>
+                <div
+                  className="font-semibold uppercase tracking-[0.2em] text-sm mt-1"
+                  style={{ color: 'rgba(255,255,255,0.4)' }}
+                >
+                  months
+                </div>
+              </div>
+
+              {/* Divider */}
+              <div
+                className="hidden lg:block w-px self-stretch"
+                style={{ background: 'rgba(212,168,67,0.3)' }}
+              />
+              <div
+                className="lg:hidden w-full h-px"
+                style={{ background: 'rgba(212,168,67,0.3)' }}
+              />
+
+              {/* Promo content */}
+              <div className="flex-1 text-center lg:text-left">
+                <span
+                  className="inline-block text-[10px] font-bold uppercase tracking-widest px-3 py-1 rounded-full mb-5"
+                  style={{ background: 'rgba(212,168,67,0.15)', color: '#D4A843', border: '1px solid rgba(212,168,67,0.35)' }}
+                >
+                  Summer &amp; Back-to-School Smile Event
+                </span>
+                <h2
+                  className="headline-section text-white mb-4"
+                  style={{ fontSize: 'clamp(1.75rem, 4vw, 3rem)' }}
+                >
+                  Brighter, Straighter Teeth<br className="hidden sm:block" />{' '}
+                  Before School Starts
+                </h2>
+                <p
+                  className="text-white/60 mb-7 leading-relaxed"
+                  style={{ fontSize: '1.0625rem' }}
+                >
+                  Get a complimentary Zoom chairside whitening when you start Invisalign this summer — or save{' '}
+                  <span style={{ color: '#D4A843', fontWeight: 600 }}>$150</span> on standalone professional whitening.
+                </p>
+                <div className="flex flex-col sm:flex-row items-center lg:items-start justify-center lg:justify-start gap-4">
+                  <Link href="/summer-smile-promo" className="btn-gold">
+                    Claim Summer Offer <ArrowRight className="w-4 h-4" />
+                  </Link>
+                  <span className="text-white/35 text-sm self-center">
+                    Valid for consultations booked by August 31
+                  </span>
+                </div>
               </div>
             </div>
           </div>

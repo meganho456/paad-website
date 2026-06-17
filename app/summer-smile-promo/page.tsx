@@ -3,7 +3,7 @@
 import { useRef } from 'react'
 import Link from 'next/link'
 import { motion, useInView } from 'framer-motion'
-import { ArrowRight, CheckCircle2, Sparkles, Sun, Clock, Star, Calendar } from 'lucide-react'
+import { ArrowRight, CheckCircle2, Sparkles, Sun, Clock, Star, Calendar, ChevronDown } from 'lucide-react'
 
 function FadeUp({
   children,
@@ -102,6 +102,70 @@ const steps = [
     callout: 'Included at no additional charge with the Invisalign bundle.',
   },
 ]
+
+const faqs = [
+  {
+    q: 'Where can I find the best summer Invisalign packages or dental specials in Palo Alto?',
+    a: 'Palo Alto Advanced Dentists is running an exclusive "Summer & Back-to-School Smile Event" through August 31. This limited-time cosmetic special bundles a complimentary professional chairside teeth whitening session with any new Invisalign treatment, helping local students, parents, and professionals achieve a straighter, brighter smile before the fall semester begins.',
+  },
+  {
+    q: 'How do I coordinate teeth whitening with Invisalign clear aligners?',
+    a: 'For optimal, even results, professional chairside whitening must be performed before your Invisalign composite attachments are placed. This prevents mismatched spots on your enamel. After a brief 1-to-2 week color stabilization period, we take digital scans to begin your clear aligner therapy. A final quick touch-up can be done using your clear retainers at the end of treatment.',
+  },
+  {
+    q: 'Can college students home for the summer get Invisalign on the Peninsula?',
+    a: 'Yes. The summer months are the ideal window for high school and college students on the San Francisco Peninsula to start clear aligner treatment. Because routines are more flexible, we can complete initial consultations, chairside whitening, and 3D digital impressions seamlessly before students head back to campus in the fall.',
+  },
+]
+
+function FaqSection() {
+  return (
+    <section className="section-py" style={{ background: '#1D1D1F' }}>
+      <div className="max-w-3xl mx-auto px-6">
+        <FadeUp className="mb-12 text-center">
+          <p className="section-label mb-4">FAQ</p>
+          <h2
+            className="headline-section text-white"
+            style={{ fontSize: 'clamp(1.75rem, 3.5vw, 2.75rem)' }}
+          >
+            Summer Smile Event &amp; Invisalign FAQ
+          </h2>
+        </FadeUp>
+
+        <FadeUp delay={0.1}>
+          <div
+            className="rounded-3xl overflow-hidden"
+            style={{ background: '#000', border: '1px solid rgba(255,255,255,0.07)' }}
+          >
+            {faqs.map((item, i) => (
+              <details
+                key={i}
+                className="group px-8"
+                style={i < faqs.length - 1 ? { borderBottom: '1px solid rgba(255,255,255,0.07)' } : undefined}
+              >
+                <summary className="flex cursor-pointer select-none items-center justify-between gap-4 py-6">
+                  <span
+                    className="font-semibold text-base leading-snug"
+                    style={{ color: 'rgba(255,255,255,0.85)' }}
+                  >
+                    {item.q}
+                  </span>
+                  <ChevronDown
+                    className="w-4 h-4 shrink-0 transition-transform duration-200 group-open:rotate-180"
+                    style={{ color: '#D4A843' }}
+                  />
+                </summary>
+                <p className="pb-6 text-sm leading-relaxed" style={{ color: 'rgba(255,255,255,0.55)' }}>
+                  {item.a}
+                </p>
+              </details>
+            ))}
+          </div>
+        </FadeUp>
+      </div>
+    </section>
+  )
+}
 
 export default function SummerSmilePromoPage() {
   return (
@@ -393,6 +457,9 @@ export default function SummerSmilePromoPage() {
           </div>
         </div>
       </section>
+
+      {/* ── GEO FAQ ── */}
+      <FaqSection />
 
       {/* ── Scarcity + Final CTA ── */}
       <section className="section-py" style={{ background: '#1D1D1F' }}>

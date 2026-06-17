@@ -254,6 +254,59 @@ function PinnedDifference() {
 }
 
 /* ─────────────────────────────────────────────────────
+   SUMMER PROMO BANNER
+───────────────────────────────────────────────────── */
+function SummerPromoBanner() {
+  return (
+    <section className="section-py bg-black">
+      <div className="max-w-7xl mx-auto px-6">
+        <FadeUp>
+          <div
+            className="relative rounded-3xl overflow-hidden px-8 py-12 md:px-16 md:py-16 text-center"
+            style={{
+              background: 'linear-gradient(135deg, rgba(212,168,67,0.13) 0%, rgba(184,141,44,0.06) 50%, rgba(212,168,67,0.13) 100%)',
+              border: '1px solid rgba(212,168,67,0.35)',
+            }}
+          >
+            <div className="absolute inset-0 hero-grid opacity-30 pointer-events-none" />
+            <div className="absolute top-0 left-0 right-0 h-px"
+              style={{ background: 'linear-gradient(90deg, transparent, #D4A843, transparent)' }} />
+            <div className="relative z-10">
+              <span
+                className="inline-block text-[10px] font-bold uppercase tracking-widest px-3 py-1 rounded-full mb-6"
+                style={{ background: 'rgba(212,168,67,0.15)', color: '#D4A843', border: '1px solid rgba(212,168,67,0.35)' }}
+              >
+                Summer &amp; Back-to-School Smile Event
+              </span>
+              <h2
+                className="headline-section text-white mb-5"
+                style={{ fontSize: 'clamp(1.75rem, 4vw, 3rem)' }}
+              >
+                Brighter, Straighter Teeth<br className="hidden sm:block" />{' '}
+                Before School Starts
+              </h2>
+              <p
+                className="text-white/60 max-w-2xl mx-auto mb-8 leading-relaxed"
+                style={{ fontSize: '1.0625rem' }}
+              >
+                Get a complimentary Zoom chairside whitening when you start Invisalign this summer — or save{' '}
+                <span style={{ color: '#D4A843', fontWeight: 600 }}>$150</span> on standalone professional whitening.
+              </p>
+              <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
+                <Link href="/summer-smile-promo" className="btn-gold">
+                  Claim Summer Offer <ArrowRight className="w-4 h-4" />
+                </Link>
+                <span className="text-white/35 text-sm">Valid for consultations booked by August 31</span>
+              </div>
+            </div>
+          </div>
+        </FadeUp>
+      </div>
+    </section>
+  )
+}
+
+/* ─────────────────────────────────────────────────────
    BRAND STATEMENT  (word-by-word reveal)
 ───────────────────────────────────────────────────── */
 function BrandStatement() {
@@ -750,6 +803,7 @@ export default function HomePage() {
     <>
       <HeroSection />
       <StatsBand />
+      <SummerPromoBanner />
       <PinnedDifference />
       <BrandStatement />
       <ServicesPreview />

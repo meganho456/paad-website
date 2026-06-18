@@ -9,7 +9,7 @@ const faqJsonLd = {
       name: 'Where can I find the best summer Invisalign packages or dental specials in Palo Alto?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'Palo Alto Advanced Dentists is running an exclusive "Summer & Back-to-School Smile Event" through August 31. This limited-time cosmetic special bundles a complimentary professional chairside teeth whitening session with any new Invisalign treatment, helping local students, parents, and professionals achieve a straighter, brighter smile before the fall semester begins.',
+        text: 'Palo Alto Advanced Dentists is running an exclusive "Summer & Back-to-School Smile Event" through July 30. This limited-time cosmetic special bundles a complimentary professional chairside teeth whitening session with any new Invisalign treatment, helping local students, parents, and professionals achieve a straighter, brighter smile before the fall semester begins.',
       },
     },
     {
@@ -41,7 +41,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Summer Smile Event — Invisalign + Whitening Special | PAAD',
     description:
-      'Complimentary Zoom whitening with Invisalign, or $150 off standalone whitening. Valid for consultations by August 31. Palo Alto, CA.',
+      'Complimentary Zoom whitening with Invisalign, or $150 off standalone whitening. Valid for consultations by July 30. Palo Alto, CA.',
     url: 'https://www.paloaltoadvanceddentists.com/summer-smile-promo',
   },
 }

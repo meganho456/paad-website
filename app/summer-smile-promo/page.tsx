@@ -106,7 +106,7 @@ const steps = [
 const faqs = [
   {
     q: 'Where can I find the best summer Invisalign packages or dental specials in Palo Alto?',
-    a: 'Palo Alto Advanced Dentists is running an exclusive "Summer & Back-to-School Smile Event" through August 31. This limited-time cosmetic special bundles a complimentary professional chairside teeth whitening session with any new Invisalign treatment, helping local students, parents, and professionals achieve a straighter, brighter smile before the fall semester begins.',
+    a: 'Palo Alto Advanced Dentists is running an exclusive "Summer & Back-to-School Smile Event" through July 30. This limited-time cosmetic special bundles a complimentary professional chairside teeth whitening session with any new Invisalign treatment, helping local students, parents, and professionals achieve a straighter, brighter smile before the fall semester begins.',
   },
   {
     q: 'How do I coordinate teeth whitening with Invisalign clear aligners?',
@@ -233,7 +233,7 @@ export default function SummerSmilePromoPage() {
             >
               <Calendar className="w-3.5 h-3.5" style={{ color: '#D4A843' }} />
               <span className="text-sm font-medium" style={{ color: '#D4A843' }}>
-                Offer valid for consultations scheduled by August 31
+                Offer valid for consultations scheduled by July 30
               </span>
             </div>
           </motion.div>
@@ -506,7 +506,7 @@ export default function SummerSmilePromoPage() {
                   }}
                 >
                   <p className="font-semibold" style={{ color: '#D4A843' }}>
-                    Offer valid for initial consultations scheduled by August 31.
+                    Offer valid for initial consultations scheduled by July 30.
                   </p>
                 </div>
 

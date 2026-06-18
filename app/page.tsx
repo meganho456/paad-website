@@ -337,7 +337,7 @@ function SummerPromoBanner() {
                     Claim Summer Offer <ArrowRight className="w-4 h-4" />
                   </Link>
                   <span className="text-white/35 text-sm self-center">
-                    Valid for consultations booked by August 31
+                    Valid for consultations booked by July 30
                   </span>
                 </div>
               </div>

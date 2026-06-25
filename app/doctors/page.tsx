@@ -111,6 +111,28 @@ const doctors = [
     bio: 'Dr. Pedro Avendaño brings a distinguished international perspective to PAAD. As a former director of clinical practices in Santiago, Chile, and an active lecturer in implantology, he combines elite academic credentials with deep hands-on expertise. Dr. Avendaño has contributed to implant training courses at Loma Linda University School of Dentistry and remains actively engaged in continuing education. He enjoys skiing and spending time with family.',
   },
   {
+    id: 'shane-huang',
+    photo: '/doctors/dr-shane-huang.jpg',
+    initials: 'SH',
+    name: 'Dr. Shane Huang',
+    credentials: 'D.M.D.',
+    title: 'Associate Dentist',
+    education: [
+      'Tufts University School of Dental Medicine — D.M.D.',
+      'Former Owner & Principal Dentist — Alpine Dental Care, Cupertino',
+    ],
+    specialties: [
+      'General & Cosmetic Dentistry',
+      'Conservative & Preventive Care',
+      'Restorative Dentistry',
+      'Anxiety-Free Patient Experience',
+    ],
+    memberships: [],
+    languages: ['English', 'Mandarin'],
+    awards: ['20+ Years Clinical Experience'],
+    bio: 'For over two decades, Dr. Shane Huang has built a reputation as one of the Bay Area\'s most trusted general and cosmetic dentists — known for meticulous precision, refreshingly honest treatment recommendations, and an ability to put even the most anxious patients completely at ease. As the former owner and principal dentist of Alpine Dental Care in Cupertino, he brings the accountability and standard of care that comes from running your own practice to everything he does at PAAD. His philosophy is straightforward: recommend only what the patient truly needs, execute it exceptionally well, and treat every person in the chair like family. Fluent in English and Mandarin, Dr. Huang is a trusted voice for the Bay Area\'s Chinese-speaking community.',
+  },
+  {
     id: 'eddy-wang',
     photo: '/doctors/dr-eddy-wang.jpg',
     initials: 'EW',
@@ -170,6 +192,27 @@ export default function DoctorsPage() {
             </span>
           ))}
         </div>
+      </section>
+
+      {/* ── Team Photo ── */}
+      <section className="py-16 px-6" style={{ background: '#1D1D1F' }}>
+        <FadeUp className="max-w-5xl mx-auto">
+          <p className="section-label text-center mb-6">The People Behind the Practice</p>
+          <div className="relative rounded-3xl overflow-hidden" style={{ minHeight: '420px' }}>
+            <Image
+              src="/team/paad-team.jpg"
+              alt="The PAAD team gathered in the office"
+              fill
+              className="object-cover object-center"
+              sizes="(max-width: 1024px) 100vw, 1024px"
+              priority
+            />
+            <div className="absolute inset-0" style={{ background: 'linear-gradient(to top, rgba(0,0,0,0.55) 0%, transparent 60%)' }} />
+            <p className="absolute bottom-5 left-0 right-0 text-center text-white/70 text-sm font-medium tracking-wide">
+              Our team at Palo Alto Advanced Dentists
+            </p>
+          </div>
+        </FadeUp>
       </section>
 
       {/* ── Doctor Cards ── */}

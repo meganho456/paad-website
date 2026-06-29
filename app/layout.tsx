@@ -193,7 +193,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             gtag('config', 'G-BV29WD7WDG');
           `}
         </Script>
-        <Script src="//code.tidio.co/sjmrtrjdaufbrl7j01xxzuq8gahdfrvh.js" strategy="afterInteractive" />
+
       </body>
     </html>
   )

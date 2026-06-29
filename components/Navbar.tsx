@@ -63,7 +63,7 @@ function DropdownMenu({ items, type }: { items: typeof servicesMenu | typeof doc
           >
             <div>
               <span className="block text-sm font-semibold">{item.label}</span>
-              {item.sub && <span className="block text-xs mt-0.5" style={{ color: 'rgba(255,255,255,0.4)' }}>{item.sub}</span>}
+              {item.sub && <span className="block text-xs mt-0.5" style={{ color: 'rgba(255,255,255,0.65)' }}>{item.sub}</span>}
             </div>
             {item.tag && (
               <span className="text-[10px] font-bold uppercase tracking-wider px-2 py-0.5 rounded-full shrink-0"
@@ -248,7 +248,7 @@ export default function Navbar() {
                                 style={{ color: 'rgba(255,255,255,0.65)' }}
                               >
                                 {item.label}
-                                {item.sub && <span className="block text-xs mt-0.5" style={{ color: 'rgba(255,255,255,0.35)' }}>{item.sub}</span>}
+                                {item.sub && <span className="block text-xs mt-0.5" style={{ color: 'rgba(255,255,255,0.65)' }}>{item.sub}</span>}
                               </Link>
                             ))}
                           </motion.div>
@@ -267,7 +267,7 @@ export default function Navbar() {
                 </div>
               ))}
               <div className="pt-5 flex flex-col gap-3">
-                <a href="tel:6503244900" className="flex items-center gap-2 text-sm" style={{ color: 'rgba(255,255,255,0.55)' }}>
+                <a href="tel:6503244900" className="flex items-center gap-2 text-sm" style={{ color: 'rgba(255,255,255,0.80)' }}>
                   <Phone className="w-4 h-4" style={{ color: '#D4A843' }} />
                   (650) 324-4900
                 </a>

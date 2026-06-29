@@ -279,7 +279,7 @@ function SummerPromoBanner() {
               <div className="text-center shrink-0">
                 <p
                   className="text-xs font-bold uppercase tracking-widest mb-3"
-                  style={{ color: 'rgba(255,255,255,0.4)' }}
+                  style={{ color: 'rgba(255,255,255,0.65)' }}
                 >
                   Did you know?
                 </p>
@@ -294,7 +294,7 @@ function SummerPromoBanner() {
                 </div>
                 <div
                   className="font-semibold uppercase tracking-[0.2em] text-sm mt-1"
-                  style={{ color: 'rgba(255,255,255,0.4)' }}
+                  style={{ color: 'rgba(255,255,255,0.65)' }}
                 >
                   months
                 </div>
@@ -483,7 +483,7 @@ function ServicesPreview() {
                   >
                     {s.title}
                   </h3>
-                  <p style={{ color: s.dark ? 'rgba(255,255,255,0.5)' : 'rgba(0,0,0,0.5)' }} className="text-sm leading-relaxed">
+                  <p style={{ color: s.dark ? 'rgba(255,255,255,0.75)' : 'rgba(0,0,0,0.65)' }} className="text-sm leading-relaxed">
                     {s.desc}
                   </p>
                   <div className="mt-6 flex items-center gap-1.5" style={{ color: '#D4A843' }}>

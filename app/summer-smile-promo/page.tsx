@@ -175,7 +175,7 @@ function FaqSection() {
                     style={{ color: '#D4A843' }}
                   />
                 </summary>
-                <p className="pb-6 text-sm leading-relaxed" style={{ color: 'rgba(255,255,255,0.55)' }}>
+                <p className="pb-6 text-sm leading-relaxed" style={{ color: 'rgba(255,255,255,0.80)' }}>
                   {item.a}
                 </p>
               </details>
@@ -346,7 +346,7 @@ export default function SummerSmilePromoPage() {
                     </span>
                     <span
                       style={{
-                        color: pkg.dark ? 'rgba(255,255,255,0.5)' : 'rgba(0,0,0,0.5)',
+                        color: pkg.dark ? 'rgba(255,255,255,0.75)' : 'rgba(0,0,0,0.65)',
                         fontSize: '0.875rem',
                       }}
                     >

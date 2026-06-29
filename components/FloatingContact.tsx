@@ -1,8 +1,19 @@
 'use client'
 
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
-import { Phone, X, Copy, Check } from 'lucide-react'
+import { Phone, X, Copy, Check, MessageCircle } from 'lucide-react'
+
+declare global {
+  interface Window {
+    tidioChatApi?: {
+      on: (event: string, cb: () => void) => void
+      open: () => void
+      show: () => void
+      hide: () => void
+    }
+  }
+}
 
 /* ── SVG icons ──────────────────────────────────────── */
 function LiveChatIcon({ className }: { className?: string }) {
@@ -165,6 +176,28 @@ function FloatBtn({
 /* ── Main export ────────────────────────────────────── */
 export default function FloatingContact() {
   const [wechatOpen, setWechatOpen] = useState(false)
+  const [dismissed, setDismissed] = useState(false)
+
+  // Suppress Tidio's own launcher bubble — we drive it from our button
+  useEffect(() => {
+    const suppress = () => {
+      window.tidioChatApi?.hide()
+      window.tidioChatApi?.on('close', () => window.tidioChatApi?.hide())
+    }
+    if (window.tidioChatApi) {
+      suppress()
+    } else {
+      const iv = setInterval(() => {
+        if (window.tidioChatApi) { clearInterval(iv); suppress() }
+      }, 300)
+      return () => clearInterval(iv)
+    }
+  }, [])
+
+  const openLiveChat = () => {
+    window.tidioChatApi?.show()
+    window.tidioChatApi?.open()
+  }
 
   return (
     <>
@@ -172,41 +205,89 @@ export default function FloatingContact() {
         {wechatOpen && <WeChatModal onClose={() => setWechatOpen(false)} />}
       </AnimatePresence>
 
-      {/* Always-visible vertical stack — bottom-right */}
+      {/* Vertical stack — bottom-right */}
       <div className="fixed right-5 bottom-8 z-[100] flex flex-col items-center gap-3">
 
-        {/* Phone */}
-        <FloatBtn
-          delay={0.1}
-          label="Call (650) 324-4900"
-          href="tel:6503244900"
-          bg="linear-gradient(135deg, #22C55E, #16A34A)"
-          shadow="rgba(34,197,94,0.45)"
-          icon={<Phone className="w-5 h-5" />}
-        />
+        {/* Collapsible buttons */}
+        <AnimatePresence>
+          {!dismissed && (
+            <motion.div
+              key="buttons"
+              initial={{ opacity: 0, scale: 0.85, y: 20 }}
+              animate={{ opacity: 1, scale: 1, y: 0 }}
+              exit={{ opacity: 0, scale: 0.85, y: 20 }}
+              transition={{ duration: 0.22, ease: [0.25, 0.1, 0.25, 1] }}
+              className="flex flex-col items-center gap-3"
+            >
+              {/* Phone */}
+              <FloatBtn
+                delay={0}
+                label="Call (650) 324-4900"
+                href="tel:6503244900"
+                bg="linear-gradient(135deg, #22C55E, #16A34A)"
+                shadow="rgba(34,197,94,0.45)"
+                icon={<Phone className="w-5 h-5" />}
+              />
 
-        {/* WeChat */}
-        <FloatBtn
-          delay={0.18}
-          label="WeChat: paad_wechat"
-          bg="linear-gradient(135deg, #07C160, #06AE56)"
-          shadow="rgba(7,193,96,0.45)"
-          onClick={() => setWechatOpen(true)}
-          icon={<WeChatIcon className="w-5 h-5" />}
-        />
+              {/* WeChat */}
+              <FloatBtn
+                delay={0}
+                label="WeChat: paad_wechat"
+                bg="linear-gradient(135deg, #07C160, #06AE56)"
+                shadow="rgba(7,193,96,0.45)"
+                onClick={() => setWechatOpen(true)}
+                icon={<WeChatIcon className="w-5 h-5" />}
+              />
 
-        {/* Live Chat */}
-        <FloatBtn
-          delay={0.26}
-          label="Live Chat"
-          bg="linear-gradient(135deg, #D4A843, #B88D2C)"
-          shadow="rgba(212,168,67,0.5)"
-          onClick={() => {
-            window.tidioChatApi?.show()
-            window.tidioChatApi?.open()
+              {/* Live Chat */}
+              <FloatBtn
+                delay={0}
+                label="Live Chat"
+                bg="linear-gradient(135deg, #D4A843, #B88D2C)"
+                shadow="rgba(212,168,67,0.5)"
+                onClick={openLiveChat}
+                icon={<LiveChatIcon className="w-5 h-5" />}
+              />
+            </motion.div>
+          )}
+        </AnimatePresence>
+
+        {/* Dismiss / restore toggle */}
+        <motion.button
+          onClick={() => setDismissed((v) => !v)}
+          className="relative flex items-center justify-center w-10 h-10 rounded-full text-white transition-transform duration-200 hover:scale-110 active:scale-95"
+          style={{
+            background: dismissed ? 'rgba(60,60,60,0.92)' : 'rgba(40,40,40,0.85)',
+            boxShadow: '0 2px 12px rgba(0,0,0,0.35)',
+            backdropFilter: 'blur(8px)',
           }}
-          icon={<LiveChatIcon className="w-5 h-5" />}
-        />
+          aria-label={dismissed ? 'Show contact options' : 'Dismiss contact options'}
+          whileTap={{ scale: 0.92 }}
+        >
+          <AnimatePresence mode="wait" initial={false}>
+            {dismissed ? (
+              <motion.span
+                key="show"
+                initial={{ opacity: 0, rotate: -90 }}
+                animate={{ opacity: 1, rotate: 0 }}
+                exit={{ opacity: 0, rotate: 90 }}
+                transition={{ duration: 0.18 }}
+              >
+                <MessageCircle className="w-4 h-4" />
+              </motion.span>
+            ) : (
+              <motion.span
+                key="hide"
+                initial={{ opacity: 0, rotate: 90 }}
+                animate={{ opacity: 1, rotate: 0 }}
+                exit={{ opacity: 0, rotate: -90 }}
+                transition={{ duration: 0.18 }}
+              >
+                <X className="w-4 h-4" />
+              </motion.span>
+            )}
+          </AnimatePresence>
+        </motion.button>
 
       </div>
     </>

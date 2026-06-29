@@ -178,25 +178,26 @@ export default function FloatingContact() {
   const [wechatOpen, setWechatOpen] = useState(false)
   const [dismissed, setDismissed] = useState(false)
 
-  // Suppress Tidio's own launcher bubble — we drive it from our button
+  // Suppress Tidio's own launcher bubble — we drive it from our button.
+  // Use DOM events (tidioChat-ready / tidioChat-close) instead of the
+  // tidioChatApi.on() method, which is unreliable across Tidio versions.
   useEffect(() => {
-    const suppress = () => {
-      window.tidioChatApi?.hide()
-      window.tidioChatApi?.on('close', () => window.tidioChatApi?.hide())
-    }
-    if (window.tidioChatApi) {
-      suppress()
-    } else {
-      const iv = setInterval(() => {
-        if (window.tidioChatApi) { clearInterval(iv); suppress() }
-      }, 300)
-      return () => clearInterval(iv)
+    const hide = () => window.tidioChatApi?.hide()
+    document.addEventListener('tidioChat-ready', hide)
+    document.addEventListener('tidioChat-close', hide)
+    // Handle case where Tidio already loaded before this effect ran
+    if (window.tidioChatApi) hide()
+    return () => {
+      document.removeEventListener('tidioChat-ready', hide)
+      document.removeEventListener('tidioChat-close', hide)
     }
   }, [])
 
   const openLiveChat = () => {
+    // show() makes the widget visible; open() opens the chat window.
+    // A short delay is required — show() is asynchronous in Tidio's renderer.
     window.tidioChatApi?.show()
-    window.tidioChatApi?.open()
+    setTimeout(() => window.tidioChatApi?.open(), 300)
   }
 
   return (

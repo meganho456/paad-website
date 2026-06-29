@@ -173,19 +173,79 @@ function FloatBtn({
   )
 }
 
+/* ── Dismiss / restore toggle button ───────────────── */
+function DismissBtn({ dismissed, onToggle }: { dismissed: boolean; onToggle: () => void }) {
+  const [hovered, setHovered] = useState(false)
+  const label = dismissed ? 'Show' : 'Hide'
+
+  return (
+    <motion.button
+      onClick={onToggle}
+      onMouseEnter={() => setHovered(true)}
+      onMouseLeave={() => setHovered(false)}
+      className="relative flex items-center justify-center w-10 h-10 rounded-full text-black transition-transform duration-200 hover:scale-110 active:scale-95"
+      style={{
+        background: 'linear-gradient(135deg, #D4A843, #B88D2C)',
+        boxShadow: '0 2px 14px rgba(212,168,67,0.5)',
+      }}
+      aria-label={dismissed ? 'Show contact options' : 'Hide contact options'}
+      whileTap={{ scale: 0.92 }}
+    >
+      {/* Hover label */}
+      <AnimatePresence>
+        {hovered && (
+          <motion.span
+            initial={{ opacity: 0, x: 8, scale: 0.95 }}
+            animate={{ opacity: 1, x: 0, scale: 1 }}
+            exit={{ opacity: 0, x: 8, scale: 0.95 }}
+            transition={{ duration: 0.18 }}
+            className="absolute right-[calc(100%+10px)] top-1/2 -translate-y-1/2 whitespace-nowrap text-xs font-semibold text-white px-3 py-1.5 rounded-xl pointer-events-none"
+            style={{ background: 'rgba(0,0,0,0.82)', backdropFilter: 'blur(10px)' }}
+          >
+            {label}
+          </motion.span>
+        )}
+      </AnimatePresence>
+
+      <AnimatePresence mode="wait" initial={false}>
+        {dismissed ? (
+          <motion.span
+            key="show"
+            initial={{ opacity: 0, rotate: -90 }}
+            animate={{ opacity: 1, rotate: 0 }}
+            exit={{ opacity: 0, rotate: 90 }}
+            transition={{ duration: 0.18 }}
+          >
+            <MessageCircle className="w-4 h-4" />
+          </motion.span>
+        ) : (
+          <motion.span
+            key="hide"
+            initial={{ opacity: 0, rotate: 90 }}
+            animate={{ opacity: 1, rotate: 0 }}
+            exit={{ opacity: 0, rotate: -90 }}
+            transition={{ duration: 0.18 }}
+          >
+            <X className="w-4 h-4" />
+          </motion.span>
+        )}
+      </AnimatePresence>
+    </motion.button>
+  )
+}
+
 /* ── Main export ────────────────────────────────────── */
 export default function FloatingContact() {
   const [wechatOpen, setWechatOpen] = useState(false)
   const [dismissed, setDismissed] = useState(false)
 
-  // Suppress Tidio's own launcher bubble — we drive it from our button.
-  // Use DOM events (tidioChat-ready / tidioChat-close) instead of the
-  // tidioChatApi.on() method, which is unreliable across Tidio versions.
+  // Suppress Tidio's own launcher bubble so only our buttons are visible.
+  // tidioChatApi.open() internally re-shows the widget, so we never need
+  // to call show() ourselves — hide() on ready/close is sufficient.
   useEffect(() => {
     const hide = () => window.tidioChatApi?.hide()
     document.addEventListener('tidioChat-ready', hide)
     document.addEventListener('tidioChat-close', hide)
-    // Handle case where Tidio already loaded before this effect ran
     if (window.tidioChatApi) hide()
     return () => {
       document.removeEventListener('tidioChat-ready', hide)
@@ -194,10 +254,12 @@ export default function FloatingContact() {
   }, [])
 
   const openLiveChat = () => {
-    // show() makes the widget visible; open() opens the chat window.
-    // A short delay is required — show() is asynchronous in Tidio's renderer.
-    window.tidioChatApi?.show()
-    setTimeout(() => window.tidioChatApi?.open(), 300)
+    if (window.tidioChatApi) {
+      window.tidioChatApi.open()
+    } else {
+      // Tidio not ready yet — open as soon as it is
+      document.addEventListener('tidioChat-ready', () => window.tidioChatApi?.open(), { once: true })
+    }
   }
 
   return (
@@ -254,41 +316,7 @@ export default function FloatingContact() {
         </AnimatePresence>
 
         {/* Dismiss / restore toggle */}
-        <motion.button
-          onClick={() => setDismissed((v) => !v)}
-          className="relative flex items-center justify-center w-10 h-10 rounded-full text-white transition-transform duration-200 hover:scale-110 active:scale-95"
-          style={{
-            background: dismissed ? 'rgba(60,60,60,0.92)' : 'rgba(40,40,40,0.85)',
-            boxShadow: '0 2px 12px rgba(0,0,0,0.35)',
-            backdropFilter: 'blur(8px)',
-          }}
-          aria-label={dismissed ? 'Show contact options' : 'Dismiss contact options'}
-          whileTap={{ scale: 0.92 }}
-        >
-          <AnimatePresence mode="wait" initial={false}>
-            {dismissed ? (
-              <motion.span
-                key="show"
-                initial={{ opacity: 0, rotate: -90 }}
-                animate={{ opacity: 1, rotate: 0 }}
-                exit={{ opacity: 0, rotate: 90 }}
-                transition={{ duration: 0.18 }}
-              >
-                <MessageCircle className="w-4 h-4" />
-              </motion.span>
-            ) : (
-              <motion.span
-                key="hide"
-                initial={{ opacity: 0, rotate: 90 }}
-                animate={{ opacity: 1, rotate: 0 }}
-                exit={{ opacity: 0, rotate: -90 }}
-                transition={{ duration: 0.18 }}
-              >
-                <X className="w-4 h-4" />
-              </motion.span>
-            )}
-          </AnimatePresence>
-        </motion.button>
+        <DismissBtn dismissed={dismissed} onToggle={() => setDismissed((v) => !v)} />
 
       </div>
     </>

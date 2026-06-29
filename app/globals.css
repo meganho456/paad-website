@@ -4,8 +4,6 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Hide Tidio's own launcher bubble — we use our own buttons to open the chat */
-#tidio-chat-iframe-launcher { display: none !important; }
 
 
 :root {

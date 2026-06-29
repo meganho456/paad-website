@@ -268,7 +268,7 @@ export default function FloatingContact() {
               {/* WhatsApp */}
               <FloatBtn
                 delay={0}
-                label="WhatsApp (650) 440-9971"
+                label="WhatsApp PAAD"
                 href="https://wa.me/16504409971"
                 bg="linear-gradient(135deg, #25D366, #128C7E)"
                 shadow="rgba(37,211,102,0.45)"

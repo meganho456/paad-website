@@ -210,6 +210,7 @@ export default function CleaningsPage() {
               Every Comprehensive Exam Includes
             </h2>
             <p className="text-white/45 max-w-2xl mx-auto">Our exams are designed to detect problems at the earliest, most treatable stage — when intervention is least invasive and least expensive.</p>
+            <p className="text-white/45 max-w-2xl mx-auto mt-4">Even a routine comprehensive exam and cleaning at Palo Alto dentistry includes digital impressions, giving you a precise baseline record for future treatment planning. Your first visit includes a comprehensive exam and cleaning, complete with digital X-rays and an oral cancer screening, so we can build a personalized treatment plan from day one.</p>
           </FadeUp>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
             {examComponents.map((e, i) => (

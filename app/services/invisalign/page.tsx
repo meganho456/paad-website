@@ -200,6 +200,7 @@ export default function InvisalignPage() {
               <div className="space-y-4 text-navy-900/65 leading-relaxed">
                 <p>Invisalign is appropriate for most adults and teens with mild-to-severe orthodontic issues. As an Elite Preferred Provider in Palo Alto, Dr. James Ho routinely treats complex bite corrections, significant crowding, and rotation cases that general Invisalign providers decline.</p>
                 <p>Your consultation includes a 3D iTero Element scan — capturing precise root anatomy and bone structure — plus a live SmileView simulation showing your projected outcome. You see the result before committing to treatment.</p>
+                <p>Your Invisalign treatment begins with comfortable digital impressions—instead of biting into messy putty, you simply close your mouth around a small scanner wand that captures a digital model of your teeth in under two minutes. New patients can pair their aligner plan with Zoom chairside whitening for a complete smile transformation at a special rate. Teeth whitening at our office features Zoom chairside whitening, an in-office system that can brighten your smile by several shades in a single session.</p>
               </div>
             </FadeUp>
             <FadeUp delay={0.15}>

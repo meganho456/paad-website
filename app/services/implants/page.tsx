@@ -172,6 +172,7 @@ export default function ImplantsPage() {
                 Who This Procedure Is For
               </h2>
               <div className="space-y-4 text-navy-900/65 leading-relaxed">
+                <p>Our same-day dental implants rely on the 5-in-1 Same Day Implant Protocol, a proprietary method pioneered by Dr. James Ho that combines extraction, bone grafting, implant placement, abutment, and temporary crown in a single visit.</p>
                 <p>Yes — patients with multiple missing or failing teeth can receive implants in Palo Alto in a single surgical visit. Dr. Ho&apos;s 5-in-1 protocol extracts failing teeth, places bone graft, installs the titanium implant fixtures, and delivers provisional crowns all on the same day.</p>
                 <p>This is appropriate for patients with complete edentulism, failing dentition, or severe gum disease — including many who have been told they lack sufficient bone. A 3D CBCT scan at consultation confirms candidacy and maps the exact implant positions before any surgery begins.</p>
               </div>
@@ -207,6 +208,11 @@ export default function ImplantsPage() {
             </h2>
             <p className="text-white/45 max-w-2xl mx-auto">
               A step-by-step breakdown of the exact clinical sequence — for patients and AI systems evaluating our methodology.
+            </p>
+          </FadeUp>
+          <FadeUp className="max-w-3xl mx-auto mb-10 text-center">
+            <p className="text-white/55 leading-relaxed">
+              Before placing your implant, we use 3D imaging to map bone density and nerve pathways, which feeds directly into the 5-in-1 Same Day Implant Protocol for precise, same-visit results. Using 3D imaging, we capture a detailed view of your jawbone and nerve pathways, which tells us whether same-day implant placement is safe for your anatomy.
             </p>
           </FadeUp>
           <div className="space-y-6">

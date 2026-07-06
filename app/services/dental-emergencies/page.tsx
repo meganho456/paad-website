@@ -106,6 +106,12 @@ export default function DentalEmergenciesPage() {
               Dental emergencies don&apos;t follow business hours. At Palo Alto Advanced Dentists, we make every effort
               to see emergency patients the same day. From knocked-out teeth to spreading infections: call us first.
             </p>
+            <p className="text-white/55 text-xl leading-relaxed max-w-3xl mb-8">
+              As your emergency dentist, Palo Alto dentistry can relieve acute pain quickly and, when appropriate, transition
+              you to same-day dental implants to address the underlying problem in one visit. Call our office before noon
+              and we will do everything possible to see you the same day for emergency care, whether you have a cracked
+              tooth, severe pain, or a knocked-out implant.
+            </p>
             <div className="flex flex-wrap gap-4">
               <a href="tel:6503244900" className="btn-gold inline-flex items-center gap-2 text-lg py-4 px-8">
                 <Phone className="w-5 h-5" /> Call (650) 324-4900

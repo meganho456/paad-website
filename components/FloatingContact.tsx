@@ -25,7 +25,7 @@ function WeChatIcon({ className }: { className?: string }) {
 /* ── WeChat Modal ───────────────────────────────────── */
 function WeChatModal({ onClose }: { onClose: () => void }) {
   const [copied, setCopied] = useState(false)
-  const wechatId = 'paad_wechat'
+  const wechatId = 'PAADSmile'
 
   const handleCopy = async () => {
     await navigator.clipboard.writeText(wechatId)
@@ -258,7 +258,7 @@ export default function FloatingContact() {
               {/* WeChat */}
               <FloatBtn
                 delay={0}
-                label="WeChat: paad_wechat"
+                label="WeChat: PAADSmile"
                 bg="linear-gradient(135deg, #07C160, #06AE56)"
                 shadow="rgba(7,193,96,0.45)"
                 onClick={() => setWechatOpen(true)}

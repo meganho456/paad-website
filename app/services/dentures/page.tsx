@@ -83,7 +83,7 @@ const comparisonRows = [
   { metric: 'Try-in stages', digital: 'Multiple wax try-in stages before finalising', traditional: 'Single or no try-in', highlight: false },
   { metric: 'Delivery timing', digital: 'Immediate delivery option available', traditional: 'Delayed delivery only', highlight: false },
   { metric: 'Upgrade pathway', digital: 'Implant overdenture upgrade planned and discussed', traditional: 'Denture-only treatment', highlight: false },
-  { metric: 'Personalised fit', digital: 'Custom-fitted to individual ridge anatomy', traditional: 'One-size approach', highlight: false },
+  { metric: 'Personalized fit', digital: 'Custom-fitted to individual ridge anatomy', traditional: 'One-size approach', highlight: false },
   { metric: 'Reline service', digital: 'In-house reline for ongoing fit maintenance', traditional: 'External lab relining required', highlight: false },
   { metric: 'Long-term monitoring', digital: 'Annual review of ridge changes and fit', traditional: 'No formal follow-up program', highlight: false },
 ]

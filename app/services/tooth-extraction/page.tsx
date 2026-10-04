@@ -31,8 +31,8 @@ const protocol = [
   {
     step: '02',
     icon: <Zap className="w-6 h-6" />,
-    title: 'Profound Local Anaesthesia',
-    body: 'Adequate anaesthesia is non-negotiable. Dr. Ho administers local anaesthetic with care, using buffered solutions where appropriate to reduce injection sting and ensuring complete pulpal and periodontal anaesthesia before any instrumentation. Patients should feel pressure and movement during extraction — never sharp pain. If sensitivity is noted, additional anaesthetic is administered before proceeding.',
+    title: 'Profound Local Anesthesia',
+    body: 'Adequate anesthesia is non-negotiable. Dr. Ho administers local anesthetic with care, using buffered solutions where appropriate to reduce injection sting and ensuring complete pulpal and periodontal anesthesia before any instrumentation. Patients should feel pressure and movement during extraction — never sharp pain. If sensitivity is noted, additional anesthetic is administered before proceeding.',
   },
   {
     step: '03',
@@ -57,7 +57,7 @@ const protocol = [
 const faqs = [
   {
     q: 'Does tooth extraction hurt?',
-    a: 'With profound local anaesthesia, you should feel significant pressure and movement during extraction — but not pain. Modern anaesthetic techniques and careful technique management make extractions far more comfortable than patients typically anticipate. Post-operative discomfort is managed with over-the-counter analgesics (ibuprofen and paracetamol alternated) for most simple extractions. Surgical extractions may require prescription pain relief for the first 24–48 hours.',
+    a: 'With profound local anesthesia, you should feel significant pressure and movement during extraction — but not pain. Modern anesthetic techniques and careful technique management make extractions far more comfortable than patients typically anticipate. Post-operative discomfort is managed with over-the-counter analgesics (ibuprofen and paracetamol alternated) for most simple extractions. Surgical extractions may require prescription pain relief for the first 24–48 hours.',
   },
   {
     q: 'What is a dry socket and how do I avoid it?',
@@ -73,7 +73,7 @@ const faqs = [
   },
   {
     q: 'What is the difference between a simple and surgical extraction?',
-    a: 'A simple extraction involves a tooth that is erupted and can be removed with luxators and forceps after adequate anaesthesia, without cutting gum tissue. A surgical extraction involves incision and flap reflection to access the tooth — required for impacted wisdom teeth, teeth with curved or bulbous roots, or teeth fractured at or below the gumline. Dr. Ho discusses the anticipated complexity at the consultation based on X-ray assessment.',
+    a: 'A simple extraction involves a tooth that is erupted and can be removed with luxators and forceps after adequate anesthesia, without cutting gum tissue. A surgical extraction involves incision and flap reflection to access the tooth — required for impacted wisdom teeth, teeth with curved or bulbous roots, or teeth fractured at or below the gumline. Dr. Ho discusses the anticipated complexity at the consultation based on X-ray assessment.',
   },
 ]
 

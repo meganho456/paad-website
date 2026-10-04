@@ -52,8 +52,8 @@ const steps = [
   },
   {
     step: '02', icon: <Shield className="w-5 h-5" />,
-    title: 'Local Anaesthesia',
-    body: 'The treatment area is thoroughly numbed with local anaesthetic before any instruments are introduced. Most patients report being surprised by how comfortable the procedure is — even compared to a routine filling.',
+    title: 'Local Anesthesia',
+    body: 'The treatment area is thoroughly numbed with local anesthetic before any instruments are introduced. Most patients report being surprised by how comfortable the procedure is — even compared to a routine filling.',
   },
   {
     step: '03', icon: <Scissors className="w-5 h-5" />,
@@ -123,7 +123,7 @@ const faqs = [
   },
   {
     q: 'Is the PINHOLE procedure painful?',
-    a: 'The procedure is performed under local anaesthesia — patients report being surprised by how comfortable the experience is, often describing it as less disruptive than a routine filling. There is no palate donor site (a significant source of pain in traditional grafting). Post-operatively, most PST patients require only over-the-counter ibuprofen for 24–48 hours. This contrasts sharply with traditional grafting, which often requires prescription pain medication and 2–4 weeks of restricted diet.',
+    a: 'The procedure is performed under local anesthesia — patients report being surprised by how comfortable the experience is, often describing it as less disruptive than a routine filling. There is no palate donor site (a significant source of pain in traditional grafting). Post-operatively, most PST patients require only over-the-counter ibuprofen for 24–48 hours. This contrasts sharply with traditional grafting, which often requires prescription pain medication and 2–4 weeks of restricted diet.',
   },
   {
     q: 'Can I have PINHOLE treatment done on my whole mouth at once?',
@@ -375,7 +375,7 @@ export default function PinholePage() {
               Reclaim your gum line.<br />
               <span style={{ color: '#D4A843', fontStyle: 'italic' }}>No grafts required.</span>
             </h2>
-            <p className="text-white/50 mb-8">Book a recession assessment with Dr. Ho — includes digital charting and a personalised PST treatment plan.</p>
+            <p className="text-white/50 mb-8">Book a recession assessment with Dr. Ho — includes digital charting and a personalized PST treatment plan.</p>
             <div className="flex flex-wrap justify-center gap-4">
               <Link href="/contact" className="btn-gold inline-flex items-center gap-2">
                 Book PST Assessment <ArrowRight className="w-4 h-4" />

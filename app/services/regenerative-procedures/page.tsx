@@ -32,7 +32,7 @@ const protocol = [
     step: '02',
     icon: <Zap className="w-6 h-6" />,
     title: 'Surgical Access & Debridement',
-    body: 'Under local anaesthesia, we create a precisely designed surgical flap to gain access to the bony defect and root surface below the gumline. The flap design is planned pre-operatively to preserve blood supply, maintain papillary tissue, and allow tension-free closure over the regenerative materials. All granulation tissue — the chronic inflammatory tissue that occupies the defect — is meticulously removed, and the root surface is thoroughly debrided and conditioned to remove bacterial deposits and create a biocompatible surface that regenerating cells can adhere to.'
+    body: 'Under local anesthesia, we create a precisely designed surgical flap to gain access to the bony defect and root surface below the gumline. The flap design is planned pre-operatively to preserve blood supply, maintain papillary tissue, and allow tension-free closure over the regenerative materials. All granulation tissue — the chronic inflammatory tissue that occupies the defect — is meticulously removed, and the root surface is thoroughly debrided and conditioned to remove bacterial deposits and create a biocompatible surface that regenerating cells can adhere to.'
   },
   {
     step: '03',

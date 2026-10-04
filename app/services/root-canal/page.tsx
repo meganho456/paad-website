@@ -32,8 +32,8 @@ const protocol = [
   {
     step: '02',
     icon: <Zap className="w-6 h-6" />,
-    title: 'Profound Local Anaesthesia',
-    body: 'Modern anaesthetic techniques — including buffered lidocaine and supplemental block strategies — eliminate discomfort during treatment. The majority of PAAD patients report the procedure is no more uncomfortable than receiving a routine filling.',
+    title: 'Profound Local Anesthesia',
+    body: 'Modern anesthetic techniques — including buffered lidocaine and supplemental block strategies — eliminate discomfort during treatment. The majority of PAAD patients report the procedure is no more uncomfortable than receiving a routine filling.',
   },
   {
     step: '03',
@@ -58,7 +58,7 @@ const protocol = [
 const faqs = [
   {
     q: 'Is root canal therapy painful?',
-    a: 'Modern root canal therapy is performed under profound local anaesthesia and is comparable in discomfort to having a filling placed. Most patients are surprised by how comfortable the procedure is. Post-treatment soreness, if any, typically resolves within 24–48 hours with over-the-counter analgesics.',
+    a: 'Modern root canal therapy is performed under profound local anesthesia and is comparable in discomfort to having a filling placed. Most patients are surprised by how comfortable the procedure is. Post-treatment soreness, if any, typically resolves within 24–48 hours with over-the-counter analgesics.',
   },
   {
     q: 'How do I know if I need a root canal?',
@@ -83,7 +83,7 @@ const comparisonRows = [
   { metric: 'Instrumentation', digital: 'Nickel-titanium rotary files', traditional: 'Manual stainless steel files', highlight: true },
   { metric: 'Disinfection', digital: 'Sodium hypochlorite + ultrasonic activation', traditional: 'Passive irrigant delivery' },
   { metric: 'Imaging', digital: 'Digital X-ray + CBCT when needed', traditional: 'Film-based X-ray only' },
-  { metric: 'Procedural Comfort', digital: 'Buffered / supplemental anaesthesia', traditional: 'Standard block injection' },
+  { metric: 'Procedural Comfort', digital: 'Buffered / supplemental anesthesia', traditional: 'Standard block injection' },
   { metric: 'Treatment Duration', digital: '1–2 visits for most cases', traditional: '2–3 visits standard' },
   { metric: 'Obturation', digital: 'Warm vertical compaction', traditional: 'Cold lateral compaction' },
   { metric: 'Restoration', digital: 'CEREC same-day crown option', traditional: 'Lab crown, 2–3 week wait' },
@@ -180,7 +180,7 @@ export default function RootCanalPage() {
                 {[
                   'Severe or persistent toothache',
                   'Prolonged sensitivity to heat or cold',
-                  'Tooth darkening or discolouration',
+                  'Tooth darkening or discoloration',
                   'Swelling or tenderness in the gum',
                   'Recurring abscess or gum pimple',
                   'Infection detected on routine X-ray',

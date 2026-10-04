@@ -57,7 +57,7 @@ const protocol = [
 const faqs = [
   {
     q: 'How long does braces treatment take?',
-    a: 'Most patients complete treatment in 12 to 24 months, depending on the severity of crowding, spacing, or bite issues. Mild cases may finish in under a year, while complex skeletal discrepancies requiring significant tooth movement can take up to 30 months. A dentist provides a personalised estimate after reviewing your records.',
+    a: 'Most patients complete treatment in 12 to 24 months, depending on the severity of crowding, spacing, or bite issues. Mild cases may finish in under a year, while complex skeletal discrepancies requiring significant tooth movement can take up to 30 months. A dentist provides a personalized estimate after reviewing your records.',
   },
   {
     q: 'Are ceramic braces as effective as metal?',

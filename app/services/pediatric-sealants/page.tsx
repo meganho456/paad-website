@@ -82,7 +82,7 @@ const comparisonRows = [
   { metric: 'Sealant Material', digital: 'BPA-free resin — paediatric safety standard', traditional: 'Standard resin (may contain BPA)', highlight: true },
   { metric: 'Coverage', digital: 'Applied to all high-risk molars at optimal timing', traditional: 'Selected teeth only, delayed timing', highlight: false },
   { metric: 'Monitoring', digital: 'Checked and documented at every recall visit', traditional: 'One-time application, no follow-up', highlight: false },
-  { metric: 'Procedure Comfort', digital: 'Painless — no anaesthesia, no injection', traditional: 'Same — no anaesthesia needed', highlight: false },
+  { metric: 'Procedure Comfort', digital: 'Painless — no anesthesia, no injection', traditional: 'Same — no anesthesia needed', highlight: false },
   { metric: 'Insurance Billing', digital: 'Covered by most child insurance plans', traditional: 'Same', highlight: false },
   { metric: 'Parent Education', digital: 'Diet and home care counselling included', traditional: 'Not provided', highlight: false },
   { metric: 'Long-Term Tracking', digital: 'Sealant integrity monitored for life', traditional: 'Single-appointment service', highlight: false },
@@ -90,7 +90,7 @@ const comparisonRows = [
 
 const clinicalStats = [
   { value: '80%', label: 'reduction in molar decay risk with properly applied sealants', source: 'CDC, Community Preventive Services Task Force' },
-  { value: 'None', label: 'No injection or anaesthesia needed — completely painless', source: 'PAAD Clinical Protocol' },
+  { value: 'None', label: 'No injection or anesthesia needed — completely painless', source: 'PAAD Clinical Protocol' },
   { value: 'Covered', label: 'by most children\'s dental insurance plans', source: 'ADA Insurance Guidelines' },
   { value: '20+', label: 'years of pediatric preventive care at PAAD', source: 'Dr. James Ho, DDS' },
 ]

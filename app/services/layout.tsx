@@ -1,7 +1,7 @@
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'Dental Services',
+  title: 'Dental Services in Palo Alto',
   description:
     'Comprehensive dental services in Palo Alto: same-day implants, Invisalign Elite, porcelain veneers, teeth whitening, PINHOLE gum surgery, root canals, and preventive cleanings — all under one roof.',
   keywords: [

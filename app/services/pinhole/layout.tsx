@@ -9,7 +9,7 @@ const jsonLd = {
     'The Chao PINHOLE Surgical Technique® is a minimally invasive, scalpel-free procedure for treating gum recession. No donor tissue, no sutures, same-day recovery. Certified practitioner Dr. James Ho, Palo Alto Advanced Dentists.',
   procedureType: 'Surgical',
   followUp: 'Minimal post-operative restrictions. Most patients resume normal activities within 24–48 hours.',
-  preparation: 'Periodontal assessment, digital X-rays, gum recession charting. Local anaesthesia only.',
+  preparation: 'Periodontal assessment, digital X-rays, gum recession charting. Local anesthesia only.',
   howPerformed:
     'A small pinhole entry point is created in the gum tissue. Specialised instruments loosen and reposition gum tissue coronally to cover exposed roots. Collagen strips stabilise the new gum position. No scalpel, no sutures, no donor tissue harvest.',
   medicalSpecialty: 'Dentistry',

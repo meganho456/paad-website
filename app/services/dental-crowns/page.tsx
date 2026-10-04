@@ -32,7 +32,7 @@ const protocol = [
     step: '02',
     icon: <Palette className="w-6 h-6" />,
     title: 'Tooth Preparation & Shade Matching',
-    body: 'The tooth is prepared under local anaesthesia by removing a controlled layer of structure to accommodate the crown thickness. Shade selection is performed with digital photography under calibrated lighting, capturing the hue, chroma, and value of adjacent natural teeth. This data guides the selection of ceramic block colour so the final crown integrates invisibly into your smile.',
+    body: 'The tooth is prepared under local anesthesia by removing a controlled layer of structure to accommodate the crown thickness. Shade selection is performed with digital photography under calibrated lighting, capturing the hue, chroma, and value of adjacent natural teeth. This data guides the selection of ceramic block colour so the final crown integrates invisibly into your smile.',
   },
   {
     step: '03',
@@ -61,7 +61,7 @@ const faqs = [
   },
   {
     q: 'Does getting a crown hurt?',
-    a: 'Tooth preparation is performed under local anaesthesia and should be completely comfortable. Some patients experience sensitivity in the prepared tooth between the preparation and cementation steps, which is normal and resolves once the crown is placed. Post-cementation, mild sensitivity for a few days is possible as the tooth settles. This is typically managed with over-the-counter analgesics.',
+    a: 'Tooth preparation is performed under local anesthesia and should be completely comfortable. Some patients experience sensitivity in the prepared tooth between the preparation and cementation steps, which is normal and resolves once the crown is placed. Post-cementation, mild sensitivity for a few days is possible as the tooth settles. This is typically managed with over-the-counter analgesics.',
   },
   {
     q: 'Why would I need a crown rather than a filling?',

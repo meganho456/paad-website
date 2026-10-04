@@ -38,7 +38,7 @@ const protocol = [
     step: '03',
     icon: <Zap className="w-6 h-6" />,
     title: 'Anti-Infective Scaling & Root Planing',
-    body: 'Our scaling and root planing protocol for cardiac patients emphasises thorough removal of all subgingival calculus and biofilm using a combination of ultrasonic scalers and hand instruments under local anaesthesia. We are particularly thorough because periodontal pathogens — including Porphyromonas gingivalis and Treponema denticola — are among the bacteria found in atherosclerotic plaques. Effective periodontal treatment reduces the seeding of these bacteria into the bloodstream and lowers systemic CRP levels.'
+    body: 'Our scaling and root planing protocol for cardiac patients emphasises thorough removal of all subgingival calculus and biofilm using a combination of ultrasonic scalers and hand instruments under local anesthesia. We are particularly thorough because periodontal pathogens — including Porphyromonas gingivalis and Treponema denticola — are among the bacteria found in atherosclerotic plaques. Effective periodontal treatment reduces the seeding of these bacteria into the bloodstream and lowers systemic CRP levels.'
   },
   {
     step: '04',

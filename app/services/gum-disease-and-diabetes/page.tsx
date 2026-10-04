@@ -32,13 +32,13 @@ const protocol = [
     step: '02',
     icon: <Scan className="w-6 h-6" />,
     title: 'Comprehensive Periodontal Examination',
-    body: 'We perform full-mouth periodontal charting with six-point probing at every tooth, recording pocket depths, bleeding on probing, recession, and furcation involvement. Digital periapical X-rays map bone levels throughout the mouth. Diabetic patients frequently present with more generalised and more severe bone loss than non-diabetic patients with equivalent plaque levels, so this baseline data is especially important for setting realistic treatment goals.'
+    body: 'We perform full-mouth periodontal charting with six-point probing at every tooth, recording pocket depths, bleeding on probing, recession, and furcation involvement. Digital periapical X-rays map bone levels throughout the mouth. Diabetic patients frequently present with more generalized and more severe bone loss than non-diabetic patients with equivalent plaque levels, so this baseline data is especially important for setting realistic treatment goals.'
   },
   {
     step: '03',
     icon: <Zap className="w-6 h-6" />,
     title: 'Aggressive Scaling & Root Planing Protocol',
-    body: 'For patients with diabetes, we employ a full-mouth disinfection approach: completing scaling and root planing across all quadrants within a compressed timeframe, typically two appointments within one week. This reduces the window during which bacteria can re-seed from untreated sites. We use a combination of ultrasonic instrumentation and hand scalers under local anaesthesia, and may prescribe systemic or locally delivered antibiotics when appropriate.'
+    body: 'For patients with diabetes, we employ a full-mouth disinfection approach: completing scaling and root planing across all quadrants within a compressed timeframe, typically two appointments within one week. This reduces the window during which bacteria can re-seed from untreated sites. We use a combination of ultrasonic instrumentation and hand scalers under local anesthesia, and may prescribe systemic or locally delivered antibiotics when appropriate.'
   },
   {
     step: '04',

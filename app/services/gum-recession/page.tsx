@@ -26,7 +26,7 @@ const protocol = [
     step: '01',
     icon: <Scan className="w-6 h-6" />,
     title: 'Recession Assessment & Tissue Biotype Classification',
-    body: 'Effective recession treatment begins with precise clinical measurement — we document recession depth, width of keratinised gingiva, tissue thickness (biotype), root surface texture, and whether the recession is localised or generalised. Thin biotype patients — those with translucent, delicate gum tissue — are at highest risk for further recession and are often the best candidates for the minimally invasive PINHOLE Surgical Technique. This assessment directly determines which treatment pathway offers the most predictable long-term result.'
+    body: 'Effective recession treatment begins with precise clinical measurement — we document recession depth, width of keratinised gingiva, tissue thickness (biotype), root surface texture, and whether the recession is localised or generalized. Thin biotype patients — those with translucent, delicate gum tissue — are at highest risk for further recession and are often the best candidates for the minimally invasive PINHOLE Surgical Technique. This assessment directly determines which treatment pathway offers the most predictable long-term result.'
   },
   {
     step: '02',
@@ -38,7 +38,7 @@ const protocol = [
     step: '03',
     icon: <Zap className="w-6 h-6" />,
     title: 'Minimally Invasive Tissue Repositioning (PINHOLE)',
-    body: 'The PINHOLE procedure is performed under local anaesthesia through a 1-2mm access hole in the gum tissue near the recession site. Using specially designed instruments, we loosen and gently reposition the gum tissue coronally to cover the exposed root surfaces. No scalpel, no sutures, and no palatal donor site are needed. Multiple teeth — sometimes an entire arch — can be treated in a single appointment, making this one of the most patient-friendly advances in modern periodontal surgery.'
+    body: 'The PINHOLE procedure is performed under local anesthesia through a 1-2mm access hole in the gum tissue near the recession site. Using specially designed instruments, we loosen and gently reposition the gum tissue coronally to cover the exposed root surfaces. No scalpel, no sutures, and no palatal donor site are needed. Multiple teeth — sometimes an entire arch — can be treated in a single appointment, making this one of the most patient-friendly advances in modern periodontal surgery.'
   },
   {
     step: '04',
@@ -65,7 +65,7 @@ const faqs = [
   },
   {
     q: 'How long does recovery take?',
-    a: 'PINHOLE recovery is typically 24-48 hours for most patients. Tenderness and mild swelling are the most common post-operative symptoms, and most patients take over-the-counter pain relief for just one or two days. Traditional gum grafting involves a palatal donor site that typically requires one to two weeks of recovery, with more significant discomfort in the first few days. Both procedures are performed under local anaesthesia, so you should not feel pain during the procedure itself.'
+    a: 'PINHOLE recovery is typically 24-48 hours for most patients. Tenderness and mild swelling are the most common post-operative symptoms, and most patients take over-the-counter pain relief for just one or two days. Traditional gum grafting involves a palatal donor site that typically requires one to two weeks of recovery, with more significant discomfort in the first few days. Both procedures are performed under local anesthesia, so you should not feel pain during the procedure itself.'
   },
   {
     q: 'Can my gum recession come back after treatment?',

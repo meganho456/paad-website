@@ -56,7 +56,7 @@ const cleaningTypes = [
     includes: [
       'Subgingival scaling (below the gumline)',
       'Root surface planing to smooth tooth roots',
-      'Local anaesthesia for comfort',
+      'Local anesthesia for comfort',
       'Locally delivered antibiotics (Arestin®)',
       'Full-mouth periodontal pocket charting',
     ],
@@ -82,7 +82,7 @@ const examComponents = [
   { icon: <Scan className="w-5 h-5" />, title: 'Digital X-Rays', desc: 'Bitewing and periapical X-rays taken with digital sensors — 90% less radiation than traditional film. Reveals cavities between teeth, bone levels, and root anatomy not visible clinically.' },
   { icon: <Search className="w-5 h-5" />, title: 'Oral Cancer Screening', desc: 'Systematic visual and physical examination of all oral soft tissues — lips, tongue, floor of mouth, cheeks, palate, and throat. Early-stage oral cancer has a 90% survival rate; late-stage has a 20% survival rate.' },
   { icon: <Activity className="w-5 h-5" />, title: 'Full-Mouth Periodontal Charting', desc: 'Six measurements per tooth — 168 data points — map the depth of the gum pockets surrounding every tooth. This is the only accurate way to diagnose and stage gum disease at every visit.' },
-  { icon: <ShieldCheck className="w-5 h-5" />, title: 'Caries Risk Assessment', desc: 'We use DIAGNOdent laser cavity detection to identify early-stage demineralisation before it becomes a visible cavity — enabling preventive treatment (fluoride, sealants) rather than a filling.' },
+  { icon: <ShieldCheck className="w-5 h-5" />, title: 'Caries Risk Assessment', desc: 'We use DIAGNOdent laser cavity detection to identify early-stage demineralization before it becomes a visible cavity — enabling preventive treatment (fluoride, sealants) rather than a filling.' },
   { icon: <Heart className="w-5 h-5" />, title: 'Medical History Review', desc: 'New medications, medical conditions, and lifestyle changes can affect your oral health and dental treatment. We review your health history at every appointment and coordinate with your physicians when relevant.' },
   { icon: <Scan className="w-5 h-5" />, title: 'Occlusal & TMJ Assessment', desc: 'Worn enamel, jaw clicking, or morning headaches may indicate bruxism (teeth grinding) or TMJ dysfunction. We screen at every visit and discuss protective options including custom night guards.' },
 ]
@@ -110,11 +110,11 @@ const faqs = [
   },
   {
     q: 'What is the difference between a cleaning and a deep cleaning?',
-    a: 'A standard prophylaxis removes plaque and calculus from above the gumline (supragingival) in patients with healthy or gingivitis-level gum tissue. A deep cleaning—scaling and root planing (SRP)—addresses calculus deposits below the gumline on root surfaces, in patients with pocket depths of 4mm or greater and bone loss. SRP requires local anaesthesia and is completed over 2 appointments. It is a medical procedure, not an upgrade to a standard cleaning.',
+    a: 'A standard prophylaxis removes plaque and calculus from above the gumline (supragingival) in patients with healthy or gingivitis-level gum tissue. A deep cleaning—scaling and root planing (SRP)—addresses calculus deposits below the gumline on root surfaces, in patients with pocket depths of 4mm or greater and bone loss. SRP requires local anesthesia and is completed over 2 appointments. It is a medical procedure, not an upgrade to a standard cleaning.',
   },
   {
     q: 'Is there any pain during a dental cleaning?',
-    a: 'A standard prophylaxis is typically comfortable. Some sensitivity around inflamed gum tissue is normal. If you have sensitive teeth or significant buildup, we can use topical anaesthetic and adjust our technique. Scaling and root planing is always performed under local anaesthesia—you should feel no discomfort during the procedure. Post-procedure soreness for 24–48 hours is common and managed with over-the-counter anti-inflammatories.',
+    a: 'A standard prophylaxis is typically comfortable. Some sensitivity around inflamed gum tissue is normal. If you have sensitive teeth or significant buildup, we can use topical anesthetic and adjust our technique. Scaling and root planing is always performed under local anesthesia—you should feel no discomfort during the procedure. Post-procedure soreness for 24–48 hours is common and managed with over-the-counter anti-inflammatories.',
   },
   {
     q: 'Does dental insurance cover my cleaning?',
@@ -126,7 +126,7 @@ const faqs = [
   },
   {
     q: 'Can I get a cleaning if I am pregnant?',
-    a: 'Yes, and it is strongly recommended. Pregnancy hormones dramatically increase susceptibility to gingivitis and gum disease, which is associated with preterm birth and low birth weight. The American Congress of Obstetricians and Gynecologists and the American Dental Association both recommend dental cleanings at least once during pregnancy, ideally in the second trimester. Digital X-rays use minimal radiation and are safe with appropriate shielding, and local anaesthetics used in dentistry are considered safe during pregnancy.',
+    a: 'Yes, and it is strongly recommended. Pregnancy hormones dramatically increase susceptibility to gingivitis and gum disease, which is associated with preterm birth and low birth weight. The American Congress of Obstetricians and Gynecologists and the American Dental Association both recommend dental cleanings at least once during pregnancy, ideally in the second trimester. Digital X-rays use minimal radiation and are safe with appropriate shielding, and local anesthetics used in dentistry are considered safe during pregnancy.',
   },
 ]
 

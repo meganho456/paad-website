@@ -61,11 +61,11 @@ const faqs = [
   },
   {
     q: 'How long does the sinus lift procedure take?',
-    a: 'A unilateral (single side) lateral window sinus lift typically takes 1.5 to 2 hours under local anaesthesia. Bilateral sinus lifts (both sides) are sometimes staged into two separate appointments to reduce procedural length and post-operative discomfort. The crestal approach with simultaneous implant placement is significantly shorter — usually 45-60 minutes combined. We schedule adequate time for every procedure and never rush surgical steps to fit the appointment into a shorter slot.'
+    a: 'A unilateral (single side) lateral window sinus lift typically takes 1.5 to 2 hours under local anesthesia. Bilateral sinus lifts (both sides) are sometimes staged into two separate appointments to reduce procedural length and post-operative discomfort. The crestal approach with simultaneous implant placement is significantly shorter — usually 45-60 minutes combined. We schedule adequate time for every procedure and never rush surgical steps to fit the appointment into a shorter slot.'
   },
   {
     q: 'Is a sinus lift painful?',
-    a: 'The procedure is performed under local anaesthesia — you should feel pressure and movement but no sharp pain during the surgery itself. Post-operative discomfort is moderate and typically peaks at day 2-3. Most patients describe it as comparable to a wisdom tooth extraction. We prescribe appropriate pain management and anti-inflammatory medication. Nasal congestion and minor bloody nasal discharge are normal in the first few days. We provide detailed post-operative instructions to support an uneventful healing course.'
+    a: 'The procedure is performed under local anesthesia — you should feel pressure and movement but no sharp pain during the surgery itself. Post-operative discomfort is moderate and typically peaks at day 2-3. Most patients describe it as comparable to a wisdom tooth extraction. We prescribe appropriate pain management and anti-inflammatory medication. Nasal congestion and minor bloody nasal discharge are normal in the first few days. We provide detailed post-operative instructions to support an uneventful healing course.'
   },
   {
     q: 'What are the risks of sinus augmentation?',

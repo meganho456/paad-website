@@ -5,7 +5,7 @@ import Link from 'next/link'
 import { motion, useInView } from 'framer-motion'
 import {
   Zap, Smile, Sparkles, Sun, ShieldCheck, Activity,
-  Scissors, CheckCircle2, ArrowRight, ChevronRight, Phone
+  Scissors, ArrowRight, ChevronRight, Phone
 } from 'lucide-react'
 
 function FadeUp({ children, delay = 0, className = '' }: { children: React.ReactNode; delay?: number; className?: string }) {
@@ -31,17 +31,8 @@ const services = [
     headline: 'Gum recession reversed. No grafts.',
     desc: [
       "The Chao PINHOLE Surgical Technique® is a revolutionary, scalpel-free approach to treating gum recession. Through a tiny pinhole in the gum, special instruments gently loosen and reposition the gum tissue — no cutting, no sutures, no donor tissue.",
-      "Dr. Ho is one of a select number of certified PINHOLE practitioners. Multiple teeth can be treated in a single visit, with recovery typically measured in hours rather than weeks.",
     ],
-    benefits: [
-      'No scalpel or sutures required',
-      'Multiple teeth treated in one visit',
-      'Same-day recovery for most patients',
-      'Eliminates graft donor site pain',
-      'Reduces sensitivity immediately',
-      'Long-lasting gum coverage',
-    ],
-    note: 'Dr. Ho holds official PINHOLE Surgical Technique® certification.',
+    benefits: [],
   },
   {
     id: 'veneers',
@@ -51,17 +42,8 @@ const services = [
     headline: 'Your smile, beautifully reimagined.',
     desc: [
       "Custom-crafted ultra-thin porcelain shells bonded to the front surface of your teeth. Veneers correct shape, color, length, and alignment — transforming your smile in as few as two appointments.",
-      "We use digital smile design to preview your result and collaborate with world-class ceramists to craft veneers that are indistinguishable from natural teeth.",
     ],
-    benefits: [
-      'Digital smile design preview',
-      'Ultra-thin minimal prep option',
-      'Stain-resistant porcelain',
-      'Corrects chips, gaps, and discoloration',
-      '10–15 year longevity with care',
-      'Natural, luminous result',
-    ],
-    note: 'Available as composite, porcelain, and no-prep ultra-thin options.',
+    benefits: [],
   },
   {
     id: 'implants',
@@ -71,17 +53,8 @@ const services = [
     headline: 'Walk in. Walk out with a smile.',
     desc: [
       "PAAD's exclusive 5-in-1 Same Day Implant Protocol combines five procedures — extraction, socket preservation, sinus lift (when needed), implant placement, and provisional restoration — into a single, streamlined appointment.",
-      "Dr. Ho pioneered this technique to dramatically reduce patient burden: fewer visits, less downtime, lower total cost, and a seamless healing experience. All guided by advanced digital implant planning software.",
     ],
-    benefits: [
-      'Complete smile restoration in one visit',
-      'Computer-guided surgical precision',
-      'Same-day provisional crown placed',
-      'Minimally invasive approach',
-      'Superior long-term success rates',
-      'Suitable for full-arch cases',
-    ],
-    note: 'Most patients return to work within 48–72 hours.',
+    benefits: [],
   },
   {
     id: 'invisalign',
@@ -91,17 +64,8 @@ const services = [
     headline: 'Precision alignment, invisible process.',
     desc: [
       "As an Invisalign Elite Preferred Provider — a designation held by fewer than 5% of providers nationwide — PAAD delivers straighter smiles with exceptional case complexity experience and volume.",
-      "Every Invisalign case begins with an iTero 3D scan and a virtual smile simulation, so you can see your projected result before treatment starts. Most cases complete in 12–18 months.",
     ],
-    benefits: [
-      'Top 5% Elite Preferred Provider',
-      'iTero 3D scan — no impressions',
-      'Virtual smile preview before you start',
-      'Removable for eating and brushing',
-      'Treats complex bite issues',
-      'Teen and adult programs available',
-    ],
-    note: 'Includes complimentary whitening for completed Invisalign cases.',
+    benefits: [],
   },
   {
     id: 'whitening',
@@ -112,15 +76,7 @@ const services = [
     desc: [
       "Achieve dramatic results with our in-office Zoom whitening system — up to 8 shades brighter in a single 90-minute session. For gentler at-home brightening, we also provide custom-fitted whitening trays with professional-grade gel.",
     ],
-    benefits: [
-      'Up to 8 shades brighter in one visit',
-      'Custom take-home trays available',
-      'Safe for sensitive teeth',
-      'Long-lasting results',
-      'Included free with Invisalign completion',
-      'Touch-up kits provided',
-    ],
-    note: 'Sensitivity-safe protocol available for enamel-sensitive patients.',
+    benefits: [],
   },
   {
     id: 'rootcanal',
@@ -130,17 +86,8 @@ const services = [
     headline: 'Save your tooth. End the pain.',
     desc: [
       "Modern root canal therapy is nothing like the stories you may have heard. Using rotary nickel-titanium files and digital apex locators, our procedure is precise, comfortable, and typically completed in one visit.",
-      "We numb thoroughly before we start, and most patients report feeling little to nothing during treatment. Post-procedure discomfort is usually manageable with over-the-counter medication.",
     ],
-    benefits: [
-      'Single-visit treatment in most cases',
-      'Rotary NiTi instrumentation for precision',
-      'Digital apex locator accuracy',
-      'Minimal post-op discomfort',
-      'Followed by crown placement',
-      'Saves your natural tooth',
-    ],
-    note: 'Most root canals are completed in a single 60–90 minute appointment.',
+    benefits: [],
   },
   {
     id: 'cleanings',
@@ -150,17 +97,8 @@ const services = [
     headline: 'Prevention is the best investment.',
     desc: [
       "Routine cleanings are the cornerstone of lasting oral health. Our hygienists use ultrasonic scaling and digital X-rays to detect and address issues early — keeping your smile healthy for life.",
-      "We offer standard, deep-cleaning (scaling and root planing), and maintenance cleanings for patients with periodontal disease.",
     ],
-    benefits: [
-      'Comprehensive digital X-rays',
-      'Oral cancer screening included',
-      'Periodontal charting',
-      'Deep-cleaning / SRP for gum disease',
-      'Fluoride & sealant options',
-      'Personalized hygiene coaching',
-    ],
-    note: 'Recommended every 6 months for most patients.',
+    benefits: [],
   },
 ]
 

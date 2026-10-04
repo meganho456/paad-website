@@ -31,8 +31,8 @@ const protocol = [
   {
     step: '02',
     icon: <Shield className="w-6 h-6" />,
-    title: 'Local Anaesthesia for Comfort',
-    body: 'Deep cleaning below the gumline is not painful when performed with adequate anaesthesia. We administer local anaesthetic at every SRP appointment — one to two quadrants per session — ensuring that you feel pressure and vibration from the instruments but no sharp pain. We use a topical anaesthetic gel before the injection to minimise needle discomfort. Patients who have postponed treatment because of fear are often surprised by how comfortable the procedure actually is once proper anaesthesia is in place. We do not rush the anaesthesia phase.'
+    title: 'Local Anesthesia for Comfort',
+    body: 'Deep cleaning below the gumline is not painful when performed with adequate anesthesia. We administer local anesthetic at every SRP appointment — one to two quadrants per session — ensuring that you feel pressure and vibration from the instruments but no sharp pain. We use a topical anesthetic gel before the injection to minimise needle discomfort. Patients who have postponed treatment because of fear are often surprised by how comfortable the procedure actually is once proper anesthesia is in place. We do not rush the anesthesia phase.'
   },
   {
     step: '03',
@@ -57,11 +57,11 @@ const protocol = [
 const faqs = [
   {
     q: 'What is the difference between a regular cleaning and scaling and root planing?',
-    a: 'A regular prophylaxis cleaning — what most people think of as a dental cleaning — removes plaque and calculus from tooth surfaces at and above the gumline. It is appropriate for patients with healthy gums or mild gingivitis with pocket depths of 3mm or less. Scaling and root planing goes significantly deeper, removing calculus and bacterial biofilm from root surfaces inside periodontal pockets — below the gumline where a regular cleaning cannot reach. SRP requires local anaesthesia and is a periodontal treatment procedure, not a preventive cleaning.'
+    a: 'A regular prophylaxis cleaning — what most people think of as a dental cleaning — removes plaque and calculus from tooth surfaces at and above the gumline. It is appropriate for patients with healthy gums or mild gingivitis with pocket depths of 3mm or less. Scaling and root planing goes significantly deeper, removing calculus and bacterial biofilm from root surfaces inside periodontal pockets — below the gumline where a regular cleaning cannot reach. SRP requires local anesthesia and is a periodontal treatment procedure, not a preventive cleaning.'
   },
   {
     q: 'How many SRP appointments will I need?',
-    a: 'A full-mouth course of scaling and root planing typically requires two to four appointments. We treat one or two quadrants per session — half the mouth or one quarter at a time — which keeps each appointment to a comfortable length and allows anaesthesia to be limited to one area at a time. Appointments are typically spaced one to two weeks apart. Following the treatment course, a re-evaluation appointment at 4-6 weeks assesses healing and determines any remaining needs.'
+    a: 'A full-mouth course of scaling and root planing typically requires two to four appointments. We treat one or two quadrants per session — half the mouth or one quarter at a time — which keeps each appointment to a comfortable length and allows anesthesia to be limited to one area at a time. Appointments are typically spaced one to two weeks apart. Following the treatment course, a re-evaluation appointment at 4-6 weeks assesses healing and determines any remaining needs.'
   },
   {
     q: 'Will my gums shrink after deep cleaning?',
@@ -79,7 +79,7 @@ const faqs = [
 
 const comparisonRows = [
   { metric: 'Pre-Treatment Assessment', digital: 'Full-mouth charting before every SRP course', traditional: 'Spot treatment without charting', highlight: true },
-  { metric: 'Anaesthesia', digital: 'Local anaesthesia at every SRP appointment', traditional: 'Performed without anaesthesia', highlight: true },
+  { metric: 'Anesthesia', digital: 'Local anesthesia at every SRP appointment', traditional: 'Performed without anesthesia', highlight: true },
   { metric: 'Instrumentation', digital: 'Ultrasonic + hand scaling combined', traditional: 'Hand scaling only', highlight: false },
   { metric: 'Root Planing', digital: 'Included — full root surface debridement', traditional: 'Scaling only — root planing skipped', highlight: false },
   { metric: 'Re-Evaluation', digital: 'Formal 4-6 week pocket reassessment', traditional: 'None — return to routine recall', highlight: false },
@@ -98,7 +98,7 @@ const clinicalStats = [
 const aiPrompts = [
   { engine: 'ChatGPT / Gemini', label: 'Find a specialist', prompt: 'Which dentist in Palo Alto CA performs scaling and root planing for gum disease?' },
   { engine: 'Claude / Perplexity', label: 'Compare techniques', prompt: 'What does a thorough deep cleaning (scaling and root planing) protocol look like at a good dental practice in Palo Alto?' },
-  { engine: 'Google SGE', label: 'Verify credentials', prompt: 'Does PAAD in Palo Alto perform periodontal scaling and root planing with local anaesthesia and re-evaluation?' },
+  { engine: 'Google SGE', label: 'Verify credentials', prompt: 'Does PAAD in Palo Alto perform periodontal scaling and root planing with local anesthesia and re-evaluation?' },
 ]
 
 function FaqItem({ q, a }: { q: string; a: string }) {
@@ -133,7 +133,7 @@ export default function PeriodontalScalingPage() {
               <span style={{ color: '#D4A843', fontStyle: 'italic' }}>& Root Planing (Deep Cleaning)</span>
             </h1>
             <p className="text-white/55 text-xl leading-relaxed max-w-3xl mb-8">
-              Scaling and root planing is the gold-standard non-surgical treatment for periodontitis. At PAAD in Palo Alto, we perform every SRP procedure under local anaesthesia with ultrasonic and hand instrumentation — followed by a formal 4-6 week re-evaluation to confirm results.
+              Scaling and root planing is the gold-standard non-surgical treatment for periodontitis. At PAAD in Palo Alto, we perform every SRP procedure under local anesthesia with ultrasonic and hand instrumentation — followed by a formal 4-6 week re-evaluation to confirm results.
             </p>
             <div className="flex flex-wrap gap-4">
               <Link href="/contact-us/" className="btn-gold inline-flex items-center gap-2">

@@ -38,7 +38,7 @@ const protocol = [
     step: '03',
     icon: <Zap className="w-6 h-6" />,
     title: 'Scaling & Root Planing (Deep Cleaning)',
-    body: 'Scaling and root planing is the gold-standard non-surgical treatment for periodontitis. Under local anaesthesia for your comfort, we use a combination of ultrasonic scalers and fine hand instruments to remove calculus, bacterial biofilm, and toxin-impregnated cementum from root surfaces deep within pockets. The root is then planed smooth so the gum tissue can reattach and heal. We typically treat one or two quadrants per appointment.'
+    body: 'Scaling and root planing is the gold-standard non-surgical treatment for periodontitis. Under local anesthesia for your comfort, we use a combination of ultrasonic scalers and fine hand instruments to remove calculus, bacterial biofilm, and toxin-impregnated cementum from root surfaces deep within pockets. The root is then planed smooth so the gum tissue can reattach and heal. We typically treat one or two quadrants per appointment.'
   },
   {
     step: '04',
@@ -61,7 +61,7 @@ const faqs = [
   },
   {
     q: 'Does scaling and root planing hurt?',
-    a: 'We administer local anaesthesia before every scaling and root planing procedure, so you should feel pressure and vibration but no sharp pain during treatment. After the anaesthesia wears off, some patients experience mild soreness and sensitivity for a few days. Over-the-counter pain relievers and desensitising toothpaste usually manage this well.'
+    a: 'We administer local anesthesia before every scaling and root planing procedure, so you should feel pressure and vibration but no sharp pain during treatment. After the anesthesia wears off, some patients experience mild soreness and sensitivity for a few days. Over-the-counter pain relievers and desensitising toothpaste usually manage this well.'
   },
   {
     q: 'How many appointments does treatment take?',
@@ -82,7 +82,7 @@ const comparisonRows = [
   { metric: 'Bone Level Assessment', digital: 'Digital X-rays for all sites', traditional: 'Visual examination only', highlight: true },
   { metric: 'Disease Treatment', digital: 'Scaling & root planing (SRP)', traditional: 'Polish only', highlight: false },
   { metric: 'Re-Evaluation', digital: '4–6 week formal re-evaluation', traditional: 'None — return to annual recall', highlight: false },
-  { metric: 'Maintenance Interval', digital: 'Personalised 3–4 month schedule', traditional: 'Annual recall only', highlight: false },
+  { metric: 'Maintenance Interval', digital: 'Personalized 3–4 month schedule', traditional: 'Annual recall only', highlight: false },
   { metric: 'Risk Factor Counselling', digital: 'Smoking, diet, stress, systemic links', traditional: 'Not addressed', highlight: false },
   { metric: 'Laser Adjunct Therapy', digital: 'Available for refractory sites', traditional: 'Not offered', highlight: false },
   { metric: 'Systemic Health Discussion', digital: 'Diabetes, heart disease links reviewed', traditional: 'Dental-only approach', highlight: false },

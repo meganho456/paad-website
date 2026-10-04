@@ -275,7 +275,7 @@ export default function ImplantsPage() {
             <h2 className="font-serif text-4xl font-bold text-white mb-5" style={{ letterSpacing: '-0.03em' }}>
               Ready for a <span style={{ color: '#D4A843', fontStyle: 'italic' }}>same-day consultation?</span>
             </h2>
-            <p className="text-white/50 mb-8">Includes 3D CBCT scan, bone assessment, and personalised treatment plan.</p>
+            <p className="text-white/50 mb-8">Includes 3D CBCT scan, bone assessment, and personalized treatment plan.</p>
             <div className="flex flex-wrap justify-center gap-4">
               <Link href="/contact" className="btn-gold inline-flex items-center gap-2">
                 Book Free Consultation <ArrowRight className="w-4 h-4" />

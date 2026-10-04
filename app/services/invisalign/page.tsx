@@ -338,7 +338,7 @@ export default function InvisalignPage() {
             <h2 className="font-serif text-4xl font-bold text-white mb-5" style={{ letterSpacing: '-0.03em' }}>
               See your new smile <span style={{ color: '#D4A843', fontStyle: 'italic' }}>before you start.</span>
             </h2>
-            <p className="text-white/50 mb-8">Free consultation includes iTero 3D scan, virtual SmileView simulation, and a personalised treatment plan — no obligation.</p>
+            <p className="text-white/50 mb-8">Free consultation includes iTero 3D scan, virtual SmileView simulation, and a personalized treatment plan — no obligation.</p>
             <div className="flex flex-wrap justify-center gap-4">
               <Link href="/contact" className="btn-gold inline-flex items-center gap-2">
                 Book Free Consultation <ArrowRight className="w-4 h-4" />

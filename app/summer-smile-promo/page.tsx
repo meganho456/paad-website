@@ -118,7 +118,7 @@ const faqs = [
   },
   {
     q: 'How much does teeth whitening cost in Palo Alto?',
-    a: 'During our Summer Smile Event (valid for consultations booked by July 30), standalone in-office Zoom whitening is $150 off the regular price. If you are also starting Invisalign, chairside whitening is included complimentarily with your clear aligner case — effectively eliminating the whitening cost entirely. Call us at (650) 324-4900 or book a complimentary consultation online for a personalised quote based on your specific goals.',
+    a: 'During our Summer Smile Event (valid for consultations booked by July 30), standalone in-office Zoom whitening is $150 off the regular price. If you are also starting Invisalign, chairside whitening is included complimentarily with your clear aligner case — effectively eliminating the whitening cost entirely. Call us at (650) 324-4900 or book a complimentary consultation online for a personalized quote based on your specific goals.',
   },
   {
     q: 'Are there any package deals for Invisalign and whitening together?',

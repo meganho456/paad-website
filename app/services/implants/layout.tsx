@@ -9,7 +9,7 @@ const jsonLd = {
     'Advanced 5-in-1 same-day implant protocol combining 3D CBCT-guided surgery, digital bite-force analysis, and in-house digital lab for immediate provisional restoration. Performed by Harvard-trained Dr. James Ho at Palo Alto Advanced Dentists.',
   procedureType: 'Surgical',
   followUp: 'Implant integration monitoring over 3–6 months. Final crown placed after osseointegration.',
-  preparation: '3D CBCT scan, digital bite analysis, virtual surgical planning. No general anaesthesia required.',
+  preparation: '3D CBCT scan, digital bite analysis, virtual surgical planning. No general anesthesia required.',
   howPerformed:
     'Computer-guided implant placement using 3D CBCT-derived surgical guide. Extraction, socket preservation, sinus lift (if needed), implant fixture placement, and same-day provisional crown in a single appointment.',
   medicalSpecialty: 'Dentistry',

@@ -155,7 +155,7 @@ export default function PorcelainVeneersPage() {
                 Multiple Aesthetic Concerns, One Solution
               </h2>
               <div className="space-y-4 text-navy-900/65 leading-relaxed">
-                <p>Porcelain veneers are ultra-thin ceramic shells — approximately the thickness of a contact lens — that bond to the front surface of teeth, transforming their colour, shape, and apparent alignment. Unlike whitening, which addresses only discolouration, veneers can simultaneously correct chips, close gaps, lengthen short teeth, and create a uniform smile that looks natural in any light.</p>
+                <p>Porcelain veneers are ultra-thin ceramic shells — approximately the thickness of a contact lens — that bond to the front surface of teeth, transforming their colour, shape, and apparent alignment. Unlike whitening, which addresses only discoloration, veneers can simultaneously correct chips, close gaps, lengthen short teeth, and create a uniform smile that looks natural in any light.</p>
                 <p>At PAAD, the veneer process is unhurried and collaborative. Dr. Ho uses digital smile design technology to create a visual prototype of the planned result, allowing patients to review and approve the smile proportions before any treatment begins. This transparency is fundamental to producing outcomes that patients love and that stand the test of time — naturally beautiful smiles designed for Palo Alto&apos;s discerning patients.</p>
               </div>
             </FadeUp>

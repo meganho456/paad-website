@@ -73,7 +73,7 @@ const faqs = [
   },
   {
     q: 'Is the procedure painful?',
-    a: 'Tooth preparation is performed under local anaesthesia and is comfortable throughout. Patients may experience mild sensitivity in the prepared tooth during the temporary phase, which resolves once the permanent ceramic restoration is bonded in place. Post-bonding sensitivity typically settles within a few days as the tooth adapts to the new restoration.',
+    a: 'Tooth preparation is performed under local anesthesia and is comfortable throughout. Patients may experience mild sensitivity in the prepared tooth during the temporary phase, which resolves once the permanent ceramic restoration is bonded in place. Post-bonding sensitivity typically settles within a few days as the tooth adapts to the new restoration.',
   },
 ]
 

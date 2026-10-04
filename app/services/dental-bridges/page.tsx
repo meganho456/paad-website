@@ -32,7 +32,7 @@ const protocol = [
     step: '02',
     icon: <Wrench className="w-6 h-6" />,
     title: 'Abutment Tooth Preparation',
-    body: 'The teeth on either side of the gap (abutment teeth) are prepared by removing a controlled amount of enamel to accommodate the bridge retainer crowns. Preparation is performed under local anaesthesia and is planned to preserve maximum tooth structure while providing sufficient retention for the bridge. The shape and taper of the preparation directly affects how securely the bridge seats and how cleanly margins seal.',
+    body: 'The teeth on either side of the gap (abutment teeth) are prepared by removing a controlled amount of enamel to accommodate the bridge retainer crowns. Preparation is performed under local anesthesia and is planned to preserve maximum tooth structure while providing sufficient retention for the bridge. The shape and taper of the preparation directly affects how securely the bridge seats and how cleanly margins seal.',
   },
   {
     step: '03',

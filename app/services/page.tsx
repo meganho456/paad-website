@@ -180,7 +180,6 @@ export default function ServicesPage() {
                     <div className="mt-6 grid grid-cols-1 sm:grid-cols-2 gap-2.5">
                       {svc.benefits.map((b, k) => (
                         <div key={k} className="flex items-start gap-2.5 text-sm text-white/65">
-                          <CheckCircle2 className="w-4 h-4 text-gold-400 shrink-0 mt-0.5" />
                           {b}
                         </div>
                       ))}

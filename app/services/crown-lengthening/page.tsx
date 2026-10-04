@@ -31,8 +31,8 @@ const protocol = [
   {
     step: '02',
     icon: <Zap className="w-6 h-6" />,
-    title: 'Local Anaesthesia & Tissue Management',
-    body: 'Profound local anaesthesia is administered to ensure complete comfort throughout the procedure. Our providers use a minimally invasive approach that preserves as much healthy gum tissue as possible while achieving the clinical objectives. The surgical field is carefully managed to minimise bleeding and maintain clear visibility throughout the procedure.',
+    title: 'Local Anesthesia & Tissue Management',
+    body: 'Profound local anesthesia is administered to ensure complete comfort throughout the procedure. Our providers use a minimally invasive approach that preserves as much healthy gum tissue as possible while achieving the clinical objectives. The surgical field is carefully managed to minimise bleeding and maintain clear visibility throughout the procedure.',
   },
   {
     step: '03',

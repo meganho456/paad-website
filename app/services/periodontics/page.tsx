@@ -69,7 +69,7 @@ const treatments = [
   { icon: <Shield className="w-6 h-6" />, title: 'Antibiotic Therapy', desc: 'Locally delivered antibiotics (such as Arestin® microspheres) are placed directly into periodontal pockets after SRP to eliminate residual bacteria and extend the therapeutic effect of the deep cleaning.' },
   { icon: <Microscope className="w-6 h-6" />, title: 'Laser Periodontal Therapy', desc: 'Diode laser energy selectively targets and removes diseased gum tissue, reduces bacterial load in pockets, and stimulates reattachment without cutting. Often used adjunctively with SRP for advanced cases.' },
   { icon: <CheckCircle2 className="w-6 h-6" />, title: 'PINHOLE Surgical Technique®', desc: 'For gum recession caused by periodontitis, Dr. Ho\'s certified PINHOLE technique repositions gum tissue without grafts or sutures, restoring coverage of exposed roots in a single visit.' },
-  { icon: <AlertCircle className="w-6 h-6" />, title: 'Osseous Surgery', desc: 'For advanced cases with deep irregular bone defects, osseous surgery reshapes the underlying bone to eliminate pockets and make the area maintainable. Performed under local anaesthesia.' },
+  { icon: <AlertCircle className="w-6 h-6" />, title: 'Osseous Surgery', desc: 'For advanced cases with deep irregular bone defects, osseous surgery reshapes the underlying bone to eliminate pockets and make the area maintainable. Performed under local anesthesia.' },
   { icon: <Clock className="w-6 h-6" />, title: 'Periodontal Maintenance', desc: 'After active treatment, periodontal maintenance visits every 3–4 months are essential. These are more thorough than standard cleanings — including full pocket charting, root debridement, and reassessment of bone levels.' },
 ]
 
@@ -95,7 +95,7 @@ const faqs = [
   },
   {
     q: 'Is scaling and root planing painful?',
-    a: 'Scaling and root planing (deep cleaning) is performed under local anaesthesia, so the procedure itself should be comfortable. Post-treatment, you may experience sensitivity and mild soreness for 48–72 hours, which over-the-counter anti-inflammatories manage well. We also offer nitrous oxide for anxious patients. The discomfort of treatment is far less than the long-term consequences of untreated gum disease.',
+    a: 'Scaling and root planing (deep cleaning) is performed under local anesthesia, so the procedure itself should be comfortable. Post-treatment, you may experience sensitivity and mild soreness for 48–72 hours, which over-the-counter anti-inflammatories manage well. We also offer nitrous oxide for anxious patients. The discomfort of treatment is far less than the long-term consequences of untreated gum disease.',
   },
   {
     q: 'How do I know if I have gum disease if I have no pain?',

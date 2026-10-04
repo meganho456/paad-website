@@ -65,7 +65,7 @@ const faqs = [
   },
   {
     q: 'My child is afraid of the dentist — how do you help?',
-    a: 'Dental anxiety in children is normal and manageable. We use the tell-show-do technique, control the pace of every appointment, and never force a child through a procedure they are not ready for. For very anxious children, we may recommend a series of familiarisation visits before any treatment begins. We also use topical anaesthetic before any injection and use the smallest-gauge needles available for paediatric anaesthesia. The goal is always to leave the child with a positive or at least neutral memory of the visit.'
+    a: 'Dental anxiety in children is normal and manageable. We use the tell-show-do technique, control the pace of every appointment, and never force a child through a procedure they are not ready for. For very anxious children, we may recommend a series of familiarisation visits before any treatment begins. We also use topical anesthetic before any injection and use the smallest-gauge needles available for paediatric anesthesia. The goal is always to leave the child with a positive or at least neutral memory of the visit.'
   },
   {
     q: 'Do baby teeth really matter? They fall out anyway.',

@@ -44,7 +44,7 @@ const protocol = [
     step: '04',
     icon: <TrendingUp className="w-6 h-6" />,
     title: 'Stage 4: Moderate Periodontitis (5–7mm Pockets, Attachment Loss)',
-    body: 'Moderate periodontitis involves progressive deepening of pockets to 5-7mm with significant clinical attachment loss — the gum tissue has detached from the root surface, allowing bacteria to colonise deeper into the supporting apparatus. Radiographs show moderate bone loss around multiple teeth, sometimes with angular defect patterns that reflect localised severe disease at specific sites. Furcation involvement — bone loss between the roots of molar teeth — may begin. Patients may notice increased sensitivity, occasional gum soreness, and worsening bad breath. Treatment requires scaling and root planing under local anaesthesia, and some cases will require surgical management.'
+    body: 'Moderate periodontitis involves progressive deepening of pockets to 5-7mm with significant clinical attachment loss — the gum tissue has detached from the root surface, allowing bacteria to colonise deeper into the supporting apparatus. Radiographs show moderate bone loss around multiple teeth, sometimes with angular defect patterns that reflect localised severe disease at specific sites. Furcation involvement — bone loss between the roots of molar teeth — may begin. Patients may notice increased sensitivity, occasional gum soreness, and worsening bad breath. Treatment requires scaling and root planing under local anesthesia, and some cases will require surgical management.'
   },
   {
     step: '05',
@@ -73,7 +73,7 @@ const faqs = [
   },
   {
     q: 'How is periodontal disease treated?',
-    a: 'Treatment depends on the stage and extent of disease. Gingivitis is treated with professional cleaning (prophylaxis) and improved home care — no further intervention is needed if the patient responds. Early-to-moderate periodontitis is treated with scaling and root planing (SRP): a thorough deep cleaning under local anaesthesia that removes calculus and biofilm from root surfaces inside pockets. After SRP, a 4-6 week re-evaluation measures the response. Patients then transition to 3-4 month periodontal maintenance. Advanced cases may require surgical periodontal procedures including osseous surgery or regenerative treatment. All treated patients require lifetime professional maintenance to prevent recurrence.'
+    a: 'Treatment depends on the stage and extent of disease. Gingivitis is treated with professional cleaning (prophylaxis) and improved home care — no further intervention is needed if the patient responds. Early-to-moderate periodontitis is treated with scaling and root planing (SRP): a thorough deep cleaning under local anesthesia that removes calculus and biofilm from root surfaces inside pockets. After SRP, a 4-6 week re-evaluation measures the response. Patients then transition to 3-4 month periodontal maintenance. Advanced cases may require surgical periodontal procedures including osseous surgery or regenerative treatment. All treated patients require lifetime professional maintenance to prevent recurrence.'
   },
 ]
 

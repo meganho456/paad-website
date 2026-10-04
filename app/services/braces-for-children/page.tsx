@@ -73,7 +73,7 @@ const faqs = [
   },
   {
     q: 'Are metal braces the only option for children?',
-    a: 'Metal brackets are the most robust and reliable option for growing children undergoing comprehensive treatment. Ceramic brackets are available for older teens who prioritise aesthetics. Clear aligner systems like Invisalign Teen are an option for compliant adolescents with mild to moderate crowding, but require strict wear compliance that younger children may struggle to maintain.',
+    a: 'Metal brackets are the most robust and reliable option for growing children undergoing comprehensive treatment. Ceramic brackets are available for older teens who prioritize aesthetics. Clear aligner systems like Invisalign Teen are an option for compliant adolescents with mild to moderate crowding, but require strict wear compliance that younger children may struggle to maintain.',
   },
 ]
 

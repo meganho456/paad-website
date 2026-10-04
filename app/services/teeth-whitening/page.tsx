@@ -159,7 +159,7 @@ export default function TeethWhiteningPage() {
               <h2 className="font-serif text-4xl font-bold text-navy-900 mb-6" style={{ letterSpacing: '-0.03em' }}>
                 Which Stains Respond to Whitening?
               </h2>
-              <p className="text-navy-900/65 leading-relaxed mb-4">Professional whitening oxidises intrinsic and extrinsic stain molecules within the enamel. Results depend on the origin of the discolouration — most common staining from lifestyle and aging responds very well. We assess your candidacy at consultation.</p>
+              <p className="text-navy-900/65 leading-relaxed mb-4">Professional whitening oxidizes intrinsic and extrinsic stain molecules within the enamel. Results depend on the origin of the discoloration — most common staining from lifestyle and aging responds very well. We assess your candidacy at consultation.</p>
               <p className="text-navy-900/65 leading-relaxed">Dental restorations (crowns, veneers, bonding, and tooth-coloured fillings) do not bleach. If prominent restorations are present, we discuss sequencing treatment to achieve a uniform final result.</p>
             </FadeUp>
             <FadeUp delay={0.15}>
@@ -290,7 +290,7 @@ export default function TeethWhiteningPage() {
             <h2 className="font-serif text-4xl font-bold text-white mb-5" style={{ letterSpacing: '-0.03em' }}>
               A brighter smile <span style={{ color: '#D4A843', fontStyle: 'italic' }}>in 90 minutes.</span>
             </h2>
-            <p className="text-white/50 mb-8">Book your whitening consultation — includes shade assessment and personalised treatment recommendation. Complimentary with all completed Invisalign cases.</p>
+            <p className="text-white/50 mb-8">Book your whitening consultation — includes shade assessment and personalized treatment recommendation. Complimentary with all completed Invisalign cases.</p>
             <div className="flex flex-wrap justify-center gap-4">
               <Link href="/contact" className="btn-gold inline-flex items-center gap-2">
                 Book Whitening Appointment <ArrowRight className="w-4 h-4" />

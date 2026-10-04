@@ -57,7 +57,7 @@ const protocol = [
 const faqs = [
   {
     q: 'Is bone grafting painful?',
-    a: 'The procedure is performed under local anaesthesia, so you should feel pressure but not pain during the surgery. Post-operative discomfort is typically manageable with over-the-counter analgesics and peaks in the first 48–72 hours. Most patients return to normal activities within a week.',
+    a: 'The procedure is performed under local anesthesia, so you should feel pressure but not pain during the surgery. Post-operative discomfort is typically manageable with over-the-counter analgesics and peaks in the first 48–72 hours. Most patients return to normal activities within a week.',
   },
   {
     q: 'How long does bone grafting take to heal before I can get an implant?',

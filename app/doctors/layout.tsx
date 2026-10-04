@@ -1,7 +1,7 @@
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'Meet Our Doctors',
+  title: 'Our Dentists in Palo Alto',
   description:
     'Meet the dental team at Palo Alto Advanced Dentists, led by Harvard-trained Dr. James Ho. Our multilingual doctors speak English, Spanish, Chinese, Korean, and Persian.',
   alternates: {

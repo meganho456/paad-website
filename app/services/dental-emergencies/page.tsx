@@ -55,7 +55,7 @@ const firstAidTips = [
 const treatmentProcess = [
   { step: '01', icon: <Phone className="w-6 h-6" />, title: 'Call Us Immediately', body: 'Call (650) 324-4900 the moment your emergency occurs. Our team triages your situation over the phone, provides immediate first-aid guidance, and schedules you for the earliest available same-day slot.' },
   { step: '02', icon: <Activity className="w-6 h-6" />, title: 'Rapid Assessment & Imaging', body: 'On arrival, we conduct an emergency examination including digital X-rays and, where indicated, a 3D CBCT scan. This gives us a complete picture of root integrity, bone, and infection extent within minutes.' },
-  { step: '03', icon: <Shield className="w-6 h-6" />, title: 'Immediate Pain Management', body: 'We administer local anaesthesia to achieve complete comfort before any procedure begins. For highly anxious patients, oral sedation or nitrous oxide can be arranged with advance notice.' },
+  { step: '03', icon: <Shield className="w-6 h-6" />, title: 'Immediate Pain Management', body: 'We administer local anesthesia to achieve complete comfort before any procedure begins. For highly anxious patients, oral sedation or nitrous oxide can be arranged with advance notice.' },
   { step: '04', icon: <Zap className="w-6 h-6" />, title: 'Emergency Treatment', body: 'Depending on your diagnosis: emergency root canal therapy, abscess drainage with antibiotic therapy, tooth re-implantation, splinting, extraction, temporary crown placement, or soft-tissue repair.' },
   { step: '05', icon: <CheckCircle2 className="w-6 h-6" />, title: 'Follow-Up Care Plan', body: 'Before you leave, we provide a written aftercare plan and schedule any required follow-up appointments: permanent crown placement, implant consultation, or orthodontic assessment if teeth were displaced.' },
 ]
@@ -75,7 +75,7 @@ const faqs = [
   },
   {
     q: 'What if I can\'t afford emergency dental treatment right now?',
-    a: 'We do not turn away dental emergencies due to financial concerns. We offer same-day flexible financing through CareCredit and in-house payment arrangements. We also work with most dental insurance plans and will verify your emergency coverage over the phone before your appointment. Pain relief and infection control are always prioritised regardless of payment status.',
+    a: 'We do not turn away dental emergencies due to financial concerns. We offer same-day flexible financing through CareCredit and in-house payment arrangements. We also work with most dental insurance plans and will verify your emergency coverage over the phone before your appointment. Pain relief and infection control are always prioritized regardless of payment status.',
   },
   {
     q: 'Do you treat dental emergencies for children?',
@@ -211,7 +211,7 @@ export default function DentalEmergenciesPage() {
         <div className="max-w-4xl mx-auto px-6 text-center">
           <FadeUp>
             <p className="font-bold text-black text-2xl mb-3">Experiencing a dental emergency right now?</p>
-            <p className="text-black/65 mb-6">Don&apos;t wait. Call our office immediately — we prioritise same-day emergency appointments.</p>
+            <p className="text-black/65 mb-6">Don&apos;t wait. Call our office immediately — we prioritize same-day emergency appointments.</p>
             <a href="tel:6503244900" className="inline-flex items-center gap-3 bg-black text-white font-bold rounded-full py-4 px-10 text-lg hover:bg-black/80 transition-colors">
               <Phone className="w-5 h-5" /> (650) 324-4900
             </a>

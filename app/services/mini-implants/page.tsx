@@ -32,7 +32,7 @@ const protocol = [
     step: '02',
     icon: <Zap className="w-6 h-6" />,
     title: 'Mini Implant Placement (Minimally Invasive)',
-    body: 'Mini implants are placed through a minimally invasive technique that typically does not require a surgical flap or sutures. Under local anaesthesia, a small pilot hole is created in the bone, and the titanium mini implant — 1.8 to 2.9mm in diameter — is threaded into position with a ratchet or micro-motor. The entire placement sequence for a two-implant denture stabilisation typically takes under an hour.',
+    body: 'Mini implants are placed through a minimally invasive technique that typically does not require a surgical flap or sutures. Under local anesthesia, a small pilot hole is created in the bone, and the titanium mini implant — 1.8 to 2.9mm in diameter — is threaded into position with a ratchet or micro-motor. The entire placement sequence for a two-implant denture stabilisation typically takes under an hour.',
   },
   {
     step: '03',

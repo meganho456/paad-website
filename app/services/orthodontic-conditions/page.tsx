@@ -38,7 +38,7 @@ const protocol = [
     step: '03',
     icon: <Layers className="w-6 h-6" />,
     title: 'Treatment Plan Selection (Invisalign or Braces)',
-    body: 'Based on your records and clinical findings, we present a personalised treatment plan that outlines the recommended approach — Invisalign clear aligners, fixed braces, or a combination — along with the anticipated treatment duration, number of appointments, estimated fees, and retention plan. As an Elite Preferred Invisalign Provider, we have the experience to manage complex cases with Invisalign that many practices would treat only with braces. For cases where braces are clinically superior, we recommend them without hesitation.'
+    body: 'Based on your records and clinical findings, we present a personalized treatment plan that outlines the recommended approach — Invisalign clear aligners, fixed braces, or a combination — along with the anticipated treatment duration, number of appointments, estimated fees, and retention plan. As an Elite Preferred Invisalign Provider, we have the experience to manage complex cases with Invisalign that many practices would treat only with braces. For cases where braces are clinically superior, we recommend them without hesitation.'
   },
   {
     step: '04',

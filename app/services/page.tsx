@@ -22,7 +22,18 @@ function FadeUp({ children, delay = 0, className = '' }: { children: React.React
   )
 }
 
-const services = [
+type Service = {
+  id: string
+  icon: React.ReactNode
+  tag: string
+  title: string
+  headline: string
+  desc: string[]
+  benefits: string[]
+  note?: string
+}
+
+const services: Service[] = [
   {
     id: 'pinhole',
     icon: <Scissors className="w-9 h-9" />,

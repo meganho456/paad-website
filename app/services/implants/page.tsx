@@ -149,6 +149,7 @@ export default function ImplantsPage() {
               Dr. James Ho (Harvard DMD, MPH) performs same-day full-arch dental implants in Palo Alto using
               3D CBCT-guided surgery and in-house digital fabrication. Most patients leave with functional
               provisional teeth on the same day as extraction — no staging across multiple appointments.
+              In cases that need more support, we may combine implant placement with <Link href="/services/bone-grafting" className="text-gold-400 underline decoration-gold-400/60 underline-offset-4">bone grafting</Link> or a <Link href="/services/sinus-augmentation" className="text-gold-400 underline decoration-gold-400/60 underline-offset-4">sinus augmentation</Link> to build the ideal foundation.
             </p>
             <div className="flex flex-wrap gap-4">
               <Link href="/contact" className="btn-gold inline-flex items-center gap-2">
@@ -232,6 +233,33 @@ export default function ImplantsPage() {
                   </div>
                 </div>
               </FadeUp>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* ── Related Treatments ── */}
+      <section className="py-20" style={{ background: '#faf7f0' }}>
+        <div className="max-w-6xl mx-auto px-6">
+          <FadeUp className="text-center mb-10">
+            <p className="section-label mb-4">Related treatments</p>
+            <h2 className="font-serif text-4xl font-bold text-navy-900 mb-4" style={{ letterSpacing: '-0.03em' }}>
+              Complementary procedures that support implant success
+            </h2>
+          </FadeUp>
+
+          <div className="grid grid-cols-1 md:grid-cols-4 gap-5">
+            {[
+              { title: 'Bone Grafting', href: '/services/bone-grafting', summary: 'Restore missing jawbone volume before implant placement.' },
+              { title: 'Sinus Augmentation', href: '/services/sinus-augmentation', summary: 'Increase bone height in the upper jaw when needed for implants.' },
+              { title: 'Tooth Extraction', href: '/services/tooth-extraction', summary: 'Remove failing teeth and preserve the socket for future restoration.' },
+              { title: 'Mini Implants', href: '/services/mini-implants', summary: 'A conservative implant option for carefully selected cases.' },
+            ].map((item) => (
+              <Link key={item.href} href={item.href} className="group block rounded-2xl border border-gold-500/20 bg-white p-5 shadow-sm transition-all hover:-translate-y-0.5 hover:border-gold-500/40">
+                <div className="mb-3 text-xs font-bold uppercase tracking-[0.18em] text-gold-500">Related</div>
+                <h3 className="font-serif text-2xl font-bold text-navy-900 mb-2">{item.title}</h3>
+                <p className="text-navy-900/60 text-sm leading-relaxed">{item.summary}</p>
+              </Link>
             ))}
           </div>
         </div>

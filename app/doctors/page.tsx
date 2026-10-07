@@ -5,6 +5,7 @@ import Link from 'next/link'
 import Image from 'next/image'
 import { motion, useInView } from 'framer-motion'
 import { Globe, CheckCircle2, ArrowRight, GraduationCap, Star } from 'lucide-react'
+import LanguageDoctors from '@/components/LanguageDoctors'
 
 function FadeUp({ children, delay = 0, className = '' }: { children: React.ReactNode; delay?: number; className?: string }) {
   const ref    = useRef(null)
@@ -171,48 +172,41 @@ export default function DoctorsPage() {
               Meet the Team<br />
               <span className="gold-text">Behind Your Smile</span>
             </h1>
-            <p className="text-white/55 text-xl leading-relaxed max-w-2xl mx-auto">
-              Led by Harvard-trained Dr. James Ho and his son Dr. Ryan Ho,
-              a Palo Alto native carrying the family legacy forward. Two generations
-              of dentists, one shared commitment to exceptional care.
-            </p>
+
+            <div className="mx-auto mt-6 max-w-5xl overflow-hidden rounded-3xl border border-white/10 shadow-2xl">
+              <div className="relative aspect-[16/9] w-full">
+                <Image
+                  src="/team/paad-team.jpg"
+                  alt="The PAAD team gathered in the office"
+                  fill
+                  className="object-cover object-center"
+                  sizes="(max-width: 1024px) 100vw, 1024px"
+                  priority
+                />
+                <div className="absolute inset-0" style={{ background: 'linear-gradient(to top, rgba(0,0,0,0.55) 0%, transparent 60%)' }} />
+                <p className="absolute bottom-5 left-0 right-0 text-center text-white/70 text-sm font-medium tracking-wide">
+                  Our team at Palo Alto Advanced Dentists
+                </p>
+              </div>
+            </div>
           </motion.div>
         </div>
       </section>
+
+      <LanguageDoctors />
 
       {/* ── Languages banner ── */}
       <section className="border-y border-white/10 py-5" style={{ background: '#1D1D1F' }}>
         <div className="max-w-5xl mx-auto px-6 flex flex-wrap items-center justify-center gap-6">
           <Globe className="w-4 h-4 text-gold-400" />
           <span className="text-white/50 text-sm font-medium">We speak:</span>
-          {['English', 'Spanish', 'Chinese', 'Korean', 'Persian'].map((lang) => (
+          {['English', 'Spanish', 'Chinese', 'Japanese', 'Persian'].map((lang) => (
             <span key={lang} className="text-white/80 text-sm font-semibold px-3 py-1 rounded-full"
               style={{ background: 'rgba(212,168,67,0.12)', border: '1px solid rgba(212,168,67,0.25)' }}>
               {lang}
             </span>
           ))}
         </div>
-      </section>
-
-      {/* ── Team Photo ── */}
-      <section className="py-16 px-6" style={{ background: '#1D1D1F' }}>
-        <FadeUp className="max-w-5xl mx-auto">
-          <p className="section-label text-center mb-6">The People Behind the Practice</p>
-          <div className="relative rounded-3xl overflow-hidden" style={{ minHeight: '420px' }}>
-            <Image
-              src="/team/paad-team.jpg"
-              alt="The PAAD team gathered in the office"
-              fill
-              className="object-cover object-center"
-              sizes="(max-width: 1024px) 100vw, 1024px"
-              priority
-            />
-            <div className="absolute inset-0" style={{ background: 'linear-gradient(to top, rgba(0,0,0,0.55) 0%, transparent 60%)' }} />
-            <p className="absolute bottom-5 left-0 right-0 text-center text-white/70 text-sm font-medium tracking-wide">
-              Our team at Palo Alto Advanced Dentists
-            </p>
-          </div>
-        </FadeUp>
       </section>
 
       {/* ── Doctor Cards ── */}

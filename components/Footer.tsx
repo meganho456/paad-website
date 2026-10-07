@@ -3,13 +3,18 @@ import Image from 'next/image'
 import { MapPin, Phone, Clock, Star } from 'lucide-react'
 
 const services = [
-  'PINHOLE Surgery',
-  'Porcelain Veneers',
-  'Same-Day Implants',
-  'Invisalign Elite',
-  'Teeth Whitening',
-  'Root Canal',
-  'Comprehensive Exam & Cleaning',
+  { label: 'Dental Implants', href: '/services/implants' },
+  { label: 'Bone Grafting', href: '/services/bone-grafting' },
+  { label: 'Sinus Augmentation', href: '/services/sinus-augmentation' },
+  { label: 'Invisalign', href: '/services/invisalign' },
+  { label: 'Smile Makeover', href: '/services/smile-makeover' },
+  { label: 'Porcelain Veneers', href: '/services/porcelain-veneers' },
+  { label: 'Teeth Whitening', href: '/services/teeth-whitening' },
+  { label: 'Root Canal', href: '/services/root-canal' },
+  { label: 'Gum Disease', href: '/services/gum-disease' },
+  { label: 'PINHOLE Surgery', href: '/services/pinhole' },
+  { label: 'Braces', href: '/services/braces' },
+  { label: 'Comprehensive Exam & Cleaning', href: '/services/cleanings' },
 ]
 
 const practiceLinks = [
@@ -61,13 +66,13 @@ export default function Footer() {
             </h3>
             <ul className="space-y-2.5">
               {services.map((s) => (
-                <li key={s}>
+                <li key={s.href}>
                   <Link
-                    href="/services"
+                    href={s.href}
                     className="text-white/50 hover:text-gold-400 text-sm transition-colors duration-200 flex items-center gap-2 group"
                   >
                     <span className="w-1 h-1 rounded-full bg-gold-600 group-hover:bg-gold-400 transition-colors" />
-                    {s}
+                    {s.label}
                   </Link>
                 </li>
               ))}

@@ -1,209 +1,157 @@
-﻿'use client'
+'use client'
 
 import { useRef } from 'react'
 import Link from 'next/link'
 import { motion, useInView } from 'framer-motion'
-import {
-  Zap, Smile, Sparkles, Sun, ShieldCheck, Activity,
-  Scissors, ArrowRight, ChevronRight, Phone
-} from 'lucide-react'
+import { ArrowRight, ChevronRight, Phone } from 'lucide-react'
 
 function FadeUp({ children, delay = 0, className = '' }: { children: React.ReactNode; delay?: number; className?: string }) {
-  const ref    = useRef(null)
+  const ref = useRef(null)
   const inView = useInView(ref, { once: true, margin: '-60px' })
+
   return (
-    <motion.div ref={ref} className={className}
-      initial={{ opacity: 0, y: 40 }}
+    <motion.div
+      ref={ref}
+      className={className}
+      initial={{ opacity: 0, y: 32 }}
       animate={inView ? { opacity: 1, y: 0 } : {}}
-      transition={{ duration: 0.65, delay, ease: [0.25, 0.1, 0.25, 1] }}
+      transition={{ duration: 0.7, delay, ease: [0.25, 0.1, 0.25, 1] }}
     >
       {children}
     </motion.div>
   )
 }
 
-type Service = {
-  id: string
-  icon: React.ReactNode
-  tag: string
+type ServiceSection = {
   title: string
-  headline: string
-  desc: string[]
-  benefits: string[]
-  note?: string
+  description: string
+  items: { label: string; href: string; summary: string }[]
 }
 
-const services: Service[] = [
+const serviceSections: ServiceSection[] = [
   {
-    id: 'pinhole',
-    icon: <Scissors className="w-9 h-9" />,
-    tag: 'Minimally Invasive',
-    title: 'PINHOLE Surgical Technique™',
-    headline: 'Gum recession reversed. No grafts.',
-    desc: [
-      "The Chao PINHOLE Surgical Technique® is a revolutionary, scalpel-free approach to treating gum recession. Through a tiny pinhole in the gum, special instruments gently loosen and reposition the gum tissue — no cutting, no sutures, no donor tissue.",
+    title: 'Restorative & Implant Dentistry',
+    description: 'Restoring form, function, and confidence with long-term solutions for missing, damaged, or failing teeth.',
+    items: [
+      { label: 'Dental Implants', href: '/services/implants', summary: 'Same-day implant placement, guided surgery, and full-arch restoration.' },
+      { label: 'Bone Grafting', href: '/services/bone-grafting', summary: 'Rebuild the jawbone and prepare the site for implant stability.' },
+      { label: 'Sinus Augmentation', href: '/services/sinus-augmentation', summary: 'Create adequate bone height for upper posterior implant placement.' },
+      { label: 'Dental Crowns', href: '/services/dental-crowns', summary: 'Protect and restore damaged teeth with custom-fit crowns.' },
+      { label: 'Dental Bridges', href: '/services/dental-bridges', summary: 'Replace missing teeth with a secure, natural-looking bridge.' },
+      { label: 'Dentures', href: '/services/dentures', summary: 'Comfortable, custom dentures for improved function and aesthetics.' },
+      { label: 'Tooth Extraction', href: '/services/tooth-extraction', summary: 'Gentle extractions when a tooth can no longer be saved.' },
+      { label: 'Inlays & Onlays', href: '/services/inlays-onlays', summary: 'Preserve tooth structure with conservative indirect restorations.' },
     ],
-    benefits: [],
   },
   {
-    id: 'veneers',
-    icon: <Sparkles className="w-9 h-9" />,
-    tag: 'Cosmetic Excellence',
-    title: 'Porcelain Veneers',
-    headline: 'Your smile, beautifully reimagined.',
-    desc: [
-      "Custom-crafted ultra-thin porcelain shells bonded to the front surface of your teeth. Veneers correct shape, color, length, and alignment — transforming your smile in as few as two appointments.",
+    title: 'Periodontal & Gum Care',
+    description: 'Preventive and surgical care that protects the supporting structures of your teeth.',
+    items: [
+      { label: 'Gum Disease', href: '/services/gum-disease', summary: 'Diagnosis and treatment for gingivitis and periodontitis.' },
+      { label: 'What Is Periodontal Disease?', href: '/services/what-is-periodontal-disease', summary: 'Learn how gum disease develops and why early treatment matters.' },
+      { label: 'Gum Recession', href: '/services/gum-recession', summary: 'Recession treatment that protects exposed roots and improves aesthetics.' },
+      { label: 'Gum Grafting', href: '/services/gum-grafting', summary: 'Restore lost tissue and strengthen the gumline.' },
+      { label: 'Periodontics', href: '/services/periodontics', summary: 'Comprehensive gum and bone therapy for lasting oral health.' },
+      { label: 'Periodontal Scaling', href: '/services/periodontal-scaling', summary: 'Deep cleaning to remove plaque and calculus below the gumline.' },
+      { label: 'Crown Lengthening', href: '/services/crown-lengthening', summary: 'Expose more of the tooth for restorative or cosmetic benefits.' },
+      { label: 'Regenerative Procedures', href: '/services/regenerative-procedures', summary: 'Advanced regeneration to restore bone and soft tissue support.' },
     ],
-    benefits: [],
   },
   {
-    id: 'implants',
-    icon: <Zap className="w-9 h-9" />,
-    tag: 'Signature Procedure',
-    title: '5-in-1 Same Day Implant Surgery',
-    headline: 'Walk in. Walk out with a smile.',
-    desc: [
-      "PAAD's exclusive 5-in-1 Same Day Implant Protocol combines five procedures — extraction, socket preservation, sinus lift (when needed), implant placement, and provisional restoration — into a single, streamlined appointment.",
+    title: 'Orthodontic & Cosmetic Dentistry',
+    description: 'Straighten smiles, improve bite function, and elevate esthetics with modern techniques.',
+    items: [
+      { label: 'Invisalign', href: '/services/invisalign', summary: 'Clear aligners for a discreet, customizable treatment plan.' },
+      { label: 'Braces', href: '/services/braces', summary: 'Traditional orthodontic treatment for complex bite and alignment issues.' },
+      { label: 'Braces for Children', href: '/services/braces-for-children', summary: 'Early orthodontic care designed for growing smiles.' },
+      { label: 'Orthodontic Conditions', href: '/services/orthodontic-conditions', summary: 'Solutions for crowding, spacing, bite issues, and alignment concerns.' },
+      { label: 'Smile Makeover', href: '/services/smile-makeover', summary: 'Full-face smile design tailored to your goals and facial balance.' },
+      { label: 'Porcelain Veneers', href: '/services/porcelain-veneers', summary: 'Thin ceramic shells that transform smile shape and color.' },
+      { label: 'Teeth Whitening', href: '/services/teeth-whitening', summary: 'Professional whitening for brighter, more confident smiles.' },
+      { label: 'Invisalign FAQs', href: '/services/invisalign-faqs', summary: 'Answers to common questions about clear aligners and treatment timing.' },
     ],
-    benefits: [],
   },
   {
-    id: 'invisalign',
-    icon: <Smile className="w-9 h-9" />,
-    tag: 'Elite Preferred — Top 5%',
-    title: 'Invisalign Clear Aligners',
-    headline: 'Precision alignment, invisible process.',
-    desc: [
-      "As an Invisalign Elite Preferred Provider — a designation held by fewer than 5% of providers nationwide — PAAD delivers straighter smiles with exceptional case complexity experience and volume.",
+    title: 'Pediatric & Preventive Care',
+    description: 'Early interventions and gentle preventive care to keep every family member smiling healthy.',
+    items: [
+      { label: 'Pediatric Dentistry', href: '/services/pediatric-dentistry', summary: 'Family-friendly dental care tailored to children and teens.' },
+      { label: 'Pediatric Sealants', href: '/services/pediatric-sealants', summary: 'Protective sealants to prevent decay on vulnerable back teeth.' },
+      { label: 'Comprehensive Exam & Cleaning', href: '/services/cleanings', summary: 'Essential preventive care for long-term oral health.' },
+      { label: 'Digital X-Rays', href: '/services/digital-xrays', summary: 'Low-radiation imaging for precise diagnosis and safe monitoring.' },
+      { label: 'Oral Cancer Exam', href: '/services/oral-cancer-exam', summary: 'Comprehensive screening to detect changes early.' },
+      { label: 'Dental Emergencies', href: '/services/dental-emergencies', summary: 'Rapid care when pain, trauma, or swelling requires immediate attention.' },
+      { label: 'Bruxism', href: '/services/bruxism', summary: 'Protect teeth from grinding and clenching-related wear.' },
+      { label: 'TMJ Treatment', href: '/services/tmj-treatment', summary: 'Relief for jaw pain, clicking, and bite-related discomfort.' },
     ],
-    benefits: [],
   },
   {
-    id: 'whitening',
-    icon: <Sun className="w-9 h-9" />,
-    tag: 'Quick Transformation',
-    title: 'Professional Teeth Whitening',
-    headline: 'Noticeably brighter. Same day.',
-    desc: [
-      "Achieve dramatic results with our in-office Zoom whitening system — up to 8 shades brighter in a single 90-minute session. For gentler at-home brightening, we also provide custom-fitted whitening trays with professional-grade gel.",
+    title: 'Diagnostic & Health Screening',
+    description: 'High-precision diagnostics that support safer treatment planning and better long-term outcomes.',
+    items: [
+      { label: 'Digital X-Rays', href: '/services/digital-xrays', summary: 'Detailed 3D and digital imaging for accurate screening and planning.' },
+      { label: 'Oral Cancer Exam', href: '/services/oral-cancer-exam', summary: 'Early detection screening for high-risk or symptomatic patients.' },
+      { label: 'Gum Disease & Diabetes', href: '/services/gum-disease-and-diabetes', summary: 'How oral and systemic health connect in chronic disease management.' },
+      { label: 'Gum Disease & Heart Disease', href: '/services/gum-disease-and-heart-disease', summary: 'Understanding the relationship between inflammation and cardiovascular health.' },
+      { label: 'Mini Implants', href: '/services/mini-implants', summary: 'A conservative implant option for selected restorative cases.' },
+      { label: 'Root Canal Treatment', href: '/services/root-canal', summary: 'Modern endodontic therapy to save teeth and relieve pain.' },
+      { label: 'Gum Disease', href: '/services/gum-disease', summary: 'Diagnostic and therapeutic planning for periodontal disease.' },
+      { label: 'Comprehensive Exam & Cleaning', href: '/services/cleanings', summary: 'Preventive monitoring and routine screening for lifelong oral health.' },
     ],
-    benefits: [],
-  },
-  {
-    id: 'rootcanal',
-    icon: <Activity className="w-9 h-9" />,
-    tag: 'Gentle & Precise',
-    title: 'Root Canal Treatment',
-    headline: 'Save your tooth. End the pain.',
-    desc: [
-      "Modern root canal therapy is nothing like the stories you may have heard. Using rotary nickel-titanium files and digital apex locators, our procedure is precise, comfortable, and typically completed in one visit.",
-    ],
-    benefits: [],
-  },
-  {
-    id: 'cleanings',
-    icon: <ShieldCheck className="w-9 h-9" />,
-    tag: 'Foundation of Health',
-    title: 'Comprehensive Exam & Cleaning',
-    headline: 'Prevention is the best investment.',
-    desc: [
-      "Routine cleanings are the cornerstone of lasting oral health. Our hygienists use ultrasonic scaling and digital X-rays to detect and address issues early — keeping your smile healthy for life.",
-    ],
-    benefits: [],
   },
 ]
 
 export default function ServicesPage() {
   return (
     <>
-      {/* ── Page Hero ── */}
-      <section className="relative pt-40 pb-28 overflow-hidden hero-grid" style={{ background: "#000" }}>
-        <div className="absolute top-0 right-0 w-80 h-80 rounded-full blur-3xl opacity-15 pointer-events-none"
-          style={{ background: 'radial-gradient(circle, #B88D2C, transparent)' }} />
-        <div className="max-w-4xl mx-auto px-6 text-center">
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.7 }}
-          >
-            <p className="section-label mb-5">
-              Our Services
-            </p>
+      <section className="relative pt-40 pb-28 overflow-hidden hero-grid" style={{ background: '#000' }}>
+        <div className="absolute top-0 right-0 w-80 h-80 rounded-full blur-3xl opacity-15 pointer-events-none" style={{ background: 'radial-gradient(circle, #B88D2C, transparent)' }} />
+        <div className="max-w-5xl mx-auto px-6 text-center">
+          <motion.div initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.7 }}>
+            <p className="section-label mb-5">Our Services</p>
             <h1 className="font-serif text-5xl md:text-6xl font-bold text-white leading-tight mb-6">
               Every Procedure.<br />
               <span className="gold-text italic">One Standard of Excellence.</span>
             </h1>
-            <p className="text-white/55 text-xl leading-relaxed max-w-2xl mx-auto mb-8">
-              From same-day implant surgery to invisible orthodontics — every service at PAAD
-              reflects our commitment to comprehensive, compassionate care — all under one roof.
+            <p className="text-white/55 text-xl leading-relaxed max-w-3xl mx-auto mb-8">
+              From same-day dental implants to gentle preventive care, PAAD brings advanced treatment, modern technology, and compassionate guidance to every smile in Palo Alto.
             </p>
-            <Link href="/contact" className="btn-gold inline-flex items-center gap-2">
-              Book a Consultation
-              <ArrowRight className="w-4 h-4" />
-            </Link>
+            <div className="flex flex-wrap justify-center gap-4">
+              <Link href="/contact" className="btn-gold inline-flex items-center gap-2">
+                Book a Consultation <ArrowRight className="w-4 h-4" />
+              </Link>
+              <a href="tel:6503244900" className="btn-ghost-white inline-flex items-center gap-2">
+                <Phone className="w-4 h-4" /> (650) 324-4900
+              </a>
+            </div>
           </motion.div>
         </div>
       </section>
 
-      {/* ── Service Cards ── */}
       <section className="bg-navy-900 py-24">
-        <div className="max-w-7xl mx-auto px-6 space-y-10">
-          {services.map((svc) => (
-            <FadeUp key={svc.id} delay={0.05}>
-              <div
-                id={svc.id}
-                className="glass-card p-8 md:p-12 group hover:border-gold-500/35 transition-all duration-400"
-              >
-                <div className="grid grid-cols-1 lg:grid-cols-[1fr_1.6fr] gap-10 items-start">
-                  {/* Left: icon + header */}
+        <div className="max-w-7xl mx-auto px-6 space-y-12">
+          {serviceSections.map((section, index) => (
+            <FadeUp key={section.title} delay={0.05 * index}>
+              <div className="border border-white/8 rounded-[28px] bg-white/3 p-6 md:p-8 lg:p-10">
+                <div className="mb-8 flex flex-col gap-3 md:flex-row md:items-end md:justify-between">
                   <div>
-                    <div
-                      className="w-18 h-18 w-16 h-16 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-105 transition-transform duration-300"
-                      style={{ background: 'linear-gradient(135deg, rgba(212,168,67,0.18), rgba(184,141,44,0.28))', color: '#D4A843' }}
-                    >
-                      {svc.icon}
-                    </div>
-                    <div
-                      className="inline-block text-[10px] font-bold uppercase tracking-widest px-2.5 py-1 rounded-full mb-3"
-                      style={{ background: 'rgba(184,141,44,0.15)', color: '#D4A843' }}
-                    >
-                      {svc.tag}
-                    </div>
-                    <h2 className="font-serif text-2xl md:text-3xl font-bold text-white mb-2 leading-tight">
-                      {svc.title}
-                    </h2>
-                    <p className="text-gold-400 text-sm font-medium italic mb-6">{svc.headline}</p>
-                    <Link
-                      href="/contact"
-                      className="inline-flex items-center gap-2 text-gold-400 font-semibold text-sm hover:gap-3 transition-all"
-                    >
-                      Schedule <ChevronRight className="w-4 h-4" />
-                    </Link>
+                    <p className="section-label mb-3">Treatment Category</p>
+                    <h2 className="font-serif text-3xl md:text-4xl font-bold text-white leading-tight">{section.title}</h2>
                   </div>
+                  <p className="max-w-2xl text-white/55 text-sm md:text-base leading-relaxed">{section.description}</p>
+                </div>
 
-                  {/* Right: description + benefits */}
-                  <div>
-                    {svc.desc.map((para, j) => (
-                      <p key={j} className="text-white/60 leading-relaxed mb-4 text-base">
-                        {para}
-                      </p>
-                    ))}
-                    <div className="mt-6 grid grid-cols-1 sm:grid-cols-2 gap-2.5">
-                      {svc.benefits.map((b, k) => (
-                        <div key={k} className="flex items-start gap-2.5 text-sm text-white/65">
-                          {b}
-                        </div>
-                      ))}
-                    </div>
-                    {svc.note && (
-                      <div
-                        className="mt-6 px-4 py-3 rounded-xl text-xs text-gold-300 italic"
-                        style={{ background: 'rgba(184,141,44,0.1)', borderLeft: '3px solid rgba(184,141,44,0.5)' }}
-                      >
-                        {svc.note}
+                <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-4">
+                  {section.items.map((item) => (
+                    <Link key={item.href} href={item.href} className="group block h-full rounded-2xl border border-white/8 bg-[#121820] p-5 transition-all duration-300 hover:border-gold-500/40 hover:bg-[#1a1f2a]">
+                      <div className="flex items-center justify-between text-gold-400 mb-3">
+                        <span className="text-sm font-semibold uppercase tracking-[0.14em]">Service</span>
+                        <ChevronRight className="w-4 h-4 transition-transform group-hover:translate-x-1" />
                       </div>
-                    )}
-                  </div>
+                      <h3 className="font-serif text-2xl font-bold text-white leading-tight mb-3">{item.label}</h3>
+                      <p className="text-white/55 text-sm leading-relaxed">{item.summary}</p>
+                    </Link>
+                  ))}
                 </div>
               </div>
             </FadeUp>
@@ -211,88 +159,23 @@ export default function ServicesPage() {
         </div>
       </section>
 
-      {/* ── Deep Dive Clinical Guides ── */}
       <section className="py-20" style={{ background: '#F5F5F7' }}>
-        <div className="max-w-7xl mx-auto px-6">
-          <FadeUp className="text-center mb-12">
-            <p className="section-label mb-4">Clinical Solution Guides</p>
-            <h2 className="font-serif text-4xl font-bold text-navy-900 mb-4" style={{ letterSpacing: '-0.03em' }}>
-              Deep-Dive Into Our Signature Procedures
-            </h2>
-            <p className="text-navy-900/55 max-w-2xl mx-auto">
-              Detailed clinical guides covering protocols, technology, candidacy criteria, and AI-optimised research prompts for our three most advanced procedures.
-            </p>
-          </FadeUp>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-            {[
-              {
-                href: '/services/pinhole',
-                tag: 'Minimally Invasive',
-                title: 'PINHOLE Surgical Technique™',
-                desc: 'No scalpel. No sutures. Full-arch gum recession reversed in one visit. Certified PST practitioner.',
-                dark: true,
-              },
-              {
-                href: '/services/implants',
-                tag: 'Signature Procedure',
-                title: 'Same-Day Full-Mouth Implants',
-                desc: '3D CBCT-guided surgery. Digital bite analysis. Same-day provisional teeth. 5-in-1 protocol.',
-                dark: true,
-              },
-              {
-                href: '/services/smile-makeover',
-                tag: 'Cosmetic Excellence',
-                title: 'Smile Makeover & Invisalign Elite',
-                desc: 'Top 5% Invisalign Elite Provider. Digital smile design preview. Artisan porcelain veneers.',
-                dark: false,
-              },
-            ].map((card, i) => (
-              <FadeUp key={i} delay={0.1 * i}>
-                <Link href={card.href} className="block group h-full">
-                  <div className={`h-full rounded-3xl p-8 border transition-all duration-300 group-hover:scale-[1.02] ${
-                    card.dark
-                      ? 'bg-navy-900 border-white/8 hover:border-gold-600/40'
-                      : 'bg-white border-cream-300 hover:border-gold-500/40 shadow-sm'
-                  }`}>
-                    <span className="section-label block mb-3">{card.tag}</span>
-                    <h3 className={`font-serif text-2xl font-bold mb-4 leading-tight ${card.dark ? 'text-white' : 'text-navy-900'}`}>
-                      {card.title}
-                    </h3>
-                    <p className={`text-sm leading-relaxed mb-6 ${card.dark ? 'text-white/55' : 'text-navy-900/55'}`}>
-                      {card.desc}
-                    </p>
-                    <span className="inline-flex items-center gap-2 text-sm font-semibold" style={{ color: '#D4A843' }}>
-                      Read Clinical Guide <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
-                    </span>
-                  </div>
-                </Link>
-              </FadeUp>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* ── CTA ── */}
-      <section className="bg-navy-950 py-24">
-        <div className="max-w-3xl mx-auto px-6 text-center">
+        <div className="max-w-5xl mx-auto px-6 text-center">
           <FadeUp>
-            <h2 className="font-serif text-4xl md:text-5xl font-bold text-white mb-5">
-              Not sure which treatment<br />
-              <span className="gold-text italic">is right for you?</span>
+            <p className="section-label mb-4">Need guidance?</p>
+            <h2 className="font-serif text-4xl font-bold text-navy-900 mb-5" style={{ letterSpacing: '-0.03em' }}>
+              Find the right treatment path for your smile.
             </h2>
-            <p className="text-white/50 text-lg mb-10 leading-relaxed">
-              Every smile is unique. Our complimentary consultation includes a full
-              exam, digital X-rays, and a personalized treatment recommendation.
+            <p className="text-navy-900/60 mb-8 max-w-2xl mx-auto leading-relaxed">
+              Our team can help you narrow treatment options, compare procedures, and build a plan that fits your goals, timeline, and long-term oral health.
             </p>
-            <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
+            <div className="flex flex-col sm:flex-row justify-center gap-4">
               <Link href="/contact" className="btn-gold inline-flex items-center gap-2">
-                <ArrowRight className="w-4 h-4" />
-                Book Free Consultation
+                Book a Free Consultation <ArrowRight className="w-4 h-4" />
               </Link>
-              <a href="tel:6503244900" className="btn-ghost-white inline-flex items-center gap-2">
-                <Phone className="w-4 h-4" />
-                (650) 324-4900
-              </a>
+              <Link href="/doctors" className="btn-ghost inline-flex items-center gap-2">
+                Meet Our Doctors
+              </Link>
             </div>
           </FadeUp>
         </div>
@@ -300,5 +183,3 @@ export default function ServicesPage() {
     </>
   )
 }
-
-

@@ -11,6 +11,7 @@ import {
 } from 'framer-motion'
 import { ArrowRight, CheckCircle2, Globe } from 'lucide-react'
 import { WordReveal, FadeUp } from '@/components/animations'
+import FamilyNote from '@/components/FamilyNote'
 
 /* ─────────────────────────────────────────────────────
    HERO
@@ -84,50 +85,6 @@ function HeroSection() {
           style={{ background: 'linear-gradient(to bottom, rgba(212,168,67,0.7), transparent)' }}
         />
       </motion.div>
-    </section>
-  )
-}
-
-/* ─────────────────────────────────────────────────────
-   STATS BAND
-───────────────────────────────────────────────────── */
-const stats = [
-  { number: '20+', label: 'Years of Excellence' },
-  { number: '15k+', label: 'Smiles Transformed' },
-  { number: '5',   label: 'Languages Spoken' },
-  { number: '1',   label: 'Day for Same-Day Implants' },
-]
-
-function StatsBand() {
-  const ref    = useRef(null)
-  const inView = useInView(ref, { once: true, margin: '-40px' })
-  return (
-    <section ref={ref} className="py-16" style={{ background: '#1D1D1F' }}>
-      <div className="max-w-6xl mx-auto px-6 grid grid-cols-2 lg:grid-cols-4 gap-8">
-        {stats.map((s, i) => (
-          <motion.div
-            key={s.label}
-            initial={{ opacity: 0, y: 32 }}
-            animate={inView ? { opacity: 1, y: 0 } : {}}
-            transition={{ duration: 0.7, delay: i * 0.1 }}
-            className="text-center"
-          >
-            <div
-              className="font-extrabold mb-1"
-              style={{
-                fontSize: 'clamp(2.5rem,5vw,3.5rem)',
-                letterSpacing: '-0.04em',
-                background: 'linear-gradient(135deg,#F0CC7A,#D4A843)',
-                WebkitBackgroundClip: 'text',
-                WebkitTextFillColor: 'transparent',
-              }}
-            >
-              {s.number}
-            </div>
-            <div className="text-white/50 text-sm font-medium">{s.label}</div>
-          </motion.div>
-        ))}
-      </div>
     </section>
   )
 }
@@ -316,28 +273,28 @@ function SummerPromoBanner() {
                   className="inline-block text-[10px] font-bold uppercase tracking-widest px-3 py-1 rounded-full mb-5"
                   style={{ background: 'rgba(212,168,67,0.15)', color: '#D4A843', border: '1px solid rgba(212,168,67,0.35)' }}
                 >
-                  Summer &amp; Back-to-School Smile Event
+                  End-of-Year Smile Event
                 </span>
                 <h2
                   className="headline-section text-white mb-4"
                   style={{ fontSize: 'clamp(1.75rem, 4vw, 3rem)' }}
                 >
                   Brighter, Straighter Teeth<br className="hidden sm:block" />{' '}
-                  Before School Starts
+                  Before the New Year
                 </h2>
                 <p
                   className="text-white/60 mb-7 leading-relaxed"
                   style={{ fontSize: '1.0625rem' }}
                 >
-                  Get a complimentary Zoom chairside whitening when you start Invisalign this summer — or save{' '}
+                  Get a complimentary Zoom chairside whitening when you start Invisalign before year-end — or save{' '}
                   <span style={{ color: '#D4A843', fontWeight: 600 }}>$150</span> on standalone professional whitening.
                 </p>
                 <div className="flex flex-col sm:flex-row items-center lg:items-start justify-center lg:justify-start gap-4">
                   <Link href="/summer-smile-promo" className="btn-gold">
-                    Claim Summer Offer <ArrowRight className="w-4 h-4" />
+                    Claim Year-End Offer <ArrowRight className="w-4 h-4" />
                   </Link>
                   <span className="text-white/35 text-sm self-center">
-                    Valid for consultations booked by July 30
+                    Valid for consultations booked by Dec 31
                   </span>
                 </div>
               </div>
@@ -845,7 +802,7 @@ export default function HomePage() {
   return (
     <>
       <HeroSection />
-      <StatsBand />
+      <FamilyNote />
       <SummerPromoBanner />
       <PinnedDifference />
       <BrandStatement />

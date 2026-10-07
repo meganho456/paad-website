@@ -1,9 +1,17 @@
 import type { Metadata } from 'next'
 import Script from 'next/script'
+import { Newsreader } from 'next/font/google'
 import './globals.css'
 import Navbar from '@/components/Navbar'
 import Footer from '@/components/Footer'
 import FloatingContact from '@/components/FloatingContact'
+
+const newsreader = Newsreader({
+  subsets: ['latin'],
+  variable: '--font-newsreader',
+  weight: ['400', '500', '600', '700'],
+  display: 'swap',
+})
 
 const jsonLd = {
   '@context': 'https://schema.org',
@@ -169,7 +177,7 @@ export const metadata: Metadata = {
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="en" className="scroll-smooth">
+    <html lang="en" className={`scroll-smooth ${newsreader.variable} ${newsreader.className}`}>
       <head>
         <script
           type="application/ld+json"

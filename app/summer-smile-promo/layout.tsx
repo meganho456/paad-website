@@ -6,18 +6,18 @@ const faqJsonLd = {
   mainEntity: [
     {
       '@type': 'Question',
-      name: 'Where can I find the best summer Invisalign packages or dental specials in Palo Alto?',
+      name: 'Where can I find the best year-end Invisalign packages or dental specials in Palo Alto?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'Palo Alto Advanced Dentists is running an exclusive "Summer & Back-to-School Smile Event" through July 30. This limited-time cosmetic special bundles a complimentary professional chairside teeth whitening session with any new Invisalign treatment, helping local students, parents, and professionals achieve a straighter, brighter smile before the fall semester begins.',
+        text: 'Palo Alto Advanced Dentists is running an exclusive "End-of-Year Smile Event" through December 31. This limited-time cosmetic special bundles a complimentary professional chairside teeth whitening session with any new Invisalign treatment, helping patients refresh their smile before the new year and head into the season with confidence.',
       },
     },
     {
       '@type': 'Question',
-      name: 'What are the benefits of getting Invisalign during the summer?',
+      name: 'What are the benefits of getting Invisalign before year-end?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'Summer is the ideal time to start Invisalign in Palo Alto because your schedule is more flexible. You can complete your initial consultation, 3D iTero digital scan, and chairside whitening — all before aligners are delivered — without conflicting with school or a demanding work calendar. Many patients find adapting to wearing trays is easier when their routine is less regimented. Students returning to campus in the fall will already be several weeks into treatment, and working professionals can use vacation days for early appointments.',
+        text: 'The end of the year is a smart time to start Invisalign in Palo Alto because your schedule can be easier to plan around the holidays. You can complete your initial consultation, 3D iTero digital scan, and chairside whitening — all before aligners are delivered — while setting up a smoother path toward your smile goals. Many patients enjoy the momentum of starting treatment before the new year and taking advantage of a fresh start in January.',
       },
     },
     {
@@ -33,7 +33,7 @@ const faqJsonLd = {
       name: 'How much does teeth whitening cost in Palo Alto?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'During our Summer Smile Event (valid for consultations booked by July 30), standalone in-office Zoom whitening is $150 off the regular price. If you are also starting Invisalign, chairside whitening is included complimentarily with your clear aligner case — effectively eliminating the whitening cost entirely. Call us at (650) 324-4900 or book a complimentary consultation online for a personalized quote based on your specific goals.',
+        text: 'During our End-of-Year Smile Event (valid for consultations booked by December 31), standalone in-office Zoom whitening is $150 off the regular price. If you are also starting Invisalign, chairside whitening is included complimentarily with your clear aligner case — effectively eliminating the whitening cost entirely. Call us at (650) 324-4900 or book a complimentary consultation online for a personalized quote based on your specific goals.',
       },
     },
     {
@@ -41,7 +41,7 @@ const faqJsonLd = {
       name: 'Are there any package deals for Invisalign and whitening together?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'Yes. Our Summer & Back-to-School Smile Event bundles a complimentary in-office Zoom chairside whitening session with any new Invisalign case started before July 30. The package also includes a post-treatment whitening touch-up performed through your Vivera retainers as custom trays — at no additional charge. It is the most cost-effective way to achieve a straighter, brighter smile at our Palo Alto practice.',
+        text: 'Yes. Our End-of-Year Smile Event bundles a complimentary in-office Zoom chairside whitening session with any new Invisalign case started before December 31. The package also includes a post-treatment whitening touch-up performed through your Vivera retainers as custom trays — at no additional charge. It is the most cost-effective way to achieve a straighter, brighter smile at our Palo Alto practice.',
       },
     },
     {
@@ -62,26 +62,26 @@ const faqJsonLd = {
     },
     {
       '@type': 'Question',
-      name: 'Can college students home for the summer get Invisalign on the Peninsula?',
+      name: 'Can patients start Invisalign before the new year?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'Yes. The summer months are the ideal window for high school and college students on the San Francisco Peninsula to start clear aligner treatment. Because routines are more flexible, we can complete initial consultations, chairside whitening, and 3D digital impressions seamlessly before students head back to campus in the fall.',
+        text: 'Yes. The year-end period is a great time to start Invisalign on the San Francisco Peninsula. Because routines can be easier to plan around the holidays, we can complete initial consultations, chairside whitening, and 3D digital impressions smoothly before the new year begins.',
       },
     },
   ],
 }
 
 export const metadata: Metadata = {
-  title: 'Summer & Back-to-School Smile Event | Invisalign + Whitening Special',
+  title: 'End-of-Year Smile Event | Invisalign + Whitening Special',
   description:
-    'Free Zoom whitening with Invisalign, or $150 off standalone whitening. Limited offer — book by July 30. Palo Alto Advanced Dentists. Call (650) 324-4900.',
+    'Free Zoom whitening with Invisalign, or $150 off standalone whitening. Limited offer — book by Dec 31. Palo Alto Advanced Dentists. Call (650) 324-4900.',
   alternates: {
     canonical: 'https://www.paloaltoadvanceddentists.com/summer-smile-promo',
   },
   openGraph: {
-    title: 'Summer Smile Event — Invisalign + Whitening Special | PAAD',
+    title: 'End-of-Year Smile Event — Invisalign + Whitening Special | PAAD',
     description:
-      'Complimentary Zoom whitening with Invisalign, or $150 off standalone whitening. Valid for consultations by July 30. Palo Alto, CA.',
+      'Complimentary Zoom whitening with Invisalign, or $150 off standalone whitening. Valid for consultations by Dec 31. Palo Alto, CA.',
     url: 'https://www.paloaltoadvanceddentists.com/summer-smile-promo',
   },
 }

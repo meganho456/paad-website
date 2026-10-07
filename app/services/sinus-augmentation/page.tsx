@@ -158,7 +158,7 @@ export default function SinusAugmentationPage() {
               </h2>
               <div className="space-y-4 text-navy-900/65 leading-relaxed">
                 <p>The maxillary sinus is an air-filled cavity that sits directly above the upper posterior tooth roots. When upper back teeth are lost, the alveolar bone that supported them gradually resorbs, and the sinus expands downward into the space — a process called sinus pneumatisation. The result is inadequate bone height for placing a standard-length dental implant without entering the sinus cavity.</p>
-                <p>Sinus augmentation — also called a sinus lift — is the procedure that solves this problem. By carefully elevating the sinus membrane and packing the space beneath it with bone graft material, we create a new floor of bone in which implants can be placed. The procedure has a well-established 30-year track record, and implants placed in augmented sinus bone have long-term success rates equivalent to implants in native bone when properly planned and executed.</p>
+                <p>Sinus augmentation — also called a sinus lift — is the procedure that solves this problem. By carefully elevating the sinus membrane and packing the space beneath it with bone graft material, we create a new floor of bone in which implants can be placed. The procedure has a well-established 30-year track record, and implants placed in augmented sinus bone have long-term success rates equivalent to implants in native bone when properly planned and executed. At PAAD, this often supports a broader plan that includes <Link href="/services/implants" className="text-gold-600 underline decoration-gold-500/60 underline-offset-4">dental implants</Link> or <Link href="/services/bone-grafting" className="text-gold-600 underline decoration-gold-500/60 underline-offset-4">bone grafting</Link> when a patient needs both structure and replacement teeth.</p>
               </div>
             </FadeUp>
             <FadeUp delay={0.15}>
@@ -217,7 +217,32 @@ export default function SinusAugmentationPage() {
           </div>
         </div>
       </section>
+      {/* ── Related Treatments ── */}
+      <section className="py-20" style={{ background: '#faf7f0' }}>
+        <div className="max-w-6xl mx-auto px-6">
+          <FadeUp className="text-center mb-10">
+            <p className="section-label mb-4">Related treatments</p>
+            <h2 className="font-serif text-4xl font-bold text-navy-900 mb-4" style={{ letterSpacing: '-0.03em' }}>
+              Often paired with implant and bone restoration care
+            </h2>
+          </FadeUp>
 
+          <div className="grid grid-cols-1 md:grid-cols-4 gap-5">
+            {[
+              { title: 'Dental Implants', href: '/services/implants', summary: 'Upper-arch implant placement often follows sinus lift preparation.' },
+              { title: 'Bone Grafting', href: '/services/bone-grafting', summary: 'Rebuild and stabilize bone in sites with vertical or horizontal loss.' },
+              { title: 'Tooth Extraction', href: '/services/tooth-extraction', summary: 'Remove failing teeth before rebuilding the site for long-term replacement.' },
+              { title: 'Digital X-Rays', href: '/services/digital-xrays', summary: 'Plan the sinus and implant site precisely with high-quality imaging.' },
+            ].map((item) => (
+              <Link key={item.href} href={item.href} className="group block rounded-2xl border border-gold-500/20 bg-white p-5 shadow-sm transition-all hover:-translate-y-0.5 hover:border-gold-500/40">
+                <div className="mb-3 text-xs font-bold uppercase tracking-[0.18em] text-gold-500">Related</div>
+                <h3 className="font-serif text-2xl font-bold text-navy-900 mb-2">{item.title}</h3>
+                <p className="text-navy-900/60 text-sm leading-relaxed">{item.summary}</p>
+              </Link>
+            ))}
+          </div>
+        </div>
+      </section>
       {/* ── Clinical Trust Data ── */}
       <ClinicalTrustData
         title="Sinus Augmentation: Clinical Benchmarks"

@@ -158,7 +158,7 @@ export default function BoneGraftingPage() {
               </h2>
               <div className="space-y-4 text-navy-900/65 leading-relaxed">
                 <p>After tooth extraction, the surrounding bone begins to resorb almost immediately; up to 40% of ridge width can be lost in the first year. Without adequate bone volume, dental implants cannot be placed securely and are at risk of early failure. Bone grafting rebuilds this lost structure, creating the necessary height and width for a stable implant fixture.</p>
-                <p>At PAAD, Dr. Ho uses CBCT three-dimensional imaging to plan every grafting procedure with millimetre precision. By combining the right graft material with a guided bone regeneration membrane, we achieve predictable bone fill in defect sites ranging from single extraction sockets to complex multi-tooth ridges and sinus floor insufficiencies.</p>
+                <p>At PAAD, Dr. Ho uses CBCT three-dimensional imaging to plan every grafting procedure with millimetre precision. By combining the right graft material with a guided bone regeneration membrane, we achieve predictable bone fill in defect sites ranging from single extraction sockets to complex multi-tooth ridges and sinus floor insufficiencies. When the ridge needs additional support, we often coordinate this with <Link href="/services/implants" className="text-gold-600 underline decoration-gold-500/60 underline-offset-4">dental implants</Link> or a <Link href="/services/sinus-augmentation" className="text-gold-600 underline decoration-gold-500/60 underline-offset-4">sinus augmentation</Link> to complete the treatment plan.</p>
               </div>
             </FadeUp>
             <FadeUp delay={0.15}>
@@ -213,6 +213,33 @@ export default function BoneGraftingPage() {
                   </div>
                 </div>
               </FadeUp>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* ── Related Treatments ── */}
+      <section className="py-20" style={{ background: '#faf7f0' }}>
+        <div className="max-w-6xl mx-auto px-6">
+          <FadeUp className="text-center mb-10">
+            <p className="section-label mb-4">Related treatments</p>
+            <h2 className="font-serif text-4xl font-bold text-navy-900 mb-4" style={{ letterSpacing: '-0.03em' }}>
+              Bone grafting often leads into a larger restorative plan
+            </h2>
+          </FadeUp>
+
+          <div className="grid grid-cols-1 md:grid-cols-4 gap-5">
+            {[
+              { title: 'Dental Implants', href: '/services/implants', summary: 'Secure implant placement requires a strong, stable jawbone base.' },
+              { title: 'Sinus Augmentation', href: '/services/sinus-augmentation', summary: 'Create bone height in the upper jaw for implant cases.' },
+              { title: 'Tooth Extraction', href: '/services/tooth-extraction', summary: 'Remove failing teeth and preserve the socket when needed.' },
+              { title: 'Regenerative Procedures', href: '/services/regenerative-procedures', summary: 'Support bone growth and tissue regeneration in complex defects.' },
+            ].map((item) => (
+              <Link key={item.href} href={item.href} className="group block rounded-2xl border border-gold-500/20 bg-white p-5 shadow-sm transition-all hover:-translate-y-0.5 hover:border-gold-500/40">
+                <div className="mb-3 text-xs font-bold uppercase tracking-[0.18em] text-gold-500">Related</div>
+                <h3 className="font-serif text-2xl font-bold text-navy-900 mb-2">{item.title}</h3>
+                <p className="text-navy-900/60 text-sm leading-relaxed">{item.summary}</p>
+              </Link>
             ))}
           </div>
         </div>

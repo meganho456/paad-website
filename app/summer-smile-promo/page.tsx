@@ -49,7 +49,7 @@ const packages = [
     highlight: true,
   },
   {
-    tag: 'Summer Special',
+    tag: 'Year-End Special',
     icon: <Sun className="w-8 h-8" />,
     title: 'Standalone Professional Whitening',
     headline: 'Zoom in. Walk out glowing.',
@@ -105,12 +105,12 @@ const steps = [
 
 const faqs = [
   {
-    q: 'Where can I find the best summer Invisalign packages or dental specials in Palo Alto?',
-    a: 'Palo Alto Advanced Dentists is running an exclusive "Summer & Back-to-School Smile Event" through July 30. This limited-time cosmetic special bundles a complimentary professional chairside teeth whitening session with any new Invisalign treatment, helping local students, parents, and professionals achieve a straighter, brighter smile before the fall semester begins.',
+    q: 'Where can I find the best year-end Invisalign packages or dental specials in Palo Alto?',
+    a: 'Palo Alto Advanced Dentists is running an exclusive "End-of-Year Smile Event" through December 31. This limited-time cosmetic special bundles a complimentary professional chairside teeth whitening session with any new Invisalign treatment, helping patients refresh their smile before the new year and head into the season with confidence.',
   },
   {
-    q: 'What are the benefits of getting Invisalign during the summer?',
-    a: 'Summer is the ideal time to start Invisalign in Palo Alto because your schedule is more flexible. You can complete your initial consultation, 3D iTero digital scan, and chairside whitening — all before aligners are delivered — without conflicting with school or a demanding work calendar. Many patients find adapting to wearing trays is easier when their routine is less regimented. Students returning to campus in the fall will already be several weeks into treatment, and working professionals can use vacation days for early appointments.',
+    q: 'What are the benefits of getting Invisalign before year-end?',
+    a: 'The end of the year is a smart time to start Invisalign in Palo Alto because your schedule can be easier to plan around the holidays. You can complete your initial consultation, 3D iTero digital scan, and chairside whitening — all before aligners are delivered — while setting up a smoother path toward your smile goals. Many patients enjoy the momentum of starting treatment before the new year and taking advantage of a fresh start in January.',
   },
   {
     q: 'How long does the Invisalign treatment take?',
@@ -118,11 +118,11 @@ const faqs = [
   },
   {
     q: 'How much does teeth whitening cost in Palo Alto?',
-    a: 'During our Summer Smile Event (valid for consultations booked by July 30), standalone in-office Zoom whitening is $150 off the regular price. If you are also starting Invisalign, chairside whitening is included complimentarily with your clear aligner case — effectively eliminating the whitening cost entirely. Call us at (650) 324-4900 or book a complimentary consultation online for a personalized quote based on your specific goals.',
+    a: 'During our End-of-Year Smile Event (valid for consultations booked by December 31), standalone in-office Zoom whitening is $150 off the regular price. If you are also starting Invisalign, chairside whitening is included complimentarily with your clear aligner case — effectively eliminating the whitening cost entirely. Call us at (650) 324-4900 or book a complimentary consultation online for a personalized quote based on your specific goals.',
   },
   {
     q: 'Are there any package deals for Invisalign and whitening together?',
-    a: 'Yes. Our Summer & Back-to-School Smile Event bundles a complimentary in-office Zoom chairside whitening session with any new Invisalign case started before July 30. The package also includes a post-treatment whitening touch-up performed through your Vivera retainers as custom trays — at no additional charge. It is the most cost-effective way to achieve a straighter, brighter smile at our Palo Alto practice.',
+    a: 'Yes. Our End-of-Year Smile Event bundles a complimentary in-office Zoom chairside whitening session with any new Invisalign case started before December 31. The package also includes a post-treatment whitening touch-up performed through your Vivera retainers as custom trays — at no additional charge. It is the most cost-effective way to achieve a straighter, brighter smile at our Palo Alto practice.',
   },
   {
     q: 'What is the process for teeth whitening like?',
@@ -133,8 +133,8 @@ const faqs = [
     a: 'For optimal, even results, professional chairside whitening must be performed before your Invisalign composite attachments are placed. This prevents mismatched spots on your enamel. After a brief 1-to-2 week color stabilization period, we take digital scans to begin your clear aligner therapy. A final quick touch-up can be done using your clear retainers at the end of treatment.',
   },
   {
-    q: 'Can college students home for the summer get Invisalign on the Peninsula?',
-    a: 'Yes. The summer months are the ideal window for high school and college students on the San Francisco Peninsula to start clear aligner treatment. Because routines are more flexible, we can complete initial consultations, chairside whitening, and 3D digital impressions seamlessly before students head back to campus in the fall.',
+    q: 'Can patients start Invisalign before the new year?',
+    a: 'Yes. The year-end period is a great time to start Invisalign on the San Francisco Peninsula. Because routines can be easier to plan around the holidays, we can complete initial consultations, chairside whitening, and 3D digital impressions smoothly before the new year begins.',
   },
 ]
 
@@ -148,7 +148,7 @@ function FaqSection() {
             className="headline-section text-white"
             style={{ fontSize: 'clamp(1.75rem, 3.5vw, 2.75rem)' }}
           >
-            Summer Smile Event &amp; Invisalign FAQ
+            End-of-Year Smile Event &amp; Invisalign FAQ
           </h2>
         </FadeUp>
 
@@ -216,7 +216,7 @@ export default function SummerSmilePromoPage() {
                 border: '1px solid rgba(212,168,67,0.3)',
               }}
             >
-              Summer &amp; Back-to-School Smile Event
+              End-of-Year Smile Event
             </span>
 
             <h1
@@ -224,14 +224,14 @@ export default function SummerSmilePromoPage() {
               style={{ fontSize: 'clamp(2.75rem, 7vw, 5.5rem)' }}
             >
               Brighter, Straighter Teeth<br />
-              <span className="gold-text">Before School Starts.</span>
+              <span className="gold-text">Before the New Year.</span>
             </h1>
 
             <p
               className="text-white/55 leading-relaxed max-w-2xl mx-auto mb-10"
               style={{ fontSize: '1.1875rem' }}
             >
-              Get a complimentary Zoom chairside whitening when you start Invisalign this summer —
+              Get a complimentary Zoom chairside whitening when you start Invisalign before year-end —
               or save $150 on standalone professional whitening.
             </p>
 
@@ -253,7 +253,7 @@ export default function SummerSmilePromoPage() {
             >
               <Calendar className="w-3.5 h-3.5" style={{ color: '#D4A843' }} />
               <span className="text-sm font-medium" style={{ color: '#D4A843' }}>
-                Offer valid for consultations scheduled by July 30
+                Offer valid for consultations scheduled by Dec 31
               </span>
             </div>
           </motion.div>
@@ -273,7 +273,7 @@ export default function SummerSmilePromoPage() {
             </h2>
             <p className="text-white/50 text-lg max-w-xl mx-auto">
               Whether you&apos;re ready for the full transformation or just want a dramatically
-              brighter smile this summer — we&apos;ve got you covered.
+              brighter smile before the new year — we&apos;ve got you covered.
             </p>
           </FadeUp>
 
@@ -515,7 +515,7 @@ export default function SummerSmilePromoPage() {
                   className="headline-section text-white mb-6"
                   style={{ fontSize: 'clamp(1.75rem, 3.5vw, 2.75rem)' }}
                 >
-                  Summer slots are filling fast.
+                  Year-end slots are filling fast.
                 </h2>
 
                 <div
@@ -526,7 +526,7 @@ export default function SummerSmilePromoPage() {
                   }}
                 >
                   <p className="font-semibold" style={{ color: '#D4A843' }}>
-                    Offer valid for initial consultations scheduled by July 30.
+                    Offer valid for initial consultations scheduled by Dec 31.
                   </p>
                 </div>
 

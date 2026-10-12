@@ -30,6 +30,7 @@ const jsonLd = {
 }
 
 export const metadata: Metadata = {
+  alternates: { canonical: 'https://www.paloaltoadvanceddentists.com/services/cleanings' },
   title: 'Dental Cleanings & Preventive Care Palo Alto | Comprehensive Exam | PAAD',
   description: 'Affordable dental care in Palo Alto, CA — professional cleanings, preventive exams, oral cancer screening, digital X-rays, and periodontal charting. Most insurance accepted. Call (650) 324-4900.',
   keywords: [

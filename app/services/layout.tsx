@@ -13,9 +13,6 @@ export const metadata: Metadata = {
     'teeth whitening palo alto',
     'dental services bay area',
   ],
-  alternates: {
-    canonical: 'https://www.paloaltoadvanceddentists.com/services',
-  },
   openGraph: {
     title: 'Dental Services | Palo Alto Advanced Dentists',
     description:

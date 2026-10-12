@@ -31,6 +31,7 @@ const jsonLd = {
 }
 
 export const metadata: Metadata = {
+  alternates: { canonical: 'https://www.paloaltoadvanceddentists.com/services/periodontics' },
   title: 'Gum Disease Treatment Palo Alto | Periodontal Therapy | Scaling & Root Planing',
   description: 'Expert periodontal disease treatment in Palo Alto, CA. Gingivitis, periodontitis, scaling and root planing, laser gum therapy, gum recession reversal with PINHOLE technique. Certified specialist. Call (650) 324-4900.',
   keywords: [

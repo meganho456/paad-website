@@ -164,7 +164,7 @@ export default function DoctorsPage() {
       {/* ── Page Hero ── */}
       <section className="relative pt-40 pb-28 overflow-hidden hero-grid" style={{ background: '#000' }}>
         <div className="absolute bottom-0 left-0 w-80 h-80 rounded-full blur-3xl opacity-10 pointer-events-none"
-          style={{ background: 'radial-gradient(circle, #D4A843, transparent)' }} />
+          style={{ background: 'radial-gradient(circle, #3A8CC9, transparent)' }} />
         <div className="max-w-4xl mx-auto px-6 text-center">
           <motion.div initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.7 }}>
             <p className="section-label mb-5">Our Doctors</p>
@@ -196,13 +196,13 @@ export default function DoctorsPage() {
       <LanguageDoctors />
 
       {/* ── Languages banner ── */}
-      <section className="border-y border-white/10 py-5" style={{ background: '#1D1D1F' }}>
+      <section className="border-y border-white/10 py-5" style={{ background: '#1A3450' }}>
         <div className="max-w-5xl mx-auto px-6 flex flex-wrap items-center justify-center gap-6">
           <Globe className="w-4 h-4 text-gold-400" />
           <span className="text-white/50 text-sm font-medium">We speak:</span>
           {['English', 'Spanish', 'Chinese', 'Japanese', 'Persian'].map((lang) => (
             <span key={lang} className="text-white/80 text-sm font-semibold px-3 py-1 rounded-full"
-              style={{ background: 'rgba(212,168,67,0.12)', border: '1px solid rgba(212,168,67,0.25)' }}>
+              style={{ background: 'rgba(58,140,201,0.12)', border: '1px solid rgba(58,140,201,0.25)' }}>
               {lang}
             </span>
           ))}
@@ -210,7 +210,7 @@ export default function DoctorsPage() {
       </section>
 
       {/* ── Doctor Cards ── */}
-      <section className="py-24" style={{ background: '#1D1D1F' }}>
+      <section className="py-24" style={{ background: '#1A3450' }}>
         <div className="max-w-7xl mx-auto px-6 space-y-16">
           {doctors.map((doc, i) => (
             <FadeUp key={doc.name} delay={0.05}>
@@ -241,7 +241,7 @@ export default function DoctorsPage() {
                       <div className="absolute top-4 left-4 flex flex-col gap-1.5">
                         {doc.awards.map((a) => (
                           <span key={a} className="text-[9px] font-bold uppercase tracking-wider px-2 py-1 rounded-full"
-                            style={{ background: 'rgba(212,168,67,0.9)', color: '#000' }}>
+                            style={{ background: 'rgba(58,140,201,0.9)', color: '#000' }}>
                             {a}
                           </span>
                         ))}
@@ -308,7 +308,7 @@ export default function DoctorsPage() {
                       <span className="text-white/40 text-xs font-medium uppercase tracking-wider">Speaks:</span>
                       {doc.languages.map((l) => (
                         <span key={l} className="text-xs font-semibold px-2.5 py-1 rounded-full text-white/75"
-                          style={{ background: 'rgba(212,168,67,0.1)', border: '1px solid rgba(212,168,67,0.2)' }}>
+                          style={{ background: 'rgba(58,140,201,0.1)', border: '1px solid rgba(58,140,201,0.2)' }}>
                           {l}
                         </span>
                       ))}

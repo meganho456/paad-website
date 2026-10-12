@@ -78,7 +78,7 @@ export default function ContactPage() {
       {/* ── Page Hero ── */}
       <section className="relative pt-40 pb-28 overflow-hidden hero-grid" style={{ background: "#000" }}>
         <div className="absolute top-0 right-0 w-72 h-72 rounded-full blur-3xl opacity-15 pointer-events-none"
-          style={{ background: 'radial-gradient(circle, #B88D2C, transparent)' }} />
+          style={{ background: 'radial-gradient(circle, #2B6AA3, transparent)' }} />
         <div className="max-w-4xl mx-auto px-6 text-center">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
@@ -117,7 +117,7 @@ export default function ContactPage() {
                   <div className="text-center py-16">
                     <div
                       className="w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-6"
-                      style={{ background: 'linear-gradient(135deg, #D4A843, #B88D2C)' }}
+                      style={{ background: 'linear-gradient(135deg, #3A8CC9, #2B6AA3)' }}
                     >
                       <CheckCircle2 className="w-10 h-10 text-navy-950" />
                     </div>
@@ -407,7 +407,7 @@ export default function ContactPage() {
               <FadeUp delay={0.3}>
                 <div
                   className="rounded-2xl p-5"
-                  style={{ background: 'rgba(184,141,44,0.1)', border: '1px solid rgba(184,141,44,0.3)' }}
+                  style={{ background: 'rgba(43,106,163,0.1)', border: '1px solid rgba(43,106,163,0.3)' }}
                 >
                   <p className="text-gold-700 font-semibold text-sm mb-1">Dental Emergency?</p>
                   <p className="text-navy-700/70 text-xs leading-relaxed mb-3">

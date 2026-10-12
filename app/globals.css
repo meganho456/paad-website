@@ -17,11 +17,11 @@
 
 :root {
   --font-playfair: 'Playfair Display', Georgia, serif;
-  --accent-gold:   #D4A843;
-  --accent-gold-l: #F0CC7A;
-  --accent-gold-d: #B88D2C;
-  --apple-black:   #000000;
-  --apple-gray:    #1D1D1F;
+  --accent-gold:   #3A8CC9;
+  --accent-gold-l: #8FC6EA;
+  --accent-gold-d: #2B6AA3;
+  --apple-black:   #0F1F33;
+  --apple-gray:    #1A3450;
   --apple-light:   #F5F5F7;
 }
 
@@ -91,37 +91,37 @@
   /* ── Tile utilities (bento grid) ─────────────────── */
   .tile-dark {
     @apply rounded-3xl p-8 md:p-10;
-    background: #1D1D1F;
+    background: #1A3450;
     border: 1px solid rgba(255,255,255,0.08);
   }
 
   .tile-darker {
     @apply rounded-3xl p-8 md:p-10;
-    background: #0D0D0F;
+    background: #12263D;
     border: 1px solid rgba(255,255,255,0.06);
   }
 
   .tile-gold {
     @apply rounded-3xl p-8 md:p-10;
-    background: linear-gradient(135deg, rgba(212,168,67,0.18) 0%, rgba(184,141,44,0.12) 100%);
-    border: 1px solid rgba(212,168,67,0.25);
+    background: linear-gradient(135deg, rgba(58,140,201,0.18) 0%, rgba(43,106,163,0.12) 100%);
+    border: 1px solid rgba(58,140,201,0.25);
   }
 
   /* ── Buttons ────────────────────────────────────── */
   .btn-gold {
     @apply inline-flex items-center justify-center gap-2 font-semibold transition-all duration-300;
-    background: linear-gradient(135deg, #D4A843 0%, #B88D2C 100%);
-    color: #000000;
+    background: linear-gradient(135deg, #3A8CC9 0%, #2B6AA3 100%);
+    color: #FFFFFF;
     padding: 0.75rem 2rem;
     border-radius: 980px;
     font-size: 0.9375rem;
     letter-spacing: -0.01em;
-    box-shadow: 0 4px 20px rgba(212,168,67,0.3);
+    box-shadow: 0 4px 20px rgba(58,140,201,0.3);
   }
   .btn-gold:hover {
-    box-shadow: 0 6px 32px rgba(212,168,67,0.5);
+    box-shadow: 0 6px 32px rgba(58,140,201,0.5);
     transform: translateY(-1px);
-    background: linear-gradient(135deg, #E0B550 0%, #C49930 100%);
+    background: linear-gradient(135deg, #4E9BD1 0%, #2B6AA3 100%);
   }
 
   .btn-ghost-white {
@@ -146,7 +146,7 @@
   /* ── Typography Utilities ───────────────────────── */
   .gold-text {
     @apply text-transparent bg-clip-text;
-    background-image: linear-gradient(135deg, #F0CC7A 0%, #D4A843 50%, #B88D2C 100%);
+    background-image: linear-gradient(135deg, #8FC6EA 0%, #3A8CC9 50%, #2B6AA3 100%);
   }
 
   .section-heading {
@@ -162,15 +162,15 @@
   /* ── Hero grid ──────────────────────────────────── */
   .hero-grid {
     background-image:
-      linear-gradient(rgba(212,168,67,0.04) 1px, transparent 1px),
-      linear-gradient(90deg, rgba(212,168,67,0.04) 1px, transparent 1px);
+      linear-gradient(rgba(58,140,201,0.04) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(58,140,201,0.04) 1px, transparent 1px);
     background-size: 80px 80px;
   }
 
   /* ── Gold divider ───────────────────────────────── */
   .divider-gold {
     @apply w-12 h-[2px] rounded-full;
-    background: linear-gradient(90deg, #D4A843, #B88D2C);
+    background: linear-gradient(90deg, #3A8CC9, #2B6AA3);
   }
 
   /* ── Section padding ────────────────────────────── */
@@ -187,8 +187,8 @@
 
 /* ── Scrollbar ─────────────────────────────────────── */
 ::-webkit-scrollbar { width: 6px; }
-::-webkit-scrollbar-track { background: #000000; }
+::-webkit-scrollbar-track { background: #0F1F33; }
 ::-webkit-scrollbar-thumb {
-  background: linear-gradient(#D4A843, #B88D2C);
+  background: linear-gradient(#3A8CC9, #2B6AA3);
   border-radius: 3px;
 }

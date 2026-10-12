@@ -30,6 +30,7 @@ const jsonLd = {
 }
 
 export const metadata: Metadata = {
+  alternates: { canonical: 'https://www.paloaltoadvanceddentists.com/services/teeth-whitening' },
   title: 'Teeth Whitening Palo Alto | Zoom Whitening | 8 Shades Brighter | PAAD',
   description: 'Professional teeth whitening in Palo Alto, CA. In-office Zoom whitening up to 8 shades brighter in one 90-minute visit. Custom take-home trays. Sensitivity-safe protocol. Complimentary with Invisalign. Call (650) 324-4900.',
   keywords: [

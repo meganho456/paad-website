@@ -29,6 +29,7 @@ const jsonLd = {
 }
 
 export const metadata: Metadata = {
+  alternates: { canonical: 'https://www.paloaltoadvanceddentists.com/services/dental-emergencies' },
   title: 'Emergency Dentist Palo Alto | Same-Day Emergency Dental Care | PAAD',
   description: 'Emergency dentist in Palo Alto, CA. Same-day appointments for knocked-out teeth, dental abscess, broken tooth, severe toothache, lost crown, and jaw pain. Call now: (650) 324-4900.',
   keywords: [

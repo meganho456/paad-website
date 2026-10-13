@@ -26,7 +26,7 @@ function FaqItem({ q, a }: { q: string; a: string }) {
       <button onClick={() => setOpen(v => !v)}
         className="w-full text-left py-5 flex items-center justify-between gap-4 text-white/85 font-semibold text-base hover:text-white transition-colors">
         {q}
-        <ChevronDown className={`w-4 h-4 shrink-0 transition-transform duration-200 ${open ? 'rotate-180' : ''}`} style={{ color: '#D4A843' }} />
+        <ChevronDown className={`w-4 h-4 shrink-0 transition-transform duration-200 ${open ? 'rotate-180' : ''}`} style={{ color: '#3A8CC9' }} />
       </button>
       {open && <p className="pb-5 text-white/55 text-sm leading-relaxed">{a}</p>}
     </div>
@@ -119,16 +119,16 @@ export default function PeriodonticsPage() {
   return (
     <>
       {/* Hero */}
-      <section className="relative pt-40 pb-28 overflow-hidden hero-grid" style={{ background: '#000' }}>
+      <section className="relative pt-40 pb-28 overflow-hidden hero-grid" style={{ background: '#083B3E' }}>
         <div className="absolute top-0 right-0 w-96 h-96 rounded-full blur-3xl opacity-15 pointer-events-none"
-          style={{ background: 'radial-gradient(circle, #B88D2C, transparent)' }} />
+          style={{ background: 'radial-gradient(circle, #2B6AA3, transparent)' }} />
         <div className="max-w-5xl mx-auto px-6">
           <motion.div initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.7 }}>
             <p className="section-label mb-5">Periodontal Health · Gum Disease Treatment</p>
             <h1 className="font-serif font-bold text-white leading-tight mb-6"
               style={{ fontSize: 'clamp(2.75rem, 6vw, 5rem)', letterSpacing: '-0.04em' }}>
               Gum Disease Treatment<br />
-              <span style={{ color: '#D4A843', fontStyle: 'italic' }}>Comprehensive Periodontal Care.</span>
+              <span style={{ color: '#3A8CC9', fontStyle: 'italic' }}>Comprehensive Periodontal Care.</span>
             </h1>
             <p className="text-white/55 text-xl leading-relaxed max-w-3xl mb-8">
               Nearly half of American adults have some form of gum disease. At Palo Alto Advanced Dentists,
@@ -186,7 +186,7 @@ export default function PeriodonticsPage() {
       </section>
 
       {/* Treatments */}
-      <section className="py-20" style={{ background: '#1D1D1F' }}>
+      <section className="py-20" style={{ background: '#083B3E' }}>
         <div className="max-w-6xl mx-auto px-6">
           <FadeUp className="text-center mb-12">
             <p className="section-label mb-4">Our Treatments</p>
@@ -199,7 +199,7 @@ export default function PeriodonticsPage() {
             {treatments.map((t, i) => (
               <FadeUp key={i} delay={0.07 * i}>
                 <div className="flex gap-5 p-6 rounded-2xl h-full" style={{ background: 'rgba(255,255,255,0.04)', border: '1px solid rgba(255,255,255,0.07)' }}>
-                  <div className="shrink-0 w-12 h-12 rounded-xl flex items-center justify-center" style={{ background: 'rgba(212,168,67,0.15)', color: '#D4A843' }}>
+                  <div className="shrink-0 w-12 h-12 rounded-xl flex items-center justify-center" style={{ background: 'rgba(58,140,201,0.15)', color: '#3A8CC9' }}>
                     {t.icon}
                   </div>
                   <div>
@@ -227,7 +227,7 @@ export default function PeriodonticsPage() {
             {systemicLinks.map((l, i) => (
               <FadeUp key={i} delay={0.06 * i}>
                 <div className="flex gap-5 p-6 rounded-2xl bg-white border border-cream-300 shadow-sm">
-                  <div className="shrink-0 w-2 rounded-full self-stretch" style={{ background: '#D4A843' }} />
+                  <div className="shrink-0 w-2 rounded-full self-stretch" style={{ background: '#0F766E' }} />
                   <div>
                     <h3 className="font-semibold text-navy-900 mb-1">{l.condition}</h3>
                     <p className="text-navy-900/60 text-sm leading-relaxed">{l.detail}</p>
@@ -240,7 +240,7 @@ export default function PeriodonticsPage() {
       </section>
 
       {/* Stats */}
-      <section className="py-16" style={{ background: '#D4A843' }}>
+      <section className="py-16" style={{ background: '#0F766E' }}>
         <div className="max-w-6xl mx-auto px-6">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
             {stats.map((s, i) => (
@@ -255,7 +255,7 @@ export default function PeriodonticsPage() {
       </section>
 
       {/* FAQ */}
-      <section className="py-20" style={{ background: '#1D1D1F' }}>
+      <section className="py-20" style={{ background: '#083B3E' }}>
         <div className="max-w-3xl mx-auto px-6">
           <FadeUp className="text-center mb-12">
             <p className="section-label mb-4">FAQ</p>
@@ -270,11 +270,11 @@ export default function PeriodonticsPage() {
       </section>
 
       {/* CTA */}
-      <section className="py-20" style={{ background: '#000' }}>
+      <section className="py-20" style={{ background: '#083B3E' }}>
         <div className="max-w-3xl mx-auto px-6 text-center">
           <FadeUp>
             <h2 className="font-serif text-4xl font-bold text-white mb-5" style={{ letterSpacing: '-0.03em' }}>
-              Gum disease caught early is <span style={{ color: '#D4A843', fontStyle: 'italic' }}>fully reversible.</span>
+              Gum disease caught early is <span style={{ color: '#3A8CC9', fontStyle: 'italic' }}>fully reversible.</span>
             </h2>
             <p className="text-white/50 mb-8">Schedule a comprehensive periodontal evaluation including digital X-rays and full pocket charting.</p>
             <div className="flex flex-wrap justify-center gap-4">

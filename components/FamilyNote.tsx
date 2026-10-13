@@ -2,12 +2,12 @@
 import Image from "next/image";
 import Link from "next/link";
 
-const gold = "#D4A843";
+const gold = "#3A8CC9";
 const serif = "var(--font-newsreader), Georgia, serif";
 
 export default function FamilyNote() {
   return (
-    <section style={{ background: "#1D1D1F", color: "#f2efe8", padding: "clamp(64px,8vw,104px) clamp(24px,7vw,96px)" }}>
+    <section style={{ background: "#083B3E", color: "#f2efe8", padding: "clamp(64px,8vw,104px) clamp(24px,7vw,96px)" }}>
       <div style={{ maxWidth: 1200, margin: "0 auto", display: "grid", gridTemplateColumns: "repeat(auto-fit,minmax(min(100%,380px),1fr))", gap: "clamp(48px,6vw,80px)", alignItems: "center" }}>
         <div style={{ position: "relative", height: 460, maxWidth: 420, width: "100%" }}>
           <div style={{ position: "absolute", left: 0, top: 0, width: "70%", height: 360, transform: "rotate(-2deg)", overflow: "hidden", background: "#2a2a2a" }}>

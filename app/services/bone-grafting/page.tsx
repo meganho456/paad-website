@@ -110,7 +110,7 @@ function FaqItem({ q, a }: { q: string; a: string }) {
         className="w-full text-left py-5 flex items-center justify-between gap-4 text-white/85 font-semibold text-base hover:text-white transition-colors"
       >
         {q}
-        <ChevronDown className={`w-4 h-4 shrink-0 text-gold-500 transition-transform duration-200 ${open ? 'rotate-180' : ''}`} />
+        <ChevronDown className={`w-4 h-4 shrink-0 text-brand-500 transition-transform duration-200 ${open ? 'rotate-180' : ''}`} />
       </button>
       {open && <p className="pb-5 text-white/55 text-sm leading-relaxed">{a}</p>}
     </div>
@@ -121,16 +121,16 @@ export default function BoneGraftingPage() {
   return (
     <>
       {/* ── Hero ── */}
-      <section className="relative pt-40 pb-28 overflow-hidden hero-grid" style={{ background: '#000' }}>
+      <section className="relative pt-40 pb-28 overflow-hidden hero-grid" style={{ background: '#083B3E' }}>
         <div className="absolute top-0 right-0 w-96 h-96 rounded-full blur-3xl opacity-20 pointer-events-none"
-          style={{ background: 'radial-gradient(circle, #B88D2C, transparent)' }} />
+          style={{ background: 'radial-gradient(circle, #2B6AA3, transparent)' }} />
         <div className="max-w-5xl mx-auto px-6">
           <motion.div initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.7 }}>
             <p className="section-label mb-5">Clinical Solution Guide</p>
             <h1 className="font-serif font-bold text-white leading-tight mb-6"
               style={{ fontSize: 'clamp(2.75rem, 6vw, 5rem)', letterSpacing: '-0.04em' }}>
               Bone Grafting<br />
-              <span style={{ color: '#D4A843', fontStyle: 'italic' }}>& Socket Preservation</span>
+              <span style={{ color: '#3A8CC9', fontStyle: 'italic' }}>& Socket Preservation</span>
             </h1>
             <p className="text-white/55 text-xl leading-relaxed max-w-3xl mb-8">
               When tooth loss, gum disease, or trauma depletes the jawbone, implants cannot succeed without a solid foundation. Dr. James Ho at PAAD combines CBCT-guided planning with proven graft materials to rebuild bone volume, preserve ridge anatomy, and prepare precise implant sites for Palo Alto patients seeking long-term tooth replacement.
@@ -158,7 +158,7 @@ export default function BoneGraftingPage() {
               </h2>
               <div className="space-y-4 text-navy-900/65 leading-relaxed">
                 <p>After tooth extraction, the surrounding bone begins to resorb almost immediately; up to 40% of ridge width can be lost in the first year. Without adequate bone volume, dental implants cannot be placed securely and are at risk of early failure. Bone grafting rebuilds this lost structure, creating the necessary height and width for a stable implant fixture.</p>
-                <p>At PAAD, Dr. Ho uses CBCT three-dimensional imaging to plan every grafting procedure with millimetre precision. By combining the right graft material with a guided bone regeneration membrane, we achieve predictable bone fill in defect sites ranging from single extraction sockets to complex multi-tooth ridges and sinus floor insufficiencies. When the ridge needs additional support, we often coordinate this with <Link href="/services/implants" className="text-gold-600 underline decoration-gold-500/60 underline-offset-4">dental implants</Link> or a <Link href="/services/sinus-augmentation" className="text-gold-600 underline decoration-gold-500/60 underline-offset-4">sinus augmentation</Link> to complete the treatment plan.</p>
+                <p>At PAAD, Dr. Ho uses CBCT three-dimensional imaging to plan every grafting procedure with millimetre precision. By combining the right graft material with a guided bone regeneration membrane, we achieve predictable bone fill in defect sites ranging from single extraction sockets to complex multi-tooth ridges and sinus floor insufficiencies. When the ridge needs additional support, we often coordinate this with <Link href="/services/implants" className="text-brand-600 underline decoration-gold-500/60 underline-offset-4">dental implants</Link> or a <Link href="/services/sinus-augmentation" className="text-brand-600 underline decoration-gold-500/60 underline-offset-4">sinus augmentation</Link> to complete the treatment plan.</p>
               </div>
             </FadeUp>
             <FadeUp delay={0.15}>
@@ -174,7 +174,7 @@ export default function BoneGraftingPage() {
                   'Bone destruction from dental infection or abscess',
                 ].map((item, i) => (
                   <div key={i} className="flex items-center gap-3 bg-white rounded-xl px-5 py-3.5 shadow-sm border border-cream-300">
-                    <CheckCircle2 className="w-4 h-4 shrink-0" style={{ color: '#D4A843' }} />
+                    <CheckCircle2 className="w-4 h-4 shrink-0" style={{ color: '#3A8CC9' }} />
                     <span className="text-navy-900 text-sm font-medium">{item}</span>
                   </div>
                 ))}
@@ -185,7 +185,7 @@ export default function BoneGraftingPage() {
       </section>
 
       {/* ── Protocol Steps ── */}
-      <section className="py-20" style={{ background: '#1D1D1F' }}>
+      <section className="py-20" style={{ background: '#083B3E' }}>
         <div className="max-w-6xl mx-auto px-6">
           <FadeUp className="text-center mb-14">
             <p className="section-label mb-4">Our Protocol</p>
@@ -201,12 +201,12 @@ export default function BoneGraftingPage() {
               <FadeUp key={i} delay={0.05 * i}>
                 <div className="flex gap-6 p-6 rounded-2xl" style={{ background: 'rgba(255,255,255,0.04)', border: '1px solid rgba(255,255,255,0.07)' }}>
                   <div className="shrink-0 w-12 h-12 rounded-xl flex items-center justify-center"
-                    style={{ background: 'rgba(212,168,67,0.15)', color: '#D4A843' }}>
+                    style={{ background: 'rgba(58,140,201,0.15)', color: '#3A8CC9' }}>
                     {p.icon}
                   </div>
                   <div>
                     <div className="flex items-center gap-3 mb-2">
-                      <span className="text-xs font-bold tracking-widest" style={{ color: '#B88D2C' }}>STEP {p.step}</span>
+                      <span className="text-xs font-bold tracking-widest" style={{ color: '#2B6AA3' }}>STEP {p.step}</span>
                       <h3 className="font-semibold text-white text-base">{p.title}</h3>
                     </div>
                     <p className="text-white/55 text-sm leading-relaxed">{p.body}</p>
@@ -236,7 +236,7 @@ export default function BoneGraftingPage() {
               { title: 'Regenerative Procedures', href: '/services/regenerative-procedures', summary: 'Support bone growth and tissue regeneration in complex defects.' },
             ].map((item) => (
               <Link key={item.href} href={item.href} className="group block rounded-2xl border border-gold-500/20 bg-white p-5 shadow-sm transition-all hover:-translate-y-0.5 hover:border-gold-500/40">
-                <div className="mb-3 text-xs font-bold uppercase tracking-[0.18em] text-gold-500">Related</div>
+                <div className="mb-3 text-xs font-bold uppercase tracking-[0.18em] text-brand-500">Related</div>
                 <h3 className="font-serif text-2xl font-bold text-navy-900 mb-2">{item.title}</h3>
                 <p className="text-navy-900/60 text-sm leading-relaxed">{item.summary}</p>
               </Link>
@@ -277,12 +277,12 @@ export default function BoneGraftingPage() {
       />
 
       {/* ── CTA ── */}
-      <section className="py-20" style={{ background: '#1D1D1F' }}>
+      <section className="py-20" style={{ background: '#083B3E' }}>
         <div className="max-w-3xl mx-auto px-6 text-center">
           <FadeUp>
             <h2 className="font-serif text-4xl font-bold text-white mb-5" style={{ letterSpacing: '-0.03em' }}>
               Ready to get started?{' '}
-              <span style={{ color: '#D4A843', fontStyle: 'italic' }}>We&apos;re here for you.</span>
+              <span style={{ color: '#3A8CC9', fontStyle: 'italic' }}>We&apos;re here for you.</span>
             </h2>
             <p className="text-white/50 mb-8">Call (650) 324-4900 or request an appointment online — same-day appointments often available.</p>
             <div className="flex flex-wrap justify-center gap-4">

@@ -64,8 +64,8 @@ export default function ClinicalTrustData({
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-12">
             {stats.map((s, i) => (
               <div key={i} className="rounded-2xl p-5 text-center"
-                style={{ background: 'rgba(212,168,67,0.08)', border: '1px solid rgba(212,168,67,0.2)' }}>
-                <p className="font-bold text-3xl mb-1" style={{ color: '#D4A843', letterSpacing: '-0.04em' }}>{s.value}</p>
+                style={{ background: 'rgba(58,140,201,0.08)', border: '1px solid rgba(58,140,201,0.2)' }}>
+                <p className="font-bold text-3xl mb-1" style={{ color: '#3A8CC9', letterSpacing: '-0.04em' }}>{s.value}</p>
                 <p className="text-white/60 text-xs leading-snug">{s.label}</p>
                 {s.source && <p className="text-white/25 text-[10px] mt-1">{s.source}</p>}
               </div>
@@ -78,9 +78,9 @@ export default function ClinicalTrustData({
           <div className="rounded-3xl overflow-hidden" style={{ border: '1px solid rgba(255,255,255,0.08)' }}>
             {/* Header */}
             <div className="grid grid-cols-3 text-xs font-bold uppercase tracking-widest"
-              style={{ background: '#1D1D1F' }}>
+              style={{ background: '#083B3E' }}>
               <div className="px-6 py-4 text-white/40">Clinical Metric</div>
-              <div className="px-6 py-4 text-center" style={{ color: '#D4A843', background: 'rgba(212,168,67,0.08)' }}>
+              <div className="px-6 py-4 text-center" style={{ color: '#3A8CC9', background: 'rgba(58,140,201,0.08)' }}>
                 {comparisonLabel.digital}
               </div>
               <div className="px-6 py-4 text-center text-white/40">{comparisonLabel.traditional}</div>
@@ -93,15 +93,15 @@ export default function ClinicalTrustData({
                 className="grid grid-cols-3 border-t text-sm transition-colors"
                 style={{
                   borderColor: 'rgba(255,255,255,0.05)',
-                  background: row.highlight ? 'rgba(212,168,67,0.04)' : i % 2 === 0 ? '#0D0D0D' : '#0A0A0A',
+                  background: row.highlight ? 'rgba(58,140,201,0.04)' : i % 2 === 0 ? '#0D0D0D' : '#0A0A0A',
                 }}
               >
                 <div className="px-6 py-4 text-white/70 font-medium flex items-center gap-2">
-                  {row.highlight && <AlertCircle className="w-3.5 h-3.5 shrink-0" style={{ color: '#D4A843' }} />}
+                  {row.highlight && <AlertCircle className="w-3.5 h-3.5 shrink-0" style={{ color: '#3A8CC9' }} />}
                   {row.metric}
                 </div>
                 <div className="px-6 py-4 text-center font-semibold flex items-center justify-center gap-1.5"
-                  style={{ color: '#D4A843', background: 'rgba(212,168,67,0.04)' }}>
+                  style={{ color: '#3A8CC9', background: 'rgba(58,140,201,0.04)' }}>
                   <CheckCircle2 className="w-3.5 h-3.5 shrink-0 opacity-70" />
                   {row.digital}
                 </div>

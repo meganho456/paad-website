@@ -1,5 +1,5 @@
 // Doctors page — edit the `doctors` arrays below.
-const gold = "#D4A843";
+const gold = "#3A8CC9";
 const serif = "var(--font-newsreader), Georgia, serif";
 
 const languages = [
@@ -12,7 +12,7 @@ const languages = [
 
 export default function LanguageDoctors() {
   return (
-    <section style={{ background: "#000", color: "#f2efe8", padding: "clamp(64px,8vw,96px) clamp(24px,7vw,96px)" }}>
+    <section style={{ background: "#083B3E", color: "#f2efe8", padding: "clamp(64px,8vw,96px) clamp(24px,7vw,96px)" }}>
       <div style={{ maxWidth: 1200, margin: "0 auto", display: "flex", flexDirection: "column", gap: 56 }}>
         <div style={{ display: "flex", flexWrap: "wrap", justifyContent: "space-between", alignItems: "flex-end", gap: 32 }}>
           <div style={{ display: "flex", flexDirection: "column", gap: 16 }}>
@@ -23,7 +23,7 @@ export default function LanguageDoctors() {
         </div>
         <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit,minmax(180px,1fr))", gap: 16 }}>
           {languages.map((l) => (
-            <div key={l.label} style={{ background: "#1D1D1F", padding: "28px 24px", display: "flex", flexDirection: "column", gap: 20 }}>
+            <div key={l.label} style={{ background: "#083B3E", padding: "28px 24px", display: "flex", flexDirection: "column", gap: 20 }}>
               <div lang="" dir={l.rtl ? "rtl" : undefined} style={{ height: 56, display: "flex", alignItems: "center", justifyContent: l.rtl ? "flex-end" : undefined, whiteSpace: "nowrap", fontFamily: l.serif ? serif : undefined, fontWeight: l.serif ? 400 : 500, fontSize: l.small ? 26 : l.serif ? 40 : 38 }}>{l.hello}</div>
               <div style={{ fontSize: 12, fontWeight: 600, letterSpacing: ".1em", textTransform: "uppercase", color: gold }}>{l.label}</div>
               <div style={{ height: 1, background: "#333" }} />

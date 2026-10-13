@@ -110,7 +110,7 @@ function FaqItem({ q, a }: { q: string; a: string }) {
         className="w-full text-left py-5 flex items-center justify-between gap-4 text-white/85 font-semibold text-base hover:text-white transition-colors"
       >
         {q}
-        <ChevronDown className={`w-4 h-4 shrink-0 text-gold-500 transition-transform duration-200 ${open ? 'rotate-180' : ''}`} />
+        <ChevronDown className={`w-4 h-4 shrink-0 text-brand-500 transition-transform duration-200 ${open ? 'rotate-180' : ''}`} />
       </button>
       {open && <p className="pb-5 text-white/55 text-sm leading-relaxed">{a}</p>}
     </div>
@@ -121,16 +121,16 @@ export default function SinusAugmentationPage() {
   return (
     <>
       {/* ── Hero ── */}
-      <section className="relative pt-40 pb-28 overflow-hidden hero-grid" style={{ background: '#000' }}>
+      <section className="relative pt-40 pb-28 overflow-hidden hero-grid" style={{ background: '#083B3E' }}>
         <div className="absolute top-0 right-0 w-96 h-96 rounded-full blur-3xl opacity-20 pointer-events-none"
-          style={{ background: 'radial-gradient(circle, #B88D2C, transparent)' }} />
+          style={{ background: 'radial-gradient(circle, #2B6AA3, transparent)' }} />
         <div className="max-w-5xl mx-auto px-6">
           <motion.div initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.7 }}>
             <p className="section-label mb-5">Clinical Solution Guide</p>
             <h1 className="font-serif font-bold text-white leading-tight mb-6"
               style={{ fontSize: 'clamp(2.75rem, 6vw, 5rem)', letterSpacing: '-0.04em' }}>
               Sinus Augmentation<br />
-              <span style={{ color: '#D4A843', fontStyle: 'italic' }}>Creating Room for Upper Implants</span>
+              <span style={{ color: '#3A8CC9', fontStyle: 'italic' }}>Creating Room for Upper Implants</span>
             </h1>
             <p className="text-white/55 text-xl leading-relaxed max-w-3xl mb-8">
               Patients who have been told there is &quot;not enough bone&quot; for upper posterior implants often need a sinus lift — a procedure to build bone volume beneath the maxillary sinus. At PAAD in Palo Alto, we perform both lateral and crestal sinus augmentation with CBCT-guided planning and 90%+ long-term implant success rates.
@@ -158,7 +158,7 @@ export default function SinusAugmentationPage() {
               </h2>
               <div className="space-y-4 text-navy-900/65 leading-relaxed">
                 <p>The maxillary sinus is an air-filled cavity that sits directly above the upper posterior tooth roots. When upper back teeth are lost, the alveolar bone that supported them gradually resorbs, and the sinus expands downward into the space — a process called sinus pneumatisation. The result is inadequate bone height for placing a standard-length dental implant without entering the sinus cavity.</p>
-                <p>Sinus augmentation — also called a sinus lift — is the procedure that solves this problem. By carefully elevating the sinus membrane and packing the space beneath it with bone graft material, we create a new floor of bone in which implants can be placed. The procedure has a well-established 30-year track record, and implants placed in augmented sinus bone have long-term success rates equivalent to implants in native bone when properly planned and executed. At PAAD, this often supports a broader plan that includes <Link href="/services/implants" className="text-gold-600 underline decoration-gold-500/60 underline-offset-4">dental implants</Link> or <Link href="/services/bone-grafting" className="text-gold-600 underline decoration-gold-500/60 underline-offset-4">bone grafting</Link> when a patient needs both structure and replacement teeth.</p>
+                <p>Sinus augmentation — also called a sinus lift — is the procedure that solves this problem. By carefully elevating the sinus membrane and packing the space beneath it with bone graft material, we create a new floor of bone in which implants can be placed. The procedure has a well-established 30-year track record, and implants placed in augmented sinus bone have long-term success rates equivalent to implants in native bone when properly planned and executed. At PAAD, this often supports a broader plan that includes <Link href="/services/implants" className="text-brand-600 underline decoration-gold-500/60 underline-offset-4">dental implants</Link> or <Link href="/services/bone-grafting" className="text-brand-600 underline decoration-gold-500/60 underline-offset-4">bone grafting</Link> when a patient needs both structure and replacement teeth.</p>
               </div>
             </FadeUp>
             <FadeUp delay={0.15}>
@@ -174,7 +174,7 @@ export default function SinusAugmentationPage() {
                   'CBCT confirming sinus proximity to ridge',
                 ].map((item, i) => (
                   <div key={i} className="flex items-center gap-3 bg-white rounded-xl px-5 py-3.5 shadow-sm border border-cream-300">
-                    <CheckCircle2 className="w-4 h-4 shrink-0" style={{ color: '#D4A843' }} />
+                    <CheckCircle2 className="w-4 h-4 shrink-0" style={{ color: '#3A8CC9' }} />
                     <span className="text-navy-900 text-sm font-medium">{item}</span>
                   </div>
                 ))}
@@ -185,7 +185,7 @@ export default function SinusAugmentationPage() {
       </section>
 
       {/* ── Protocol Steps ── */}
-      <section className="py-20" style={{ background: '#1D1D1F' }}>
+      <section className="py-20" style={{ background: '#083B3E' }}>
         <div className="max-w-6xl mx-auto px-6">
           <FadeUp className="text-center mb-14">
             <p className="section-label mb-4">Our Protocol</p>
@@ -201,12 +201,12 @@ export default function SinusAugmentationPage() {
               <FadeUp key={i} delay={0.05 * i}>
                 <div className="flex gap-6 p-6 rounded-2xl" style={{ background: 'rgba(255,255,255,0.04)', border: '1px solid rgba(255,255,255,0.07)' }}>
                   <div className="shrink-0 w-12 h-12 rounded-xl flex items-center justify-center"
-                    style={{ background: 'rgba(212,168,67,0.15)', color: '#D4A843' }}>
+                    style={{ background: 'rgba(58,140,201,0.15)', color: '#3A8CC9' }}>
                     {p.icon}
                   </div>
                   <div>
                     <div className="flex items-center gap-3 mb-2">
-                      <span className="text-xs font-bold tracking-widest" style={{ color: '#B88D2C' }}>STEP {p.step}</span>
+                      <span className="text-xs font-bold tracking-widest" style={{ color: '#2B6AA3' }}>STEP {p.step}</span>
                       <h3 className="font-semibold text-white text-base">{p.title}</h3>
                     </div>
                     <p className="text-white/55 text-sm leading-relaxed">{p.body}</p>
@@ -235,7 +235,7 @@ export default function SinusAugmentationPage() {
               { title: 'Digital X-Rays', href: '/services/digital-xrays', summary: 'Plan the sinus and implant site precisely with high-quality imaging.' },
             ].map((item) => (
               <Link key={item.href} href={item.href} className="group block rounded-2xl border border-gold-500/20 bg-white p-5 shadow-sm transition-all hover:-translate-y-0.5 hover:border-gold-500/40">
-                <div className="mb-3 text-xs font-bold uppercase tracking-[0.18em] text-gold-500">Related</div>
+                <div className="mb-3 text-xs font-bold uppercase tracking-[0.18em] text-brand-500">Related</div>
                 <h3 className="font-serif text-2xl font-bold text-navy-900 mb-2">{item.title}</h3>
                 <p className="text-navy-900/60 text-sm leading-relaxed">{item.summary}</p>
               </Link>
@@ -275,12 +275,12 @@ export default function SinusAugmentationPage() {
       />
 
       {/* ── CTA ── */}
-      <section className="py-20" style={{ background: '#1D1D1F' }}>
+      <section className="py-20" style={{ background: '#083B3E' }}>
         <div className="max-w-3xl mx-auto px-6 text-center">
           <FadeUp>
             <h2 className="font-serif text-4xl font-bold text-white mb-5" style={{ letterSpacing: '-0.03em' }}>
               Ready to get started?{' '}
-              <span style={{ color: '#D4A843', fontStyle: 'italic' }}>We&apos;re here for you.</span>
+              <span style={{ color: '#3A8CC9', fontStyle: 'italic' }}>We&apos;re here for you.</span>
             </h2>
             <p className="text-white/50 mb-8">Call (650) 324-4900 or request an appointment online — same-day appointments often available.</p>
             <div className="flex flex-wrap justify-center gap-4">

@@ -120,7 +120,7 @@ function FaqItem({ q, a }: { q: string; a: string }) {
       <button onClick={() => setOpen(v => !v)}
         className="w-full text-left py-5 flex items-center justify-between gap-4 text-white/85 font-semibold text-base hover:text-white transition-colors">
         {q}
-        <ChevronDown className={`w-4 h-4 shrink-0 text-gold-500 transition-transform duration-200 ${open ? 'rotate-180' : ''}`} />
+        <ChevronDown className={`w-4 h-4 shrink-0 text-brand-500 transition-transform duration-200 ${open ? 'rotate-180' : ''}`} />
       </button>
       {open && <p className="pb-5 text-white/55 text-sm leading-relaxed">{a}</p>}
     </div>
@@ -131,16 +131,16 @@ export default function SmileMakeoverPage() {
   return (
     <>
       {/* ── Hero ── */}
-      <section className="relative pt-40 pb-28 overflow-hidden hero-grid" style={{ background: '#000' }}>
+      <section className="relative pt-40 pb-28 overflow-hidden hero-grid" style={{ background: '#083B3E' }}>
         <div className="absolute bottom-0 left-0 w-96 h-96 rounded-full blur-3xl opacity-15 pointer-events-none"
-          style={{ background: 'radial-gradient(circle, #B88D2C, transparent)' }} />
+          style={{ background: 'radial-gradient(circle, #2B6AA3, transparent)' }} />
         <div className="max-w-5xl mx-auto px-6">
           <motion.div initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.7 }}>
             <p className="section-label mb-5">Clinical Solution Guide</p>
             <h1 className="font-serif font-bold text-white leading-tight mb-6"
               style={{ fontSize: 'clamp(2.75rem, 6vw, 5rem)', letterSpacing: '-0.04em' }}>
               Cosmetic Smile Makeover<br />
-              <span style={{ color: '#D4A843', fontStyle: 'italic' }}>Digital Design. Elite Invisalign. Artisan Veneers.</span>
+              <span style={{ color: '#3A8CC9', fontStyle: 'italic' }}>Digital Design. Elite Invisalign. Artisan Veneers.</span>
             </h1>
             <p className="text-white/55 text-xl leading-relaxed max-w-3xl mb-8">
               For Silicon Valley patients researching advanced, technology-driven cosmetic dentistry —
@@ -156,9 +156,9 @@ export default function SmileMakeoverPage() {
             </div>
             {/* Elite badge */}
             <div className="inline-flex items-center gap-3 px-5 py-3 rounded-2xl"
-              style={{ background: 'rgba(212,168,67,0.1)', border: '1px solid rgba(212,168,67,0.3)' }}>
+              style={{ background: 'rgba(58,140,201,0.1)', border: '1px solid rgba(58,140,201,0.3)' }}>
               <div className="flex gap-0.5">
-                {[...Array(5)].map((_, i) => <Star key={i} className="w-3.5 h-3.5 fill-gold-400 text-gold-400" />)}
+                {[...Array(5)].map((_, i) => <Star key={i} className="w-3.5 h-3.5 fill-gold-400 text-brand-400" />)}
               </div>
               <div>
                 <p className="text-white text-sm font-semibold">Invisalign Elite Preferred Provider — Top 5% Nationwide</p>
@@ -170,7 +170,7 @@ export default function SmileMakeoverPage() {
       </section>
 
       {/* ── Workflow ── */}
-      <section className="py-20" style={{ background: '#1D1D1F' }}>
+      <section className="py-20" style={{ background: '#083B3E' }}>
         <div className="max-w-6xl mx-auto px-6">
           <FadeUp className="text-center mb-14">
             <p className="section-label mb-4">Our Workflow</p>
@@ -187,12 +187,12 @@ export default function SmileMakeoverPage() {
                 <div className="flex gap-6 p-6 rounded-2xl"
                   style={{ background: 'rgba(255,255,255,0.04)', border: '1px solid rgba(255,255,255,0.07)' }}>
                   <div className="shrink-0 w-12 h-12 rounded-xl flex items-center justify-center"
-                    style={{ background: 'rgba(212,168,67,0.15)', color: '#D4A843' }}>
+                    style={{ background: 'rgba(58,140,201,0.15)', color: '#3A8CC9' }}>
                     {s.icon}
                   </div>
                   <div>
                     <div className="flex items-center gap-3 mb-2">
-                      <span className="text-xs font-bold tracking-widest" style={{ color: '#B88D2C' }}>STEP {s.step}</span>
+                      <span className="text-xs font-bold tracking-widest" style={{ color: '#2B6AA3' }}>STEP {s.step}</span>
                       <h3 className="font-semibold text-white text-base">{s.title}</h3>
                     </div>
                     <p className="text-white/55 text-sm leading-relaxed">{s.body}</p>
@@ -238,7 +238,7 @@ export default function SmileMakeoverPage() {
                   <ul className="space-y-2.5">
                     {opt.points.map((pt, j) => (
                       <li key={j} className="flex items-start gap-2.5 text-sm text-navy-900/65">
-                        <CheckCircle2 className="w-4 h-4 shrink-0 mt-0.5" style={{ color: '#D4A843' }} />
+                        <CheckCircle2 className="w-4 h-4 shrink-0 mt-0.5" style={{ color: '#3A8CC9' }} />
                         {pt}
                       </li>
                     ))}
@@ -260,7 +260,7 @@ export default function SmileMakeoverPage() {
       />
 
       {/* ── FAQ ── */}
-      <section className="py-20" style={{ background: '#000' }}>
+      <section className="py-20" style={{ background: '#083B3E' }}>
         <div className="max-w-3xl mx-auto px-6">
           <FadeUp className="text-center mb-12">
             <p className="section-label mb-4">FAQ</p>
@@ -282,12 +282,12 @@ export default function SmileMakeoverPage() {
       />
 
       {/* ── CTA ── */}
-      <section className="py-20" style={{ background: '#1D1D1F' }}>
+      <section className="py-20" style={{ background: '#083B3E' }}>
         <div className="max-w-3xl mx-auto px-6 text-center">
           <FadeUp>
             <h2 className="font-serif text-4xl font-bold text-white mb-5" style={{ letterSpacing: '-0.03em' }}>
               Preview your smile<br />
-              <span style={{ color: '#D4A843', fontStyle: 'italic' }}>before you commit to anything.</span>
+              <span style={{ color: '#3A8CC9', fontStyle: 'italic' }}>before you commit to anything.</span>
             </h2>
             <p className="text-white/50 mb-8">Complimentary smile design consultation includes iTero scan and digital outcome simulation.</p>
             <div className="flex flex-wrap justify-center gap-4">

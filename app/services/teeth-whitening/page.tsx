@@ -26,7 +26,7 @@ function FaqItem({ q, a }: { q: string; a: string }) {
       <button onClick={() => setOpen(v => !v)}
         className="w-full text-left py-5 flex items-center justify-between gap-4 text-white/85 font-semibold text-base hover:text-white transition-colors">
         {q}
-        <ChevronDown className={`w-4 h-4 shrink-0 transition-transform duration-200 ${open ? 'rotate-180' : ''}`} style={{ color: '#D4A843' }} />
+        <ChevronDown className={`w-4 h-4 shrink-0 transition-transform duration-200 ${open ? 'rotate-180' : ''}`} style={{ color: '#3A8CC9' }} />
       </button>
       {open && <p className="pb-5 text-white/55 text-sm leading-relaxed">{a}</p>}
     </div>
@@ -122,16 +122,16 @@ export default function TeethWhiteningPage() {
   return (
     <>
       {/* Hero */}
-      <section className="relative pt-40 pb-28 overflow-hidden hero-grid" style={{ background: '#000' }}>
+      <section className="relative pt-40 pb-28 overflow-hidden hero-grid" style={{ background: '#083B3E' }}>
         <div className="absolute top-0 right-0 w-96 h-96 rounded-full blur-3xl opacity-25 pointer-events-none"
-          style={{ background: 'radial-gradient(circle, #B88D2C, transparent)' }} />
+          style={{ background: 'radial-gradient(circle, #2B6AA3, transparent)' }} />
         <div className="max-w-5xl mx-auto px-6">
           <motion.div initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.7 }}>
             <p className="section-label mb-5">Cosmetic Dentistry · Whitening</p>
             <h1 className="font-serif font-bold text-white leading-tight mb-6"
               style={{ fontSize: 'clamp(2.75rem, 6vw, 5rem)', letterSpacing: '-0.04em' }}>
               Professional Teeth Whitening<br />
-              <span style={{ color: '#D4A843', fontStyle: 'italic' }}>Up to 8 Shades Brighter.</span>
+              <span style={{ color: '#3A8CC9', fontStyle: 'italic' }}>Up to 8 Shades Brighter.</span>
             </h1>
             <p className="text-white/55 text-xl leading-relaxed max-w-3xl mb-8">
               In-office Zoom whitening delivers dramatic, immediate results in a single 90-minute visit.
@@ -183,7 +183,7 @@ export default function TeethWhiteningPage() {
       </section>
 
       {/* Options */}
-      <section className="py-20" style={{ background: '#1D1D1F' }}>
+      <section className="py-20" style={{ background: '#083B3E' }}>
         <div className="max-w-6xl mx-auto px-6">
           <FadeUp className="text-center mb-12">
             <p className="section-label mb-4">Treatment Options</p>
@@ -195,12 +195,12 @@ export default function TeethWhiteningPage() {
             {options.map((o, i) => (
               <FadeUp key={i} delay={0.1 * i}>
                 <div className="rounded-2xl p-7 h-full flex flex-col" style={{ background: 'rgba(255,255,255,0.04)', border: '1px solid rgba(255,255,255,0.08)' }}>
-                  <div className="w-12 h-12 rounded-xl flex items-center justify-center mb-5" style={{ background: 'rgba(212,168,67,0.15)', color: '#D4A843' }}>
+                  <div className="w-12 h-12 rounded-xl flex items-center justify-center mb-5" style={{ background: 'rgba(58,140,201,0.15)', color: '#3A8CC9' }}>
                     {o.icon}
                   </div>
                   <h3 className="font-serif text-xl font-bold text-white mb-1">{o.name}</h3>
                   <div className="flex gap-4 mb-4 mt-1">
-                    <span className="text-xs font-semibold px-2.5 py-1 rounded-full" style={{ background: 'rgba(212,168,67,0.15)', color: '#D4A843' }}>{o.time}</span>
+                    <span className="text-xs font-semibold px-2.5 py-1 rounded-full" style={{ background: 'rgba(58,140,201,0.15)', color: '#3A8CC9' }}>{o.time}</span>
                     <span className="text-xs font-semibold px-2.5 py-1 rounded-full" style={{ background: 'rgba(34,197,94,0.12)', color: '#4ADE80' }}>{o.result}</span>
                   </div>
                   <p className="text-white/50 text-xs mb-4 italic">{o.ideal}</p>
@@ -210,7 +210,7 @@ export default function TeethWhiteningPage() {
                     <ul className="space-y-1.5">
                       {o.included.map((item, j) => (
                         <li key={j} className="flex items-center gap-2 text-xs text-white/60">
-                          <CheckCircle2 className="w-3 h-3 shrink-0" style={{ color: '#D4A843' }} />
+                          <CheckCircle2 className="w-3 h-3 shrink-0" style={{ color: '#3A8CC9' }} />
                           {item}
                         </li>
                       ))}
@@ -234,9 +234,9 @@ export default function TeethWhiteningPage() {
           </FadeUp>
           <FadeUp>
             <div className="rounded-2xl overflow-hidden" style={{ border: '1px solid rgba(255,255,255,0.08)' }}>
-              <div className="grid grid-cols-4 px-6 py-3" style={{ background: 'rgba(212,168,67,0.12)' }}>
+              <div className="grid grid-cols-4 px-6 py-3" style={{ background: 'rgba(58,140,201,0.12)' }}>
                 <span className="text-xs font-bold uppercase tracking-widest text-white/40"></span>
-                <span className="text-xs font-bold uppercase tracking-widest text-center" style={{ color: '#D4A843' }}>In-Office</span>
+                <span className="text-xs font-bold uppercase tracking-widest text-center" style={{ color: '#3A8CC9' }}>In-Office</span>
                 <span className="text-xs font-bold uppercase tracking-widest text-center text-white/70">Take-Home</span>
                 <span className="text-xs font-bold uppercase tracking-widest text-center text-white/40">Store-Bought</span>
               </div>
@@ -254,7 +254,7 @@ export default function TeethWhiteningPage() {
       </section>
 
       {/* Stats */}
-      <section className="py-16" style={{ background: '#D4A843' }}>
+      <section className="py-16" style={{ background: '#0F766E' }}>
         <div className="max-w-6xl mx-auto px-6">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
             {stats.map((s, i) => (
@@ -269,7 +269,7 @@ export default function TeethWhiteningPage() {
       </section>
 
       {/* FAQ */}
-      <section className="py-20" style={{ background: '#1D1D1F' }}>
+      <section className="py-20" style={{ background: '#083B3E' }}>
         <div className="max-w-3xl mx-auto px-6">
           <FadeUp className="text-center mb-12">
             <p className="section-label mb-4">FAQ</p>
@@ -284,11 +284,11 @@ export default function TeethWhiteningPage() {
       </section>
 
       {/* CTA */}
-      <section className="py-20" style={{ background: '#000' }}>
+      <section className="py-20" style={{ background: '#083B3E' }}>
         <div className="max-w-3xl mx-auto px-6 text-center">
           <FadeUp>
             <h2 className="font-serif text-4xl font-bold text-white mb-5" style={{ letterSpacing: '-0.03em' }}>
-              A brighter smile <span style={{ color: '#D4A843', fontStyle: 'italic' }}>in 90 minutes.</span>
+              A brighter smile <span style={{ color: '#3A8CC9', fontStyle: 'italic' }}>in 90 minutes.</span>
             </h2>
             <p className="text-white/50 mb-8">Book your whitening consultation — includes shade assessment and personalized treatment recommendation. Complimentary with all completed Invisalign cases.</p>
             <div className="flex flex-wrap justify-center gap-4">

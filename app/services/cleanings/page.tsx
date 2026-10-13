@@ -26,7 +26,7 @@ function FaqItem({ q, a }: { q: string; a: string }) {
       <button onClick={() => setOpen(v => !v)}
         className="w-full text-left py-5 flex items-center justify-between gap-4 text-white/85 font-semibold text-base hover:text-white transition-colors">
         {q}
-        <ChevronDown className={`w-4 h-4 shrink-0 transition-transform duration-200 ${open ? 'rotate-180' : ''}`} style={{ color: '#D4A843' }} />
+        <ChevronDown className={`w-4 h-4 shrink-0 transition-transform duration-200 ${open ? 'rotate-180' : ''}`} style={{ color: '#3A8CC9' }} />
       </button>
       {open && <p className="pb-5 text-white/55 text-sm leading-relaxed">{a}</p>}
     </div>
@@ -134,16 +134,16 @@ export default function CleaningsPage() {
   return (
     <>
       {/* Hero */}
-      <section className="relative pt-40 pb-28 overflow-hidden hero-grid" style={{ background: '#000' }}>
+      <section className="relative pt-40 pb-28 overflow-hidden hero-grid" style={{ background: '#083B3E' }}>
         <div className="absolute top-0 right-0 w-96 h-96 rounded-full blur-3xl opacity-20 pointer-events-none"
-          style={{ background: 'radial-gradient(circle, #B88D2C, transparent)' }} />
+          style={{ background: 'radial-gradient(circle, #2B6AA3, transparent)' }} />
         <div className="max-w-5xl mx-auto px-6">
           <motion.div initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.7 }}>
             <p className="section-label mb-5">Preventive Dentistry · Comprehensive Care</p>
             <h1 className="font-serif font-bold text-white leading-tight mb-6"
               style={{ fontSize: 'clamp(2.75rem, 6vw, 5rem)', letterSpacing: '-0.04em' }}>
               Dental Cleanings &amp;<br />
-              <span style={{ color: '#D4A843', fontStyle: 'italic' }}>Preventive Care in Palo Alto.</span>
+              <span style={{ color: '#3A8CC9', fontStyle: 'italic' }}>Preventive Care in Palo Alto.</span>
             </h1>
             <p className="text-white/55 text-xl leading-relaxed max-w-3xl mb-8">
               Prevention is the most cost-effective investment in your oral health. Our comprehensive
@@ -177,16 +177,16 @@ export default function CleaningsPage() {
             {cleaningTypes.map((c, i) => (
               <FadeUp key={i} delay={0.1 * i}>
                 <div className="bg-white rounded-2xl p-7 border border-cream-300 shadow-sm h-full flex flex-col">
-                  <div className="w-12 h-12 rounded-xl flex items-center justify-center mb-5" style={{ background: 'rgba(212,168,67,0.12)', color: '#D4A843' }}>
+                  <div className="w-12 h-12 rounded-xl flex items-center justify-center mb-5" style={{ background: 'rgba(58,140,201,0.12)', color: '#3A8CC9' }}>
                     {c.icon}
                   </div>
                   <h3 className="font-serif text-lg font-bold text-navy-900 mb-1">{c.name}</h3>
-                  <p className="text-xs font-semibold mb-1" style={{ color: '#D4A843' }}>{c.frequency}</p>
+                  <p className="text-xs font-semibold mb-1" style={{ color: '#3A8CC9' }}>{c.frequency}</p>
                   <p className="text-navy-900/55 text-xs mb-4 italic">{c.for}</p>
                   <ul className="space-y-2 mb-5 flex-grow">
                     {c.includes.map((item, j) => (
                       <li key={j} className="flex items-start gap-2 text-sm text-navy-900/70">
-                        <CheckCircle2 className="w-4 h-4 shrink-0 mt-0.5" style={{ color: '#D4A843' }} />
+                        <CheckCircle2 className="w-4 h-4 shrink-0 mt-0.5" style={{ color: '#3A8CC9' }} />
                         {item}
                       </li>
                     ))}
@@ -202,7 +202,7 @@ export default function CleaningsPage() {
       </section>
 
       {/* Comprehensive Exam Components */}
-      <section className="py-20" style={{ background: '#1D1D1F' }}>
+      <section className="py-20" style={{ background: '#083B3E' }}>
         <div className="max-w-6xl mx-auto px-6">
           <FadeUp className="text-center mb-12">
             <p className="section-label mb-4">What&apos;s Included</p>
@@ -216,7 +216,7 @@ export default function CleaningsPage() {
             {examComponents.map((e, i) => (
               <FadeUp key={i} delay={0.07 * i}>
                 <div className="flex gap-4 p-6 rounded-2xl h-full" style={{ background: 'rgba(255,255,255,0.04)', border: '1px solid rgba(255,255,255,0.07)' }}>
-                  <div className="shrink-0 w-10 h-10 rounded-lg flex items-center justify-center" style={{ background: 'rgba(212,168,67,0.15)', color: '#D4A843' }}>
+                  <div className="shrink-0 w-10 h-10 rounded-lg flex items-center justify-center" style={{ background: 'rgba(58,140,201,0.15)', color: '#3A8CC9' }}>
                     {e.icon}
                   </div>
                   <div>
@@ -270,15 +270,15 @@ export default function CleaningsPage() {
           </FadeUp>
           <FadeUp>
             <div className="rounded-2xl overflow-hidden" style={{ border: '1px solid rgba(255,255,255,0.08)' }}>
-              <div className="grid grid-cols-3 px-6 py-3" style={{ background: 'rgba(212,168,67,0.12)' }}>
-                <span className="text-xs font-bold uppercase tracking-widest" style={{ color: '#D4A843' }}>Patient Group</span>
+              <div className="grid grid-cols-3 px-6 py-3" style={{ background: 'rgba(58,140,201,0.12)' }}>
+                <span className="text-xs font-bold uppercase tracking-widest" style={{ color: '#3A8CC9' }}>Patient Group</span>
                 <span className="text-xs font-bold uppercase tracking-widest text-center text-white/70">Recommended Frequency</span>
                 <span className="text-xs font-bold uppercase tracking-widest text-white/40">Why</span>
               </div>
               {whoNeedsMore.map((row, i) => (
                 <div key={i} className="grid grid-cols-3 px-6 py-4 gap-4" style={{ borderTop: '1px solid rgba(255,255,255,0.05)', background: i % 2 === 0 ? 'rgba(255,255,255,0.02)' : 'transparent' }}>
                   <span className="text-sm font-semibold text-white/85">{row.group}</span>
-                  <span className="text-sm text-center font-semibold" style={{ color: '#D4A843' }}>{row.freq}</span>
+                  <span className="text-sm text-center font-semibold" style={{ color: '#3A8CC9' }}>{row.freq}</span>
                   <span className="text-xs text-white/45 leading-relaxed">{row.reason}</span>
                 </div>
               ))}
@@ -288,7 +288,7 @@ export default function CleaningsPage() {
       </section>
 
       {/* FAQ */}
-      <section className="py-20" style={{ background: '#1D1D1F' }}>
+      <section className="py-20" style={{ background: '#083B3E' }}>
         <div className="max-w-3xl mx-auto px-6">
           <FadeUp className="text-center mb-12">
             <p className="section-label mb-4">FAQ</p>
@@ -303,11 +303,11 @@ export default function CleaningsPage() {
       </section>
 
       {/* CTA */}
-      <section className="py-20" style={{ background: '#000' }}>
+      <section className="py-20" style={{ background: '#083B3E' }}>
         <div className="max-w-3xl mx-auto px-6 text-center">
           <FadeUp>
             <h2 className="font-serif text-4xl font-bold text-white mb-5" style={{ letterSpacing: '-0.03em' }}>
-              The best dental work is <span style={{ color: '#D4A843', fontStyle: 'italic' }}>the work you never need.</span>
+              The best dental work is <span style={{ color: '#3A8CC9', fontStyle: 'italic' }}>the work you never need.</span>
             </h2>
             <p className="text-white/50 mb-8">Schedule your comprehensive exam and cleaning. Most insurance plans cover 100% — no out-of-pocket cost for eligible patients.</p>
             <div className="flex flex-wrap justify-center gap-4">

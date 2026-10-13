@@ -26,7 +26,7 @@ function FaqItem({ q, a }: { q: string; a: string }) {
       <button onClick={() => setOpen(v => !v)}
         className="w-full text-left py-5 flex items-center justify-between gap-4 text-white/85 font-semibold text-base hover:text-white transition-colors">
         {q}
-        <ChevronDown className={`w-4 h-4 shrink-0 transition-transform duration-200 ${open ? 'rotate-180' : ''}`} style={{ color: '#D4A843' }} />
+        <ChevronDown className={`w-4 h-4 shrink-0 transition-transform duration-200 ${open ? 'rotate-180' : ''}`} style={{ color: '#3A8CC9' }} />
       </button>
       {open && <p className="pb-5 text-white/55 text-sm leading-relaxed">{a}</p>}
     </div>
@@ -91,7 +91,7 @@ export default function DentalEmergenciesPage() {
   return (
     <>
       {/* Hero */}
-      <section className="relative pt-40 pb-28 overflow-hidden hero-grid" style={{ background: '#000' }}>
+      <section className="relative pt-40 pb-28 overflow-hidden hero-grid" style={{ background: '#083B3E' }}>
         <div className="absolute top-0 left-0 w-96 h-96 rounded-full blur-3xl opacity-15 pointer-events-none"
           style={{ background: 'radial-gradient(circle, #8B0000, transparent)' }} />
         <div className="max-w-5xl mx-auto px-6">
@@ -100,7 +100,7 @@ export default function DentalEmergenciesPage() {
             <h1 className="font-serif font-bold text-white leading-tight mb-6"
               style={{ fontSize: 'clamp(2.75rem, 6vw, 5rem)', letterSpacing: '-0.04em' }}>
               Emergency Dentist<br />
-              <span style={{ color: '#D4A843', fontStyle: 'italic' }}>in Palo Alto. Call Now.</span>
+              <span style={{ color: '#3A8CC9', fontStyle: 'italic' }}>in Palo Alto. Call Now.</span>
             </h1>
             <p className="text-white/55 text-xl leading-relaxed max-w-3xl mb-8">
               Dental emergencies don&apos;t follow business hours. At Palo Alto Advanced Dentists, we make every effort
@@ -138,7 +138,7 @@ export default function DentalEmergenciesPage() {
             {emergencyTypes.map((e, i) => (
               <FadeUp key={i} delay={0.05 * i}>
                 <div className="bg-white rounded-2xl p-6 border border-cream-300 shadow-sm h-full">
-                  <div className="w-11 h-11 rounded-xl flex items-center justify-center mb-4" style={{ background: 'rgba(212,168,67,0.12)', color: '#D4A843' }}>
+                  <div className="w-11 h-11 rounded-xl flex items-center justify-center mb-4" style={{ background: 'rgba(58,140,201,0.12)', color: '#3A8CC9' }}>
                     {e.icon}
                   </div>
                   <h3 className="font-semibold text-navy-900 text-base mb-2">{e.title}</h3>
@@ -151,7 +151,7 @@ export default function DentalEmergenciesPage() {
       </section>
 
       {/* First Aid Before You Arrive */}
-      <section className="py-20" style={{ background: '#1D1D1F' }}>
+      <section className="py-20" style={{ background: '#083B3E' }}>
         <div className="max-w-5xl mx-auto px-6">
           <FadeUp className="text-center mb-12">
             <p className="section-label mb-4">Before You Arrive</p>
@@ -164,7 +164,7 @@ export default function DentalEmergenciesPage() {
             {firstAidTips.map((tip, i) => (
               <FadeUp key={i} delay={0.05 * i}>
                 <div className="flex gap-5 p-6 rounded-2xl" style={{ background: 'rgba(255,255,255,0.04)', border: '1px solid rgba(255,255,255,0.07)' }}>
-                  <div className="shrink-0 w-2 rounded-full self-stretch" style={{ background: '#D4A843' }} />
+                  <div className="shrink-0 w-2 rounded-full self-stretch" style={{ background: '#0F766E' }} />
                   <div>
                     <h3 className="font-semibold text-white mb-1">{tip.situation}</h3>
                     <p className="text-white/55 text-sm leading-relaxed">{tip.action}</p>
@@ -189,12 +189,12 @@ export default function DentalEmergenciesPage() {
             {treatmentProcess.map((p, i) => (
               <FadeUp key={i} delay={0.05 * i}>
                 <div className="flex gap-6 p-6 rounded-2xl bg-white shadow-sm border border-cream-300">
-                  <div className="shrink-0 w-12 h-12 rounded-xl flex items-center justify-center" style={{ background: 'rgba(212,168,67,0.12)', color: '#D4A843' }}>
+                  <div className="shrink-0 w-12 h-12 rounded-xl flex items-center justify-center" style={{ background: 'rgba(58,140,201,0.12)', color: '#3A8CC9' }}>
                     {p.icon}
                   </div>
                   <div>
                     <div className="flex items-center gap-3 mb-2">
-                      <span className="text-xs font-bold tracking-widest" style={{ color: '#B88D2C' }}>STEP {p.step}</span>
+                      <span className="text-xs font-bold tracking-widest" style={{ color: '#2B6AA3' }}>STEP {p.step}</span>
                       <h3 className="font-semibold text-navy-900 text-base">{p.title}</h3>
                     </div>
                     <p className="text-navy-900/60 text-sm leading-relaxed">{p.body}</p>
@@ -207,12 +207,12 @@ export default function DentalEmergenciesPage() {
       </section>
 
       {/* Urgent CTA Banner */}
-      <section className="py-14" style={{ background: '#D4A843' }}>
+      <section className="py-14" style={{ background: '#0F766E' }}>
         <div className="max-w-4xl mx-auto px-6 text-center">
           <FadeUp>
             <p className="font-bold text-black text-2xl mb-3">Experiencing a dental emergency right now?</p>
             <p className="text-black/65 mb-6">Don&apos;t wait. Call our office immediately — we prioritize same-day emergency appointments.</p>
-            <a href="tel:6503244900" className="inline-flex items-center gap-3 bg-black text-white font-bold rounded-full py-4 px-10 text-lg hover:bg-black/80 transition-colors">
+            <a href="tel:6503244900" className="inline-flex items-center gap-3 bg-gold-400 text-white font-bold rounded-full py-4 px-10 text-lg hover:bg-gold-500 transition-colors">
               <Phone className="w-5 h-5" /> (650) 324-4900
             </a>
           </FadeUp>
@@ -220,7 +220,7 @@ export default function DentalEmergenciesPage() {
       </section>
 
       {/* FAQ */}
-      <section className="py-20" style={{ background: '#1D1D1F' }}>
+      <section className="py-20" style={{ background: '#083B3E' }}>
         <div className="max-w-3xl mx-auto px-6">
           <FadeUp className="text-center mb-12">
             <p className="section-label mb-4">FAQ</p>
@@ -235,11 +235,11 @@ export default function DentalEmergenciesPage() {
       </section>
 
       {/* CTA */}
-      <section className="py-20" style={{ background: '#000' }}>
+      <section className="py-20" style={{ background: '#083B3E' }}>
         <div className="max-w-3xl mx-auto px-6 text-center">
           <FadeUp>
             <h2 className="font-serif text-4xl font-bold text-white mb-5" style={{ letterSpacing: '-0.03em' }}>
-              Don&apos;t wait with <span style={{ color: '#D4A843', fontStyle: 'italic' }}>dental pain.</span>
+              Don&apos;t wait with <span style={{ color: '#3A8CC9', fontStyle: 'italic' }}>dental pain.</span>
             </h2>
             <p className="text-white/50 mb-8">Call now for same-day emergency care. We treat the pain first, then plan the solution.</p>
             <div className="flex flex-wrap justify-center gap-4">

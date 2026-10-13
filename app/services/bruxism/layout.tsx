@@ -3,5 +3,10 @@ export const metadata: Metadata = {
   alternates: { canonical: 'https://www.paloaltoadvanceddentists.com/services/bruxism' },
   title: 'Bruxism & Teeth Grinding Treatment in Palo Alto, CA | Palo Alto Advanced Dentists',
   description: 'Teeth grinding (bruxism) treatment in Palo Alto, CA. Custom night guards, bite correction, and Botox for jaw muscle relaxation. Call (650) 324-4900.',
+  openGraph: {
+    title: 'Bruxism & Teeth Grinding Treatment in Palo Alto, CA | Palo Alto Advanced Dentists',
+    description: 'Teeth grinding (bruxism) treatment in Palo Alto, CA. Custom night guards, bite correction, and Botox for jaw muscle relaxation. Call (650) 324-4900.',
+    url: 'https://www.paloaltoadvanceddentists.com/services/bruxism',
+  },
 }
 export default function Layout({ children }: { children: React.ReactNode }) { return <>{children}</> }

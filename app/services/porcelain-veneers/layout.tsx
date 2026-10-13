@@ -3,5 +3,10 @@ export const metadata: Metadata = {
   alternates: { canonical: 'https://www.paloaltoadvanceddentists.com/services/porcelain-veneers' },
   title: 'Porcelain Veneers in Palo Alto, CA | Palo Alto Advanced Dentists',
   description: 'Custom porcelain veneers in Palo Alto, CA. Transform chips, stains, gaps and misshapen teeth into a radiant smile. Digital design preview. Call (650) 324-4900.',
+  openGraph: {
+    title: 'Porcelain Veneers in Palo Alto, CA | Palo Alto Advanced Dentists',
+    description: 'Custom porcelain veneers in Palo Alto, CA. Transform chips, stains, gaps and misshapen teeth into a radiant smile. Digital design preview. Call (650) 324-4900.',
+    url: 'https://www.paloaltoadvanceddentists.com/services/porcelain-veneers',
+  },
 }
 export default function Layout({ children }: { children: React.ReactNode }) { return <>{children}</> }

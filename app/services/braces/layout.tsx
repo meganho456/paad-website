@@ -3,5 +3,10 @@ export const metadata: Metadata = {
   alternates: { canonical: 'https://www.paloaltoadvanceddentists.com/services/braces' },
   title: 'Braces in Palo Alto, CA | Palo Alto Advanced Dentists',
   description: 'Traditional and clear braces in Palo Alto, CA. Comprehensive orthodontic treatment for teens and adults. Also see Invisalign Elite Provider. Call (650) 324-4900.',
+  openGraph: {
+    title: 'Braces in Palo Alto, CA | Palo Alto Advanced Dentists',
+    description: 'Traditional and clear braces in Palo Alto, CA. Comprehensive orthodontic treatment for teens and adults. Also see Invisalign Elite Provider. Call (650) 324-4900.',
+    url: 'https://www.paloaltoadvanceddentists.com/services/braces',
+  },
 }
 export default function Layout({ children }: { children: React.ReactNode }) { return <>{children}</> }

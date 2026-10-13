@@ -3,5 +3,10 @@ export const metadata: Metadata = {
   alternates: { canonical: 'https://www.paloaltoadvanceddentists.com/services/orthodontic-conditions' },
   title: 'Orthodontic Conditions We Treat in Palo Alto, CA | Palo Alto Advanced Dentists',
   description: 'Overbite, underbite, crossbite, crowding, gaps — orthodontic conditions treated with Invisalign and braces at Palo Alto Advanced Dentists. Call (650) 324-4900.',
+  openGraph: {
+    title: 'Orthodontic Conditions We Treat in Palo Alto, CA | Palo Alto Advanced Dentists',
+    description: 'Overbite, underbite, crossbite, crowding, gaps — orthodontic conditions treated with Invisalign and braces at Palo Alto Advanced Dentists. Call (650) 324-4900.',
+    url: 'https://www.paloaltoadvanceddentists.com/services/orthodontic-conditions',
+  },
 }
 export default function Layout({ children }: { children: React.ReactNode }) { return <>{children}</> }

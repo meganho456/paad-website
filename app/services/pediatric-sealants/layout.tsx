@@ -3,5 +3,10 @@ export const metadata: Metadata = {
   alternates: { canonical: 'https://www.paloaltoadvanceddentists.com/services/pediatric-sealants' },
   title: 'Dental Sealants for Children in Palo Alto, CA | Palo Alto Advanced Dentists',
   description: 'Protective dental sealants for children in Palo Alto, CA. Prevents cavities in back teeth by up to 80%. Quick, painless, and covered by most insurance. Call (650) 324-4900.',
+  openGraph: {
+    title: 'Dental Sealants for Children in Palo Alto, CA | Palo Alto Advanced Dentists',
+    description: 'Protective dental sealants for children in Palo Alto, CA. Prevents cavities in back teeth by up to 80%. Quick, painless, and covered by most insurance. Call (650) 324-4900.',
+    url: 'https://www.paloaltoadvanceddentists.com/services/pediatric-sealants',
+  },
 }
 export default function Layout({ children }: { children: React.ReactNode }) { return <>{children}</> }

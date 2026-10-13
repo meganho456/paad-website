@@ -136,7 +136,7 @@ export default function PediatricSealantsPage() {
               Dental sealants are one of the most cost-effective preventive interventions in modern dentistry — reducing cavity risk in molars by up to 80%. At PAAD in Palo Alto, we apply BPA-free sealants at the optimal eruption window and monitor them at every future visit to keep your child protected.
             </p>
             <div className="flex flex-wrap gap-4">
-              <Link href="/contact-us/" className="btn-gold inline-flex items-center gap-2">
+              <Link href="/contact" className="btn-gold inline-flex items-center gap-2">
                 Book a Consultation <ArrowRight className="w-4 h-4" />
               </Link>
               <a href="tel:6503244900" className="inline-flex items-center gap-2 text-white/70 hover:text-white font-semibold transition-colors">
@@ -259,7 +259,7 @@ export default function PediatricSealantsPage() {
             </h2>
             <p className="text-white/50 mb-8">Call (650) 324-4900 or request an appointment online — same-day appointments often available.</p>
             <div className="flex flex-wrap justify-center gap-4">
-              <Link href="/contact-us/" className="btn-gold inline-flex items-center gap-2">
+              <Link href="/contact" className="btn-gold inline-flex items-center gap-2">
                 Book a Consultation <ArrowRight className="w-4 h-4" />
               </Link>
               <a href="tel:6503244900" className="inline-flex items-center gap-2 text-white/60 hover:text-white font-semibold transition-colors">

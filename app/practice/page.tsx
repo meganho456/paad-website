@@ -133,9 +133,9 @@ export default function PracticePage() {
   return (
     <>
       {/* ── Page Hero ── */}
-      <section className="relative pt-40 pb-28 overflow-hidden hero-grid" style={{ background: "#000" }}>
+      <section className="relative pt-40 pb-28 overflow-hidden hero-grid" style={{ background: "#083B3E" }}>
         <div className="absolute top-0 right-0 w-96 h-96 rounded-full blur-3xl opacity-12 pointer-events-none"
-          style={{ background: 'radial-gradient(circle, #B88D2C, transparent)' }} />
+          style={{ background: 'radial-gradient(circle, #2B6AA3, transparent)' }} />
         <div className="max-w-4xl mx-auto px-6 text-center">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
@@ -167,18 +167,18 @@ export default function PracticePage() {
                 <div className={i % 2 !== 0 ? 'lg:order-2' : ''}>
                   <div
                     className="w-20 h-20 rounded-3xl flex items-center justify-center mb-7"
-                    style={{ background: 'linear-gradient(135deg, rgba(212,168,67,0.2), rgba(184,141,44,0.3))', color: '#D4A843' }}
+                    style={{ background: 'linear-gradient(135deg, rgba(58,140,201,0.2), rgba(43,106,163,0.3))', color: '#3A8CC9' }}
                   >
                     {tech.icon}
                   </div>
                   <div
                     className="inline-block text-[10px] font-bold uppercase tracking-widest px-3 py-1.5 rounded-full mb-4"
-                    style={{ background: 'rgba(184,141,44,0.15)', color: '#D4A843' }}
+                    style={{ background: 'rgba(43,106,163,0.15)', color: '#3A8CC9' }}
                   >
                     {tech.tag}
                   </div>
                   <h2 className="font-serif text-3xl md:text-4xl font-bold text-white mb-3 leading-tight">{tech.title}</h2>
-                  <p className="text-gold-400 text-base font-medium italic mb-6">{tech.tagline}</p>
+                  <p className="text-brand-400 text-base font-medium italic mb-6">{tech.tagline}</p>
 
                   {tech.description.map((para, j) => (
                     <p key={j} className="text-white/55 leading-relaxed mb-4 text-base">{para}</p>
@@ -186,8 +186,8 @@ export default function PracticePage() {
 
                   {tech.highlight && (
                     <div
-                      className="mt-4 px-4 py-3 rounded-xl text-sm text-gold-300 italic font-medium"
-                      style={{ background: 'rgba(184,141,44,0.1)', borderLeft: '3px solid rgba(184,141,44,0.5)' }}
+                      className="mt-4 px-4 py-3 rounded-xl text-sm text-brand-300 italic font-medium"
+                      style={{ background: 'rgba(43,106,163,0.1)', borderLeft: '3px solid rgba(43,106,163,0.5)' }}
                     >
                       {tech.highlight}
                     </div>
@@ -206,7 +206,7 @@ export default function PracticePage() {
                     <ul className="space-y-3.5">
                       {tech.benefits.map((b, k) => (
                         <li key={k} className="flex items-start gap-3 text-white/60 text-sm">
-                          <CheckCircle2 className="w-4 h-4 text-gold-400 shrink-0 mt-0.5" />
+                          <CheckCircle2 className="w-4 h-4 text-brand-400 shrink-0 mt-0.5" />
                           {b}
                         </li>
                       ))}
@@ -228,7 +228,7 @@ export default function PracticePage() {
       <section className="bg-cream-50 section-py">
         <div className="max-w-7xl mx-auto px-6">
           <FadeUp className="text-center mb-16">
-            <p className="text-gold-500 text-xs font-semibold uppercase tracking-[0.25em] mb-4">Our Philosophy</p>
+            <p className="text-brand-500 text-xs font-semibold uppercase tracking-[0.25em] mb-4">Our Philosophy</p>
             <h2 className="section-heading text-navy-900 mb-5">
               Technology Guided by<br />
               <span className="gold-text italic">Principle</span>
@@ -241,7 +241,7 @@ export default function PracticePage() {
                 <div className="p-7 rounded-2xl border border-cream-300 bg-white hover:border-gold-300 hover:shadow-lg transition-all duration-300 text-center group h-full">
                   <div
                     className="w-14 h-14 rounded-2xl flex items-center justify-center mx-auto mb-5 group-hover:scale-110 transition-transform duration-300"
-                    style={{ background: 'linear-gradient(135deg, #EBF4FD, #D4EAFA)', color: '#B88D2C' }}
+                    style={{ background: 'linear-gradient(135deg, #EBF4FD, #D4EAFA)', color: '#2B6AA3' }}
                   >
                     {p.icon}
                   </div>

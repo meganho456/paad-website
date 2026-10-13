@@ -76,9 +76,9 @@ export default function ContactPage() {
   return (
     <>
       {/* ── Page Hero ── */}
-      <section className="relative pt-40 pb-28 overflow-hidden hero-grid" style={{ background: "#000" }}>
+      <section className="relative pt-40 pb-28 overflow-hidden hero-grid" style={{ background: "#083B3E" }}>
         <div className="absolute top-0 right-0 w-72 h-72 rounded-full blur-3xl opacity-15 pointer-events-none"
-          style={{ background: 'radial-gradient(circle, #B88D2C, transparent)' }} />
+          style={{ background: 'radial-gradient(circle, #2B6AA3, transparent)' }} />
         <div className="max-w-4xl mx-auto px-6 text-center">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
@@ -117,7 +117,7 @@ export default function ContactPage() {
                   <div className="text-center py-16">
                     <div
                       className="w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-6"
-                      style={{ background: 'linear-gradient(135deg, #D4A843, #B88D2C)' }}
+                      style={{ background: 'linear-gradient(135deg, #0F766E, #0C5F59)' }}
                     >
                       <CheckCircle2 className="w-10 h-10 text-navy-950" />
                     </div>
@@ -130,7 +130,7 @@ export default function ContactPage() {
                     </p>
                     <p className="text-navy-700/50 text-sm">
                       Questions? Call us at{' '}
-                      <a href="tel:6503244900" className="text-gold-600 font-semibold hover:text-gold-500">
+                      <a href="tel:6503244900" className="text-brand-600 font-semibold hover:text-brand-500">
                         (650) 324-4900
                       </a>
                     </p>
@@ -333,7 +333,7 @@ export default function ContactPage() {
                     <li className="flex gap-3.5">
                       <div className="w-9 h-9 rounded-xl flex items-center justify-center shrink-0"
                         style={{ background: 'linear-gradient(135deg, #EBF4FD, #D4EAFA)' }}>
-                        <MapPin className="w-4 h-4 text-gold-500" />
+                        <MapPin className="w-4 h-4 text-brand-500" />
                       </div>
                       <div>
                         <p className="font-semibold text-navy-900 text-sm">4191 El Camino Real</p>
@@ -342,7 +342,7 @@ export default function ContactPage() {
                           href="https://maps.google.com/?q=4191+El+Camino+Real+Palo+Alto+CA"
                           target="_blank"
                           rel="noopener noreferrer"
-                          className="text-gold-600 text-xs font-medium hover:text-gold-500 mt-1 inline-block"
+                          className="text-brand-600 text-xs font-medium hover:text-brand-500 mt-1 inline-block"
                         >
                           Open in Maps →
                         </a>
@@ -351,10 +351,10 @@ export default function ContactPage() {
                     <li className="flex gap-3.5">
                       <div className="w-9 h-9 rounded-xl flex items-center justify-center shrink-0"
                         style={{ background: 'linear-gradient(135deg, #EBF4FD, #D4EAFA)' }}>
-                        <Phone className="w-4 h-4 text-gold-500" />
+                        <Phone className="w-4 h-4 text-brand-500" />
                       </div>
                       <div>
-                        <a href="tel:6503244900" className="font-semibold text-navy-900 text-sm hover:text-gold-600 transition-colors">
+                        <a href="tel:6503244900" className="font-semibold text-navy-900 text-sm hover:text-brand-600 transition-colors">
                           (650) 324-4900
                         </a>
                         <p className="text-navy-700/50 text-xs mt-0.5">Call or text</p>
@@ -363,7 +363,7 @@ export default function ContactPage() {
                     <li className="flex gap-3.5">
                       <div className="w-9 h-9 rounded-xl flex items-center justify-center shrink-0"
                         style={{ background: 'linear-gradient(135deg, #EBF4FD, #D4EAFA)' }}>
-                        <Clock className="w-4 h-4 text-gold-500" />
+                        <Clock className="w-4 h-4 text-brand-500" />
                       </div>
                       <div className="space-y-1">
                         {[
@@ -388,7 +388,7 @@ export default function ContactPage() {
                   style={{ height: '220px', background: 'linear-gradient(135deg, #0D1828 0%, #2D2010 100%)', position: 'relative' }}
                 >
                   <div className="absolute inset-0 flex flex-col items-center justify-center text-center p-6">
-                    <MapPin className="w-8 h-8 text-gold-400 mb-3" />
+                    <MapPin className="w-8 h-8 text-brand-400 mb-3" />
                     <p className="text-white font-semibold text-sm">4191 El Camino Real</p>
                     <p className="text-white/50 text-xs mb-4">Palo Alto, CA 94306</p>
                     <a
@@ -407,13 +407,13 @@ export default function ContactPage() {
               <FadeUp delay={0.3}>
                 <div
                   className="rounded-2xl p-5"
-                  style={{ background: 'rgba(184,141,44,0.1)', border: '1px solid rgba(184,141,44,0.3)' }}
+                  style={{ background: 'rgba(43,106,163,0.1)', border: '1px solid rgba(43,106,163,0.3)' }}
                 >
-                  <p className="text-gold-700 font-semibold text-sm mb-1">Dental Emergency?</p>
+                  <p className="text-brand-700 font-semibold text-sm mb-1">Dental Emergency?</p>
                   <p className="text-navy-700/70 text-xs leading-relaxed mb-3">
                     Call us immediately — we reserve emergency slots every day for urgent cases.
                   </p>
-                  <a href="tel:6503244900" className="text-gold-600 font-bold text-sm hover:text-gold-500 transition-colors">
+                  <a href="tel:6503244900" className="text-brand-600 font-bold text-sm hover:text-brand-500 transition-colors">
                     (650) 324-4900
                   </a>
                 </div>

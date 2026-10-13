@@ -162,9 +162,9 @@ export default function DoctorsPage() {
   return (
     <>
       {/* ── Page Hero ── */}
-      <section className="relative pt-40 pb-28 overflow-hidden hero-grid" style={{ background: '#000' }}>
+      <section className="relative pt-40 pb-28 overflow-hidden hero-grid" style={{ background: '#083B3E' }}>
         <div className="absolute bottom-0 left-0 w-80 h-80 rounded-full blur-3xl opacity-10 pointer-events-none"
-          style={{ background: 'radial-gradient(circle, #D4A843, transparent)' }} />
+          style={{ background: 'radial-gradient(circle, #14B8A6, transparent)' }} />
         <div className="max-w-4xl mx-auto px-6 text-center">
           <motion.div initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.7 }}>
             <p className="section-label mb-5">Our Doctors</p>
@@ -196,13 +196,13 @@ export default function DoctorsPage() {
       <LanguageDoctors />
 
       {/* ── Languages banner ── */}
-      <section className="border-y border-white/10 py-5" style={{ background: '#1D1D1F' }}>
+      <section className="border-y border-white/10 py-5" style={{ background: '#083B3E' }}>
         <div className="max-w-5xl mx-auto px-6 flex flex-wrap items-center justify-center gap-6">
-          <Globe className="w-4 h-4 text-gold-400" />
+          <Globe className="w-4 h-4 text-brand-400" />
           <span className="text-white/50 text-sm font-medium">We speak:</span>
           {['English', 'Spanish', 'Chinese', 'Japanese', 'Persian'].map((lang) => (
             <span key={lang} className="text-white/80 text-sm font-semibold px-3 py-1 rounded-full"
-              style={{ background: 'rgba(212,168,67,0.12)', border: '1px solid rgba(212,168,67,0.25)' }}>
+              style={{ background: 'rgba(58,140,201,0.12)', border: '1px solid rgba(58,140,201,0.25)' }}>
               {lang}
             </span>
           ))}
@@ -210,7 +210,7 @@ export default function DoctorsPage() {
       </section>
 
       {/* ── Doctor Cards ── */}
-      <section className="py-24" style={{ background: '#1D1D1F' }}>
+      <section className="py-24" style={{ background: '#083B3E' }}>
         <div className="max-w-7xl mx-auto px-6 space-y-16">
           {doctors.map((doc, i) => (
             <FadeUp key={doc.name} delay={0.05}>
@@ -233,7 +233,7 @@ export default function DoctorsPage() {
                       <div className="font-bold text-white text-lg leading-tight" style={{ letterSpacing: '-0.02em' }}>
                         {doc.name}
                       </div>
-                      <div className="text-gold-400 text-xs font-semibold mt-0.5">{doc.credentials}</div>
+                      <div className="text-brand-400 text-xs font-semibold mt-0.5">{doc.credentials}</div>
                       <div className="text-white/50 text-[10px] uppercase tracking-widest mt-0.5">{doc.title}</div>
                     </div>
                     {/* Awards badges */}
@@ -241,7 +241,7 @@ export default function DoctorsPage() {
                       <div className="absolute top-4 left-4 flex flex-col gap-1.5">
                         {doc.awards.map((a) => (
                           <span key={a} className="text-[9px] font-bold uppercase tracking-wider px-2 py-1 rounded-full"
-                            style={{ background: 'rgba(212,168,67,0.9)', color: '#000' }}>
+                            style={{ background: 'rgba(58,140,201,0.9)', color: '#000' }}>
                             {a}
                           </span>
                         ))}
@@ -256,20 +256,20 @@ export default function DoctorsPage() {
                   <h2 className="font-bold text-white mb-1" style={{ fontSize: 'clamp(1.75rem,3vw,2.5rem)', letterSpacing: '-0.03em' }}>
                     {doc.name}
                   </h2>
-                  <p className="text-gold-400 text-sm font-semibold mb-6">{doc.credentials}</p>
+                  <p className="text-brand-400 text-sm font-semibold mb-6">{doc.credentials}</p>
                   <p className="text-white/60 leading-relaxed mb-8 text-base">{doc.bio}</p>
 
                   <div className="grid grid-cols-1 sm:grid-cols-2 gap-8">
                     {/* Education */}
                     <div>
                       <div className="flex items-center gap-2 mb-3">
-                        <GraduationCap className="w-4 h-4 text-gold-400" />
+                        <GraduationCap className="w-4 h-4 text-brand-400" />
                         <span className="text-white/90 font-semibold text-xs uppercase tracking-wider">Education</span>
                       </div>
                       <ul className="space-y-2">
                         {doc.education.map((e) => (
                           <li key={e} className="flex items-start gap-2 text-sm text-white/55">
-                            <CheckCircle2 className="w-3.5 h-3.5 text-gold-500 shrink-0 mt-0.5" />
+                            <CheckCircle2 className="w-3.5 h-3.5 text-brand-500 shrink-0 mt-0.5" />
                             {e}
                           </li>
                         ))}
@@ -279,13 +279,13 @@ export default function DoctorsPage() {
                     {/* Specialties */}
                     <div>
                       <div className="flex items-center gap-2 mb-3">
-                        <Star className="w-4 h-4 text-gold-400" />
+                        <Star className="w-4 h-4 text-brand-400" />
                         <span className="text-white/90 font-semibold text-xs uppercase tracking-wider">Specialties</span>
                       </div>
                       <ul className="space-y-2">
                         {doc.specialties.map((s) => (
                           <li key={s} className="flex items-start gap-2 text-sm text-white/55">
-                            <CheckCircle2 className="w-3.5 h-3.5 text-gold-500 shrink-0 mt-0.5" />
+                            <CheckCircle2 className="w-3.5 h-3.5 text-brand-500 shrink-0 mt-0.5" />
                             {s}
                           </li>
                         ))}
@@ -304,11 +304,11 @@ export default function DoctorsPage() {
                   {/* Languages */}
                   {doc.languages.length > 0 && (
                     <div className="mt-4 flex items-center gap-3 flex-wrap">
-                      <Globe className="w-4 h-4 text-gold-400" />
+                      <Globe className="w-4 h-4 text-brand-400" />
                       <span className="text-white/40 text-xs font-medium uppercase tracking-wider">Speaks:</span>
                       {doc.languages.map((l) => (
                         <span key={l} className="text-xs font-semibold px-2.5 py-1 rounded-full text-white/75"
-                          style={{ background: 'rgba(212,168,67,0.1)', border: '1px solid rgba(212,168,67,0.2)' }}>
+                          style={{ background: 'rgba(58,140,201,0.1)', border: '1px solid rgba(58,140,201,0.2)' }}>
                           {l}
                         </span>
                       ))}
@@ -322,7 +322,7 @@ export default function DoctorsPage() {
       </section>
 
       {/* ── CTA ── */}
-      <section className="bg-black py-24">
+      <section className="bg-navy-900 py-24">
         <FadeUp className="max-w-3xl mx-auto px-6 text-center">
           <h2 className="headline-section text-white mb-5" style={{ fontSize: 'clamp(2rem,4vw,3.5rem)' }}>
             Ready to meet your doctor?

@@ -104,8 +104,8 @@ const serviceSections: ServiceSection[] = [
 export default function ServicesContent() {
   return (
     <>
-      <section className="relative pt-40 pb-28 overflow-hidden hero-grid" style={{ background: '#000' }}>
-        <div className="absolute top-0 right-0 w-80 h-80 rounded-full blur-3xl opacity-15 pointer-events-none" style={{ background: 'radial-gradient(circle, #B88D2C, transparent)' }} />
+      <section className="relative pt-40 pb-28 overflow-hidden hero-grid" style={{ background: '#083B3E' }}>
+        <div className="absolute top-0 right-0 w-80 h-80 rounded-full blur-3xl opacity-15 pointer-events-none" style={{ background: 'radial-gradient(circle, #2B6AA3, transparent)' }} />
         <div className="max-w-5xl mx-auto px-6 text-center">
           <motion.div initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.7 }}>
             <p className="section-label mb-5">Our Services</p>
@@ -144,7 +144,7 @@ export default function ServicesContent() {
                 <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-4">
                   {section.items.map((item) => (
                     <Link key={item.href} href={item.href} className="group block h-full rounded-2xl border border-white/8 bg-[#121820] p-5 transition-all duration-300 hover:border-gold-500/40 hover:bg-[#1a1f2a]">
-                      <div className="flex items-center justify-between text-gold-400 mb-3">
+                      <div className="flex items-center justify-between text-brand-400 mb-3">
                         <span className="text-sm font-semibold uppercase tracking-[0.14em]">Service</span>
                         <ChevronRight className="w-4 h-4 transition-transform group-hover:translate-x-1" />
                       </div>

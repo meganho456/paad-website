@@ -55,10 +55,10 @@ function FAQ({ q, a }: { q: string; a: string }) {
     <div className="border-b border-cream-300">
       <button
         onClick={() => setOpen((v) => !v)}
-        className="w-full flex items-center justify-between py-5 text-left gap-4 hover:text-gold-600 transition-colors"
+        className="w-full flex items-center justify-between py-5 text-left gap-4 hover:text-brand-600 transition-colors"
       >
         <span className="font-semibold text-navy-900 text-base">{q}</span>
-        <ChevronDown className={`w-5 h-5 text-gold-500 shrink-0 transition-transform duration-300 ${open ? 'rotate-180' : ''}`} />
+        <ChevronDown className={`w-5 h-5 text-brand-500 shrink-0 transition-transform duration-300 ${open ? 'rotate-180' : ''}`} />
       </button>
       <motion.div
         initial={false}
@@ -76,9 +76,9 @@ export default function PatientsPage() {
   return (
     <>
       {/* ── Page Hero ── */}
-      <section className="relative pt-40 pb-28 overflow-hidden hero-grid" style={{ background: "#000" }}>
+      <section className="relative pt-40 pb-28 overflow-hidden hero-grid" style={{ background: "#083B3E" }}>
         <div className="absolute top-0 left-0 w-80 h-80 rounded-full blur-3xl opacity-12 pointer-events-none"
-          style={{ background: 'radial-gradient(circle, #D4A843, transparent)' }} />
+          style={{ background: 'radial-gradient(circle, #14B8A6, transparent)' }} />
         <div className="max-w-4xl mx-auto px-6 text-center">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
@@ -115,7 +115,7 @@ export default function PatientsPage() {
       <section className="bg-cream-50 section-py">
         <div className="max-w-6xl mx-auto px-6">
           <FadeUp className="text-center mb-16">
-            <p className="text-gold-500 text-xs font-semibold uppercase tracking-[0.25em] mb-4">
+            <p className="text-brand-500 text-xs font-semibold uppercase tracking-[0.25em] mb-4">
               New Patients
             </p>
             <h2 className="section-heading text-navy-900 mb-5">
@@ -160,7 +160,7 @@ export default function PatientsPage() {
                   <div className="flex items-start justify-between mb-5">
                     <div
                       className="w-13 h-13 w-12 h-12 rounded-xl flex items-center justify-center group-hover:scale-110 transition-transform"
-                      style={{ background: 'linear-gradient(135deg, #EBF4FD, #D4EAFA)', color: '#B88D2C' }}
+                      style={{ background: 'linear-gradient(135deg, #EBF4FD, #D4EAFA)', color: '#2B6AA3' }}
                     >
                       {s.icon}
                     </div>
@@ -184,7 +184,7 @@ export default function PatientsPage() {
               <div className="glass-card p-8 md:p-10 h-full">
                 <div
                   className="w-14 h-14 rounded-2xl flex items-center justify-center mb-6"
-                  style={{ background: 'rgba(212,168,67,0.18)', color: '#D4A843' }}
+                  style={{ background: 'rgba(58,140,201,0.18)', color: '#3A8CC9' }}
                 >
                   <ClipboardList className="w-7 h-7" />
                 </div>
@@ -200,7 +200,7 @@ export default function PatientsPage() {
                     'Referral letter (if applicable)',
                   ].map((item) => (
                     <li key={item} className="flex items-start gap-3 text-white/65 text-sm">
-                      <CheckCircle2 className="w-4 h-4 text-gold-400 shrink-0 mt-0.5" />
+                      <CheckCircle2 className="w-4 h-4 text-brand-400 shrink-0 mt-0.5" />
                       {item}
                     </li>
                   ))}
@@ -213,7 +213,7 @@ export default function PatientsPage() {
               <div className="glass-card p-8 md:p-10 h-full">
                 <div
                   className="w-14 h-14 rounded-2xl flex items-center justify-center mb-6"
-                  style={{ background: 'rgba(212,168,67,0.18)', color: '#D4A843' }}
+                  style={{ background: 'rgba(58,140,201,0.18)', color: '#3A8CC9' }}
                 >
                   <CreditCard className="w-7 h-7" />
                 </div>
@@ -235,7 +235,7 @@ export default function PatientsPage() {
                 <div className="flex flex-wrap gap-2">
                   {['CareCredit (0% APR)', 'Sunbit', 'In-House Plans'].map((f) => (
                     <span key={f} className="text-xs px-2.5 py-1 rounded-full font-medium"
-                      style={{ background: 'rgba(184,141,44,0.15)', color: '#D4A843', border: '1px solid rgba(184,141,44,0.25)' }}>
+                      style={{ background: 'rgba(43,106,163,0.15)', color: '#3A8CC9', border: '1px solid rgba(43,106,163,0.25)' }}>
                       {f}
                     </span>
                   ))}
@@ -253,7 +253,7 @@ export default function PatientsPage() {
             {/* Left: dark */}
             <div className="p-10 md:p-14" style={{ background: 'linear-gradient(135deg, #0D1828, #100C04)' }}>
               <FadeUp>
-                <p className="text-gold-400 text-xs font-semibold uppercase tracking-[0.25em] mb-4">Existing Patients</p>
+                <p className="text-brand-400 text-xs font-semibold uppercase tracking-[0.25em] mb-4">Existing Patients</p>
                 <h2 className="font-serif text-3xl font-bold text-white mb-5">Patient Portal</h2>
                 <p className="text-white/55 text-base leading-relaxed mb-8">
                   Access your records, X-rays, treatment plans, billing statements,
@@ -269,7 +269,7 @@ export default function PatientsPage() {
                     'Update health history forms',
                   ].map((item) => (
                     <li key={item} className="flex items-center gap-2.5 text-white/65 text-sm">
-                      <CheckCircle2 className="w-4 h-4 text-gold-400 shrink-0" />
+                      <CheckCircle2 className="w-4 h-4 text-brand-400 shrink-0" />
                       {item}
                     </li>
                   ))}
@@ -287,30 +287,30 @@ export default function PatientsPage() {
             {/* Right: light */}
             <div className="bg-white p-10 md:p-14 flex flex-col justify-center">
               <FadeUp delay={0.15}>
-                <p className="text-gold-500 text-xs font-semibold uppercase tracking-[0.25em] mb-4">Hours & Location</p>
+                <p className="text-brand-500 text-xs font-semibold uppercase tracking-[0.25em] mb-4">Hours & Location</p>
                 <h3 className="font-serif text-2xl font-bold text-navy-900 mb-6">Visit Us</h3>
                 <ul className="space-y-5">
                   <li className="flex gap-3">
-                    <MapPin className="w-5 h-5 text-gold-500 shrink-0 mt-0.5" />
+                    <MapPin className="w-5 h-5 text-brand-500 shrink-0 mt-0.5" />
                     <div>
                       <p className="font-semibold text-navy-900 text-sm">4191 El Camino Real</p>
                       <p className="text-navy-700/60 text-sm">Palo Alto, CA 94306</p>
                       <a href="https://maps.google.com" target="_blank" rel="noopener noreferrer"
-                        className="text-gold-600 text-xs font-medium hover:text-gold-500 mt-1 inline-flex items-center gap-1">
+                        className="text-brand-600 text-xs font-medium hover:text-brand-500 mt-1 inline-flex items-center gap-1">
                         Get Directions <ExternalLink className="w-3 h-3" />
                       </a>
                     </div>
                   </li>
                   <li className="flex gap-3">
-                    <Phone className="w-5 h-5 text-gold-500 shrink-0 mt-0.5" />
+                    <Phone className="w-5 h-5 text-brand-500 shrink-0 mt-0.5" />
                     <div>
-                      <a href="tel:6503244900" className="font-semibold text-navy-900 text-sm hover:text-gold-600 transition-colors">
+                      <a href="tel:6503244900" className="font-semibold text-navy-900 text-sm hover:text-brand-600 transition-colors">
                         (650) 324-4900
                       </a>
                     </div>
                   </li>
                   <li className="flex gap-3">
-                    <Clock className="w-5 h-5 text-gold-500 shrink-0 mt-0.5" />
+                    <Clock className="w-5 h-5 text-brand-500 shrink-0 mt-0.5" />
                     <div className="space-y-1">
                       {[
                         { day: 'Monday – Saturday', hours: '9:00 am – 6:00 pm' },
@@ -334,7 +334,7 @@ export default function PatientsPage() {
       <section className="bg-cream-50 section-py">
         <div className="max-w-3xl mx-auto px-6">
           <FadeUp className="text-center mb-12">
-            <p className="text-gold-500 text-xs font-semibold uppercase tracking-[0.25em] mb-4">FAQ</p>
+            <p className="text-brand-500 text-xs font-semibold uppercase tracking-[0.25em] mb-4">FAQ</p>
             <h2 className="section-heading text-navy-900">Common Questions</h2>
           </FadeUp>
           <FadeUp delay={0.1}>

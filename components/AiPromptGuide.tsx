@@ -41,12 +41,12 @@ function PromptCard({ prompt, delay }: { prompt: AiPrompt; delay: number }) {
 
   return (
     <FadeUp delay={delay}>
-      <div className="rounded-2xl p-6" style={{ background: '#1D1D1F', border: '1px solid rgba(255,255,255,0.08)' }}>
+      <div className="rounded-2xl p-6" style={{ background: '#083B3E', border: '1px solid rgba(255,255,255,0.08)' }}>
         <div className="flex items-center justify-between mb-3">
           <div className="flex items-center gap-2">
             <span
               className="text-[10px] font-bold uppercase tracking-widest px-2.5 py-1 rounded-full"
-              style={{ background: 'rgba(212,168,67,0.15)', color: '#D4A843' }}
+              style={{ background: 'rgba(58,140,201,0.15)', color: '#3A8CC9' }}
             >
               {prompt.engine}
             </span>
@@ -56,16 +56,16 @@ function PromptCard({ prompt, delay }: { prompt: AiPrompt; delay: number }) {
             onClick={copy}
             className="flex items-center gap-1.5 text-xs font-medium px-3 py-1.5 rounded-lg transition-all"
             style={{
-              background: copied ? 'rgba(34,197,94,0.15)' : 'rgba(212,168,67,0.12)',
-              color: copied ? '#4ade80' : '#D4A843',
-              border: `1px solid ${copied ? 'rgba(34,197,94,0.3)' : 'rgba(212,168,67,0.25)'}`,
+              background: copied ? 'rgba(34,197,94,0.15)' : 'rgba(58,140,201,0.12)',
+              color: copied ? '#4ade80' : '#3A8CC9',
+              border: `1px solid ${copied ? 'rgba(34,197,94,0.3)' : 'rgba(58,140,201,0.25)'}`,
             }}
           >
             {copied ? <CheckCheck className="w-3.5 h-3.5" /> : <Copy className="w-3.5 h-3.5" />}
             {copied ? 'Copied!' : 'Copy'}
           </button>
         </div>
-        <p className="text-white/65 text-sm leading-relaxed font-mono bg-black/30 rounded-xl p-4">
+        <p className="text-white/65 text-sm leading-relaxed font-mono bg-navy-950/30 rounded-xl p-4">
           &ldquo;{prompt.prompt}&rdquo;
         </p>
       </div>
@@ -79,14 +79,14 @@ export default function AiPromptGuide({
   prompts,
 }: AiPromptGuideProps) {
   return (
-    <section className="py-20" style={{ background: '#000' }}>
+    <section className="py-20" style={{ background: '#083B3E' }}>
       <div className="max-w-4xl mx-auto px-6">
         <FadeUp>
           <div className="text-center mb-12">
             <div className="inline-flex items-center gap-2 mb-5 px-4 py-2 rounded-full"
-              style={{ background: 'rgba(212,168,67,0.1)', border: '1px solid rgba(212,168,67,0.25)' }}>
-              <Sparkles className="w-4 h-4" style={{ color: '#D4A843' }} />
-              <span className="text-xs font-semibold uppercase tracking-widest" style={{ color: '#D4A843' }}>
+              style={{ background: 'rgba(58,140,201,0.1)', border: '1px solid rgba(58,140,201,0.25)' }}>
+              <Sparkles className="w-4 h-4" style={{ color: '#3A8CC9' }} />
+              <span className="text-xs font-semibold uppercase tracking-widest" style={{ color: '#3A8CC9' }}>
                 AI Search Guide
               </span>
             </div>

@@ -135,7 +135,7 @@ export default function DentalBridgesPage() {
               A dental bridge permanently replaces one or more missing teeth with a fixed restoration that looks, feels, and functions like natural teeth. At PAAD, we combine digital impressions, CAD/CAM porcelain, and optional CEREC same-day fabrication to give Palo Alto patients a seamless, durable result with minimal chair time.
             </p>
             <div className="flex flex-wrap gap-4">
-              <Link href="/contact-us/" className="btn-gold inline-flex items-center gap-2">
+              <Link href="/contact" className="btn-gold inline-flex items-center gap-2">
                 Book a Consultation <ArrowRight className="w-4 h-4" />
               </Link>
               <a href="tel:6503244900" className="inline-flex items-center gap-2 text-white/70 hover:text-white font-semibold transition-colors">
@@ -252,7 +252,7 @@ export default function DentalBridgesPage() {
             </h2>
             <p className="text-white/50 mb-8">Call (650) 324-4900 or request an appointment online — same-day appointments often available.</p>
             <div className="flex flex-wrap justify-center gap-4">
-              <Link href="/contact-us/" className="btn-gold inline-flex items-center gap-2">
+              <Link href="/contact" className="btn-gold inline-flex items-center gap-2">
                 Book a Consultation <ArrowRight className="w-4 h-4" />
               </Link>
               <a href="tel:6503244900" className="inline-flex items-center gap-2 text-white/60 hover:text-white font-semibold transition-colors">

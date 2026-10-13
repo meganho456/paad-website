@@ -135,7 +135,7 @@ export default function DigitalXraysPage() {
               Digital radiography is the foundation of accurate dental diagnosis. At PAAD, Dr. James Ho uses state-of-the-art digital sensors and on-site CBCT cone-beam CT to detect problems early, plan treatment precisely, and monitor changes over time — all with a fraction of the radiation delivered by conventional film X-rays.
             </p>
             <div className="flex flex-wrap gap-4">
-              <Link href="/contact-us/" className="btn-gold inline-flex items-center gap-2">
+              <Link href="/contact" className="btn-gold inline-flex items-center gap-2">
                 Book a Consultation <ArrowRight className="w-4 h-4" />
               </Link>
               <a href="tel:6503244900" className="inline-flex items-center gap-2 text-white/70 hover:text-white font-semibold transition-colors">
@@ -252,7 +252,7 @@ export default function DigitalXraysPage() {
             </h2>
             <p className="text-white/50 mb-8">Call (650) 324-4900 or request an appointment online — same-day appointments often available.</p>
             <div className="flex flex-wrap justify-center gap-4">
-              <Link href="/contact-us/" className="btn-gold inline-flex items-center gap-2">
+              <Link href="/contact" className="btn-gold inline-flex items-center gap-2">
                 Book a Consultation <ArrowRight className="w-4 h-4" />
               </Link>
               <a href="tel:6503244900" className="inline-flex items-center gap-2 text-white/60 hover:text-white font-semibold transition-colors">

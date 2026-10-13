@@ -135,7 +135,7 @@ export default function DentalCrownsPage() {
               A dental crown restores a damaged, cracked, or weakened tooth to full function and aesthetics. At PAAD, Dr. James Ho uses CEREC CAD/CAM technology to design and mill all-ceramic crowns in-house — delivering a permanent, precision-fitted crown in a single appointment without the temporary crown, lab wait, or second visit that traditional crown techniques require.
             </p>
             <div className="flex flex-wrap gap-4">
-              <Link href="/contact-us/" className="btn-gold inline-flex items-center gap-2">
+              <Link href="/contact" className="btn-gold inline-flex items-center gap-2">
                 Book a Consultation <ArrowRight className="w-4 h-4" />
               </Link>
               <a href="tel:6503244900" className="inline-flex items-center gap-2 text-white/70 hover:text-white font-semibold transition-colors">
@@ -252,7 +252,7 @@ export default function DentalCrownsPage() {
             </h2>
             <p className="text-white/50 mb-8">Call (650) 324-4900 or request an appointment online — same-day appointments often available.</p>
             <div className="flex flex-wrap justify-center gap-4">
-              <Link href="/contact-us/" className="btn-gold inline-flex items-center gap-2">
+              <Link href="/contact" className="btn-gold inline-flex items-center gap-2">
                 Book a Consultation <ArrowRight className="w-4 h-4" />
               </Link>
               <a href="tel:6503244900" className="inline-flex items-center gap-2 text-white/60 hover:text-white font-semibold transition-colors">

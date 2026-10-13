@@ -26,7 +26,7 @@ function FaqItem({ q, a }: { q: string; a: string }) {
       <button onClick={() => setOpen(v => !v)}
         className="w-full text-left py-5 flex items-center justify-between gap-4 text-white/85 font-semibold text-base hover:text-white transition-colors">
         {q}
-        <ChevronDown className={`w-4 h-4 shrink-0 text-gold-500 transition-transform duration-200 ${open ? 'rotate-180' : ''}`} style={{ color: '#D4A843' }} />
+        <ChevronDown className={`w-4 h-4 shrink-0 text-brand-500 transition-transform duration-200 ${open ? 'rotate-180' : ''}`} style={{ color: '#3A8CC9' }} />
       </button>
       {open && <p className="pb-5 text-white/55 text-sm leading-relaxed">{a}</p>}
     </div>
@@ -146,16 +146,16 @@ export default function InvisalignPage() {
   return (
     <>
       {/* Hero */}
-      <section className="relative pt-40 pb-28 overflow-hidden hero-grid" style={{ background: '#000' }}>
+      <section className="relative pt-40 pb-28 overflow-hidden hero-grid" style={{ background: '#083B3E' }}>
         <div className="absolute top-0 right-0 w-96 h-96 rounded-full blur-3xl opacity-20 pointer-events-none"
-          style={{ background: 'radial-gradient(circle, #B88D2C, transparent)' }} />
+          style={{ background: 'radial-gradient(circle, #2B6AA3, transparent)' }} />
         <div className="max-w-5xl mx-auto px-6">
           <motion.div initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.7 }}>
             <p className="section-label mb-5">Orthodontics · Clear Aligners</p>
             <h1 className="font-serif font-bold text-white leading-tight mb-6"
               style={{ fontSize: 'clamp(2.75rem, 6vw, 5rem)', letterSpacing: '-0.04em' }}>
               Invisalign Clear Aligners<br />
-              <span style={{ color: '#D4A843', fontStyle: 'italic' }}>Elite Preferred Provider — Top 5%.</span>
+              <span style={{ color: '#3A8CC9', fontStyle: 'italic' }}>Elite Preferred Provider — Top 5%.</span>
             </h1>
             <p className="text-white/55 text-xl leading-relaxed max-w-3xl mb-8">
               Palo Alto Advanced Dentists is an Invisalign Elite Preferred Provider — a designation held by
@@ -178,8 +178,8 @@ export default function InvisalignPage() {
       {/* Elite Badge */}
       <section className="py-10" style={{ background: 'linear-gradient(90deg, #0a0a0a, #111)' }}>
         <div className="max-w-5xl mx-auto px-6">
-          <div className="flex flex-wrap items-center gap-6 py-5 px-8 rounded-2xl" style={{ border: '1px solid rgba(212,168,67,0.3)', background: 'rgba(212,168,67,0.06)' }}>
-            <Star className="w-10 h-10 shrink-0" style={{ color: '#D4A843' }} />
+          <div className="flex flex-wrap items-center gap-6 py-5 px-8 rounded-2xl" style={{ border: '1px solid rgba(58,140,201,0.3)', background: 'rgba(58,140,201,0.06)' }}>
+            <Star className="w-10 h-10 shrink-0" style={{ color: '#3A8CC9' }} />
             <div>
               <p className="text-white font-bold text-lg">Invisalign Elite Preferred Provider — Top 5% Nationwide</p>
               <p className="text-white/50 text-sm mt-0.5">This designation is awarded by Align Technology to providers demonstrating exceptional case volume, complexity experience, and clinical outcomes. Fewer than 1 in 20 Invisalign providers qualifies.</p>
@@ -207,7 +207,7 @@ export default function InvisalignPage() {
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
                 {conditions.map((item, i) => (
                   <div key={i} className="flex items-center gap-3 bg-white rounded-xl px-4 py-3.5 shadow-sm border border-cream-300">
-                    <CheckCircle2 className="w-4 h-4 shrink-0" style={{ color: '#D4A843' }} />
+                    <CheckCircle2 className="w-4 h-4 shrink-0" style={{ color: '#3A8CC9' }} />
                     <span className="text-navy-900 text-sm font-medium">{item}</span>
                   </div>
                 ))}
@@ -218,7 +218,7 @@ export default function InvisalignPage() {
       </section>
 
       {/* Treatment Options */}
-      <section className="py-20" style={{ background: '#1D1D1F' }}>
+      <section className="py-20" style={{ background: '#083B3E' }}>
         <div className="max-w-6xl mx-auto px-6">
           <FadeUp className="text-center mb-12">
             <p className="section-label mb-4">Treatment Options</p>
@@ -233,7 +233,7 @@ export default function InvisalignPage() {
                   <h3 className="font-serif text-xl font-bold text-white mb-4">{o.name}</h3>
                   <div className="space-y-3 text-sm">
                     <div><span className="text-white/40 uppercase tracking-wider text-xs">Best for</span><p className="text-white/75 mt-1">{o.ideal}</p></div>
-                    <div><span className="text-white/40 uppercase tracking-wider text-xs">Duration</span><p className="mt-1 font-semibold" style={{ color: '#D4A843' }}>{o.duration}</p></div>
+                    <div><span className="text-white/40 uppercase tracking-wider text-xs">Duration</span><p className="mt-1 font-semibold" style={{ color: '#3A8CC9' }}>{o.duration}</p></div>
                     <div><span className="text-white/40 uppercase tracking-wider text-xs">Aligners</span><p className="text-white/75 mt-1">{o.aligners}</p></div>
                   </div>
                 </div>
@@ -256,12 +256,12 @@ export default function InvisalignPage() {
             {steps.map((s, i) => (
               <FadeUp key={i} delay={0.05 * i}>
                 <div className="flex gap-6 p-6 rounded-2xl bg-white shadow-sm border border-cream-300">
-                  <div className="shrink-0 w-12 h-12 rounded-xl flex items-center justify-center" style={{ background: 'rgba(212,168,67,0.12)', color: '#D4A843' }}>
+                  <div className="shrink-0 w-12 h-12 rounded-xl flex items-center justify-center" style={{ background: 'rgba(58,140,201,0.12)', color: '#3A8CC9' }}>
                     {s.icon}
                   </div>
                   <div>
                     <div className="flex items-center gap-3 mb-2">
-                      <span className="text-xs font-bold tracking-widest" style={{ color: '#B88D2C' }}>STEP {s.step}</span>
+                      <span className="text-xs font-bold tracking-widest" style={{ color: '#2B6AA3' }}>STEP {s.step}</span>
                       <h3 className="font-semibold text-navy-900 text-base">{s.title}</h3>
                     </div>
                     <p className="text-navy-900/60 text-sm leading-relaxed">{s.body}</p>
@@ -284,9 +284,9 @@ export default function InvisalignPage() {
           </FadeUp>
           <FadeUp>
             <div className="rounded-2xl overflow-hidden" style={{ border: '1px solid rgba(255,255,255,0.08)' }}>
-              <div className="grid grid-cols-3 px-6 py-3" style={{ background: 'rgba(212,168,67,0.12)' }}>
+              <div className="grid grid-cols-3 px-6 py-3" style={{ background: 'rgba(58,140,201,0.12)' }}>
                 <span className="text-xs font-bold uppercase tracking-widest text-white/50"></span>
-                <span className="text-xs font-bold uppercase tracking-widest text-center" style={{ color: '#D4A843' }}>Invisalign at PAAD</span>
+                <span className="text-xs font-bold uppercase tracking-widest text-center" style={{ color: '#3A8CC9' }}>Invisalign at PAAD</span>
                 <span className="text-xs font-bold uppercase tracking-widest text-center text-white/50">Traditional Braces</span>
               </div>
               {comparisonRows.map((row, i) => (
@@ -302,7 +302,7 @@ export default function InvisalignPage() {
       </section>
 
       {/* Stats */}
-      <section className="py-16" style={{ background: '#D4A843' }}>
+      <section className="py-16" style={{ background: '#0F766E' }}>
         <div className="max-w-6xl mx-auto px-6">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
             {stats.map((s, i) => (
@@ -317,7 +317,7 @@ export default function InvisalignPage() {
       </section>
 
       {/* FAQ */}
-      <section className="py-20" style={{ background: '#1D1D1F' }}>
+      <section className="py-20" style={{ background: '#083B3E' }}>
         <div className="max-w-3xl mx-auto px-6">
           <FadeUp className="text-center mb-12">
             <p className="section-label mb-4">FAQ</p>
@@ -332,11 +332,11 @@ export default function InvisalignPage() {
       </section>
 
       {/* CTA */}
-      <section className="py-20" style={{ background: '#000' }}>
+      <section className="py-20" style={{ background: '#083B3E' }}>
         <div className="max-w-3xl mx-auto px-6 text-center">
           <FadeUp>
             <h2 className="font-serif text-4xl font-bold text-white mb-5" style={{ letterSpacing: '-0.03em' }}>
-              See your new smile <span style={{ color: '#D4A843', fontStyle: 'italic' }}>before you start.</span>
+              See your new smile <span style={{ color: '#3A8CC9', fontStyle: 'italic' }}>before you start.</span>
             </h2>
             <p className="text-white/50 mb-8">Free consultation includes iTero 3D scan, virtual SmileView simulation, and a personalized treatment plan — no obligation.</p>
             <div className="flex flex-wrap justify-center gap-4">

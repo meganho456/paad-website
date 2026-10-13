@@ -140,7 +140,7 @@ const faqs = [
 
 function FaqSection() {
   return (
-    <section className="section-py" style={{ background: '#1D1D1F' }}>
+    <section className="section-py" style={{ background: '#083B3E' }}>
       <div className="max-w-3xl mx-auto px-6">
         <FadeUp className="mb-12 text-center">
           <p className="section-label mb-4">FAQ</p>
@@ -155,7 +155,7 @@ function FaqSection() {
         <FadeUp delay={0.1}>
           <div
             className="rounded-3xl overflow-hidden"
-            style={{ background: '#000', border: '1px solid rgba(255,255,255,0.07)' }}
+            style={{ background: '#083B3E', border: '1px solid rgba(255,255,255,0.07)' }}
           >
             {faqs.map((item, i) => (
               <details
@@ -172,7 +172,7 @@ function FaqSection() {
                   </span>
                   <ChevronDown
                     className="w-4 h-4 shrink-0 transition-transform duration-200 group-open:rotate-180"
-                    style={{ color: '#D4A843' }}
+                    style={{ color: '#3A8CC9' }}
                   />
                 </summary>
                 <p className="pb-6 text-sm leading-relaxed" style={{ color: 'rgba(255,255,255,0.80)' }}>
@@ -193,13 +193,13 @@ export default function SummerSmilePromoPage() {
       {/* ── Hero ── */}
       <section
         className="relative pt-40 pb-28 overflow-hidden hero-grid"
-        style={{ background: '#000' }}
+        style={{ background: '#083B3E' }}
       >
         <div
           className="absolute inset-0 pointer-events-none"
           style={{
             background:
-              'radial-gradient(ellipse 70% 50% at 50% 60%, rgba(212,168,67,0.1) 0%, transparent 70%)',
+              'radial-gradient(ellipse 70% 50% at 50% 60%, rgba(58,140,201,0.1) 0%, transparent 70%)',
           }}
         />
         <div className="max-w-4xl mx-auto px-6 text-center relative z-10">
@@ -211,9 +211,9 @@ export default function SummerSmilePromoPage() {
             <span
               className="inline-block text-[10px] font-bold uppercase tracking-widest px-3 py-1 rounded-full mb-6"
               style={{
-                background: 'rgba(212,168,67,0.15)',
-                color: '#D4A843',
-                border: '1px solid rgba(212,168,67,0.3)',
+                background: 'rgba(58,140,201,0.15)',
+                color: '#3A8CC9',
+                border: '1px solid rgba(58,140,201,0.3)',
               }}
             >
               End-of-Year Smile Event
@@ -247,12 +247,12 @@ export default function SummerSmilePromoPage() {
             <div
               className="inline-flex items-center gap-2 rounded-full px-4 py-2"
               style={{
-                background: 'rgba(212,168,67,0.1)',
-                border: '1px solid rgba(212,168,67,0.25)',
+                background: 'rgba(58,140,201,0.1)',
+                border: '1px solid rgba(58,140,201,0.25)',
               }}
             >
-              <Calendar className="w-3.5 h-3.5" style={{ color: '#D4A843' }} />
-              <span className="text-sm font-medium" style={{ color: '#D4A843' }}>
+              <Calendar className="w-3.5 h-3.5" style={{ color: '#3A8CC9' }} />
+              <span className="text-sm font-medium" style={{ color: '#3A8CC9' }}>
                 Offer valid for consultations scheduled by Dec 31
               </span>
             </div>
@@ -261,7 +261,7 @@ export default function SummerSmilePromoPage() {
       </section>
 
       {/* ── Dual-Benefit Packages ── */}
-      <section className="section-py" style={{ background: '#1D1D1F' }}>
+      <section className="section-py" style={{ background: '#083B3E' }}>
         <div className="max-w-7xl mx-auto px-6">
           <FadeUp className="text-center mb-14">
             <p className="section-label mb-4">Choose Your Offer</p>
@@ -285,7 +285,7 @@ export default function SummerSmilePromoPage() {
                   style={{
                     background: pkg.dark ? '#000' : '#fff',
                     border: pkg.highlight
-                      ? '1px solid rgba(212,168,67,0.4)'
+                      ? '1px solid rgba(58,140,201,0.4)'
                       : pkg.dark
                       ? '1px solid rgba(255,255,255,0.07)'
                       : '1px solid rgba(0,0,0,0.07)',
@@ -296,7 +296,7 @@ export default function SummerSmilePromoPage() {
                       className="absolute top-0 left-0 right-0 h-px"
                       style={{
                         background:
-                          'linear-gradient(90deg, transparent, #D4A843, transparent)',
+                          'linear-gradient(90deg, transparent, #2DD4BF, transparent)',
                       }}
                     />
                   )}
@@ -304,14 +304,14 @@ export default function SummerSmilePromoPage() {
                   <div className="flex items-start gap-4 mb-6">
                     <div
                       className="w-14 h-14 rounded-2xl flex items-center justify-center shrink-0"
-                      style={{ background: 'rgba(212,168,67,0.15)', color: '#D4A843' }}
+                      style={{ background: 'rgba(58,140,201,0.15)', color: '#3A8CC9' }}
                     >
                       {pkg.icon}
                     </div>
                     <div>
                       <span
                         className="text-[10px] font-bold uppercase tracking-widest px-2.5 py-1 rounded-full inline-block mb-2"
-                        style={{ background: 'rgba(212,168,67,0.12)', color: '#D4A843' }}
+                        style={{ background: 'rgba(58,140,201,0.12)', color: '#3A8CC9' }}
                       >
                         {pkg.tag}
                       </span>
@@ -328,7 +328,7 @@ export default function SummerSmilePromoPage() {
                     </div>
                   </div>
 
-                  <p className="font-medium mb-4" style={{ color: '#D4A843', fontSize: '0.9375rem' }}>
+                  <p className="font-medium mb-4" style={{ color: '#3A8CC9', fontSize: '0.9375rem' }}>
                     {pkg.headline}
                   </p>
 
@@ -336,12 +336,12 @@ export default function SummerSmilePromoPage() {
                     className="rounded-2xl px-4 py-3 mb-6"
                     style={{
                       background: pkg.dark
-                        ? 'rgba(212,168,67,0.1)'
-                        : 'rgba(212,168,67,0.07)',
-                      border: '1px solid rgba(212,168,67,0.25)',
+                        ? 'rgba(58,140,201,0.1)'
+                        : 'rgba(58,140,201,0.07)',
+                      border: '1px solid rgba(58,140,201,0.25)',
                     }}
                   >
-                    <span className="font-bold" style={{ color: '#D4A843', fontSize: '1.125rem' }}>
+                    <span className="font-bold" style={{ color: '#3A8CC9', fontSize: '1.125rem' }}>
                       {pkg.priceLabel}
                     </span>
                     <span
@@ -366,7 +366,7 @@ export default function SummerSmilePromoPage() {
                       >
                         <CheckCircle2
                           className="w-4 h-4 shrink-0 mt-0.5"
-                          style={{ color: '#D4A843' }}
+                          style={{ color: '#3A8CC9' }}
                         />
                         {f}
                       </li>
@@ -384,7 +384,7 @@ export default function SummerSmilePromoPage() {
       </section>
 
       {/* ── Clinical Sequencing Timeline ── */}
-      <section className="section-py bg-black">
+      <section className="section-py bg-navy-900">
         <div className="max-w-4xl mx-auto px-6">
           <FadeUp className="text-center mb-16">
             <p className="section-label mb-4">Clinical Workflow</p>
@@ -405,7 +405,7 @@ export default function SummerSmilePromoPage() {
               className="absolute left-8 top-8 bottom-8 w-px hidden md:block"
               style={{
                 background:
-                  'linear-gradient(to bottom, #D4A843, rgba(212,168,67,0.15))',
+                  'linear-gradient(to bottom, #3A8CC9, rgba(58,140,201,0.15))',
               }}
             />
 
@@ -417,7 +417,7 @@ export default function SummerSmilePromoPage() {
                       <div
                         className="w-16 h-16 rounded-2xl flex items-center justify-center z-10 relative"
                         style={{
-                          background: 'linear-gradient(135deg, #D4A843, #B88D2C)',
+                          background: 'linear-gradient(135deg, #0F766E, #0C5F59)',
                           color: '#000',
                         }}
                       >
@@ -428,14 +428,14 @@ export default function SummerSmilePromoPage() {
                     <div
                       className="flex-1 rounded-3xl p-6 md:p-8"
                       style={{
-                        background: '#1D1D1F',
+                        background: '#083B3E',
                         border: '1px solid rgba(255,255,255,0.07)',
                       }}
                     >
                       <div className="flex flex-wrap items-center gap-2 mb-3">
                         <span
                           className="text-[10px] font-bold uppercase tracking-widest"
-                          style={{ color: '#D4A843' }}
+                          style={{ color: '#3A8CC9' }}
                         >
                           Step {step.num}
                         </span>
@@ -453,17 +453,17 @@ export default function SummerSmilePromoPage() {
                         <div
                           className="inline-flex items-start gap-2 rounded-xl px-3 py-2"
                           style={{
-                            background: 'rgba(212,168,67,0.1)',
-                            border: '1px solid rgba(212,168,67,0.25)',
+                            background: 'rgba(58,140,201,0.1)',
+                            border: '1px solid rgba(58,140,201,0.25)',
                           }}
                         >
                           <CheckCircle2
                             className="w-3.5 h-3.5 shrink-0 mt-0.5"
-                            style={{ color: '#D4A843' }}
+                            style={{ color: '#3A8CC9' }}
                           />
                           <span
                             className="text-xs font-semibold"
-                            style={{ color: '#D4A843' }}
+                            style={{ color: '#3A8CC9' }}
                           >
                             {step.callout}
                           </span>
@@ -482,15 +482,15 @@ export default function SummerSmilePromoPage() {
       <FaqSection />
 
       {/* ── Scarcity + Final CTA ── */}
-      <section className="section-py" style={{ background: '#1D1D1F' }}>
+      <section className="section-py" style={{ background: '#083B3E' }}>
         <div className="max-w-3xl mx-auto px-6">
           <FadeUp>
             <div
               className="rounded-3xl p-8 md:p-14 text-center relative overflow-hidden"
               style={{
                 background:
-                  'linear-gradient(135deg, rgba(212,168,67,0.12), rgba(184,141,44,0.05))',
-                border: '1px solid rgba(212,168,67,0.3)',
+                  'linear-gradient(135deg, rgba(58,140,201,0.12), rgba(43,106,163,0.05))',
+                border: '1px solid rgba(58,140,201,0.3)',
               }}
             >
               <div className="absolute inset-0 hero-grid opacity-25 pointer-events-none" />
@@ -498,13 +498,13 @@ export default function SummerSmilePromoPage() {
                 className="absolute top-0 left-0 right-0 h-px"
                 style={{
                   background:
-                    'linear-gradient(90deg, transparent, #D4A843, transparent)',
+                    'linear-gradient(90deg, transparent, #2DD4BF, transparent)',
                 }}
               />
               <div className="relative z-10">
                 <div
                   className="w-14 h-14 rounded-2xl flex items-center justify-center mx-auto mb-6"
-                  style={{ background: 'linear-gradient(135deg, #D4A843, #B88D2C)' }}
+                  style={{ background: 'linear-gradient(135deg, #0F766E, #0C5F59)' }}
                 >
                   <Clock className="w-7 h-7 text-black" />
                 </div>
@@ -521,11 +521,11 @@ export default function SummerSmilePromoPage() {
                 <div
                   className="inline-block rounded-2xl px-6 py-4 mb-8"
                   style={{
-                    background: 'rgba(212,168,67,0.1)',
-                    border: '1px solid rgba(212,168,67,0.3)',
+                    background: 'rgba(58,140,201,0.1)',
+                    border: '1px solid rgba(58,140,201,0.3)',
                   }}
                 >
-                  <p className="font-semibold" style={{ color: '#D4A843' }}>
+                  <p className="font-semibold" style={{ color: '#3A8CC9' }}>
                     Offer valid for initial consultations scheduled by Dec 31.
                   </p>
                 </div>

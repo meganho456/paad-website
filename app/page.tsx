@@ -22,13 +22,13 @@ function HeroSection() {
   const opacity = useTransform(scrollY, [0, 500], [1, 0])
 
   return (
-    <section className="relative h-screen bg-black flex items-center justify-center overflow-hidden hero-grid">
+    <section className="relative h-screen bg-navy-900 flex items-center justify-center overflow-hidden hero-grid">
       {/* ambient glow */}
       <div
         className="absolute inset-0 pointer-events-none"
         style={{
           background:
-            'radial-gradient(ellipse 80% 60% at 50% 60%, rgba(212,168,67,0.08) 0%, transparent 70%)',
+            'radial-gradient(ellipse 80% 60% at 50% 60%, rgba(58,140,201,0.08) 0%, transparent 70%)',
         }}
       />
 
@@ -82,7 +82,7 @@ function HeroSection() {
           animate={{ y: [0, 8, 0] }}
           transition={{ repeat: Infinity, duration: 1.8, ease: 'easeInOut' }}
           className="w-px h-10 rounded-full"
-          style={{ background: 'linear-gradient(to bottom, rgba(212,168,67,0.7), transparent)' }}
+          style={{ background: 'linear-gradient(to bottom, rgba(58,140,201,0.7), transparent)' }}
         />
       </motion.div>
     </section>
@@ -138,7 +138,7 @@ function PanelContent({
         >
           {panel.headline}
         </h2>
-        <p className="text-gold-400 text-xl md:text-2xl font-medium mb-8">{panel.sub}</p>
+        <p className="text-brand-400 text-xl md:text-2xl font-medium mb-8">{panel.sub}</p>
         <p
           className="text-white/50 leading-relaxed max-w-xl mx-auto mb-10"
           style={{ fontSize: '1.125rem' }}
@@ -193,7 +193,7 @@ function PinnedDifference() {
 
   return (
     <div ref={containerRef} style={{ height: '300vh' }} className="relative">
-      <div className="sticky top-0 h-screen bg-black overflow-hidden">
+      <div className="sticky top-0 h-screen bg-navy-900 overflow-hidden">
         <ProgressDots progress={scrollYProgress} />
         <div className="relative h-full">
           {panels.map((panel, i) => (
@@ -215,20 +215,20 @@ function PinnedDifference() {
 ───────────────────────────────────────────────────── */
 function SummerPromoBanner() {
   return (
-    <section className="section-py bg-black">
+    <section className="section-py bg-navy-900">
       <div className="max-w-7xl mx-auto px-6">
         <FadeUp>
           <div
             className="relative rounded-3xl overflow-hidden px-8 py-12 md:px-16 md:py-16"
             style={{
-              background: 'linear-gradient(135deg, rgba(212,168,67,0.13) 0%, rgba(184,141,44,0.06) 50%, rgba(212,168,67,0.13) 100%)',
-              border: '1px solid rgba(212,168,67,0.35)',
+              background: 'linear-gradient(135deg, rgba(58,140,201,0.13) 0%, rgba(43,106,163,0.06) 50%, rgba(58,140,201,0.13) 100%)',
+              border: '1px solid rgba(58,140,201,0.35)',
             }}
           >
             <div className="absolute inset-0 hero-grid opacity-30 pointer-events-none" />
             <div
               className="absolute top-0 left-0 right-0 h-px"
-              style={{ background: 'linear-gradient(90deg, transparent, #D4A843, transparent)' }}
+              style={{ background: 'linear-gradient(90deg, transparent, #2DD4BF, transparent)' }}
             />
 
             <div className="relative z-10 flex flex-col lg:flex-row items-center gap-10 lg:gap-16">
@@ -260,18 +260,18 @@ function SummerPromoBanner() {
               {/* Divider */}
               <div
                 className="hidden lg:block w-px self-stretch"
-                style={{ background: 'rgba(212,168,67,0.3)' }}
+                style={{ background: 'rgba(58,140,201,0.3)' }}
               />
               <div
                 className="lg:hidden w-full h-px"
-                style={{ background: 'rgba(212,168,67,0.3)' }}
+                style={{ background: 'rgba(58,140,201,0.3)' }}
               />
 
               {/* Promo content */}
               <div className="flex-1 text-center lg:text-left">
                 <span
                   className="inline-block text-[10px] font-bold uppercase tracking-widest px-3 py-1 rounded-full mb-5"
-                  style={{ background: 'rgba(212,168,67,0.15)', color: '#D4A843', border: '1px solid rgba(212,168,67,0.35)' }}
+                  style={{ background: 'rgba(58,140,201,0.15)', color: '#3A8CC9', border: '1px solid rgba(58,140,201,0.35)' }}
                 >
                   End-of-Year Smile Event
                 </span>
@@ -287,7 +287,7 @@ function SummerPromoBanner() {
                   style={{ fontSize: '1.0625rem' }}
                 >
                   Get a complimentary Zoom chairside whitening when you start Invisalign before year-end — or save{' '}
-                  <span style={{ color: '#D4A843', fontWeight: 600 }}>$150</span> on standalone professional whitening.
+                  <span style={{ color: '#3A8CC9', fontWeight: 600 }}>$150</span> on standalone professional whitening.
                 </p>
                 <div className="flex flex-col sm:flex-row items-center lg:items-start justify-center lg:justify-start gap-4">
                   <Link href="/summer-smile-promo" className="btn-gold">
@@ -313,7 +313,7 @@ function BrandStatement() {
   return (
     <section
       className="section-py"
-      style={{ background: '#1D1D1F' }}
+      style={{ background: '#083B3E' }}
     >
       <div className="max-w-5xl mx-auto px-6">
         <FadeUp>
@@ -396,7 +396,7 @@ function ServicesPreview() {
     <section className="section-py" style={{ background: '#F5F5F7' }}>
       <div className="max-w-7xl mx-auto px-6">
         <FadeUp className="text-center mb-14">
-          <p className="section-label mb-4" style={{ color: '#B88D2C' }}>Services</p>
+          <p className="section-label mb-4" style={{ color: '#2B6AA3' }}>Services</p>
           <h2
             className="headline-section text-navy-950 mb-4"
             style={{ fontSize: 'clamp(2.5rem,5vw,4rem)' }}
@@ -415,7 +415,7 @@ function ServicesPreview() {
                 <div
                   className="h-full rounded-3xl p-8 transition-all duration-300 group-hover:scale-[1.02]"
                   style={{
-                    background: s.dark ? '#1D1D1F' : '#FFFFFF',
+                    background: s.dark ? '#083B3E' : '#FFFFFF',
                     border: s.dark
                       ? '1px solid rgba(255,255,255,0.07)'
                       : '1px solid rgba(0,0,0,0.07)',
@@ -424,8 +424,8 @@ function ServicesPreview() {
                   <span
                     className="text-[10px] font-bold uppercase tracking-widest px-2.5 py-1 rounded-full inline-block mb-5"
                     style={{
-                      background: 'rgba(212,168,67,0.12)',
-                      color: '#D4A843',
+                      background: 'rgba(58,140,201,0.12)',
+                      color: '#3A8CC9',
                     }}
                   >
                     {s.tag}
@@ -443,7 +443,7 @@ function ServicesPreview() {
                   <p style={{ color: s.dark ? 'rgba(255,255,255,0.75)' : 'rgba(0,0,0,0.65)' }} className="text-sm leading-relaxed">
                     {s.desc}
                   </p>
-                  <div className="mt-6 flex items-center gap-1.5" style={{ color: '#D4A843' }}>
+                  <div className="mt-6 flex items-center gap-1.5" style={{ color: '#3A8CC9' }}>
                     <span className="text-sm font-semibold">Learn more</span>
                     <ArrowRight className="w-3.5 h-3.5 transition-transform group-hover:translate-x-1" />
                   </div>
@@ -477,7 +477,7 @@ function ScaleRevealCard({ children, delay = 0 }: { children: React.ReactNode; d
 
 function TechHighlight() {
   return (
-    <section className="section-py bg-black">
+    <section className="section-py bg-navy-900">
       <div className="max-w-7xl mx-auto px-6">
         <FadeUp className="text-center mb-16">
           <p className="section-label mb-4">Our Technology</p>
@@ -495,9 +495,9 @@ function TechHighlight() {
             <div className="tile-dark h-full">
               <div
                 className="w-14 h-14 rounded-2xl flex items-center justify-center mb-6"
-                style={{ background: 'rgba(212,168,67,0.15)' }}
+                style={{ background: 'rgba(58,140,201,0.15)' }}
               >
-                <svg className="w-7 h-7" fill="none" viewBox="0 0 24 24" stroke="#D4A843" strokeWidth={1.5}>
+                <svg className="w-7 h-7" fill="none" viewBox="0 0 24 24" stroke="#3A8CC9" strokeWidth={1.5}>
                   <path strokeLinecap="round" strokeLinejoin="round" d="M3.75 13.5l10.5-11.25L12 10.5h8.25L9.75 21.75 12 13.5H3.75z" />
                 </svg>
               </div>
@@ -512,7 +512,7 @@ function TechHighlight() {
               <div className="space-y-2">
                 {['3D scan in 60 seconds', 'Invisalign outcome simulation', 'NIRI cavity detection'].map((b) => (
                   <div key={b} className="flex items-center gap-2.5">
-                    <CheckCircle2 className="w-4 h-4 text-gold-400 shrink-0" />
+                    <CheckCircle2 className="w-4 h-4 text-brand-400 shrink-0" />
                     <span className="text-white/60 text-sm">{b}</span>
                   </div>
                 ))}
@@ -524,9 +524,9 @@ function TechHighlight() {
             <div className="tile-gold h-full">
               <div
                 className="w-14 h-14 rounded-2xl flex items-center justify-center mb-6"
-                style={{ background: 'rgba(212,168,67,0.2)' }}
+                style={{ background: 'rgba(58,140,201,0.2)' }}
               >
-                <svg className="w-7 h-7" fill="none" viewBox="0 0 24 24" stroke="#D4A843" strokeWidth={1.5}>
+                <svg className="w-7 h-7" fill="none" viewBox="0 0 24 24" stroke="#3A8CC9" strokeWidth={1.5}>
                   <path strokeLinecap="round" strokeLinejoin="round" d="M21 7.5l-9-5.25L3 7.5m18 0l-9 5.25m9-5.25v9l-9 5.25M3 7.5l9 5.25M3 7.5v9l9 5.25m0-9v9" />
                 </svg>
               </div>
@@ -554,22 +554,22 @@ function TechHighlight() {
 ───────────────────────────────────────────────────── */
 function DoctorSpotlight() {
   return (
-    <section className="section-py" style={{ background: '#1D1D1F' }}>
+    <section className="section-py" style={{ background: '#083B3E' }}>
       <div className="max-w-7xl mx-auto px-6">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
           <FadeUp>
             <div
               className="rounded-3xl flex flex-col items-center justify-center p-16 text-center"
               style={{
-                background: 'linear-gradient(135deg, rgba(212,168,67,0.15) 0%, rgba(184,141,44,0.08) 100%)',
-                border: '1px solid rgba(212,168,67,0.2)',
+                background: 'linear-gradient(135deg, rgba(58,140,201,0.15) 0%, rgba(43,106,163,0.08) 100%)',
+                border: '1px solid rgba(58,140,201,0.2)',
                 minHeight: '420px',
               }}
             >
               <div
                 className="w-28 h-28 rounded-full flex items-center justify-center font-bold text-4xl mb-6"
                 style={{
-                  background: 'linear-gradient(135deg,#D4A843,#B88D2C)',
+                  background: 'linear-gradient(135deg,#0F766E,#0C5F59)',
                   color: '#000',
                   letterSpacing: '-0.04em',
                 }}
@@ -582,7 +582,7 @@ function DoctorSpotlight() {
               >
                 Dr. James Ho
               </h3>
-              <p className="text-gold-400 text-sm font-semibold mb-1">DMD, MPH</p>
+              <p className="text-brand-400 text-sm font-semibold mb-1">DMD, MPH</p>
               <p className="text-white/40 text-xs uppercase tracking-widest mb-6">
                 Founder &amp; Lead Dentist
               </p>
@@ -591,7 +591,7 @@ function DoctorSpotlight() {
                   <span
                     key={a}
                     className="text-[9px] font-bold uppercase tracking-wider px-2 py-1 rounded-full"
-                    style={{ background: 'rgba(212,168,67,0.15)', color: '#D4A843' }}
+                    style={{ background: 'rgba(58,140,201,0.15)', color: '#3A8CC9' }}
                   >
                     {a}
                   </span>
@@ -623,7 +623,7 @@ function DoctorSpotlight() {
                 'Speaks English & Cantonese',
               ].map((item) => (
                 <div key={item} className="flex items-start gap-3">
-                  <CheckCircle2 className="w-4 h-4 text-gold-400 shrink-0 mt-0.5" />
+                  <CheckCircle2 className="w-4 h-4 text-brand-400 shrink-0 mt-0.5" />
                   <span className="text-white/60 text-sm">{item}</span>
                 </div>
               ))}
@@ -676,7 +676,7 @@ function StarRow() {
   return (
     <div className="flex gap-1 justify-center mb-4">
       {Array.from({ length: 5 }).map((_, i) => (
-        <svg key={i} className="w-4 h-4" viewBox="0 0 20 20" fill="#D4A843">
+        <svg key={i} className="w-4 h-4" viewBox="0 0 20 20" fill="#3A8CC9">
           <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
         </svg>
       ))}
@@ -689,7 +689,7 @@ function Testimonials() {
     <section className="section-py" style={{ background: '#F5F5F7' }}>
       <div className="max-w-7xl mx-auto px-6">
         <FadeUp className="text-center mb-14">
-          <p className="section-label mb-4" style={{ color: '#B88D2C' }}>Patient Stories</p>
+          <p className="section-label mb-4" style={{ color: '#2B6AA3' }}>Patient Stories</p>
           <h2
             className="headline-section text-navy-950 mb-4"
             style={{ fontSize: 'clamp(2.5rem,5vw,4rem)' }}
@@ -714,7 +714,7 @@ function Testimonials() {
                 </p>
                 <p
                   className="text-center font-semibold mt-6"
-                  style={{ color: '#D4A843', fontSize: '0.875rem' }}
+                  style={{ color: '#3A8CC9', fontSize: '0.875rem' }}
                 >
                   — {t.name}
                 </p>
@@ -732,15 +732,15 @@ function Testimonials() {
 ───────────────────────────────────────────────────── */
 function LanguagesBand() {
   return (
-    <section className="py-6 border-y border-white/5" style={{ background: '#000' }}>
+    <section className="py-6 border-y border-white/5" style={{ background: '#083B3E' }}>
       <div className="max-w-5xl mx-auto px-6 flex flex-wrap items-center justify-center gap-5">
-        <Globe className="w-4 h-4 text-gold-400" />
+        <Globe className="w-4 h-4 text-brand-400" />
         <span className="text-white/35 text-sm font-medium">We speak:</span>
         {['English', 'Spanish', 'Chinese', 'Korean', 'Persian'].map((lang) => (
           <span
             key={lang}
             className="text-white/70 text-sm font-semibold px-3 py-1 rounded-full"
-            style={{ background: 'rgba(212,168,67,0.1)', border: '1px solid rgba(212,168,67,0.2)' }}
+            style={{ background: 'rgba(58,140,201,0.1)', border: '1px solid rgba(58,140,201,0.2)' }}
           >
             {lang}
           </span>
@@ -757,13 +757,13 @@ function FinalCTA() {
   return (
     <section
       className="relative section-py overflow-hidden"
-      style={{ background: '#000' }}
+      style={{ background: '#083B3E' }}
     >
       <div
         className="absolute inset-0 pointer-events-none"
         style={{
           background:
-            'radial-gradient(ellipse 70% 50% at 50% 50%, rgba(212,168,67,0.1) 0%, transparent 70%)',
+            'radial-gradient(ellipse 70% 50% at 50% 50%, rgba(58,140,201,0.1) 0%, transparent 70%)',
         }}
       />
       <FadeUp className="max-w-3xl mx-auto px-6 text-center relative z-10">

@@ -136,7 +136,7 @@ export default function BracesForChildrenPage() {
               Catching orthodontic problems early — at age 7 — means harnessing your child&apos;s natural jaw growth to correct bite issues before they become complex. Dr. James Ho at PAAD offers phased orthodontic treatment for children in Palo Alto, using gentle interceptive techniques that can reduce treatment time, avoid tooth extractions, and prevent more invasive corrections later.
             </p>
             <div className="flex flex-wrap gap-4">
-              <Link href="/contact-us/" className="btn-gold inline-flex items-center gap-2">
+              <Link href="/contact" className="btn-gold inline-flex items-center gap-2">
                 Book a Consultation <ArrowRight className="w-4 h-4" />
               </Link>
               <a href="tel:6503244900" className="inline-flex items-center gap-2 text-white/70 hover:text-white font-semibold transition-colors">
@@ -255,7 +255,7 @@ export default function BracesForChildrenPage() {
             </h2>
             <p className="text-white/50 mb-8">Call (650) 324-4900 or request an appointment online — same-day appointments often available.</p>
             <div className="flex flex-wrap justify-center gap-4">
-              <Link href="/contact-us/" className="btn-gold inline-flex items-center gap-2">
+              <Link href="/contact" className="btn-gold inline-flex items-center gap-2">
                 Book a Consultation <ArrowRight className="w-4 h-4" />
               </Link>
               <a href="tel:6503244900" className="inline-flex items-center gap-2 text-white/60 hover:text-white font-semibold transition-colors">

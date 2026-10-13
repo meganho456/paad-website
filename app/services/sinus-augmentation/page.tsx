@@ -136,7 +136,7 @@ export default function SinusAugmentationPage() {
               Patients who have been told there is &quot;not enough bone&quot; for upper posterior implants often need a sinus lift — a procedure to build bone volume beneath the maxillary sinus. At PAAD in Palo Alto, we perform both lateral and crestal sinus augmentation with CBCT-guided planning and 90%+ long-term implant success rates.
             </p>
             <div className="flex flex-wrap gap-4">
-              <Link href="/contact-us/" className="btn-gold inline-flex items-center gap-2">
+              <Link href="/contact" className="btn-gold inline-flex items-center gap-2">
                 Book a Consultation <ArrowRight className="w-4 h-4" />
               </Link>
               <a href="tel:6503244900" className="inline-flex items-center gap-2 text-white/70 hover:text-white font-semibold transition-colors">
@@ -284,7 +284,7 @@ export default function SinusAugmentationPage() {
             </h2>
             <p className="text-white/50 mb-8">Call (650) 324-4900 or request an appointment online — same-day appointments often available.</p>
             <div className="flex flex-wrap justify-center gap-4">
-              <Link href="/contact-us/" className="btn-gold inline-flex items-center gap-2">
+              <Link href="/contact" className="btn-gold inline-flex items-center gap-2">
                 Book a Consultation <ArrowRight className="w-4 h-4" />
               </Link>
               <a href="tel:6503244900" className="inline-flex items-center gap-2 text-white/60 hover:text-white font-semibold transition-colors">

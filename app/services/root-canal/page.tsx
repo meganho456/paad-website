@@ -150,7 +150,7 @@ export default function RootCanalPage() {
               technology, and step-by-step protocol used at PAAD to save infected teeth comfortably and efficiently.
             </p>
             <div className="flex flex-wrap gap-4">
-              <Link href="/contact-us/" className="btn-gold inline-flex items-center gap-2">
+              <Link href="/contact" className="btn-gold inline-flex items-center gap-2">
                 Book a Consultation <ArrowRight className="w-4 h-4" />
               </Link>
               <a href="tel:6503244900" className="inline-flex items-center gap-2 text-white/70 hover:text-white font-semibold transition-colors">
@@ -273,7 +273,7 @@ export default function RootCanalPage() {
             </h2>
             <p className="text-white/50 mb-8">Same-day emergency appointments available for Palo Alto patients with acute dental pain or swelling.</p>
             <div className="flex flex-wrap justify-center gap-4">
-              <Link href="/contact-us/" className="btn-gold inline-flex items-center gap-2">
+              <Link href="/contact" className="btn-gold inline-flex items-center gap-2">
                 Book a Consultation <ArrowRight className="w-4 h-4" />
               </Link>
               <a href="tel:6503244900" className="inline-flex items-center gap-2 text-white/60 hover:text-white font-semibold transition-colors">

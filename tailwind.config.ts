@@ -10,24 +10,32 @@ const config: Config = {
     extend: {
       colors: {
         navy: {
-          950: '#000000',    // pure black — Apple cinematic
-          900: '#1D1D1F',    // Apple dark gray
-          800: '#2D2D30',
-          700: '#3A3A3C',
-          600: '#48484A',
-          500: '#636366',
-          400: '#8E8E93',
+          950: '#062E31',    // near-black navy
+          900: '#083B3E',    // deep navy (was Apple dark gray)
+          800: '#0B4F4A',
+          700: '#0E5F58',
+          600: '#147A70',
+          500: '#3AA893',
+          400: '#7FCFC2',
+        },
+        // logo blue ramp — links, badges, secondary accents
+        brand: {
+          300: '#8FC6EA',
+          400: '#3A8CC9',
+          500: '#2B6AA3',
+          600: '#21517E',
+          700: '#1B4266',
         },
         gold: {
-          50:  '#FDF8EC',
-          100: '#FAF0CC',
-          200: '#F5E099',
-          300: '#F0CC7A',
-          400: '#D4A843',    // warm gold primary
-          500: '#B88D2C',
-          600: '#8F6B18',
-          700: '#6E5012',
-          800: '#52390D',
+          50:  '#F0FAF8',
+          100: '#D9EFEB',
+          200: '#B8E3DB',
+          300: '#2DD4BF',
+          400: '#0F766E',    // primary teal
+          500: '#0C5F59',
+          600: '#0A4A45',
+          700: '#083B3E',
+          800: '#062E31',
         },
         cream: {
           50:  '#FFFFFF',
@@ -41,9 +49,9 @@ const config: Config = {
         serif: ['var(--font-playfair)', 'Playfair Display', 'Georgia', 'serif'],
       },
       backgroundImage: {
-        'gold-gradient': 'linear-gradient(135deg, #D4A843 0%, #B88D2C 100%)',
-        'navy-gradient': 'linear-gradient(135deg, #000000 0%, #1D1D1F 100%)',
-        'hero-pattern':  'linear-gradient(135deg, #000000 0%, #0D0D0F 100%)',
+        'gold-gradient': 'linear-gradient(135deg, #0F766E 0%, #0C5F59 100%)',
+        'navy-gradient': 'linear-gradient(135deg, #062E31 0%, #083B3E 100%)',
+        'hero-pattern':  'linear-gradient(135deg, #083B3E 0%, #0F766E 100%)',
       },
       letterSpacing: {
         tightest: '-0.05em',
@@ -68,8 +76,8 @@ const config: Config = {
         },
       },
       boxShadow: {
-        gold:      '0 0 40px rgba(212,168,67,0.3)',
-        'gold-lg': '0 0 80px rgba(212,168,67,0.4)',
+        gold:      '0 0 40px rgba(20,184,166,0.35)',
+        'gold-lg': '0 0 80px rgba(20,184,166,0.45)',
         glass:     '0 8px 32px rgba(0,0,0,0.5)',
         'card-hover': '0 20px 60px rgba(0,0,0,0.5)',
       },

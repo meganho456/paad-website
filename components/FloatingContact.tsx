@@ -48,7 +48,7 @@ function WeChatModal({ onClose }: { onClose: () => void }) {
         exit={{ opacity: 0, scale: 0.88, y: 24 }}
         transition={{ duration: 0.28, ease: [0.25, 0.1, 0.25, 1] }}
         className="relative rounded-3xl p-8 text-center max-w-xs w-full"
-        style={{ background: '#1D1D1F', border: '1px solid rgba(255,255,255,0.12)', boxShadow: '0 32px 80px rgba(0,0,0,0.6)' }}
+        style={{ background: '#083B3E', border: '1px solid rgba(255,255,255,0.12)', boxShadow: '0 32px 80px rgba(0,0,0,0.6)' }}
         onClick={(e) => e.stopPropagation()}
       >
         <button
@@ -79,7 +79,7 @@ function WeChatModal({ onClose }: { onClose: () => void }) {
           <button
             onClick={handleCopy}
             className="flex items-center gap-1.5 text-xs font-semibold transition-colors"
-            style={{ color: copied ? '#07C160' : '#D4A843' }}
+            style={{ color: copied ? '#07C160' : '#3A8CC9' }}
           >
             {copied ? <><Check className="w-3.5 h-3.5" /> Copied</> : <><Copy className="w-3.5 h-3.5" /> Copy</>}
           </button>
@@ -171,8 +171,8 @@ function DismissBtn({ dismissed, onToggle }: { dismissed: boolean; onToggle: () 
       onMouseLeave={() => setHovered(false)}
       className="relative flex items-center justify-center w-10 h-10 rounded-full text-black transition-transform duration-200 hover:scale-110 active:scale-95"
       style={{
-        background: 'linear-gradient(135deg, #D4A843, #B88D2C)',
-        boxShadow: '0 2px 14px rgba(212,168,67,0.5)',
+        background: 'linear-gradient(135deg, #0F766E, #0C5F59)',
+        boxShadow: '0 2px 14px rgba(58,140,201,0.5)',
       }}
       aria-label={dismissed ? 'Show contact options' : 'Hide contact options'}
       whileTap={{ scale: 0.92 }}

@@ -67,7 +67,7 @@ function DropdownMenu({ items, type }: { items: typeof servicesMenu | typeof doc
             </div>
             {item.tag && (
               <span className="text-[10px] font-bold uppercase tracking-wider px-2 py-0.5 rounded-full shrink-0"
-                style={{ background: 'rgba(212,168,67,0.15)', color: '#D4A843' }}>
+                style={{ background: 'rgba(58,140,201,0.15)', color: '#3A8CC9' }}>
                 {item.tag}
               </span>
             )}
@@ -120,7 +120,7 @@ export default function Navbar() {
           <div className="relative w-10 h-10 shrink-0">
             <Image src="/logo-t.png" alt="Palo Alto Advanced Dentists logo — dental practice at 4191 El Camino Real, Palo Alto CA, led by Harvard-trained Dr. James Ho" fill className="object-contain" priority />
           </div>
-          <span className="font-bold whitespace-nowrap" style={{ fontSize: '0.95rem', color: '#D4A843', letterSpacing: '-0.01em' }}>
+          <span className="font-bold whitespace-nowrap" style={{ fontSize: '0.95rem', color: '#3A8CC9', letterSpacing: '-0.01em' }}>
             Palo Alto Advanced Dentists
           </span>
         </Link>
@@ -139,7 +139,7 @@ export default function Navbar() {
                 className="flex items-center gap-1 font-semibold transition-colors duration-200 whitespace-nowrap"
                 style={{
                   fontSize: '0.9375rem',
-                  color: pathname.startsWith(link.href) ? '#D4A843' : 'rgba(255,255,255,0.82)',
+                  color: pathname.startsWith(link.href) ? '#3A8CC9' : 'rgba(255,255,255,0.82)',
                 }}
                 onMouseEnter={(e) => { if (!pathname.startsWith(link.href)) (e.currentTarget.style.color = '#fff') }}
                 onMouseLeave={(e) => { if (!pathname.startsWith(link.href)) (e.currentTarget.style.color = 'rgba(255,255,255,0.82)') }}
@@ -189,7 +189,7 @@ export default function Navbar() {
           </div>
           <span
             className="font-bold leading-tight"
-            style={{ fontSize: '0.875rem', color: '#D4A843', letterSpacing: '-0.01em' }}
+            style={{ fontSize: '0.875rem', color: '#3A8CC9', letterSpacing: '-0.01em' }}
           >
             Palo Alto Advanced Dentists
           </span>
@@ -223,12 +223,12 @@ export default function Navbar() {
                       <button
                         onClick={() => setMobileExpanded(v => v === link.label ? null : link.label)}
                         className="w-full text-left text-lg font-semibold py-3.5 border-b border-white/8 flex items-center justify-between transition-colors duration-200"
-                        style={{ color: pathname.startsWith(link.href) ? '#D4A843' : 'rgba(255,255,255,0.85)' }}
+                        style={{ color: pathname.startsWith(link.href) ? '#3A8CC9' : 'rgba(255,255,255,0.85)' }}
                       >
                         {link.label}
                         <ChevronDown
                           className="w-4 h-4 transition-transform duration-200"
-                          style={{ transform: mobileExpanded === link.label ? 'rotate(180deg)' : 'rotate(0deg)', color: '#D4A843' }}
+                          style={{ transform: mobileExpanded === link.label ? 'rotate(180deg)' : 'rotate(0deg)', color: '#3A8CC9' }}
                         />
                       </button>
                       <AnimatePresence>
@@ -259,7 +259,7 @@ export default function Navbar() {
                     <Link
                       href={link.href}
                       className="text-lg font-semibold py-3.5 border-b border-white/8 block transition-colors duration-200"
-                      style={{ color: pathname === link.href ? '#D4A843' : 'rgba(255,255,255,0.85)' }}
+                      style={{ color: pathname === link.href ? '#3A8CC9' : 'rgba(255,255,255,0.85)' }}
                     >
                       {link.label}
                     </Link>
@@ -268,7 +268,7 @@ export default function Navbar() {
               ))}
               <div className="pt-5 flex flex-col gap-3">
                 <a href="tel:6503244900" className="flex items-center gap-2 text-sm" style={{ color: 'rgba(255,255,255,0.80)' }}>
-                  <Phone className="w-4 h-4" style={{ color: '#D4A843' }} />
+                  <Phone className="w-4 h-4" style={{ color: '#3A8CC9' }} />
                   (650) 324-4900
                 </a>
                 <Link href="/contact" className="btn-gold text-center text-sm py-3">

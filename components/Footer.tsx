@@ -50,7 +50,7 @@ export default function Footer() {
             </p>
             <div className="flex items-center gap-1.5">
               {Array.from({ length: 5 }).map((_, i) => (
-                <Star key={i} className="w-3.5 h-3.5 fill-gold-400 text-gold-400" />
+                <Star key={i} className="w-3.5 h-3.5 fill-gold-400 text-brand-400" />
               ))}
               <span className="text-white/50 text-xs ml-1">Bay Area Best Dentist</span>
             </div>
@@ -69,7 +69,7 @@ export default function Footer() {
                 <li key={s.href}>
                   <Link
                     href={s.href}
-                    className="text-white/50 hover:text-gold-400 text-sm transition-colors duration-200 flex items-center gap-2 group"
+                    className="text-white/50 hover:text-brand-400 text-sm transition-colors duration-200 flex items-center gap-2 group"
                   >
                     <span className="w-1 h-1 rounded-full bg-gold-600 group-hover:bg-gold-400 transition-colors" />
                     {s.label}
@@ -89,7 +89,7 @@ export default function Footer() {
                 <li key={item.href}>
                   <Link
                     href={item.href}
-                    className="text-white/50 hover:text-gold-400 text-sm transition-colors duration-200 flex items-center gap-2 group"
+                    className="text-white/50 hover:text-brand-400 text-sm transition-colors duration-200 flex items-center gap-2 group"
                   >
                     <span className="w-1 h-1 rounded-full bg-gold-600 group-hover:bg-gold-400 transition-colors" />
                     {item.label}
@@ -106,23 +106,23 @@ export default function Footer() {
             </h3>
             <ul className="space-y-5">
               <li className="flex gap-3">
-                <MapPin className="w-4 h-4 text-gold-400 mt-0.5 shrink-0" />
+                <MapPin className="w-4 h-4 text-brand-400 mt-0.5 shrink-0" />
                 <div>
                   <p className="text-white/75 text-sm">4191 El Camino Real</p>
                   <p className="text-white/50 text-sm">Palo Alto, CA 94306</p>
                 </div>
               </li>
               <li className="flex gap-3">
-                <Phone className="w-4 h-4 text-gold-400 mt-0.5 shrink-0" />
+                <Phone className="w-4 h-4 text-brand-400 mt-0.5 shrink-0" />
                 <a
                   href="tel:6503244900"
-                  className="text-white/75 hover:text-gold-400 text-sm transition-colors duration-200"
+                  className="text-white/75 hover:text-brand-400 text-sm transition-colors duration-200"
                 >
                   (650) 324-4900
                 </a>
               </li>
               <li className="flex gap-3">
-                <Clock className="w-4 h-4 text-gold-400 mt-0.5 shrink-0" />
+                <Clock className="w-4 h-4 text-brand-400 mt-0.5 shrink-0" />
                 <div>
                   <p className="text-white/75 text-sm">Mon – Sat: 9 am – 6 pm</p>
                   <p className="text-white/50 text-sm">Sun: Closed</p>

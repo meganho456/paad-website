@@ -409,14 +409,19 @@ function ServicesPreview() {
         </FadeUp>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
-          {services.map((s, i) => (
+          {services.map((s, i) => {
+            // Card tone rotation: dark teal, green, white, green, white, ...
+            const tone = i === 0 ? 'dark' : (i % 2 === 1 ? 'green' : 'white')
+            const bg = tone === 'dark' ? '#083B3E' : tone === 'green' ? '#0F766E' : '#FFFFFF'
+            const lightText = tone !== 'white'
+            return (
             <FadeUp key={s.title} delay={i * 0.07} className={s.span}>
               <Link href="/services" className="block h-full group">
                 <div
                   className="h-full rounded-3xl p-8 transition-all duration-300 group-hover:scale-[1.02]"
                   style={{
-                    background: s.dark ? '#083B3E' : '#FFFFFF',
-                    border: s.dark
+                    background: bg,
+                    border: lightText
                       ? '1px solid rgba(255,255,255,0.07)'
                       : '1px solid rgba(0,0,0,0.07)',
                   }}
@@ -435,12 +440,12 @@ function ServicesPreview() {
                     style={{
                       fontSize: '1.375rem',
                       letterSpacing: '-0.02em',
-                      color: s.dark ? '#FFFFFF' : '#000000',
+                      color: lightText ? '#FFFFFF' : '#000000',
                     }}
                   >
                     {s.title}
                   </h3>
-                  <p style={{ color: s.dark ? 'rgba(255,255,255,0.75)' : 'rgba(0,0,0,0.65)' }} className="text-sm leading-relaxed">
+                  <p style={{ color: lightText ? 'rgba(255,255,255,0.75)' : 'rgba(0,0,0,0.65)' }} className="text-sm leading-relaxed">
                     {s.desc}
                   </p>
                   <div className="mt-6 flex items-center gap-1.5" style={{ color: '#3A8CC9' }}>
@@ -450,7 +455,8 @@ function ServicesPreview() {
                 </div>
               </Link>
             </FadeUp>
-          ))}
+            )
+          })}
         </div>
       </div>
     </section>

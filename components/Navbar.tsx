@@ -220,17 +220,24 @@ export default function Navbar() {
                 <div key={link.href}>
                   {link.menu ? (
                     <>
-                      <button
-                        onClick={() => setMobileExpanded(v => v === link.label ? null : link.label)}
+                      <div
                         className="w-full text-left text-lg font-semibold py-3.5 border-b border-white/8 flex items-center justify-between transition-colors duration-200"
                         style={{ color: pathname.startsWith(link.href) ? '#3A8CC9' : 'rgba(255,255,255,0.85)' }}
                       >
-                        {link.label}
-                        <ChevronDown
-                          className="w-4 h-4 transition-transform duration-200"
-                          style={{ transform: mobileExpanded === link.label ? 'rotate(180deg)' : 'rotate(0deg)', color: '#3A8CC9' }}
-                        />
-                      </button>
+                        <Link href={link.href} className="flex-1">
+                          {link.label}
+                        </Link>
+                        <button
+                          onClick={() => setMobileExpanded(v => v === link.label ? null : link.label)}
+                          aria-label={`Expand ${link.label} submenu`}
+                          className="p-2 -m-2"
+                        >
+                          <ChevronDown
+                            className="w-4 h-4 transition-transform duration-200"
+                            style={{ transform: mobileExpanded === link.label ? 'rotate(180deg)' : 'rotate(0deg)', color: '#3A8CC9' }}
+                          />
+                        </button>
+                      </div>
                       <AnimatePresence>
                         {mobileExpanded === link.label && (
                           <motion.div

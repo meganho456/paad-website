@@ -19,6 +19,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${base}/practice`,                       lastModified, changeFrequency: 'monthly', priority: 0.7 },
     { url: `${base}/patients`,                       lastModified, changeFrequency: 'monthly', priority: 0.8 },
     { url: `${base}/contact`,                        lastModified, changeFrequency: 'monthly', priority: 0.8 },
+    { url: `${base}/privacy`,                        lastModified, changeFrequency: 'yearly',  priority: 0.3 },
+    { url: `${base}/terms`,                          lastModified, changeFrequency: 'yearly',  priority: 0.3 },
     { url: `${base}/services/bone-grafting`,         lastModified, changeFrequency: 'monthly', priority: 0.75 },
     { url: `${base}/services/braces`,                lastModified, changeFrequency: 'monthly', priority: 0.75 },
     { url: `${base}/services/braces-for-children`,   lastModified, changeFrequency: 'monthly', priority: 0.75 },

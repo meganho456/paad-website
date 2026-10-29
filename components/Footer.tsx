@@ -138,10 +138,14 @@ export default function Footer() {
             © {new Date().getFullYear()} Palo Alto Advanced Dentists. All rights reserved.
           </p>
           <div className="flex gap-6">
-            {['Privacy Policy', 'Terms of Service', 'Accessibility'].map((label) => (
+            {[
+              { label: 'Privacy Policy', href: '/privacy' },
+              { label: 'Terms of Service', href: '/terms' },
+              { label: 'Accessibility', href: '#' },
+            ].map(({ label, href }) => (
               <Link
                 key={label}
-                href="#"
+                href={href}
                 className="text-white/50 hover:text-white/80 text-sm transition-colors duration-200"
               >
                 {label}

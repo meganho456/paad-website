@@ -5,7 +5,7 @@ const serif = "var(--font-newsreader), Georgia, serif";
 const languages = [
   { hello: "Hello", label: "English", serif: true, doctors: ["All doctors"] },
   { hello: "Hola", label: "Español", serif: true, doctors: ["Dr. Pedro Avendaño"] },
-  { hello: "你好", label: "中文 · 廣東話", doctors: ["Dr. Shane Huang"] },
+  { hello: "你好", label: "中文 · 廣東話", doctors: ["Dr. Shane Huang", "Dr. Brenda Luan"] },
   { hello: "こんにちは", label: "日本語", doctors: ["Dr. James Ho"], small: true },
   { hello: "سلام", label: "فارسی", doctors: ["Dr. Sara Hamed-Negahdar"], rtl: true },
 ];

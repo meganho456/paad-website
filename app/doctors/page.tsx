@@ -134,6 +134,28 @@ const doctors = [
     bio: 'Dr. Pedro Avendaño brings a distinguished international perspective to PAAD. As a former director of clinical practices in Santiago, Chile, and an active lecturer in implantology, he combines elite academic credentials with deep hands-on expertise. Dr. Avendaño has contributed to implant training courses at Loma Linda University School of Dentistry and remains actively engaged in continuing education. He enjoys skiing and spending time with family.',
   },
   {
+    id: 'brenda-luan',
+    photo: '/doctors/dr-brenda-luan.jpg',
+    initials: 'BL',
+    name: 'Dr. Brenda Luan',
+    credentials: 'D.D.S.',
+    title: 'Associate Dentist',
+    education: [
+      'UC Santa Barbara — B.S., Biological Sciences',
+      'University of the Pacific, Arthur A. Dugoni School of Dentistry — D.D.S.',
+    ],
+    specialties: [
+      'Comprehensive Dental Care',
+      'Preventive Dentistry',
+      'Patient Education & Oral Health',
+      'General Dentistry',
+    ],
+    memberships: [],
+    languages: ['English', 'Mandarin', 'Cantonese'],
+    awards: [],
+    bio: 'Dr. Luan brings a compassionate, thoughtful, and preventative approach to comprehensive dental care at PAAD, with a focus on patient education. A Bay Area native, she pursued her undergraduate studies in biological sciences at UC Santa Barbara before returning to earn her dental degree from the University of the Pacific. She believes great dentistry goes beyond treating symptoms—it starts with understanding the root cause, educating patients, and working together to support long-term oral health. Outside the office, she enjoys traveling, discovering new food and coffee spots, and spending time with loved ones.',
+  },
+  {
     id: 'eddy-wang',
     photo: '/doctors/dr-eddy-wang.jpg',
     initials: 'EW',

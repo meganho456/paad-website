@@ -22,6 +22,7 @@ const servicesMenu = [
 const doctorsMenu = [
   { href: '/doctors#james-ho',       label: 'Dr. James Ho',            sub: 'Founder · Harvard D.M.D.' },
   { href: '/doctors#ryan-ho',        label: 'Dr. Ryan Charles Ho',     sub: 'Associate · D.M.D.' },
+  { href: '/doctors#brenda-luan',     label: 'Dr. Brenda Luan',         sub: 'Associate · D.D.S.' },
   { href: '/doctors#shane-huang',    label: 'Dr. Shane Huang',         sub: 'Associate · D.M.D.' },
   { href: '/doctors#sara-hamed',     label: 'Dr. Sara Hamed-Negahdar', sub: 'Associate · D.D.S.' },
   { href: '/doctors#pedro-avendano', label: 'Dr. Pedro Avendaño',      sub: 'Associate · D.D.S.' },
